@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Piotr S.",
+    "totalDistance": 120,
+    "avgSpeed": 25.5,
+    "avgElevation": 300,
+    "count": 5
+  },
+  {
+    "name": "Anna K.",
+    "totalDistance": 200,
+    "avgSpeed": 27.1,
+    "avgElevation": 450,
+    "count": 8
+  }
+]
