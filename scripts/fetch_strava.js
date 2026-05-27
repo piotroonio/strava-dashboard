@@ -1,3 +1,10 @@
+
+console.log("ENV:", {
+  CLIENT_ID: process.env.CLIENT_ID,
+  CLIENT_SECRET: process.env.CLIENT_SECRET ? "OK" : "MISSING",
+  REFRESH_TOKEN: process.env.REFRESH_TOKEN ? "OK" : "MISSING"
+});
+
 const fs = require("fs");
 
 async function fetchData() {
