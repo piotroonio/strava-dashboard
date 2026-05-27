@@ -1,4 +1,4 @@
-import fs from "fs";
+const fs = require("fs");
 
 // generujemy dane + znacznik czasu (wymusza zmianę)
 const now = new Date().toISOString();
