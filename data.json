@@ -1,18 +1,10 @@
 [
   {
     "name": "Piotr S.",
-    "totalDistance": 564.9,
-    "avgSpeed": 23.1,
-    "avgElevation": 341,
-    "count": 12,
-    "updatedAt": "2026-05-27T11:23:16.311Z"
-  },
-  {
-    "name": "Anna K.",
-    "totalDistance": 551.2,
-    "avgSpeed": 26,
-    "avgElevation": 142,
-    "count": 22,
-    "updatedAt": "2026-05-27T11:23:16.311Z"
+    "totalDistance": 565.5,
+    "avgSpeed": 21.1,
+    "avgElevation": 53,
+    "count": 34,
+    "updatedAt": "2026-05-27T13:56:33.133Z"
   }
 ]
