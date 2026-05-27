@@ -35,6 +35,8 @@ async function fetchData() {
   );
 
   const activities = await activitiesRes.json();
+  
+  console.log("DEBUG activities:", activities);
 
   // 📊 agregacja
   let totalDistance = 0;
