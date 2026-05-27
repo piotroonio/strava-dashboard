@@ -18,6 +18,8 @@ async function fetchData() {
   });
 
   const tokenData = await tokenRes.json();
+  console.log("DEBUG token:", tokenData);
+  
   const accessToken = tokenData.access_token;
 
   // 📅 zakres dat (1 maja – 30 września)
