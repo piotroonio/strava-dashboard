@@ -2,19 +2,54 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <title>Strava Dashboard</title>
+  <title>Strava Cycling Dashboard</title>
+
   <style>
-    body { font-family: Arial; padding: 20px; }
-    h1 { margin-bottom: 20px; }
-    table { border-collapse: collapse; width: 100%; }
-    th, td { padding: 10px; border-bottom: 1px solid #ddd; }
-    th { text-align: left; }
-    tr:hover { background: #f5f5f5; }
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      text-align: left;
+      background-color: #f5f5f5;
+    }
+
+    tr:hover {
+      background: #fafafa;
+    }
+
+    .summary {
+      margin-top: 20px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: gray;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
 
-<h1>🚴 Zestawienie aktywności</h1>
+<h1>🚴 Zestawienie aktywności (maj–wrzesień)</h1>
 
 <table id="table">
   <thead>
@@ -30,21 +65,34 @@
   <tbody></tbody>
 </table>
 
-<h2>Podsumowanie</h2>
-<div id="summary"></div>
+<div id="summary" class="summary"></div>
+
+<!-- ✅ Powered by Strava -->
+<footer>
+  <p>
+    Powered by
+    <a href="https://www.strava.com" target="_blank">Strava</a>
+  </p>
+  <p>
+    This application uses the Strava API but is not endorsed by Strava.
+  </p>
+</footer>
 
 <script>
 fetch("./data.json")
   .then(res => res.json())
   .then(data => {
-    // sort ranking
-    data.sort((a, b) => b.totalDistance - a.totalDistance);
+    const users = data.users || [];
+
+    // 🏆 sortowanie rankingowe
+    users.sort((a, b) => b.totalDistance - a.totalDistance);
 
     const tbody = document.querySelector("#table tbody");
+
     let totalDistance = 0;
     let totalActivities = 0;
 
-    data.forEach((u, i) => {
+    users.forEach((u, i) => {
       totalDistance += u.totalDistance;
       totalActivities += u.count;
 
@@ -62,10 +110,17 @@ fetch("./data.json")
       tbody.innerHTML += row;
     });
 
+    // 📊 podsumowanie
     document.getElementById("summary").innerHTML = `
-      <p>Łączny dystans: <b>${totalDistance.toFixed(1)} km</b></p>
-      <p>Liczba aktywności: <b>${totalActivities}</b></p>
+      <p>📊 Łączny dystans: <b>${totalDistance.toFixed(1)} km</b></p>
+      <p>🚴 Łączna liczba aktywności: <b>${totalActivities}</b></p>
+      <p>⏱️ Ostatnia aktualizacja: ${new Date(data.updatedAt).toLocaleString()}</p>
     `;
+  })
+  .catch(err => {
+    console.error("Błąd ładowania danych:", err);
+    document.getElementById("summary").innerHTML =
+      "<p>Błąd ładowania danych...</p>";
   });
 </script>
 
