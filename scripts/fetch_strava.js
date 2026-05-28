@@ -37,6 +37,22 @@ async function fetchData() {
 
     const accessToken = tokenData.access_token;
 
+    
+// ✅ pobierz dane użytkownika
+const athleteRes = await fetch(
+  "https://www.strava.com/api/v3/athlete",
+  {
+    headers: {
+      Authorization: `Bearer ${accessToken}`
+    }
+  }
+);
+
+const athleteData = await athleteRes.json();
+
+console.log("ATHLETE:", athleteData);
+
+
     // 📅 2. Zakres dat (dynamiczny rok)
     const year = new Date().getFullYear();
     const after = Math.floor(new Date(`${year}-05-01`).getTime() / 1000);
@@ -92,7 +108,8 @@ async function fetchData() {
 
     // 📈 5. Obliczenia końcowe
 // ✅ wyciągnij dane użytkownika z pierwszej aktywności
-const athlete = allActivities[0]?.athlete;
+//const athlete = allActivities[0]?.athlete;
+const athlete = athleteData;
 
 const firstName = athlete?.firstname || "";
 const lastName = athlete?.lastname || "";
