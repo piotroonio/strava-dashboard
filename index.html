@@ -111,11 +111,17 @@ fetch("./data.json")
     });
 
     // 📊 podsumowanie
-    document.getElementById("summary").innerHTML = `
-      <p>📊 Łączny dystans: <b>${totalDistance.toFixed(1)} km</b></p>
-      <p>🚴 Łączna liczba aktywności: <b>${totalActivities}</b></p>
-      <p>⏱️ Ostatnia aktualizacja: ${new Date(data.updatedAt).toLocaleString()}</p>
-    `;
+
+const updatedAt = Array.isArray(data)
+  ? data[0]?.updatedAt
+  : data.updatedAt;
+
+document.getElementById("summary").innerHTML = `
+  <p>📊 Łączny dystans: <b>${totalDistance.toFixed(1)} km</b></p>
+  <p>🚴 Łączna liczba aktywności: <b>${totalActivities}</b></p>
+  <p>⏱️ Ostatnia aktualizacja: ${updatedAt ? new Date(updatedAt).toLocaleString() : "brak danych"}</p>
+`;
+
   })
   .catch(err => {
     console.error("Błąd ładowania danych:", err);
