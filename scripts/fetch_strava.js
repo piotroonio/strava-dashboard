@@ -91,34 +91,48 @@ async function fetchData() {
     });
 
     // 📈 5. Obliczenia końcowe
-    const result = [
-      {
-        name: "Piotr S.",
+// ✅ wyciągnij dane użytkownika z pierwszej aktywności
+const athlete = allActivities[0]?.athlete;
 
-        totalDistance: +(totalDistance / 1000).toFixed(1), // km
+const firstName = athlete?.firstname || "";
+const lastName = athlete?.lastname || "";
+const athleteId = athlete?.id;
 
-        avgSpeed:
-          totalTime > 0
-            ? +((totalDistance / totalTime) * 3.6).toFixed(1)
-            : 0,
+// inicjał nazwiska
+const lastInitial = lastName ? `${lastName.charAt(0)}.` : "";
 
-        avgElevation:
-          totalActivities > 0
-            ? +(totalElevation / totalActivities).toFixed(0)
-            : 0,
+// fallback gdyby coś było nie tak
+const displayName = `${firstName} ${lastInitial}`.trim() || "Unknown";
 
-        totalElevation: Math.round(totalElevation),
+const result = [
+  {
+    name: displayName,
+    athleteId: athleteId, // 🔥 do linków!
 
-        count: totalActivities,
+    totalDistance: +(totalDistance / 1000).toFixed(1),
 
-        avgDistancePerRide:
-          totalActivities > 0
-            ? +((totalDistance / 1000) / totalActivities).toFixed(1)
-            : 0,
+    avgSpeed:
+      totalTime > 0
+        ? +((totalDistance / totalTime) * 3.6).toFixed(1)
+        : 0,
 
-        updatedAt: new Date().toISOString()
-      }
-    ];
+    avgElevation:
+      totalActivities > 0
+        ? +(totalElevation / totalActivities).toFixed(0)
+        : 0,
+
+    totalElevation: Math.round(totalElevation),
+
+    count: totalActivities,
+
+    avgDistancePerRide:
+      totalActivities > 0
+        ? +((totalDistance / 1000) / totalActivities).toFixed(1)
+        : 0,
+
+    updatedAt: new Date().toISOString()
+  }
+];
 
     // 💾 6. Zapis pliku
     fs.writeFileSync("data.json", JSON.stringify(result, null, 2));
