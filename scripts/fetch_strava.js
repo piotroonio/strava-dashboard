@@ -5,7 +5,6 @@ async function fetchData() {
   const CLIENT_SECRET = process.env.CLIENT_SECRET;
   const REFRESH_TOKEN = process.env.REFRESH_TOKEN;
 
-  // Debug ENV (bezpieczny)
   console.log("ENV:", {
     CLIENT_ID: CLIENT_ID,
     CLIENT_SECRET: CLIENT_SECRET ? "OK" : "MISSING",
@@ -37,28 +36,32 @@ async function fetchData() {
 
     const accessToken = tokenData.access_token;
 
-    
-// ✅ pobierz dane użytkownika
-const athleteRes = await fetch(
-  "https://www.strava.com/api/v3/athlete",
-  {
-    headers: {
-      Authorization: `Bearer ${accessToken}`
-    }
-  }
-);
+    // ✅ 2. Pobierz dane użytkownika
+    const athleteRes = await fetch(
+      "https://www.strava.com/api/v3/athlete",
+      {
+        headers: {
+          Authorization: `Bearer ${accessToken}`
+        }
+      }
+    );
 
-const athleteData = await athleteRes.json();
+    const athleteData = await athleteRes.json();
+    console.log("ATHLETE:", athleteData);
 
-console.log("ATHLETE:", athleteData);
+    // ✅ pełna nazwa
+    const fullName = [athleteData.firstname, athleteData.lastname]
+      .filter(Boolean)
+      .join(" ");
 
+    const displayName = fullName || "Unknown";
 
-    // 📅 2. Zakres dat (dynamiczny rok)
+    // 📅 3. Zakres dat (dynamiczny rok)
     const year = new Date().getFullYear();
     const after = Math.floor(new Date(`${year}-05-01`).getTime() / 1000);
     const before = Math.floor(new Date(`${year}-09-30`).getTime() / 1000);
 
-    // 🚴 3. Pagination – pobieranie wszystkich aktywności
+    // 🚴 4. Pagination – pobieranie aktywności
     let page = 1;
     let allActivities = [];
 
@@ -79,9 +82,7 @@ console.log("ATHLETE:", athleteData);
         return;
       }
 
-      if (data.length === 0) {
-        break;
-      }
+      if (data.length === 0) break;
 
       console.log(`📄 Page ${page}: ${data.length} activities`);
 
@@ -91,7 +92,7 @@ console.log("ATHLETE:", athleteData);
 
     console.log(`✅ Total activities fetched: ${allActivities.length}`);
 
-    // 📊 4. Agregacja danych
+    // 📊 5. Agregacja
     let totalDistance = 0;
     let totalElevation = 0;
     let totalTime = 0;
@@ -106,52 +107,38 @@ console.log("ATHLETE:", athleteData);
       totalActivities++;
     });
 
-    // 📈 5. Obliczenia końcowe
-// ✅ wyciągnij dane użytkownika z pierwszej aktywności
-//const athlete = allActivities[0]?.athlete;
-const athlete = athleteData;
+    // 📈 6. Wynik
+    const result = [
+      {
+        name: displayName,
+        athleteId: athleteData.id, // ✅ potrzebne do linku Strava
 
-const firstName = athlete?.firstname || "";
-const lastName = athlete?.lastname || "";
-const athleteId = athlete?.id;
+        totalDistance: +(totalDistance / 1000).toFixed(1),
 
-// inicjał nazwiska
-const lastInitial = lastName ? `${lastName.charAt(0)}.` : "";
+        avgSpeed:
+          totalTime > 0
+            ? +((totalDistance / totalTime) * 3.6).toFixed(1)
+            : 0,
 
-// fallback gdyby coś było nie tak
-const displayName = `${firstName} ${lastInitial}`.trim() || "Unknown";
+        avgElevation:
+          totalActivities > 0
+            ? +(totalElevation / totalActivities).toFixed(0)
+            : 0,
 
-const result = [
-  {
-    name: displayName,
-    athleteId: athleteId, // 🔥 do linków!
+        totalElevation: Math.round(totalElevation),
 
-    totalDistance: +(totalDistance / 1000).toFixed(1),
+        count: totalActivities,
 
-    avgSpeed:
-      totalTime > 0
-        ? +((totalDistance / totalTime) * 3.6).toFixed(1)
-        : 0,
+        avgDistancePerRide:
+          totalActivities > 0
+            ? +((totalDistance / 1000) / totalActivities).toFixed(1)
+            : 0,
 
-    avgElevation:
-      totalActivities > 0
-        ? +(totalElevation / totalActivities).toFixed(0)
-        : 0,
+        updatedAt: new Date().toISOString()
+      }
+    ];
 
-    totalElevation: Math.round(totalElevation),
-
-    count: totalActivities,
-
-    avgDistancePerRide:
-      totalActivities > 0
-        ? +((totalDistance / 1000) / totalActivities).toFixed(1)
-        : 0,
-
-    updatedAt: new Date().toISOString()
-  }
-];
-
-    // 💾 6. Zapis pliku
+    // 💾 7. Zapis
     fs.writeFileSync("data.json", JSON.stringify(result, null, 2));
 
     console.log("✅ data.json updated successfully");
