@@ -182,8 +182,14 @@ fetch("./data.json")
 
         const row = `
           <tr class="${rankClass}">
-            <td>${position}</td>
-            <td>${u.name}</td>
+            <td>${position}</td>            
+<td>
+  ${u.athleteId 
+    ? `<a href="https://www.strava.com/athletes/${u.athleteId}" target="_blank">
+         ${u.name}
+       </a>`
+    : u.name}
+</td>
             <td>${u.totalDistance}</td>
             <td>${u.avgSpeed}</td>
             <td>${u.avgElevation}</td>
