@@ -12,9 +12,7 @@
       margin: auto;
     }
 
-    h1 {
-      margin-bottom: 10px;
-    }
+    h1 { margin-bottom: 10px; }
 
     .description {
       color: #555;
@@ -39,31 +37,27 @@
 
     th {
       background-color: #f5f5f5;
-      text-align: left;
+      cursor: pointer;
     }
 
     tr:hover {
       background: #fafafa;
     }
 
-    .gold {
-      background-color: #fff8dc;
-      font-weight: bold;
+    .gold { background-color: #fff8dc; font-weight: bold; }
+    .silver { background-color: #f0f0f0; font-weight: bold; }
+    .bronze { background-color: #fbe5d6; font-weight: bold; }
+
+    a {
+      color: #fc4c02;
+      text-decoration: none;
     }
 
-    .silver {
-      background-color: #f0f0f0;
-      font-weight: bold;
+    a:hover {
+      text-decoration: underline;
     }
 
-    .bronze {
-      background-color: #fbe5d6;
-      font-weight: bold;
-    }
-
-    .summary {
-      margin-top: 20px;
-    }
+    .summary { margin-top: 20px; }
 
     footer {
       margin-top: 40px;
@@ -71,16 +65,6 @@
       color: gray;
       text-align: center;
     }
-     
-a {
-  color: #fc4c02; /* Strava orange */
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
   </style>
 </head>
 
@@ -89,22 +73,22 @@ a:hover {
 <h1>🚴 Zestawienie aktywności (maj–wrzesień)</h1>
 
 <p class="description">
-  Ranking oparty na aktywnościach rowerowych ze Strava w okresie 1 maja – 30 września.
+  Ranking na podstawie aktywności rowerowych ze Strava.
 </p>
 
 <label><b>Szukaj użytkownika:</b></label>
-<input type="text" id="searchUser" placeholder="np. Piotr..." />
+<input type="text" id="searchUser" placeholder="np. Piotr" />
 
 <table id="table">
   <thead>
     <tr>
-      <th>#</th>
-      <th>Użytkownik</th>
-      <th>Dystans (km)</th>
-      <th>Śr. prędkość</th>
-      <th>Śr. przewyższenie</th>
-      <th>Suma przewyższeń</th>
-      <th>Aktywności</th>
+      <th data-sort="position">#</th>
+      <th data-sort="name">Użytkownik</th>
+      <th data-sort="totalDistance">Dystans (km)</th>
+      <th data-sort="avgSpeed">Śr. prędkość</th>
+      <th data-sort="avgElevation">Śr. przewyższenie</th>
+      <th data-sort="totalElevation">Suma przewyższeń</th>
+      <th data-sort="count">Aktywności</th>
     </tr>
   </thead>
   <tbody></tbody>
@@ -113,20 +97,17 @@ a:hover {
 <div id="summary" class="summary"></div>
 
 <footer>
-  <p>
-    Powered by <a href="https://www.strava.com" target="_blank">Strava</a>
-  </p>
-  <p>
-    This application uses the Strava API but is not endorsed by Strava.
-  </p>
-  <p style="font-size: 11px;">
-    Only data from users who explicitly authorized the application is used.
-  </p>
+  <p>Powered by https://www.strava.com</p>
+  <p>This application uses the Strava API but is not endorsed by Strava.</p>
 </footer>
 
 <script>
 
-// ✅ funkcja "ile czasu temu"
+// ===== CONFIG SORT =====
+let currentSort = "totalDistance";
+let sortAsc = false;
+
+// ===== TIME AGO =====
 function timeAgo(dateString) {
   if (!dateString) return "brak danych";
 
@@ -134,19 +115,15 @@ function timeAgo(dateString) {
   const past = new Date(dateString);
   const diff = Math.floor((now - past) / 1000);
 
-  if (diff < 60) return `${diff} sek. temu`;
-
-  const minutes = Math.floor(diff / 60);
-  if (minutes < 60) return `${minutes} min temu`;
-
-  const hours = Math.floor(minutes / 60);
-  if (hours < 24) return `${hours} godz. temu`;
-
-  const days = Math.floor(hours / 24);
-  return `${days} dni temu`;
+  if (diff < 60) return `${diff} s`;
+  const m = Math.floor(diff / 60);
+  if (m < 60) return `${m} min`;
+  const h = Math.floor(m / 60);
+  if (h < 24) return `${h} h`;
+  return `${Math.floor(h / 24)} d`;
 }
 
-// ✅ normalizacja (polskie znaki)
+// ===== NORMALIZE =====
 function normalize(text) {
   return text
     .toLowerCase()
@@ -160,46 +137,58 @@ fetch("./data.json")
   .then(res => res.json())
   .then(data => {
 
-    // ✅ obsługa single + multi
     const users = Array.isArray(data) ? data : data.users || [];
-
     const tbody = document.querySelector("#table tbody");
     const searchInput = document.getElementById("searchUser");
 
-    function renderTable(filteredUsers) {
+    function renderTable(list) {
       tbody.innerHTML = "";
 
       let totalDistance = 0;
       let totalActivities = 0;
 
-      // sort ranking
-      filteredUsers.sort((a, b) => b.totalDistance - a.totalDistance);
+      // 🔥 SORT
+      list.sort((a, b) => {
+        let A = a[currentSort];
+        let B = b[currentSort];
 
-      filteredUsers.forEach((u, i) => {
+        if (currentSort === "name") {
+          A = A.toLowerCase();
+          B = B.toLowerCase();
+        }
+
+        if (currentSort === "position") {
+          A = a.totalDistance;
+          B = b.totalDistance;
+        }
+
+        if (A < B) return sortAsc ? -1 : 1;
+        if (A > B) return sortAsc ? 1 : -1;
+        return 0;
+      });
+
+      list.forEach((u, i) => {
+
         totalDistance += u.totalDistance;
         totalActivities += u.count;
 
-        let rankClass = "";
-        if (i === 0) rankClass = "gold";
-        else if (i === 1) rankClass = "silver";
-        else if (i === 2) rankClass = "bronze";
+        let cls = "";
+        if (i === 0) cls = "gold";
+        else if (i === 1) cls = "silver";
+        else if (i === 2) cls = "bronze";
 
-        const position =
+        const pos =
           i === 0 ? "🥇" :
           i === 1 ? "🥈" :
-          i === 2 ? "🥉" :
-          i + 1;
+          i === 2 ? "🥉" : i + 1;
 
         const row = `
-          <tr class="${rankClass}">
-            <td>${position}</td>            
-<td>
-  ${u.athleteId 
-    ? `<a href="https://www.strava.com/athletes/${u.athleteId}" target="_blank">
-         ${u.name}
-       </a>`
-    : u.name}
-</td>
+          <tr class="${cls}">
+            <td>${pos}</td>
+            <td>
+              ${u.athleteId 
+                ? `<a href="https://www.strava.com/athletes/${u.athleteId}" target="_blank      : u.name}
+            </td>
             <td>${u.totalDistance}</td>
             <td>${u.avgSpeed}</td>
             <td>${u.avgElevation}</td>
@@ -216,31 +205,42 @@ fetch("./data.json")
         : data.updatedAt;
 
       document.getElementById("summary").innerHTML = `
-        <p>📊 Łączny dystans: <b>${totalDistance.toFixed(1)} km</b></p>
-        <p>🚴 Łączna liczba aktywności: <b>${totalActivities}</b></p>
-        <p>⏱️ Ostatnia aktualizacja: <b>${timeAgo(updatedAt)}</b></p>
+        <p>📊 ${totalDistance.toFixed(1)} km</p>
+        <p>🚴 ${totalActivities} aktywności</p>
+        <p>⏱️ ${timeAgo(updatedAt)}</p>
       `;
     }
 
-    // ✅ start
     renderTable(users);
 
-    // ✅ filtrowanie live
+    // 🔍 SEARCH
     searchInput.addEventListener("input", () => {
-      const value = normalize(searchInput.value);
+      const val = normalize(searchInput.value);
 
       const filtered = users.filter(u =>
-        normalize(u.name).includes(value)
+        normalize(u.name).includes(val)
       );
 
       renderTable(filtered);
     });
 
-  })
-  .catch(err => {
-    console.error("Błąd ładowania danych:", err);
-    document.getElementById("summary").innerHTML =
-      "<p>Błąd ładowania danych...</p>";
+    // 🔽 SORT CLICK
+    document.querySelectorAll("th").forEach(th => {
+      th.addEventListener("click", () => {
+        const key = th.dataset.sort;
+        if (!key) return;
+
+        if (currentSort === key) {
+          sortAsc = !sortAsc;
+        } else {
+          currentSort = key;
+          sortAsc = false;
+        }
+
+        renderTable(users);
+      });
+    });
+
   });
 
 </script>
