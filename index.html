@@ -50,6 +50,23 @@
       color: gray;
       text-align: center;
     }
+
+    
+.gold {
+  background-color: #fff8dc;
+  font-weight: bold;
+}
+
+.silver {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.bronze {
+  background-color: #fbe5d6;
+  font-weight: bold;
+}
+
   </style>
 </head>
 <body>
@@ -130,8 +147,15 @@ fetch("./data.json")
       totalDistance += u.totalDistance;
       totalActivities += u.count;
 
-      const row = `
-        <tr>
+
+  let rankClass = "";
+  if (i === 0) rankClass = "gold";
+  else if (i === 1) rankClass = "silver";
+  else if (i === 2) rankClass = "bronze";
+
+  const row = `
+    <tr class="${rankClass}">
+
           <td>${i + 1}</td>
           <td>${u.name}</td>
           <td>${u.totalDistance}</td>
