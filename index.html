@@ -79,7 +79,25 @@
 </footer>
 
 <script>
-fetch("./data.json")
+
+function timeAgo(dateString) {
+  const now = new Date();
+  const past = new Date(dateString);
+  const diff = Math.floor((now - past) / 1000); // sekundy
+
+  if (diff < 60) return `${diff} sek. temu`;
+
+  const minutes = Math.floor(diff / 60);
+  if (minutes < 60) return `${minutes} min temu`;
+
+  const hours = Math.floor(minutes / 60);
+  if (hours < 24) return `${hours} godz. temu`;
+
+  const days = Math.floor(hours / 24);
+  return `${days} dni temu`;
+}
+
+  fetch("./data.json")
   .then(res => res.json())
   .then(data => {
     const users = Array.isArray(data) ? data : data.users || []
