@@ -182,20 +182,24 @@ fetch("./data.json")
           i === 1 ? "🥈" :
           i === 2 ? "🥉" : i + 1;
 
-        const row = `
-          <tr class="${cls}">
-            <td>${pos}</td>
-            <td>
-              ${u.athleteId 
-                ? `<a href="https://www.strava.com/athletes/${u.athleteId}" target="_blank      : u.name}
-            </td>
-            <td>${u.totalDistance}</td>
-            <td>${u.avgSpeed}</td>
-            <td>${u.avgElevation}</td>
-            <td>${u.totalElevation}</td>
-            <td>${u.count}</td>
-          </tr>
-        `;
+
+const row = `
+  <tr class="${cls}">
+    <td>${pos}</td>
+    <td>
+      ${
+        u.athleteId
+          ? `https://www.strava.com/athletes/${u.athleteId}${u.name}</a>`
+          : u.name
+      }
+    </td>
+    <td>${u.totalDistance}</td>
+    <td>${u.avgSpeed}</td>
+    <td>${u.avgElevation}</td>
+    <td>${u.totalElevation}</td>
+    <td>${u.count}</td>
+  </tr>
+`;
 
         tbody.innerHTML += row;
       });
