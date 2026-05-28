@@ -16,9 +16,15 @@
       margin-bottom: 10px;
     }
 
-    p.description {
+    .description {
       color: #555;
       margin-bottom: 20px;
+    }
+
+    input {
+      margin: 10px 0 20px 10px;
+      padding: 6px;
+      width: 220px;
     }
 
     table {
@@ -32,12 +38,27 @@
     }
 
     th {
-      text-align: left;
       background-color: #f5f5f5;
+      text-align: left;
     }
 
     tr:hover {
       background: #fafafa;
+    }
+
+    .gold {
+      background-color: #fff8dc;
+      font-weight: bold;
+    }
+
+    .silver {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+
+    .bronze {
+      background-color: #fbe5d6;
+      font-weight: bold;
     }
 
     .summary {
@@ -50,32 +71,19 @@
       color: gray;
       text-align: center;
     }
-
-    
-.gold {
-  background-color: #fff8dc;
-  font-weight: bold;
-}
-
-.silver {
-  background-color: #f0f0f0;
-  font-weight: bold;
-}
-
-.bronze {
-  background-color: #fbe5d6;
-  font-weight: bold;
-}
-
   </style>
 </head>
+
 <body>
 
 <h1>🚴 Zestawienie aktywności (maj–wrzesień)</h1>
 
 <p class="description">
-  Ranking oparty na aktywnościach rowerowych ze Strava w okresie od 1 maja do 30 września.
+  Ranking oparty na aktywnościach rowerowych ze Strava w okresie 1 maja – 30 września.
 </p>
+
+<label><b>Szukaj użytkownika:</b></label>
+<input type="text" id="searchUser" placeholder="np. Piotr..." />
 
 <table id="table">
   <thead>
@@ -96,8 +104,7 @@
 
 <footer>
   <p>
-    Powered by 
-    <a href="https://www.strava.com" target="_blank">Strava</a>
+    Powered by <a href="https://www.strava.com" target="_blank">Strava</a>
   </p>
   <p>
     This application uses the Strava API but is not endorsed by Strava.
@@ -129,56 +136,90 @@ function timeAgo(dateString) {
   return `${days} dni temu`;
 }
 
+// ✅ normalizacja (polskie znaki)
+function normalize(text) {
+  return text
+    .toLowerCase()
+    .replace(/[ąćęłńóśźż]/g, c => ({
+      'ą':'a','ć':'c','ę':'e','ł':'l',
+      'ń':'n','ó':'o','ś':'s','ź':'z','ż':'z'
+    }[c]));
+}
+
 fetch("./data.json")
   .then(res => res.json())
   .then(data => {
 
-    // ✅ obsługa SINGLE i MULTI user
+    // ✅ obsługa single + multi
     const users = Array.isArray(data) ? data : data.users || [];
 
-    // ✅ sort ranking
-    users.sort((a, b) => b.totalDistance - a.totalDistance);
-
     const tbody = document.querySelector("#table tbody");
-    let totalDistance = 0;
-    let totalActivities = 0;
+    const searchInput = document.getElementById("searchUser");
 
-    users.forEach((u, i) => {
-      totalDistance += u.totalDistance;
-      totalActivities += u.count;
+    function renderTable(filteredUsers) {
+      tbody.innerHTML = "";
 
+      let totalDistance = 0;
+      let totalActivities = 0;
 
-  let rankClass = "";
-  if (i === 0) rankClass = "gold";
-  else if (i === 1) rankClass = "silver";
-  else if (i === 2) rankClass = "bronze";
+      // sort ranking
+      filteredUsers.sort((a, b) => b.totalDistance - a.totalDistance);
 
-  const row = `
-    <tr class="${rankClass}">
+      filteredUsers.forEach((u, i) => {
+        totalDistance += u.totalDistance;
+        totalActivities += u.count;
 
-          <td>${i + 1}</td>
-          <td>${u.name}</td>
-          <td>${u.totalDistance}</td>
-          <td>${u.avgSpeed}</td>
-          <td>${u.avgElevation} m</td>
-          <td>${u.totalElevation} m</td>
-          <td>${u.count}</td>
-        </tr>
+        let rankClass = "";
+        if (i === 0) rankClass = "gold";
+        else if (i === 1) rankClass = "silver";
+        else if (i === 2) rankClass = "bronze";
+
+        const position =
+          i === 0 ? "🥇" :
+          i === 1 ? "🥈" :
+          i === 2 ? "🥉" :
+          i + 1;
+
+        const row = `
+          <tr class="${rankClass}">
+            <td>${position}</td>
+            <td>${u.name}</td>
+            <td>${u.totalDistance}</td>
+            <td>${u.avgSpeed}</td>
+            <td>${u.avgElevation}</td>
+            <td>${u.totalElevation}</td>
+            <td>${u.count}</td>
+          </tr>
+        `;
+
+        tbody.innerHTML += row;
+      });
+
+      const updatedAt = Array.isArray(data)
+        ? data[0]?.updatedAt
+        : data.updatedAt;
+
+      document.getElementById("summary").innerHTML = `
+        <p>📊 Łączny dystans: <b>${totalDistance.toFixed(1)} km</b></p>
+        <p>🚴 Łączna liczba aktywności: <b>${totalActivities}</b></p>
+        <p>⏱️ Ostatnia aktualizacja: <b>${timeAgo(updatedAt)}</b></p>
       `;
+    }
 
-      tbody.innerHTML += row;
+    // ✅ start
+    renderTable(users);
+
+    // ✅ filtrowanie live
+    searchInput.addEventListener("input", () => {
+      const value = normalize(searchInput.value);
+
+      const filtered = users.filter(u =>
+        normalize(u.name).includes(value)
+      );
+
+      renderTable(filtered);
     });
 
-    // ✅ obsługa daty (single i multi)
-    const updatedAt = Array.isArray(data)
-      ? data[0]?.updatedAt
-      : data.updatedAt;
-
-    document.getElementById("summary").innerHTML = `
-      <p>📊 Łączny dystans: <b>${totalDistance.toFixed(1)} km</b></p>
-      <p>🚴 Łączna liczba aktywności: <b>${totalActivities}</b></p>
-      <p>⏱️ Ostatnia aktualizacja: <b>${timeAgo(updatedAt)}</b></p>
-    `;
   })
   .catch(err => {
     console.error("Błąd ładowania danych:", err);
