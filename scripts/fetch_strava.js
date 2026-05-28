@@ -1,10 +1,3 @@
-
-console.log("ENV:", {
-  CLIENT_ID: process.env.CLIENT_ID,
-  CLIENT_SECRET: process.env.CLIENT_SECRET ? "OK" : "MISSING",
-  REFRESH_TOKEN: process.env.REFRESH_TOKEN ? "OK" : "MISSING"
-});
-
 const fs = require("fs");
 
 async function fetchData() {
@@ -12,77 +5,128 @@ async function fetchData() {
   const CLIENT_SECRET = process.env.CLIENT_SECRET;
   const REFRESH_TOKEN = process.env.REFRESH_TOKEN;
 
-  // 🔄 odśwież token
-  const tokenRes = await fetch("https://www.strava.com/oauth/token", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      client_id: CLIENT_ID,
-      client_secret: CLIENT_SECRET,
-      refresh_token: REFRESH_TOKEN,
-      grant_type: "refresh_token"
-    })
+  // Debug ENV (bezpieczny)
+  console.log("ENV:", {
+    CLIENT_ID: CLIENT_ID,
+    CLIENT_SECRET: CLIENT_SECRET ? "OK" : "MISSING",
+    REFRESH_TOKEN: REFRESH_TOKEN ? "OK" : "MISSING"
   });
 
-  const tokenData = await tokenRes.json();
-  console.log("DEBUG token:", tokenData);
-  
-  const accessToken = tokenData.access_token;
-
-  // 📅 zakres dat (1 maja – 30 września)
-  const after = new Date("2026-05-01").getTime() / 1000;
-  const before = new Date("2026-09-30").getTime() / 1000;
-
-  // 🚴 pobierz aktywności
-  const activitiesRes = await fetch(
-    `https://www.strava.com/api/v3/athlete/activities?after=${after}&before=${before}&per_page=200`,
-    {
+  try {
+    // 🔄 1. Odśwież token
+    const tokenRes = await fetch("https://www.strava.com/oauth/token", {
+      method: "POST",
       headers: {
-        Authorization: `Bearer ${accessToken}`
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        client_id: CLIENT_ID,
+        client_secret: CLIENT_SECRET,
+        refresh_token: REFRESH_TOKEN,
+        grant_type: "refresh_token"
+      })
+    });
+
+    const tokenData = await tokenRes.json();
+    console.log("TOKEN:", tokenData);
+
+    if (!tokenData.access_token) {
+      console.error("❌ TOKEN ERROR:", tokenData);
+      return;
+    }
+
+    const accessToken = tokenData.access_token;
+
+    // 📅 2. Zakres dat (dynamiczny rok)
+    const year = new Date().getFullYear();
+    const after = Math.floor(new Date(`${year}-05-01`).getTime() / 1000);
+    const before = Math.floor(new Date(`${year}-09-30`).getTime() / 1000);
+
+    // 🚴 3. Pagination – pobieranie wszystkich aktywności
+    let page = 1;
+    let allActivities = [];
+
+    while (true) {
+      const res = await fetch(
+        `https://www.strava.com/api/v3/athlete/activities?after=${after}&before=${before}&per_page=200&page=${page}`,
+        {
+          headers: {
+            Authorization: `Bearer ${accessToken}`
+          }
+        }
+      );
+
+      const data = await res.json();
+
+      if (!Array.isArray(data)) {
+        console.error("❌ API ERROR:", data);
+        return;
       }
+
+      if (data.length === 0) {
+        break;
+      }
+
+      console.log(`📄 Page ${page}: ${data.length} activities`);
+
+      allActivities = allActivities.concat(data);
+      page++;
     }
-  );
 
-  const activities = await activitiesRes.json();
-  
-  console.log("DEBUG activities:", activities);
+    console.log(`✅ Total activities fetched: ${allActivities.length}`);
 
-  // 📊 agregacja
-  let totalDistance = 0;
-  let totalElevation = 0;
-  let totalTime = 0;
+    // 📊 4. Agregacja danych
+    let totalDistance = 0;
+    let totalElevation = 0;
+    let totalTime = 0;
+    let totalActivities = 0;
 
-  let count = 0;
+    allActivities.forEach(a => {
+      if (a.type !== "Ride") return;
 
-  activities.forEach(a => {
-    if (a.type !== "Ride") return;
+      totalDistance += a.distance;               // metry
+      totalElevation += a.total_elevation_gain; // metry
+      totalTime += a.moving_time;               // sekundy
+      totalActivities++;
+    });
 
-    totalDistance += a.distance; // metry
-    totalElevation += a.total_elevation_gain;
-    totalTime += a.moving_time; // sekundy
-    count++;
-  });
+    // 📈 5. Obliczenia końcowe
+    const result = [
+      {
+        name: "Piotr S.",
 
-  const data = [
-    {
-      name: "Piotr S.",
-      totalDistance: +(totalDistance / 1000).toFixed(1),
-      avgSpeed:
-        count > 0
-          ? +((totalDistance / totalTime) * 3.6).toFixed(1)
-          : 0,
-      avgElevation:
-        count > 0
-          ? +(totalElevation / count).toFixed(0)
-          : 0,
-      count,
-      updatedAt: new Date().toISOString()
-    }
-  ];
+        totalDistance: +(totalDistance / 1000).toFixed(1), // km
 
-  fs.writeFileSync("data.json", JSON.stringify(data, null, 2));
+        avgSpeed:
+          totalTime > 0
+            ? +((totalDistance / totalTime) * 3.6).toFixed(1)
+            : 0,
 
-  console.log("✅ data.json updated from Strava");
+        avgElevation:
+          totalActivities > 0
+            ? +(totalElevation / totalActivities).toFixed(0)
+            : 0,
+
+        totalElevation: Math.round(totalElevation),
+
+        count: totalActivities,
+
+        avgDistancePerRide:
+          totalActivities > 0
+            ? +((totalDistance / 1000) / totalActivities).toFixed(1)
+            : 0,
+
+        updatedAt: new Date().toISOString()
+      }
+    ];
+
+    // 💾 6. Zapis pliku
+    fs.writeFileSync("data.json", JSON.stringify(result, null, 2));
+
+    console.log("✅ data.json updated successfully");
+  } catch (err) {
+    console.error("❌ ERROR:", err);
+  }
 }
 
 fetchData();
