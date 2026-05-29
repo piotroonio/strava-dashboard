@@ -219,42 +219,14 @@ fetch("./data.json")
 
 const row = `
   <tr class="${cls}">
-    <td>
-      ${
-        u.avatar
-          ? `<img src="${u.avatar}" alt="${u.name}"    </td>
-
-    <td class="${currentSort === 'position' ? 'highlight' : ''}">
-      ${pos}
-    </td>
-
-    <td class="${currentSort === 'name' ? 'highlight' : ''}">
-      ${
-        u.athleteId
-          ? `<a href="https://www.strava.com/athletes/${u.athleteme}</a>`
-          : u.name
-      }
-    </td>
-
-    <td class="${currentSort === 'totalDistance' ? 'highlight' : ''}">
-      ${u.totalDistance}
-    </td>
-
-    <td class="${currentSort === 'avgSpeed' ? 'highlight' : ''}">
-      ${u.avgSpeed}
-    </td>
-
-    <td class="${currentSort === 'avgElevation' ? 'highlight' : ''}">
-      ${u.avgElevation}
-    </td>
-
-    <td class="${currentSort === 'totalElevation' ? 'highlight' : ''}">
-      ${u.totalElevation}
-    </td>
-
-    <td class="${currentSort === 'count' ? 'highlight' : ''}">
-      ${u.count}
-    </td>
+    <td>${u.avatar ? `<img src="${u.avatar}" alt="${u.name}"</td>
+    <td class="${currentSort === 'position' ? 'highlight': ''}">${pos}</td>
+    <td class="${currentSort === 'name' ? 'highlight': ''}">${u.athleteId? "<a href="https://www.strava.com/athletes/${u.athleteme}:" ${u.name}</a></td>
+    <td class="${currentSort === 'totalDistance' ? 'highlight': ''}">${u.totalDistance}</td>
+    <td class="${currentSort === 'avgSpeed' ? 'highlight': ''}">${u.avgSpeed}</td>
+    <td class="${currentSort === 'avgElevation' ? 'highlight': ''}">${u.avgElevation}</td>
+    <td class="${currentSort === 'totalElevation' ? 'highlight': ''}">${u.totalElevation}</td>
+    <td class="${currentSort === 'count' ? 'highlight': ''}">${u.count}</td>
   </tr>
 `;
 
