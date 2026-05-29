@@ -112,6 +112,7 @@ async function fetchData() {
       {
         name: displayName,
         athleteId: athleteData.id, // ✅ potrzebne do linku Strava
+        avatar: athleteData.profile,
 
         totalDistance: +(totalDistance / 1000).toFixed(1),
 
