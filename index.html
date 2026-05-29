@@ -27,7 +27,7 @@
 
     table {
       border-collapse: collapse;
-      wid: 100%;
+      width: 100%;
     }
 
     th, td {
@@ -139,6 +139,23 @@ function normalize(text) {
     }[c]));
 }
 
+
+function updateSortIndicators() {
+  document.querySelectorAll("th").forEach(th => {
+    const key = th.dataset.sort;
+    const span = th.querySelector("span");
+
+    if (!span) return;
+
+    if (key === currentSort) {
+      span.textContent = sortAsc ? "↑" : "↓";
+    } else {
+      span.textContent = "";
+    }
+  });
+}
+
+
 fetch("./data.json")
   .then(res => res.json())
   .then(data => {
@@ -222,6 +239,7 @@ const row = `
     }
 
     renderTable(users);
+    updateSortIndicators();
 
     // 🔍 SEARCH
     searchInput.addEventListener("input", () => {
@@ -248,6 +266,7 @@ const row = `
         }
 
         renderTable(users);
+        updateSortIndicators();
       });
     });
 
