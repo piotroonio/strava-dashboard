@@ -65,6 +65,14 @@
       color: gray;
       text-align: center;
     }
+
+    
+  th span {
+  margin-left: 5px;
+  font-size: 12px;
+  color: #999;
+}
+
   </style>
 </head>
 
@@ -82,13 +90,13 @@
 <table id="table">
   <thead>
     <tr>
-      <th data-sort="position">#</th>
-      <th data-sort="name">Użytkownik</th>
-      <th data-sort="totalDistance">Dystans (km)</th>
-      <th data-sort="avgSpeed">Śr. prędkość</th>
-      <th data-sort="avgElevation">Śr. przewyższenie</th>
-      <th data-sort="totalElevation">Suma przewyższeń</th>
-      <th data-sort="count">Aktywności</th>
+      <th data-sort="position">#<span></span></th>
+      <th data-sort="name">Użytkownik <span></span></th>
+      <th data-sort="totalDistance">Dystans (km) <span></span></th>
+      <th data-sort="avgSpeed">Śr. prędkość <span></span></th>
+      <th data-sort="avgElevation">Śr. przewyższenie <span></span></th>
+      <th data-sort="totalElevation">Suma przewyższeń <span></span></th>
+      <th data-sort="count">Aktywności <span></span></th>
     </tr>
   </thead>
   <tbody></tbody>
@@ -103,6 +111,22 @@
 
 <script>
 
+function updateSortIndicators() {
+  document.querySelectorAll("th").forEach(th => {
+    const span = th.querySelector("span");
+    const key = th.dataset.sort;
+
+    if (!span) return;
+
+    if (key === currentSort) {
+      span.textContent = sortAsc ? "↑" : "↓";
+    } else {
+      span.textContent = "";
+    }
+  });
+}
+
+  
 // ===== CONFIG SORT =====
 let currentSort = "totalDistance";
 let sortAsc = false;
