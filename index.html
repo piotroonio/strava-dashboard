@@ -40,12 +40,6 @@
       cursor: pointer;
     }
 
-    th span {
-      margin-left: 5px;
-      font-size: 12px;
-      color: #999;
-    }
-
     tr:hover {
       background: #fafafa;
     }
@@ -88,13 +82,13 @@
 <table id="table">
   <thead>
     <tr>
-      <th data-sort="position"># <span></span></th>
-      <th data-sort="name">Użytkownik <span></span></th>
-      <th data-sort="totalDistance">Dystans (km) <span></span></th>
-      <th data-sort="avgSpeed">Śr. prędkość <span></span></th>
-      <th data-sort="avgElevation">Śr. przewyższenie <span></span></th>
-      <th data-sort="totalElevation">Suma przewyższeń <span></span></th>
-      <th data-sort="count">Aktywności <span></span></th>
+      <th data-sort="position">#</th>
+      <th data-sort="name">Użytkownik</th>
+      <th data-sort="totalDistance">Dystans (km)</th>
+      <th data-sort="avgSpeed">Śr. prędkość</th>
+      <th data-sort="avgElevation">Śr. przewyższenie</th>
+      <th data-sort="totalElevation">Suma przewyższeń</th>
+      <th data-sort="count">Aktywności</th>
     </tr>
   </thead>
   <tbody></tbody>
@@ -109,6 +103,7 @@
 
 <script>
 
+// ===== CONFIG SORT =====
 let currentSort = "totalDistance";
 let sortAsc = false;
 
@@ -138,22 +133,6 @@ function normalize(text) {
     }[c]));
 }
 
-// ===== SORT ICONS =====
-function updateSortIndicators() {
-  document.querySelectorAll("th").forEach(th => {
-    const key = th.dataset.sort;
-    const span = th.querySelector("span");
-
-    if (!span) return;
-
-    if (key === currentSort) {
-      span.textContent = sortAsc ? "↑" : "↓";
-    } else {
-      span.textContent = "";
-    }
-  });
-}
-
 fetch("./data.json")
   .then(res => res.json())
   .then(data => {
@@ -168,7 +147,7 @@ fetch("./data.json")
       let totalDistance = 0;
       let totalActivities = 0;
 
-      // SORT
+      // 🔥 SORT
       list.sort((a, b) => {
         let A = a[currentSort];
         let B = b[currentSort];
@@ -203,20 +182,24 @@ fetch("./data.json")
           i === 1 ? "🥈" :
           i === 2 ? "🥉" : i + 1;
 
-        const nameHtml = u.athleteId
-          ? `<a href="https://www.strava.com/athletes/${u.athleteId}" target="_     : u.name;
 
-        const row = `
-          <tr class="${cls}">
-            <td>${pos}</td>
-            <td>${nameHtml}</td>
-            <td>${u.totalDistance}</td>
-            <td>${u.avgSpeed}</td>
-            <td>${u.avgElevation}</td>
-            <td>${u.totalElevation}</td>
-            <td>${u.count}</td>
-          </tr>
-        `;
+const row = `
+  <tr class="${cls}">
+    <td>${pos}</td>
+    <td>
+      ${
+        u.athleteId
+          ? `<a href="https://www.strava.com/athletes/${u.athleteId}" target="_blank">${u.name}</a>`
+          : u.name
+      }
+    </td>
+    <td>${u.totalDistance}</td>
+    <td>${u.avgSpeed}</td>
+    <td>${u.avgElevation}</td>
+    <td>${u.totalElevation}</td>
+    <td>${u.count}</td>
+  </tr>
+`;
 
         tbody.innerHTML += row;
       });
@@ -230,13 +213,11 @@ fetch("./data.json")
         <p>🚴 ${totalActivities} aktywności</p>
         <p>⏱️ ${timeAgo(updatedAt)}</p>
       `;
-
-      updateSortIndicators();
     }
 
     renderTable(users);
 
-    // SEARCH
+    // 🔍 SEARCH
     searchInput.addEventListener("input", () => {
       const val = normalize(searchInput.value);
 
@@ -247,7 +228,7 @@ fetch("./data.json")
       renderTable(filtered);
     });
 
-    // SORT CLICK
+    // 🔽 SORT CLICK
     document.querySelectorAll("th").forEach(th => {
       th.addEventListener("click", () => {
         const key = th.dataset.sort;
