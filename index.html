@@ -170,7 +170,47 @@ fetch("./data.json")
   .then(res => res.json())
   .then(data => {
 
-    const users = Array.isArray(data) ? data : data.users || [];
+    //const users = Array.isArray(data) ? data : data.users || [];
+    
+let users = Array.isArray(data) ? data : data.users || [];
+
+// ✅ DODAJ TESTOWYCH USERÓW
+const testUsers = [
+  {
+    name: "Anna Kowalska",
+    athleteId: 1111,
+    avatar: "https://randomuser.me/api/portraits/women/1.jpg",
+    totalDistance: 850,
+    avgSpeed: 27,
+    avgElevation: 320,
+    totalElevation: 8000,
+    count: 22
+  },
+  {
+    name: "Jan Nowak",
+    athleteId: 2222,
+    avatar: "https://randomuser.me/api/portraits/men/2.jpg",
+    totalDistance: 1200,
+    avgSpeed: 29,
+    avgElevation: 280,
+    totalElevation: 9500,
+    count: 30
+  },
+  {
+    name: "Tomasz Wiśniewski",
+    athleteId: 3333,
+    avatar: "https://randomuser.me/api/portraits/men/3.jpg",
+    totalDistance: 640,
+    avgSpeed: 25,
+    avgElevation: 400,
+    totalElevation: 7000,
+    count: 18
+  }
+];
+
+// ✅ połącz realnego usera z testowymi
+users = users.concat(testUsers);
+
     const tbody = document.querySelector("#table tbody");
     const searchInput = document.getElementById("searchUser");
 
