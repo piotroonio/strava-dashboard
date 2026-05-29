@@ -362,7 +362,7 @@ const row = `
     </td>
 
     <td class="${currentSort === 'totalDistance' ? 'highlight' : ''}">
-      ${u.totalDistance}
+      ${u.totalDistance || 0}
     </td>
 
     <td class="${currentSort === 'avgSpeed' ? 'highlight' : ''}">
