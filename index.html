@@ -27,13 +27,19 @@
 
     table {
       border-collapse: collapse;
-      width: 100%;
+      wid: 100%;
     }
 
     th, td {
       padding: 10px;
       border-bottom: 1px solid #ddd;
     }
+
+th span {
+  margin-left: 5px;
+  font-size: 12px;
+  color: #999;
+}
 
     th {
       background-color: #f5f5f5;
@@ -84,11 +90,11 @@
     <tr>
       <th data-sort="position">#</th>
       <th data-sort="name">Użytkownik</th>
-      <th data-sort="totalDistance">Dystans (km)</th>
-      <th data-sort="avgSpeed">Śr. prędkość</th>
-      <th data-sort="avgElevation">Śr. przewyższenie</th>
-      <th data-sort="totalElevation">Suma przewyższeń</th>
-      <th data-sort="count">Aktywności</th>
+      <th data-sort="totalDistance">Dystans (km) <span></span></th>
+      <th data-sort="avgSpeed">Śr. prędkość <span></span></th>
+      <th data-sort="avgElevation">Śr. przewyższenie <span></span></th>
+      <th data-sort="totalElevation">Suma przewyższeń <span></span></th>
+      <th data-sort="count">Aktywności <span></span></th>
     </tr>
   </thead>
   <tbody></tbody>
