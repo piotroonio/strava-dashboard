@@ -12,50 +12,42 @@
       margin: auto;
     }
 
-    h1 { margin-bottom: 10px; }
-
-    .description {
-      color: #555;
-      margin-bottom: 20px;
-    }
-
     input, select {
       margin: 10px 10px 20px 0;
       padding: 6px;
     }
 
     table {
-      border-collapse: collapse;
       width: 100%;
+      border-collapse: collapse;
     }
 
     th, td {
       padding: 10px;
       border-bottom: 1px solid #ddd;
-      text-align: left;
     }
 
     th {
-      background-color: #f5f5f5;
       cursor: pointer;
+      background: #f5f5f5;
     }
 
     th span {
       margin-left: 5px;
       font-size: 12px;
-      color: #999;
+      color: gray;
     }
 
-    tr:hover {
-      background: #fafafa;
-    }
+    .gold { background: #fff8dc; }
+    .silver { background: #f0f0f0; }
+    .bronze { background: #fbe5d6; }
 
-    .gold { background-color: #fff8dc; font-weight: bold; }
-    .silver { background-color: #f0f0f0; font-weight: bold; }
-    .bronze { background-color: #fbe5d6; font-weight: bold; }
+    .highlight { background: #fff3e0; }
 
-    .highlight {
-      background-color: #fff3e0;
+    .avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
     }
 
     a {
@@ -63,24 +55,11 @@
       text-decoration: none;
     }
 
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .avatar {
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    /* leader */
     .leader-card {
       display: flex;
-      align-items: center;
       gap: 15px;
-      background: #fff3e0;
       padding: 15px;
+      background: #fff3e0;
       border-radius: 10px;
       margin-bottom: 20px;
     }
@@ -96,30 +75,14 @@
       font-size: 18px;
     }
 
-    .leader-stats {
-      font-size: 14px;
-      color: #555;
-    }
-
-    footer {
-      margin-top: 40px;
-      font-size: 12px;
-      color: gray;
-      text-align: center;
-    }
   </style>
 </head>
 
 <body>
 
-<h1>🚴 Zestawienie aktywności</h1>
+<h1>🚴 Ranking Strava</h1>
 
-<p class="description">
-  Ranking na podstawie aktywności Strava
-</p>
-
-<input type="text" id="searchUser" placeholder="Szukaj użytkownika..." />
-
+<input id="searchUser" placeholder="Szukaj użytkownika">
 <select id="activityFilter">
   <option value="all">Wszystkie</option>
   <option value="Ride">Road</option>
@@ -151,12 +114,10 @@
 let currentSort = "totalDistance";
 let sortAsc = false;
 
-// ✅ normalize
 function normalize(text) {
   return text.toLowerCase();
 }
 
-// ✅ sort arrows
 function updateSortIndicators() {
   document.querySelectorAll("th").forEach(th => {
     const key = th.dataset.sort;
@@ -164,143 +125,122 @@ function updateSortIndicators() {
 
     if (!span) return;
 
-    if (key === currentSort) {
-      span.textContent = sortAsc ? "↑" : "↓";
-    } else {
-      span.textContent = "";
-    }
+    span.textContent = key === currentSort
+      ? (sortAsc ? "↑" : "↓")
+      : "";
   });
 }
 
 fetch("./data.json")
-  .then(res => res.json())
-  .then(data => {
+.then(r => r.json())
+.then(data => {
 
-    let users = Array.isArray(data) ? data : data.users || [];
+  let users = Array.isArray(data) ? data : data.users || [];
 
-    // ✅ TEST USERS (do testów)
-    users = users.concat([
-      { name:"Anna", athleteId:1, avatar:"https://randomuser.me/api/portraits/women/1.jpg", totalDistance:800, avgSpeed:27, avgElevation:300, totalElevation:8000, count:20, activityTypes:["Ride"] },
-      { name:"Jan", athleteId:2, avatar:"https://randomuser.me/api/portraits/men/2.jpg", totalDistance:1500, avgSpeed:30, avgElevation:250, totalElevation:12000, count:40, activityTypes:["Ride","GravelRide"] },
-      { name:"MTB Rider", athleteId:3, avatar:"https://randomuser.me/api/portraits/men/3.jpg", totalDistance:600, avgSpeed:23, avgElevation:500, totalElevation:9000, count:18, activityTypes:["MountainBikeRide"] },
-      { name:"Test Zero", athleteId:4, avatar:"", totalDistance:0, avgSpeed:0, avgElevation:0, totalElevation:0, count:0, activityTypes:[] }
-    ]);
+  // TEST DATA
+  users = users.concat([
+    {name:"Anna", athleteId:1, avatar:"https://randomuser.me/api/portraits/women/1.jpg", totalDistance:800, avgSpeed:27, avgElevation:300, totalElevation:8000, count:20, activityTypes:["Ride"]},
+    {name:"Jan", athleteId:2, avatar:"https://randomuser.me/api/portraits/men/2.jpg", totalDistance:1500, avgSpeed:30, avgElevation:250, totalElevation:12000, count:40, activityTypes:["GravelRide"]},
+    {name:"MTB Rider", athleteId:3, avatar:"https://randomuser.me/api/portraits/men/3.jpg", totalDistance:600, avgSpeed:23, avgElevation:500, totalElevation:9000, count:18, activityTypes:["MountainBikeRide"]},
+    {name:"Test Zero", athleteId:4, avatar:"", totalDistance:0, avgSpeed:0, avgElevation:0, totalElevation:0, count:0, activityTypes:[]}
+  ]);
 
-    const tbody = document.querySelector("#table tbody");
-    const searchInput = document.getElementById("searchUser");
-    const activityFilter = document.getElementById("activityFilter");
+  const tbody = document.querySelector("#table tbody");
+  const search = document.getElementById("searchUser");
+  const filter = document.getElementById("activityFilter");
 
+  function renderLeader(list) {
+    if (!list.length) return;
 
+    const leader = [...list].sort((a,b)=>b.totalDistance-a.totalDistance)[0];
 
-function renderLeader(list) {
-  if (!list.length) return;
-
-  const leader = [...list].sort((a, b) => b.totalDistance - a.totalDistance)[0];
-
-  document.getElementById("leader").innerHTML = `
-    <img src="${leader.avatar || 'https://via.placeholder.com/60'}� ${leader.name}</div>
-      <div class="leader-stats">
-        ${leader.totalDistance} km • ${leader.avgSpeed} km/h • ${leader.count} aktywności
+    document.getElementById("leader").innerHTML = `
+      <img src="${leader.avatar || 'https://via.placeholder.com/-name">🥇 ${leader.name}</div>
+        <div>${leader.totalDistance} km • ${leader.avgSpeed} km/h</div>
       </div>
-    </div>
-  `;
-}
+    `;
+  }
 
+  function renderTable(list) {
+    const rows = [...list];
 
-    function renderTable(list) {
-      const safeList = [...list];
+    tbody.innerHTML = "";
 
-      tbody.innerHTML = "";
+    rows.sort((a,b)=>{
+      let A = currentSort === "position" ? a.totalDistance : a[currentSort];
+      let B = currentSort === "position" ? b.totalDistance : b[currentSort];
 
-      safeList.sort((a,b)=>{
-        let A = a[currentSort];
-        let B = b[currentSort];
-
-        if (currentSort === "position") {
-          A = a.totalDistance;
-          B = b.totalDistance;
-        }
-
-        if (typeof A === "string") {
-          A = A.toLowerCase();
-          B = B.toLowerCase();
-        }
-
-        if (A < B) return sortAsc ? -1 : 1;
-        if (A > B) return sortAsc ? 1 : -1;
-        return 0;
-      });
-
-      safeList.forEach((u,i)=>{
-
-        const cls = i===0 ? "gold" : i===1 ? "silver" : i===2 ? "bronze" : "";
-        const pos = i===0 ? "🥇" : i===1 ? "🥈" : i===2 ? "🥉" : i+1;
-
-        const row = `
-          <tr class="${cls}">
-            <td>
-              ${u.avatar ? `<img src="${u.avatar}" class     </td>
-            <td class="${currentSort==='position'?'highlight':''}">${pos}</td>
-            <td class="${currentSort==='name'?'highlight':''}">
-              ${u.athleteId ? `<a href="https://www.strava.com/athletes/${u.athleteId}" target="_blank">u.name</a>}
-            </td>
-            <td class="${currentSort==='totalDistance'?'highlight':''}">${u.totalDistance}</td>
-            <td class="${currentSort==='avgSpeed'?'highlight':''}">${u.avgSpeed}</td>
-            <td class="${currentSort==='avgElevation'?'highlight':''}">${u.avgElevation}</td>
-            <td class="${currentSort==='totalElevation'?'highlight':''}">${u.totalElevation}</td>
-            <td class="${currentSort==='count'?'highlight':''}">${u.count}</td>
-            <td>${(u.activityTypes||[]).join(", ")}</td>
-          </tr>
-        `;
-
-        tbody.innerHTML += row;
-      });
-
-      updateSortIndicators();
-    }
-
-    function applyFilters() {
-      const name = normalize(searchInput.value);
-      const type = activityFilter.value;
-
-      let filtered = users.filter(u =>
-        normalize(u.name).includes(name)
-      );
-
-      if (type !== "all") {
-        filtered = filtered.filter(u =>
-          (u.activityTypes || []).includes(type)
-        );
+      if (typeof A === "string") {
+        A = A.toLowerCase();
+        B = B.toLowerCase();
       }
 
-      renderTable(filtered);
-      renderLeader(filtered);
-    }
-
-    searchInput.addEventListener("input", applyFilters);
-    activityFilter.addEventListener("change", applyFilters);
-
-    document.querySelectorAll("th").forEach(th=>{
-      th.addEventListener("click", ()=>{
-        const key = th.dataset.sort;
-        if (!key) return;
-
-        if (currentSort === key) {
-          sortAsc = !sortAsc;
-        } else {
-          currentSort = key;
-          sortAsc = false;
-        }
-
-        applyFilters();
-      });
+      return sortAsc ? A - B : B - A;
     });
 
-    applyFilters(); // ✅ start
+    rows.forEach((u,i)=>{
 
+      const cls = i===0 ? "gold" : i===1 ? "silver" : i===2 ? "bronze" : "";
+      const pos = ["🥇","🥈","🥉"][i] || (i+1);
+
+      const row = `
+        <tr class="${cls}">
+          <td>${u.avatar ? `<img src="${u.avatar}"td>
+          <td>${pos}</td>
+          <td>
+            ${u.athleteId ? `<a href="https://www.strava.com/athletes/${u.athleteId}" target="_blank">${u.name}</a>
+          </td>
+          <td>${u.totalDistance}</td>
+          <td>${u.avgSpeed}</td>
+          <td>${u.avgElevation}</td>
+          <td>${u.totalElevation}</td>
+          <td>${u.count}</td>
+          <td>${(u.activityTypes||[]).join(", ")}</td>
+        </tr>
+      `;
+
+      tbody.innerHTML += row;
+    });
+
+    updateSortIndicators();
+  }
+
+  function applyFilters() {
+    let list = users.filter(u =>
+      normalize(u.name).includes(normalize(search.value))
+    );
+
+    if (filter.value !== "all") {
+      list = list.filter(u =>
+        (u.activityTypes || []).includes(filter.value)
+      );
+    }
+
+    renderTable(list);
+    renderLeader(list);
+  }
+
+  search.addEventListener("input", applyFilters);
+  filter.addEventListener("change", applyFilters);
+
+  document.querySelectorAll("th").forEach(th=>{
+    th.addEventListener("click", ()=>{
+      const key = th.dataset.sort;
+      if (!key) return;
+
+      if (currentSort === key) sortAsc = !sortAsc;
+      else {
+        currentSort = key;
+        sortAsc = false;
+      }
+
+      applyFilters();
+    });
   });
 
-</script>
+  applyFilters();
+});
 
+</script>
 </body>
 </html>
