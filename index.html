@@ -190,19 +190,21 @@ fetch("./data.json")
     const searchInput = document.getElementById("searchUser");
     const activityFilter = document.getElementById("activityFilter");
 
-    function renderLeader(list) {
-      if (!list.length) return;
 
-      const leader = [...list].sort((a,b)=>b.totalDistance-a.totalDistance)[0];
+function renderLeader(list) {
+  if (!list.length) return;
 
-      document.getElementById("leader").innerHTML = `
-        <img src="${leader.avatar || 'https://via.placeholder.com/60er-name">🥇 ${leader.name}</div>
-          <div class="leader-stats">
-            ${leader.totalDistance} km • ${leader.avgSpeed} km/h • ${leader.count} aktywności
-          </div>
-        </div>
-      `;
-    }
+  const leader = [...list].sort((a, b) => b.totalDistance - a.totalDistance)[0];
+
+  document.getElementById("leader").innerHTML = `
+    <img src="${leader.avatar || 'https://via.placeholder.com/60'}" alt="${leader}</div>
+      <div class="leader-stats">
+        ${leader.totalDistance} km • ${leader.avgSpeed} km/h • ${leader.count} aktywności
+      </div>
+    </div>
+  `;
+}
+
 
     function renderTable(list) {
       const safeList = [...list];
