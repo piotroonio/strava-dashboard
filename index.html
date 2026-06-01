@@ -12,14 +12,22 @@
       margin: auto;
     }
 
-    input, select {
-      margin: 10px 10px 20px 0;
+    h1 { margin-bottom: 10px; }
+
+    .description {
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    input {
+      margin: 10px 0 20px 10px;
       padding: 6px;
+      width: 220px;
     }
 
     table {
-      width: 100%;
       border-collapse: collapse;
+      width: 100%;
     }
 
     th, td {
@@ -27,96 +35,120 @@
       border-bottom: 1px solid #ddd;
     }
 
+th span {
+  margin-left: 5px;
+  font-size: 12px;
+  color: #999;
+}
+
     th {
+      background-color: #f5f5f5;
       cursor: pointer;
-      background: #f5f5f5;
     }
 
-    th span {
-      margin-left: 5px;
-      font-size: 12px;
-      color: gray;
+    tr:hover {
+      background: #fafafa;
     }
 
-    .gold { background: #fff8dc; }
-    .silver { background: #f0f0f0; }
-    .bronze { background: #fbe5d6; }
-
-    .highlight { background: #fff3e0; }
-
-    .avatar {
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-    }
+    .gold { background-color: #fff8dc; font-weight: bold; }
+    .silver { background-color: #f0f0f0; font-weight: bold; }
+    .bronze { background-color: #fbe5d6; font-weight: bold; }
 
     a {
       color: #fc4c02;
       text-decoration: none;
     }
 
-    .leader-card {
-      display: flex;
-      gap: 15px;
-      padding: 15px;
-      background: #fff3e0;
-      border-radius: 10px;
-      margin-bottom: 20px;
+    a:hover {
+      text-decoration: underline;
     }
 
-    .leader-card img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
+    .summary { margin-top: 20px; }
+
+    footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: gray;
+      text-align: center;
     }
 
-    .leader-name {
-      font-weight: bold;
-      font-size: 18px;
-    }
+    
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
   </style>
 </head>
 
 <body>
 
-<h1>🚴 Ranking Strava</h1>
+<h1>🚴 Zestawienie aktywności (maj–wrzesień)</h1>
 
-<input id="searchUser" placeholder="Szukaj użytkownika">
-<select id="activityFilter">
-  <option value="all">Wszystkie</option>
-  <option value="Ride">Road</option>
-  <option value="MountainBikeRide">MTB</option>
-  <option value="GravelRide">Gravel</option>
-</select>
+<p class="description">
+  Ranking na podstawie aktywności rowerowych ze Strava.
+</p>
 
-<div id="leader" class="leader-card"></div>
+<label><b>Szukaj użytkownika:</b></label>
+<input type="text" id="searchUser" placeholder="np. Piotr" />
 
 <table id="table">
   <thead>
     <tr>
       <th>👤</th>
-      <th data-sort="position"># <span></span></th>
-      <th data-sort="name">Użytkownik <span></span></th>
-      <th data-sort="totalDistance">Dystans <span></span></th>
-      <th data-sort="avgSpeed">Prędkość <span></span></th>
+      <th data-sort="position">#</th>
+      <th data-sort="name">Użytkownik</th>
+      <th data-sort="totalDistance">Dystans (km) <span></span></th>
+      <th data-sort="avgSpeed">Śr. prędkość <span></span></th>
       <th data-sort="avgElevation">Śr. przewyższenie <span></span></th>
       <th data-sort="totalElevation">Suma przewyższeń <span></span></th>
       <th data-sort="count">Aktywności <span></span></th>
-      <th>Typy</th>
     </tr>
   </thead>
   <tbody></tbody>
 </table>
 
+<div id="summary" class="summary"></div>
+
+<footer>
+  <p>Powered by https://www.strava.com</p>
+  <p>This application uses the Strava API but is not endorsed by Strava.</p>
+</footer>
+
 <script>
 
+// ===== CONFIG SORT =====
 let currentSort = "totalDistance";
 let sortAsc = false;
 
-function normalize(text) {
-  return text.toLowerCase();
+// ===== TIME AGO =====
+function timeAgo(dateString) {
+  if (!dateString) return "brak danych";
+
+  const now = new Date();
+  const past = new Date(dateString);
+  const diff = Math.floor((now - past) / 1000);
+
+  if (diff < 60) return `${diff} s`;
+  const m = Math.floor(diff / 60);
+  if (m < 60) return `${m} min`;
+  const h = Math.floor(m / 60);
+  if (h < 24) return `${h} h`;
+  return `${Math.floor(h / 24)} d`;
 }
+
+// ===== NORMALIZE =====
+function normalize(text) {
+  return text
+    .toLowerCase()
+    .replace(/[ąćęłńóśźż]/g, c => ({
+      'ą':'a','ć':'c','ę':'e','ł':'l',
+      'ń':'n','ó':'o','ś':'s','ź':'z','ż':'z'
+    }[c]));
+}
+
 
 function updateSortIndicators() {
   document.querySelectorAll("th").forEach(th => {
@@ -125,122 +157,282 @@ function updateSortIndicators() {
 
     if (!span) return;
 
-    span.textContent = key === currentSort
-      ? (sortAsc ? "↑" : "↓")
-      : "";
+    if (key === currentSort) {
+      span.textContent = sortAsc ? "↑" : "↓";
+    } else {
+      span.textContent = "";
+    }
   });
 }
 
+
 fetch("./data.json")
-.then(r => r.json())
-.then(data => {
+  .then(res => res.json())
+  .then(data => {
 
-  let users = Array.isArray(data) ? data : data.users || [];
+    //const users = Array.isArray(data) ? data : data.users || [];
+    
+let users = Array.isArray(data) ? data : data.users || [];
 
-  // TEST DATA
-  users = users.concat([
-    {name:"Anna", athleteId:1, avatar:"https://randomuser.me/api/portraits/women/1.jpg", totalDistance:800, avgSpeed:27, avgElevation:300, totalElevation:8000, count:20, activityTypes:["Ride"]},
-    {name:"Jan", athleteId:2, avatar:"https://randomuser.me/api/portraits/men/2.jpg", totalDistance:1500, avgSpeed:30, avgElevation:250, totalElevation:12000, count:40, activityTypes:["GravelRide"]},
-    {name:"MTB Rider", athleteId:3, avatar:"https://randomuser.me/api/portraits/men/3.jpg", totalDistance:600, avgSpeed:23, avgElevation:500, totalElevation:9000, count:18, activityTypes:["MountainBikeRide"]},
-    {name:"Test Zero", athleteId:4, avatar:"", totalDistance:0, avgSpeed:0, avgElevation:0, totalElevation:0, count:0, activityTypes:[]}
-  ]);
-
-  const tbody = document.querySelector("#table tbody");
-  const search = document.getElementById("searchUser");
-  const filter = document.getElementById("activityFilter");
-
-  function renderLeader(list) {
-    if (!list.length) return;
-
-    const leader = [...list].sort((a,b)=>b.totalDistance-a.totalDistance)[0];
-
-    document.getElementById("leader").innerHTML = `
-      <img src="${leader.avatar || 'https://via.placeholder.com/-name'}">🥇 ${leader.name}</div>
-        <div>${leader.totalDistance} km • ${leader.avgSpeed} km/h</div>
-      </div>
-    `;
+// ✅ DODAJ TESTOWYCH USERÓW
+const testUsers = [
+  {
+    name: "Anna Kowalska",
+    athleteId: 1111,
+    avatar: "https://randomuser.me/api/portraits/women/1.jpg",
+    totalDistance: 850,
+    avgSpeed: 27,
+    avgElevation: 320,
+    totalElevation: 8000,
+    count: 22
+  },
+  {
+    name: "Jan Nowak",
+    athleteId: 2222,
+    avatar: "https://randomuser.me/api/portraits/men/2.jpg",
+    totalDistance: 1200,
+    avgSpeed: 29,
+    avgElevation: 280,
+    totalElevation: 9500,
+    count: 30
+  },
+  {
+    name: "Tomasz Wiśniewski",
+    athleteId: 3333,
+    avatar: "https://randomuser.me/api/portraits/men/3.jpg",
+    totalDistance: 640,
+    avgSpeed: 25,
+    avgElevation: 400,
+    totalElevation: 7000,
+    count: 18
   }
+,
+  {
+    name: "Michał Zieliński",
+    athleteId: 4444,
+    avatar: "https://randomuser.me/api/portraits/men/4.jpg",
+    totalDistance: 1500,
+    avgSpeed: 31,
+    avgElevation: 260,
+    totalElevation: 11000,
+    count: 35
+  },
+  {
+    name: "Katarzyna Wójcik",
+    athleteId: 5555,
+    avatar: "https://randomuser.me/api/portraits/women/5.jpg",
+    totalDistance: 720,
+    avgSpeed: 24,
+    avgElevation: 500,
+    totalElevation: 9000,
+    count: 19
+  },
+  {
+    name: "Paweł Kamiński",
+    athleteId: 6666,
+    avatar: "https://randomuser.me/api/portraits/men/6.jpg",
+    totalDistance: 980,
+    avgSpeed: 28,
+    avgElevation: 350,
+    totalElevation: 8700,
+    count: 26
+  },
+  {
+    name: "Aleksandra Lewandowska",
+    athleteId: 7777,
+    avatar: "https://randomuser.me/api/portraits/women/7.jpg",
+    totalDistance: 430,
+    avgSpeed: 22,
+    avgElevation: 600,
+    totalElevation: 6500,
+    count: 15
+  },
+  {
+    name: "Piotr Mazur",
+    athleteId: 8888,
+    avatar: "https://randomuser.me/api/portraits/men/8.jpg",
+    totalDistance: 1600,
+    avgSpeed: 30,
+    avgElevation: 270,
+    totalElevation: 12000,
+    count: 40
+  },
+  {
+    name: "Magdalena Król",
+    athleteId: 9999,
+    avatar: "https://randomuser.me/api/portraits/women/9.jpg",
+    totalDistance: 300,
+    avgSpeed: 21,
+    avgElevation: 450,
+    totalElevation: 5000,
+    count: 12
+  },
+  {
+    name: "Łukasz Piotrowski",
+    athleteId: 1010,
+    avatar: "https://randomuser.me/api/portraits/men/10.jpg",
+    totalDistance: 1100,
+    avgSpeed: 29,
+    avgElevation: 310,
+    totalElevation: 10000,
+    count: 28
+  }, 
+{
+  name: "Test Zero",
+  athleteId: 11111,
+  avatar: "",
+  totalDistance: 0,
+  avgSpeed: 0,
+  avgElevation: 0,
+  totalElevation: 0,
+  count: 0
+}
+];
 
-  function renderTable(list) {
-    const rows = [...list];
+// ✅ połącz realnego usera z testowymi
+users = users.concat(testUsers);
 
-    tbody.innerHTML = "";
+    const tbody = document.querySelector("#table tbody");
+    const searchInput = document.getElementById("searchUser");
 
-    rows.sort((a,b)=>{
-      let A = currentSort === "position" ? a.totalDistance : a[currentSort];
-      let B = currentSort === "position" ? b.totalDistance : b[currentSort];
+    function renderTable(list) {
+      tbody.innerHTML = "";
 
-      if (typeof A === "string") {
-        A = A.toLowerCase();
-        B = B.toLowerCase();
+      let totalDistance = 0;
+      let totalActivities = 0;
+
+      // 🔥 SORT
+      list.sort((a, b) => {
+        let A = a[currentSort];
+        let B = b[currentSort];
+
+        if (currentSort === "name") {
+          A = A.toLowerCase();
+          B = B.toLowerCase();
+        }
+
+        if (currentSort === "position") {
+          A = a.totalDistance;
+          B = b.totalDistance;
+        }
+
+        if (A < B) return sortAsc ? -1 : 1;
+        if (A > B) return sortAsc ? 1 : -1;
+        return 0;
+      });
+
+      list.forEach((u, i) => {
+
+        totalDistance += u.totalDistance;
+        totalActivities += u.count;
+
+        let cls = "";
+        if (i === 0) cls = "gold";
+        else if (i === 1) cls = "silver";
+        else if (i === 2) cls = "bronze";
+
+        const pos =
+          i === 0 ? "🥇" :
+          i === 1 ? "🥈" :
+          i === 2 ? "🥉" : i + 1;
+
+
+
+
+const row = `
+  <tr class="${cls}">
+    <td>
+      ${
+        u.avatar
+          ? `<img src="${u.avatar}" alt="${u.name}" class="avatar">`
+          : "👤"
       }
+    </td>
 
-      return sortAsc ? A - B : B - A;
-    });
+    <td class="${currentSort === 'position' ? 'highlight' : ''}">
+      ${pos}
+    </td>
 
-    rows.forEach((u,i)=>{
+    <td class="${currentSort === 'name' ? 'highlight' : ''}">
+      ${
+        u.athleteId
+          ? `<a href="https://www.strava.com/athletes/${u.athleteId}" target="_blank">${u.name}</a>`
+          : u.name
+      }
+    </td>
 
-      const cls = i===0 ? "gold" : i===1 ? "silver" : i===2 ? "bronze" : "";
-      const pos = ["🥇","🥈","🥉"][i] || (i+1);
+    <td class="${currentSort === 'totalDistance' ? 'highlight' : ''}">
+      ${u.totalDistance || 0}
+    </td>
 
-      const row = `
-        <tr class="${cls}">
-          <td>${u.avatar ? `<img src="${u.avatar}"></td>
-          <td>${pos}</td>
-          <td>
-            ${u.athleteId ? `<a href="https://www.strava.com/athletes/${u.athleteId}" target="_blank">${u.name}</a>
-          </td>
-          <td>${u.totalDistance}</td>
-          <td>${u.avgSpeed}</td>
-          <td>${u.avgElevation}</td>
-          <td>${u.totalElevation}</td>
-          <td>${u.count}</td>
-          <td>${(u.activityTypes||[]).join(", ")}</td>
-        </tr>
+    <td class="${currentSort === 'avgSpeed' ? 'highlight' : ''}">
+      ${u.avgSpeed}
+    </td>
+
+    <td class="${currentSort === 'avgElevation' ? 'highlight' : ''}">
+      ${u.avgElevation}
+    </td>
+
+    <td class="${currentSort === 'totalElevation' ? 'highlight' : ''}">
+      ${u.totalElevation}
+    </td>
+
+    <td class="${currentSort === 'count' ? 'highlight' : ''}">
+      ${u.count}
+    </td>
+  </tr>
+`;
+
+
+        tbody.innerHTML += row;
+      });
+
+      const updatedAt = Array.isArray(data)
+        ? data[0]?.updatedAt
+        : data.updatedAt;
+
+      document.getElementById("summary").innerHTML = `
+        <p>📊 ${totalDistance.toFixed(1)} km</p>
+        <p>🚴 ${totalActivities} aktywności</p>
+        <p>⏱️ ${timeAgo(updatedAt)}</p>
       `;
-
-      tbody.innerHTML += row;
-    });
-
-    updateSortIndicators();
-  }
-
-  function applyFilters() {
-    let list = users.filter(u =>
-      normalize(u.name).includes(normalize(search.value))
-    );
-
-    if (filter.value !== "all") {
-      list = list.filter(u =>
-        (u.activityTypes || []).includes(filter.value)
-      );
     }
 
-    renderTable(list);
-    renderLeader(list);
-  }
+    renderTable(users);
+    updateSortIndicators();
 
-  search.addEventListener("input", applyFilters);
-  filter.addEventListener("change", applyFilters);
+    // 🔍 SEARCH
+    searchInput.addEventListener("input", () => {
+      const val = normalize(searchInput.value);
 
-  document.querySelectorAll("th").forEach(th=>{
-    th.addEventListener("click", ()=>{
-      const key = th.dataset.sort;
-      if (!key) return;
+      const filtered = users.filter(u =>
+        normalize(u.name).includes(val)
+      );
 
-      if (currentSort === key) sortAsc = !sortAsc;
-      else {
-        currentSort = key;
-        sortAsc = false;
-      }
-
-      applyFilters();
+      renderTable(filtered);
     });
+
+    // 🔽 SORT CLICK
+    document.querySelectorAll("th").forEach(th => {
+      th.addEventListener("click", () => {
+        const key = th.dataset.sort;
+        if (!key) return;
+
+        if (currentSort === key) {
+          sortAsc = !sortAsc;
+        } else {
+          currentSort = key;
+          sortAsc = false;
+        }
+
+        renderTable(users);
+        updateSortIndicators();
+      });
+    });
+
   });
 
-  applyFilters();
-});
-
 </script>
+
 </body>
 </html>
