@@ -155,7 +155,7 @@ fetch("./data.json")
     const leader = [...list].sort((a,b)=>b.totalDistance-a.totalDistance)[0];
 
     document.getElementById("leader").innerHTML = `
-      <img src="${leader.avatar || 'https://via.placeholder.com/-name">🥇 ${leader.name}</div>
+      <img src="${leader.avatar || 'https://via.placeholder.com/-name'}">🥇 ${leader.name}</div>
         <div>${leader.totalDistance} km • ${leader.avgSpeed} km/h</div>
       </div>
     `;
