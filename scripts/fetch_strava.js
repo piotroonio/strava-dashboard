@@ -98,14 +98,39 @@ async function fetchData() {
     let totalTime = 0;
     let totalActivities = 0;
 
-    allActivities.forEach(a => {
-      if (a.type !== "Ride") return;
 
-      totalDistance += a.distance;               // metry
-      totalElevation += a.total_elevation_gain; // metry
-      totalTime += a.moving_time;               // sekundy
-      totalActivities++;
-    });
+  // ✅ DOZWOLONE typy rowerowe
+  const ALLOWED_CYCLING_TYPES = [
+  "Ride",
+  "MountainBikeRide",
+  "GravelRide",
+  "Velomobile",
+  "Handcycle",
+  "EBikeRide",
+  "EMountainBikeRide"
+  ];
+
+let activityTypesSet = new Set();
+
+    
+
+allActivities.forEach(a => {
+
+  // ❌ pomijamy trenażer (Zwift / indoor)
+  if (a.trainer === true) return;
+
+  // ✅ tylko aktywności rowerowe
+  if (!ALLOWED_CYCLING_TYPES.includes(a.sport_type)) return;
+
+  // ✅ zapis typów (do tabeli)
+  activityTypesSet.add(a.sport_type);
+
+  totalDistance += a.distance;
+  totalElevation += a.total_elevation_gain;
+  totalTime += a.moving_time;
+  totalActivities++;
+});
+
 
     // 📈 6. Wynik
     const result = [
@@ -113,6 +138,7 @@ async function fetchData() {
         name: displayName,
         athleteId: athleteData.id, // ✅ potrzebne do linku Strava
         avatar: athleteData.profile,
+        activityTypes: Array.from(activityTypesSet),
 
         totalDistance: +(totalDistance / 1000).toFixed(1),
 
