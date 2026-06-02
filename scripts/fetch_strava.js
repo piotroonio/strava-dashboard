@@ -94,6 +94,9 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
     }
     //Sprawdzenie liczby aktywności użytkownika
     console.log(`📊 ${user.name} total downloaded: ${allActivities.length}`);
+    //Sprawdzenie rodzajów aktywności użytkownika
+    console.log(`${user.name} types:`,  [...new Set(allActivities.map(a => a.sport_type))]);
+
     
 
     // 📊 agregacja
