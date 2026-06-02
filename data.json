@@ -12,7 +12,7 @@
     "totalElevation": 2465,
     "count": 44,
     "avgDistancePerRide": 16.9,
-    "updatedAt": "2026-06-02T11:17:19.253Z"
+    "updatedAt": "2026-06-02T11:58:10.728Z"
   },
   {
     "name": "Małgorzata Dziuban",
@@ -27,7 +27,7 @@
     "totalElevation": 196,
     "count": 20,
     "avgDistancePerRide": 6.7,
-    "updatedAt": "2026-06-02T11:17:19.251Z"
+    "updatedAt": "2026-06-02T11:58:10.701Z"
   },
   {
     "name": "Adam Zuzel 🇯🇲",
@@ -43,7 +43,7 @@
     "totalElevation": 2876,
     "count": 34,
     "avgDistancePerRide": 23.6,
-    "updatedAt": "2026-06-02T11:17:19.471Z"
+    "updatedAt": "2026-06-02T11:58:10.871Z"
   },
   {
     "name": "Grzegorz Domagała",
@@ -58,7 +58,7 @@
     "totalElevation": 548,
     "count": 21,
     "avgDistancePerRide": 14.6,
-    "updatedAt": "2026-06-02T11:17:19.102Z"
+    "updatedAt": "2026-06-02T11:58:10.804Z"
   },
   {
     "name": "Mateusz Witkowski",
@@ -71,6 +71,21 @@
     "totalElevation": 0,
     "count": 0,
     "avgDistancePerRide": 0,
-    "updatedAt": "2026-06-02T11:17:18.859Z"
+    "updatedAt": "2026-06-02T11:58:10.482Z"
+  },
+  {
+    "name": "Norbert Nowak",
+    "athleteId": 136614767,
+    "avatar": "avatar/athlete/large.png",
+    "activityTypes": [
+      "Ride"
+    ],
+    "totalDistance": 318.4,
+    "avgSpeed": 17.9,
+    "avgElevation": 49,
+    "totalElevation": 1272,
+    "count": 26,
+    "avgDistancePerRide": 12.2,
+    "updatedAt": "2026-06-02T11:58:10.849Z"
   }
 ]
