@@ -1,8 +1,12 @@
+const tokens = JSON.parse(process.env.TOKENS_JSON);
+
 const fs = require("fs");
 
 async function fetchData() {
   const CLIENT_ID = process.env.CLIENT_ID;
   const CLIENT_SECRET = process.env.CLIENT_SECRET;
+  
+for (const user of tokens) {
   const REFRESH_TOKEN = process.env.REFRESH_TOKEN;
 
   console.log("ENV:", {
@@ -130,11 +134,12 @@ allActivities.forEach(a => {
   totalTime += a.moving_time;
   totalActivities++;
 });
-
+  }
 
     // 📈 6. Wynik
-    const result = [
-      {
+   // const result = [
+   results.push({
+     // {
         name: displayName,
         athleteId: athleteData.id, // ✅ potrzebne do linku Strava
         avatar: athleteData.profile,
@@ -162,11 +167,13 @@ allActivities.forEach(a => {
             : 0,
 
         updatedAt: new Date().toISOString()
-      }
-    ];
+     // }
+    //];
+   });
 
     // 💾 7. Zapis
-    fs.writeFileSync("data.json", JSON.stringify(result, null, 2));
+    //fs.writeFileSync("data.json", JSON.stringify(result, null, 2));
+    fs.writeFileSync("data.json", JSON.stringify(results, null, 2));
 
     console.log("✅ data.json updated successfully");
   } catch (err) {
