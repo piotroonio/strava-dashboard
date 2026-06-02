@@ -1,77 +1,47 @@
-const tokens = JSON.parse(process.env.TOKENS_JSON);
-
 const fs = require("fs");
+
+// ✅ wczytanie tokenów
+const tokens = JSON.parse(process.env.TOKENS_JSON);
 
 async function fetchData() {
   const CLIENT_ID = process.env.CLIENT_ID;
   const CLIENT_SECRET = process.env.CLIENT_SECRET;
-  
-for (const user of tokens) {
-  const REFRESH_TOKEN = process.env.REFRESH_TOKEN;
 
-  console.log("ENV:", {
-    CLIENT_ID: CLIENT_ID,
-    CLIENT_SECRET: CLIENT_SECRET ? "OK" : "MISSING",
-    REFRESH_TOKEN: REFRESH_TOKEN ? "OK" : "MISSING"
-  });
+  let results = []; // ✅ DODANE
 
   try {
-    // 🔄 1. Odśwież token
-    const tokenRes = await fetch("https://www.strava.com/oauth/token", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        client_id: CLIENT_ID,
-        client_secret: CLIENT_SECRET,
-        refresh_token: REFRESH_TOKEN,
-        grant_type: "refresh_token"
-      })
-    });
 
-    const tokenData = await tokenRes.json();
-    console.log("TOKEN:", tokenData);
+    // 🔁 PĘTLA USERS
+    for (const user of tokens) {
 
-    if (!tokenData.access_token) {
-      console.error("❌ TOKEN ERROR:", tokenData);
-      return;
-    }
+      const REFRESH_TOKEN = user.refresh_token; // ✅ FIX
 
-    const accessToken = tokenData.access_token;
+      console.log("👤 USER:", user.name);
 
-    // ✅ 2. Pobierz dane użytkownika
-    const athleteRes = await fetch(
-      "https://www.strava.com/api/v3/athlete",
-      {
-        headers: {
-          Authorization: `Bearer ${accessToken}`
-        }
+      // 🔄 1. Odśwież token
+      const tokenRes = await fetch("https://www.strava.com/oauth/token", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          client_id: CLIENT_ID,
+          client_secret: CLIENT_SECRET,
+          refresh_token: REFRESH_TOKEN,
+          grant_type: "refresh_token"
+        })
+      });
+
+      const tokenData = await tokenRes.json();
+
+      if (!tokenData.access_token) {
+        console.error("❌ TOKEN ERROR:", tokenData);
+        continue; // ✅ ważne przy multi-user
       }
-    );
 
-    const athleteData = await athleteRes.json();
-    console.log("ATHLETE:", athleteData);
+      const accessToken = tokenData.access_token;
 
-    // ✅ pełna nazwa
-    const fullName = [athleteData.firstname, athleteData.lastname]
-      .filter(Boolean)
-      .join(" ");
-
-    const displayName = fullName || "Unknown";
-
-    // 📅 3. Zakres dat (dynamiczny rok)
-    const year = new Date().getFullYear();
-    const after = Math.floor(new Date(`${year}-05-01`).getTime() / 1000);
-    const before = Math.floor(new Date(`${year}-09-30`).getTime() / 1000);
-
-    // 🚴 4. Pagination – pobieranie aktywności
-    let page = 1;
-    let allActivities = [];
-
-    while (true) {
-      const res = await fetch(
-        `https://www.strava.com/api/v3/athlete/activities?after=${after}&before=${before}&per_page=200&page=${page}`,
+      // ✅ ATHLETE
+      const athleteRes = await fetch(
+        "https://www.strava.com/api/v3/athlete",
         {
           headers: {
             Authorization: `Bearer ${accessToken}`
@@ -79,69 +49,79 @@ for (const user of tokens) {
         }
       );
 
-      const data = await res.json();
+      const athleteData = await athleteRes.json();
 
-      if (!Array.isArray(data)) {
-        console.error("❌ API ERROR:", data);
-        return;
+      const displayName = [athleteData.firstname, athleteData.lastname]
+        .filter(Boolean)
+        .join(" ");
+
+      // 📅 zakres dat
+      const year = new Date().getFullYear();
+      const after = Math.floor(new Date(`${year}-05-01`).getTime() / 1000);
+      const before = Math.floor(new Date(`${year}-09-30`).getTime() / 1000);
+
+      // 🚴 aktywności
+      let page = 1;
+      let allActivities = [];
+
+      while (true) {
+        const res = await fetch(
+          `https://www.strava.com/api/v3/athlete/activities?after=${after}&before=${before}&per_page=200&page=${page}`,
+          {
+            headers: {
+              Authorization: `Bearer ${accessToken}`
+            }
+          }
+        );
+
+        const data = await res.json();
+
+        if (!Array.isArray(data)) {
+          console.error("❌ API ERROR:", data);
+          break;
+        }
+
+        if (data.length === 0) break;
+
+        allActivities = allActivities.concat(data);
+        page++;
       }
 
-      if (data.length === 0) break;
+      // 📊 agregacja
+      let totalDistance = 0;
+      let totalElevation = 0;
+      let totalTime = 0;
+      let totalActivities = 0;
 
-      console.log(`📄 Page ${page}: ${data.length} activities`);
+      const ALLOWED_CYCLING_TYPES = [
+        "Ride",
+        "MountainBikeRide",
+        "GravelRide",
+        "Velomobile",
+        "Handcycle",
+        "EBikeRide",
+        "EMountainBikeRide"
+      ];
 
-      allActivities = allActivities.concat(data);
-      page++;
-    }
+      let activityTypesSet = new Set();
 
-    console.log(`✅ Total activities fetched: ${allActivities.length}`);
+      allActivities.forEach(a => {
 
-    // 📊 5. Agregacja
-    let totalDistance = 0;
-    let totalElevation = 0;
-    let totalTime = 0;
-    let totalActivities = 0;
+        if (a.trainer === true) return;
+        if (!ALLOWED_CYCLING_TYPES.includes(a.sport_type)) return;
 
+        activityTypesSet.add(a.sport_type);
 
-  // ✅ DOZWOLONE typy rowerowe
-  const ALLOWED_CYCLING_TYPES = [
-  "Ride",
-  "MountainBikeRide",
-  "GravelRide",
-  "Velomobile",
-  "Handcycle",
-  "EBikeRide",
-  "EMountainBikeRide"
-  ];
+        totalDistance += a.distance;
+        totalElevation += a.total_elevation_gain;
+        totalTime += a.moving_time;
+        totalActivities++;
+      });
 
-let activityTypesSet = new Set();
-
-    
-
-allActivities.forEach(a => {
-
-  // ❌ pomijamy trenażer (Zwift / indoor)
-  if (a.trainer === true) return;
-
-  // ✅ tylko aktywności rowerowe
-  if (!ALLOWED_CYCLING_TYPES.includes(a.sport_type)) return;
-
-  // ✅ zapis typów (do tabeli)
-  activityTypesSet.add(a.sport_type);
-
-  totalDistance += a.distance;
-  totalElevation += a.total_elevation_gain;
-  totalTime += a.moving_time;
-  totalActivities++;
-});
-  }
-
-    // 📈 6. Wynik
-   // const result = [
-   results.push({
-     // {
-        name: displayName,
-        athleteId: athleteData.id, // ✅ potrzebne do linku Strava
+      // ✅ wynik
+      results.push({
+        name: displayName || "Unknown",
+        athleteId: athleteData.id,
         avatar: athleteData.profile,
         activityTypes: Array.from(activityTypesSet),
 
@@ -167,17 +147,17 @@ allActivities.forEach(a => {
             : 0,
 
         updatedAt: new Date().toISOString()
-     // }
-    //];
-   });
+      });
 
-    // 💾 7. Zapis
-    //fs.writeFileSync("data.json", JSON.stringify(result, null, 2));
+    } // ✅ KONIEC pętli
+
+    // 💾 zapis
     fs.writeFileSync("data.json", JSON.stringify(results, null, 2));
 
-    console.log("✅ data.json updated successfully");
+    console.log("✅ data.json updated");
+
   } catch (err) {
-    console.error("❌ ERROR:", err);
+    console.error("❌ GLOBAL ERROR:", err);
   }
 }
 
