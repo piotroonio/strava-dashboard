@@ -3,14 +3,16 @@
     "name": "Piotr Sieradzki",
     "athleteId": 58678501,
     "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/58678501/24592063/1/large.jpg",
-    "activityTypes": [],
-    "totalDistance": 0,
-    "avgSpeed": 0,
-    "avgElevation": 0,
-    "totalElevation": 0,
-    "count": 0,
-    "avgDistancePerRide": 0,
-    "updatedAt": "2026-06-02T08:09:28.755Z"
+    "activityTypes": [
+      "GravelRide"
+    ],
+    "totalDistance": 743.4,
+    "avgSpeed": 21.3,
+    "avgElevation": 56,
+    "totalElevation": 2465,
+    "count": 44,
+    "avgDistancePerRide": 16.9,
+    "updatedAt": "2026-06-02T08:29:09.789Z"
   },
   {
     "name": "Małgorzata Dziuban",
@@ -25,6 +27,6 @@
     "totalElevation": 196,
     "count": 20,
     "avgDistancePerRide": 6.7,
-    "updatedAt": "2026-06-02T08:09:29.029Z"
+    "updatedAt": "2026-06-02T08:29:09.695Z"
   }
 ]
