@@ -318,19 +318,47 @@ const row = `
       `;
     }
 
-    renderTable(users);
+    //renderTable(users);
+    applyFilters();
+    
     updateSortIndicators();
 
     // 🔍 SEARCH
-    searchInput.addEventListener("input", () => {
-      const val = normalize(searchInput.value);
+    //searchInput.addEventListener("input", () => {
+    //  const val = normalize(searchInput.value);
 
-      const filtered = users.filter(u =>
-        normalize(u.name).includes(val)
-      );
+    //  const filtered = users.filter(u =>
+    //    normalize(u.name).includes(val)
+   //   );
 
-      renderTable(filtered);
-    });
+   //   renderTable(filtered);
+   // });
+
+    
+function applyFilters() {
+  const val = normalize(searchInput.value);
+  const selected = activityFilter.value;
+
+  // ✅ filtr po nazwie
+  let filtered = users.filter(u =>
+    normalize(u.name).includes(val)
+  );
+
+  // ✅ filtr po typie aktywności
+  if (selected !== "all") {
+    filtered = filtered.filter(u =>
+      (u.activityTypes || []).includes(selected)
+    );
+  }
+
+  renderTable(filtered);
+  renderLeader(filtered); // ✅ ważne
+}
+
+// ✅ podłączenie eventów
+searchInput.addEventListener("input", applyFilters);
+activityFilter.addEventListener("change", applyFilters);
+
 
     // 🔽 SORT CLICK
     document.querySelectorAll("th").forEach(th => {
@@ -345,7 +373,8 @@ const row = `
           sortAsc = false;
         }
 
-        renderTable(users);
+        //renderTable(users);
+        applyFilters();
         updateSortIndicators();
       });
     });
