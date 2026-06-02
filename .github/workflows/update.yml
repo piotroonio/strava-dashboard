@@ -24,7 +24,7 @@ jobs:
           CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
           REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
-
+          TOKENS_JSON: ${{ secrets.TOKENS_JSON }}
 
       - name: Commit & push
         run: |
