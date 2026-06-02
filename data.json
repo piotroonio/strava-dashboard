@@ -6,12 +6,12 @@
     "activityTypes": [
       "GravelRide"
     ],
-    "totalDistance": 715.5,
+    "totalDistance": 743.4,
     "avgSpeed": 21.3,
-    "avgElevation": 54,
-    "totalElevation": 2274,
-    "count": 42,
-    "avgDistancePerRide": 17,
-    "updatedAt": "2026-06-01T12:13:32.579Z"
+    "avgElevation": 56,
+    "totalElevation": 2465,
+    "count": 44,
+    "avgDistancePerRide": 16.9,
+    "updatedAt": "2026-06-02T06:48:52.006Z"
   }
 ]
