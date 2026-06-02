@@ -92,6 +92,9 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
       allActivities = allActivities.concat(data);
       page++;
     }
+    //Sprawdzenie liczby aktywności użytkownika
+    console.log(`📊 ${user.name} total downloaded: ${allActivities.length}`);
+    
 
     // 📊 agregacja
     const ALLOWED_CYCLING_TYPES = [
