@@ -12,7 +12,7 @@
     "totalElevation": 2465,
     "count": 44,
     "avgDistancePerRide": 16.9,
-    "updatedAt": "2026-06-02T11:11:49.351Z"
+    "updatedAt": "2026-06-02T11:17:19.253Z"
   },
   {
     "name": "Małgorzata Dziuban",
@@ -27,7 +27,7 @@
     "totalElevation": 196,
     "count": 20,
     "avgDistancePerRide": 6.7,
-    "updatedAt": "2026-06-02T11:11:49.171Z"
+    "updatedAt": "2026-06-02T11:17:19.251Z"
   },
   {
     "name": "Adam Zuzel 🇯🇲",
@@ -43,7 +43,7 @@
     "totalElevation": 2876,
     "count": 34,
     "avgDistancePerRide": 23.6,
-    "updatedAt": "2026-06-02T11:11:49.425Z"
+    "updatedAt": "2026-06-02T11:17:19.471Z"
   },
   {
     "name": "Grzegorz Domagała",
@@ -58,6 +58,19 @@
     "totalElevation": 548,
     "count": 21,
     "avgDistancePerRide": 14.6,
-    "updatedAt": "2026-06-02T11:11:49.202Z"
+    "updatedAt": "2026-06-02T11:17:19.102Z"
+  },
+  {
+    "name": "Mateusz Witkowski",
+    "athleteId": 83777531,
+    "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIbF85a0zV_9ioPI6vK8QD0wRFxqFDrxnJlpspcWMLJBehTwg=s96-c",
+    "activityTypes": [],
+    "totalDistance": 0,
+    "avgSpeed": 0,
+    "avgElevation": 0,
+    "totalElevation": 0,
+    "count": 0,
+    "avgDistancePerRide": 0,
+    "updatedAt": "2026-06-02T11:17:18.859Z"
   }
 ]
