@@ -1,47 +1,76 @@
 const fs = require("fs");
 
-// ✅ wczytanie tokenów
+// ✅ tokens z GitHub Secrets
 const tokens = JSON.parse(process.env.TOKENS_JSON);
 
-async function fetchData() {
-  const CLIENT_ID = process.env.CLIENT_ID;
-  const CLIENT_SECRET = process.env.CLIENT_SECRET;
+// ✅ limiter (ms)
+const DELAY_MS = 200;
 
-  let results = []; // ✅ DODANE
+// ✅ helper sleep
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+// ✅ przetwarzanie jednego użytkownika
+async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
+
+  await sleep(DELAY_MS); // ✅ limiter
 
   try {
+    console.log("👤 USER:", user.name);
 
-    // 🔁 PĘTLA USERS
-    for (const user of tokens) {
+    const REFRESH_TOKEN = user.refresh_token;
 
-      const REFRESH_TOKEN = user.refresh_token; // ✅ FIX
+    // 🔄 TOKEN REFRESH
+    const tokenRes = await fetch("https://www.strava.com/oauth/token", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        client_id: CLIENT_ID,
+        client_secret: CLIENT_SECRET,
+        refresh_token: REFRESH_TOKEN,
+        grant_type: "refresh_token"
+      })
+    });
 
-      console.log("👤 USER:", user.name);
+    const tokenData = await tokenRes.json();
 
-      // 🔄 1. Odśwież token
-      const tokenRes = await fetch("https://www.strava.com/oauth/token", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          client_id: CLIENT_ID,
-          client_secret: CLIENT_SECRET,
-          refresh_token: REFRESH_TOKEN,
-          grant_type: "refresh_token"
-        })
-      });
+    if (!tokenData.access_token) {
+      console.error("❌ TOKEN ERROR:", user.name, tokenData);
+      return null;
+    }
 
-      const tokenData = await tokenRes.json();
+    const accessToken = tokenData.access_token;
 
-      if (!tokenData.access_token) {
-        console.error("❌ TOKEN ERROR:", tokenData);
-        continue; // ✅ ważne przy multi-user
+    // ✅ ATHLETE
+    const athleteRes = await fetch(
+      "https://www.strava.com/api/v3/athlete",
+      {
+        headers: {
+          Authorization: `Bearer ${accessToken}`
+        }
       }
+    );
 
-      const accessToken = tokenData.access_token;
+    const athleteData = await athleteRes.json();
 
-      // ✅ ATHLETE
-      const athleteRes = await fetch(
-        "https://www.strava.com/api/v3/athlete",
+    const displayName = [athleteData.firstname, athleteData.lastname]
+      .filter(Boolean)
+      .join(" ");
+
+    // 📅 zakres dat
+    const year = new Date().getFullYear();
+    const after = Math.floor(new Date(`${year}-05-01`).getTime() / 1000);
+    const before = Math.floor(new Date(`${year}-09-30`).getTime() / 1000);
+
+    // 🚴 pobieranie aktywności (pagination)
+    let page = 1;
+    let allActivities = [];
+
+    while (true) {
+
+      const res = await fetch(
+        `https://www.strava.com/api/v3/athlete/activities?after=${after}&before=${before}&per_page=200&page=${page}`,
         {
           headers: {
             Authorization: `Bearer ${accessToken}`
@@ -49,112 +78,111 @@ async function fetchData() {
         }
       );
 
-      const athleteData = await athleteRes.json();
+      const data = await res.json();
 
-      const displayName = [athleteData.firstname, athleteData.lastname]
-        .filter(Boolean)
-        .join(" ");
-
-      // 📅 zakres dat
-      const year = new Date().getFullYear();
-      const after = Math.floor(new Date(`${year}-05-01`).getTime() / 1000);
-      const before = Math.floor(new Date(`${year}-09-30`).getTime() / 1000);
-
-      // 🚴 aktywności
-      let page = 1;
-      let allActivities = [];
-
-      while (true) {
-        const res = await fetch(
-          `https://www.strava.com/api/v3/athlete/activities?after=${after}&before=${before}&per_page=200&page=${page}`,
-          {
-            headers: {
-              Authorization: `Bearer ${accessToken}`
-            }
-          }
-        );
-
-        const data = await res.json();
-
-        if (!Array.isArray(data)) {
-          console.error("❌ API ERROR:", data);
-          break;
-        }
-
-        if (data.length === 0) break;
-
-        allActivities = allActivities.concat(data);
-        page++;
+      if (!Array.isArray(data)) {
+        console.error("❌ API ERROR:", user.name, data);
+        break;
       }
 
-      // 📊 agregacja
-      let totalDistance = 0;
-      let totalElevation = 0;
-      let totalTime = 0;
-      let totalActivities = 0;
+      if (data.length === 0) break;
 
-      const ALLOWED_CYCLING_TYPES = [
-        "Ride",
-        "MountainBikeRide",
-        "GravelRide",
-        "Velomobile",
-        "Handcycle",
-        "EBikeRide",
-        "EMountainBikeRide"
-      ];
+      console.log(`📄 ${user.name} page ${page}: ${data.length}`);
 
-      let activityTypesSet = new Set();
+      allActivities = allActivities.concat(data);
+      page++;
+    }
 
-      allActivities.forEach(a => {
+    // 📊 agregacja
+    const ALLOWED_CYCLING_TYPES = [
+      "Ride",
+      "MountainBikeRide",
+      "GravelRide",
+      "Velomobile",
+      "Handcycle",
+      "EBikeRide",
+      "EMountainBikeRide"
+    ];
 
-        if (a.trainer === true) return;
-        if (!ALLOWED_CYCLING_TYPES.includes(a.sport_type)) return;
+    let totalDistance = 0;
+    let totalElevation = 0;
+    let totalTime = 0;
+    let totalActivities = 0;
+    let activityTypesSet = new Set();
 
-        activityTypesSet.add(a.sport_type);
+    allActivities.forEach(a => {
 
-        totalDistance += a.distance;
-        totalElevation += a.total_elevation_gain;
-        totalTime += a.moving_time;
-        totalActivities++;
-      });
+      if (a.trainer === true) return;
+      if (!ALLOWED_CYCLING_TYPES.includes(a.sport_type)) return;
 
-      // ✅ wynik
-      results.push({
-        name: displayName || "Unknown",
-        athleteId: athleteData.id,
-        avatar: athleteData.profile,
-        activityTypes: Array.from(activityTypesSet),
+      activityTypesSet.add(a.sport_type);
 
-        totalDistance: +(totalDistance / 1000).toFixed(1),
+      totalDistance += a.distance;
+      totalElevation += a.total_elevation_gain;
+      totalTime += a.moving_time;
+      totalActivities++;
+    });
 
-        avgSpeed:
-          totalTime > 0
-            ? +((totalDistance / totalTime) * 3.6).toFixed(1)
-            : 0,
+    console.log(`✅ ${user.name}: ${totalActivities} activities`);
 
-        avgElevation:
-          totalActivities > 0
-            ? +(totalElevation / totalActivities).toFixed(0)
-            : 0,
+    // ✅ wynik pojedynczego usera
+    return {
+      name: displayName || user.name,
+      athleteId: athleteData.id,
+      avatar: athleteData.profile,
 
-        totalElevation: Math.round(totalElevation),
+      activityTypes: Array.from(activityTypesSet),
 
-        count: totalActivities,
+      totalDistance: +(totalDistance / 1000).toFixed(1),
 
-        avgDistancePerRide:
-          totalActivities > 0
-            ? +((totalDistance / 1000) / totalActivities).toFixed(1)
-            : 0,
+      avgSpeed:
+        totalTime > 0
+          ? +((totalDistance / totalTime) * 3.6).toFixed(1)
+          : 0,
 
-        updatedAt: new Date().toISOString()
-      });
+      avgElevation:
+        totalActivities > 0
+          ? Math.round(totalElevation / totalActivities)
+          : 0,
 
-    } // ✅ KONIEC pętli
+      totalElevation: Math.round(totalElevation),
+
+      count: totalActivities,
+
+      avgDistancePerRide:
+        totalActivities > 0
+          ? +((totalDistance / 1000) / totalActivities).toFixed(1)
+          : 0,
+
+      updatedAt: new Date().toISOString()
+    };
+
+  } catch (err) {
+    console.error("❌ USER ERROR:", user.name, err);
+    return null;
+  }
+}
+
+
+// ✅ MAIN
+async function fetchData() {
+  const CLIENT_ID = process.env.CLIENT_ID;
+  const CLIENT_SECRET = process.env.CLIENT_SECRET;
+
+  try {
+
+    // 🔥 równoległe wykonanie
+    const results = await Promise.all(
+      tokens.map(user => processUser(user, CLIENT_ID, CLIENT_SECRET))
+    );
+
+    // ✅ usunięcie null (userów z błędem)
+    const cleanResults = results.filter(Boolean);
 
     // 💾 zapis
-    fs.writeFileSync("data.json", JSON.stringify(results, null, 2));
+    fs.writeFileSync("data.json", JSON.stringify(cleanResults, null, 2));
 
-    console.log("✅ data.json updated");
+    console.log("✅ data.json updated (multi-user)");
 
   } catch (err) {
     console.error("❌ GLOBAL ERROR:", err);
