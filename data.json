@@ -6,13 +6,13 @@
     "activityTypes": [
       "GravelRide"
     ],
-    "totalDistance": 743.4,
+    "totalDistance": 771.2,
     "avgSpeed": 21.3,
     "avgElevation": 56,
-    "totalElevation": 2465,
-    "count": 44,
-    "avgDistancePerRide": 16.9,
-    "updatedAt": "2026-06-02T13:59:43.390Z"
+    "totalElevation": 2554,
+    "count": 46,
+    "avgDistancePerRide": 16.8,
+    "updatedAt": "2026-06-03T07:00:22.374Z"
   },
   {
     "name": "Małgorzata Dziuban",
@@ -21,13 +21,13 @@
     "activityTypes": [
       "Ride"
     ],
-    "totalDistance": 133.8,
-    "avgSpeed": 7.7,
+    "totalDistance": 138.9,
+    "avgSpeed": 7.8,
     "avgElevation": 10,
-    "totalElevation": 196,
-    "count": 20,
-    "avgDistancePerRide": 6.7,
-    "updatedAt": "2026-06-02T13:59:43.234Z"
+    "totalElevation": 202,
+    "count": 21,
+    "avgDistancePerRide": 6.6,
+    "updatedAt": "2026-06-03T07:00:22.196Z"
   },
   {
     "name": "Adam Zuzel 🇯🇲",
@@ -43,7 +43,7 @@
     "totalElevation": 2876,
     "count": 34,
     "avgDistancePerRide": 23.6,
-    "updatedAt": "2026-06-02T13:59:43.696Z"
+    "updatedAt": "2026-06-03T07:00:22.568Z"
   },
   {
     "name": "Grzegorz Domagała",
@@ -52,13 +52,13 @@
     "activityTypes": [
       "Ride"
     ],
-    "totalDistance": 306.3,
-    "avgSpeed": 12.9,
-    "avgElevation": 26,
-    "totalElevation": 548,
-    "count": 21,
-    "avgDistancePerRide": 14.6,
-    "updatedAt": "2026-06-02T13:59:43.306Z"
+    "totalDistance": 342.3,
+    "avgSpeed": 12.4,
+    "avgElevation": 25,
+    "totalElevation": 606,
+    "count": 24,
+    "avgDistancePerRide": 14.3,
+    "updatedAt": "2026-06-03T07:00:22.266Z"
   },
   {
     "name": "Mateusz Witkowski",
@@ -71,7 +71,7 @@
     "totalElevation": 0,
     "count": 0,
     "avgDistancePerRide": 0,
-    "updatedAt": "2026-06-02T13:59:42.932Z"
+    "updatedAt": "2026-06-03T07:00:21.776Z"
   },
   {
     "name": "Norbert Nowak",
@@ -80,13 +80,13 @@
     "activityTypes": [
       "Ride"
     ],
-    "totalDistance": 318.4,
+    "totalDistance": 334.4,
     "avgSpeed": 17.9,
     "avgElevation": 49,
-    "totalElevation": 1272,
-    "count": 26,
-    "avgDistancePerRide": 12.2,
-    "updatedAt": "2026-06-02T13:59:43.371Z"
+    "totalElevation": 1324,
+    "count": 27,
+    "avgDistancePerRide": 12.4,
+    "updatedAt": "2026-06-03T07:00:22.241Z"
   },
   {
     "name": "Jaroslaw Pasierski",
@@ -95,13 +95,13 @@
     "activityTypes": [
       "Ride"
     ],
-    "totalDistance": 288.5,
+    "totalDistance": 296.4,
     "avgSpeed": 18.8,
     "avgElevation": 14,
-    "totalElevation": 513,
-    "count": 38,
+    "totalElevation": 528,
+    "count": 39,
     "avgDistancePerRide": 7.6,
-    "updatedAt": "2026-06-02T13:59:43.383Z"
+    "updatedAt": "2026-06-03T07:00:22.420Z"
   },
   {
     "name": "Aga Pa",
@@ -110,12 +110,12 @@
     "activityTypes": [
       "Ride"
     ],
-    "totalDistance": 106.6,
-    "avgSpeed": 13.9,
+    "totalDistance": 111.3,
+    "avgSpeed": 14,
     "avgElevation": 7,
-    "totalElevation": 149,
-    "count": 20,
+    "totalElevation": 156,
+    "count": 21,
     "avgDistancePerRide": 5.3,
-    "updatedAt": "2026-06-02T13:59:43.235Z"
+    "updatedAt": "2026-06-03T07:00:22.206Z"
   }
 ]
