@@ -1,7 +1,15 @@
 const fs = require("fs");
 
 // ✅ tokens z GitHub Secrets
-const tokens = JSON.parse(process.env.TOKENS_JSON);
+//const tokens = JSON.parse(process.env.TOKENS_JSON);
+let tokens;
+
+try {
+  tokens = JSON.parse(process.env.TOKENS_JSON);
+} catch (e) {
+  console.error("❌ TOKENS_JSON invalid:", process.env.TOKENS_JSON);
+  throw e;
+}
 
 // ✅ limiter (ms)
 const DELAY_MS = 200;
