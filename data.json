@@ -6,13 +6,13 @@
     "activityTypes": [
       "GravelRide"
     ],
-    "totalDistance": 771.2,
-    "avgSpeed": 21.3,
-    "avgElevation": 56,
-    "totalElevation": 2554,
-    "count": 46,
-    "avgDistancePerRide": 16.8,
-    "updatedAt": "2026-06-03T09:25:54.712Z"
+    "totalDistance": 777.4,
+    "avgSpeed": 21.2,
+    "avgElevation": 55,
+    "totalElevation": 2588,
+    "count": 47,
+    "avgDistancePerRide": 16.5,
+    "updatedAt": "2026-06-04T06:49:37.534Z"
   },
   {
     "name": "Małgorzata Dziuban",
@@ -21,13 +21,13 @@
     "activityTypes": [
       "Ride"
     ],
-    "totalDistance": 138.9,
-    "avgSpeed": 7.8,
-    "avgElevation": 10,
-    "totalElevation": 202,
-    "count": 21,
+    "totalDistance": 145.4,
+    "avgSpeed": 7.7,
+    "avgElevation": 9,
+    "totalElevation": 208,
+    "count": 22,
     "avgDistancePerRide": 6.6,
-    "updatedAt": "2026-06-03T09:25:54.452Z"
+    "updatedAt": "2026-06-04T06:49:37.300Z"
   },
   {
     "name": "Adam Zuzel 🇯🇲",
@@ -43,7 +43,7 @@
     "totalElevation": 2876,
     "count": 34,
     "avgDistancePerRide": 23.6,
-    "updatedAt": "2026-06-03T09:25:54.736Z"
+    "updatedAt": "2026-06-04T06:49:37.782Z"
   },
   {
     "name": "Grzegorz Domagała",
@@ -58,7 +58,7 @@
     "totalElevation": 606,
     "count": 24,
     "avgDistancePerRide": 14.3,
-    "updatedAt": "2026-06-03T09:25:54.494Z"
+    "updatedAt": "2026-06-04T06:49:37.379Z"
   },
   {
     "name": "Norbert Nowak",
@@ -73,7 +73,7 @@
     "totalElevation": 1324,
     "count": 27,
     "avgDistancePerRide": 12.4,
-    "updatedAt": "2026-06-03T09:25:54.558Z"
+    "updatedAt": "2026-06-04T06:49:37.475Z"
   },
   {
     "name": "Jaroslaw Pasierski",
@@ -82,13 +82,13 @@
     "activityTypes": [
       "Ride"
     ],
-    "totalDistance": 296.4,
-    "avgSpeed": 18.8,
-    "avgElevation": 14,
-    "totalElevation": 528,
-    "count": 39,
+    "totalDistance": 311.8,
+    "avgSpeed": 18.7,
+    "avgElevation": 13,
+    "totalElevation": 548,
+    "count": 41,
     "avgDistancePerRide": 7.6,
-    "updatedAt": "2026-06-03T09:25:54.596Z"
+    "updatedAt": "2026-06-04T06:49:37.435Z"
   },
   {
     "name": "Aga Pa",
@@ -103,6 +103,6 @@
     "totalElevation": 156,
     "count": 21,
     "avgDistancePerRide": 5.3,
-    "updatedAt": "2026-06-03T09:25:54.518Z"
+    "updatedAt": "2026-06-04T06:49:37.205Z"
   }
 ]
