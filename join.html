@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Dołącz do wyzwania 🚴</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+    }
+
+    button {
+      background-color: #fc4c02;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    .box {
+      margin-top: 30px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #fafafa;
+    }
+
+    textarea {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    .success {
+      color: green;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>🚴 Dołącz do wyzwania</h1>
+
+<p>Zaloguj się przez Strava, aby dołączyć do rankingu.</p>
+
+<a id="loginBtn">
+  <button>Połącz ze Strava</button>
+</a>
+
+<div id="result"></div>
+
+<script>
+const CLIENT_ID = "133247"; // ← wpisz swoje
+
+const redirectUri = window.location.origin + window.location.pathname;
+
+document.getElementById("loginBtn").href =
+  `https://www.strava.com/oauth/authorize?client_id=${CLIENT_ID}` +
+  `&response_type=code` +
+  `&redirect_uri=${encodeURIComponent(redirectUri)}` +
+  `&approval_prompt=force` +
+  `&scope=read,activity:read_all`;
+
+// ✅ obsługa powrotu z OAuth
+const params = new URLSearchParams(window.location.search);
+const code = params.get("code");
+
+if (code) {
+  document.getElementById("result").innerHTML = `
+    <div class="box">
+      <h3>✅ Już prawie gotowe!</h3>
+      <p>Skopiuj kod i wyślij:</p>
+
+      <textarea id="codeBox" rows="3">${code}</textarea>
+
+      <button onclick="copyCode()">Kopiuj kod</button>
+
+      <div id="copiedMsg" class="success"></div>
+    </div>
+  `;
+}
+
+// ✅ kopiowanie do schowka
+function copyCode() {
+  const textarea = document.getElementById("codeBox");
+  textarea.select();
+  document.execCommand("copy");
+
+  document.getElementById("copiedMsg").innerText = "✅ Skopiowano!";
+}
+</script>
+
+</body>
+</html>
