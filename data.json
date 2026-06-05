@@ -12,7 +12,7 @@
     "totalElevation": 2830,
     "count": 49,
     "avgDistancePerRide": 17.2,
-    "updatedAt": "2026-06-05T09:26:56.190Z"
+    "updatedAt": "2026-06-05T09:58:20.010Z"
   },
   {
     "name": "Małgorzata Dziuban",
@@ -27,7 +27,7 @@
     "totalElevation": 208,
     "count": 22,
     "avgDistancePerRide": 6.6,
-    "updatedAt": "2026-06-05T09:26:56.115Z"
+    "updatedAt": "2026-06-05T09:58:19.885Z"
   },
   {
     "name": "Adam Zuzel 🇯🇲",
@@ -43,7 +43,7 @@
     "totalElevation": 3613,
     "count": 35,
     "avgDistancePerRide": 28.8,
-    "updatedAt": "2026-06-05T09:26:56.394Z"
+    "updatedAt": "2026-06-05T09:58:20.406Z"
   },
   {
     "name": "Grzegorz Domagała",
@@ -58,7 +58,7 @@
     "totalElevation": 606,
     "count": 24,
     "avgDistancePerRide": 14.3,
-    "updatedAt": "2026-06-05T09:26:56.079Z"
+    "updatedAt": "2026-06-05T09:58:19.937Z"
   },
   {
     "name": "Norbert Nowak",
@@ -73,7 +73,7 @@
     "totalElevation": 1366,
     "count": 28,
     "avgDistancePerRide": 12.5,
-    "updatedAt": "2026-06-05T09:26:56.170Z"
+    "updatedAt": "2026-06-05T09:58:19.994Z"
   },
   {
     "name": "Jaroslaw Pasierski",
@@ -88,7 +88,7 @@
     "totalElevation": 548,
     "count": 41,
     "avgDistancePerRide": 7.6,
-    "updatedAt": "2026-06-05T09:26:56.349Z"
+    "updatedAt": "2026-06-05T09:58:20.015Z"
   },
   {
     "name": "Aga Pa",
@@ -103,7 +103,7 @@
     "totalElevation": 156,
     "count": 21,
     "avgDistancePerRide": 5.3,
-    "updatedAt": "2026-06-05T09:26:56.083Z"
+    "updatedAt": "2026-06-05T09:58:19.873Z"
   },
   {
     "name": "Marcin K.",
@@ -118,6 +118,22 @@
     "totalElevation": 448,
     "count": 38,
     "avgDistancePerRide": 11.4,
-    "updatedAt": "2026-06-05T09:26:56.266Z"
+    "updatedAt": "2026-06-05T09:58:20.003Z"
+  },
+  {
+    "name": "Kasia Sch",
+    "athleteId": 133627842,
+    "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIq9cxp2BfbtWstPkkkFl-wwGt8Oj5YKQwm-3vkjKqI=s96-c",
+    "activityTypes": [
+      "Ride",
+      "GravelRide"
+    ],
+    "totalDistance": 1006.8,
+    "avgSpeed": 19.6,
+    "avgElevation": 65,
+    "totalElevation": 2844,
+    "count": 44,
+    "avgDistancePerRide": 22.9,
+    "updatedAt": "2026-06-05T09:58:20.446Z"
   }
 ]
