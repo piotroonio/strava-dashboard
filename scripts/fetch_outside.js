@@ -143,14 +143,7 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
       ? new Date(a.start_date_local).toISOString().split("T")[0]
       : null,
 
-    //location:
-    //  [a.location_city, a.location_country]
-    //    .filter(Boolean)
-    //    .join(", ") || "Unknown",
-
-    coordinates: a.start_latlng
-      ? `${a.start_latlng[0]}, ${a.start_latlng[1]}`
-      : null,
+    mapLink: `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lng}#map=12/${lat}/${lng}`,
 
     distance: +(a.distance / 1000).toFixed(1),
 
