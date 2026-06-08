@@ -2,14 +2,12 @@ const fs = require("fs");
 
 const tokens = JSON.parse(process.env.TOKENS_JSON);
 
-// ✅ współrzędne Wrocławia
-const CITY = { lat: 51.107883, lng: 17.038538 }; //Wrocław
-// const CITY = { lat: 52.406374, lng: 16.925168 }; // ✅ Poznań
+// ✅ Wrocław (zmień jeśli testujesz inne miasto)
+const CITY = { lat: 51.107883, lng: 17.038538 };
 
-// ✅ promień (km)
-const RADIUS_KM = 70;
+// ✅ promień
+const RADIUS_KM = 20;
 
-// ✅ dozwolone typy rowerowe
 const ALLOWED_CYCLING_TYPES = [
   "Ride",
   "MountainBikeRide",
@@ -18,7 +16,10 @@ const ALLOWED_CYCLING_TYPES = [
   "EMountainBikeRide"
 ];
 
-// ✅ funkcja liczenia odległości
+// ✅ cache do geocodingu
+const geoCache = {};
+
+// ✅ odległość (Haversine)
 function getDistance(lat1, lon1, lat2, lon2) {
   const R = 6371;
   const dLat = (lat2 - lat1) * Math.PI / 180;
@@ -33,19 +34,59 @@ function getDistance(lat1, lon1, lat2, lon2) {
   return R * (2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)));
 }
 
-// ✅ opóźnienie (limit API)
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+// ✅ geocoding OSM (miasto)
+async function getLocationName(lat, lon) {
+
+  const key = `${lat.toFixed(3)},${lon.toFixed(3)}`;
+
+  if (geoCache[key]) return geoCache[key];
+
+  try {
+    const res = await fetch(
+      `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lon}`,
+      {
+        headers: {
+          "User-Agent": "wyzwanierowerowe-app"
+        }
+      }
+    );
+
+    const data = await res.json();
+    const a = data.address || {};
+
+    const location =
+      a.city ||
+      a.town ||
+      a.village ||
+      a.county ||
+      "Unknown";
+
+    geoCache[key] = location;
+
+    // ✅ limiter (ważne)
+    await new Promise(r => setTimeout(r, 1000));
+
+    return location;
+
+  } catch (err) {
+    console.error("❌ GEO ERROR:", err);
+    return "Unknown";
+  }
 }
 
-// ✅ przetwarzanie jednego usera
+// ✅ delay dla API Strava
+function sleep(ms) {
+  return new Promise(r => setTimeout(r, ms));
+}
+
+// ✅ przetwarzanie usera
 async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
+
   await sleep(200);
 
   try {
     console.log("👤 USER:", user.name);
 
-    // 🔄 refresh token
     const tokenRes = await fetch("https://www.strava.com/oauth/token", {
       method: "POST",
       headers: {
@@ -93,7 +134,6 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
     let page = 1;
     let allActivities = [];
 
-    // ✅ pobieranie aktywności
     while (true) {
       const res = await fetch(
         `https://www.strava.com/api/v3/athlete/activities?after=${after}&before=${before}&per_page=200&page=${page}`,
@@ -114,54 +154,55 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
 
     console.log(`📊 ${displayName}: ${allActivities.length} activities`);
 
-    // ✅ filtr poza Wrocławiem
     const outsideActivities = [];
 
-  allActivities.forEach(a => {
+    // ✅ KLUCZOWA PĘTLA (async!)
+    for (const a of allActivities) {
 
-  // ❌ brak dystansu lub za krótka aktywność
-  if (!a.distance || a.distance < 1000) return;
+      if (!a.distance || a.distance < 1000) continue;
+      if (!a.start_latlng || !a.end_latlng) continue;
 
-  // ❌ brak GPS
-  if (!a.start_latlng) return;
+      const [lat, lng] = a.start_latlng;
+      const [endLat, endLng] = a.end_latlng;
 
-  const [lat, lng] = a.start_latlng;
-  const [endLat, endLng] = a.end_latlng; // nowe
-  
-  const mapLink = `https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle` + `&route=${lat}%2C${lng}%3B${endLat}%2C${endLng}`;
+      const dist = getDistance(lat, lng, CITY.lat, CITY.lng);
 
-  const dist = getDistance(lat, lng, CITY.lat, CITY.lng);
+      if (dist < RADIUS_KM) continue;
 
-  // ✅ poza miastem
-  if (dist < RADIUS_KM) return;
+      if (a.trainer === true) continue;
+      if (!ALLOWED_CYCLING_TYPES.includes(a.sport_type)) continue;
 
-  // ✅ tylko rowerowe
-  if (a.trainer === true) return;
-  if (!ALLOWED_CYCLING_TYPES.includes(a.sport_type)) return;
+      // ✅ geocoding
+      const locationName = await getLocationName(lat, lng);
 
-  outsideActivities.push({
-    name: displayName,
+      // ✅ routing (OSM)
+      const mapLink =
+        `https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle` +
+        `&route=${lat},${lng};${endLat},${endLng}`;
 
-    date: a.start_date_local
-      ? new Date(a.start_date_local).toISOString().split("T")[0]
-      : null,
+      outsideActivities.push({
+        name: displayName,
 
-   // mapLink: `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lng}#map=12/${lat}/${lng}`,
-    mapLink: mapLink,
+        date: a.start_date_local
+          ? new Date(a.start_date_local).toISOString().split("T")[0]
+          : null,
 
-    distance: +(a.distance / 1000).toFixed(1),
+        location: locationName,
 
-    link: `https://www.strava.com/activities/${a.id}`
-  });
+        distance: +(a.distance / 1000).toFixed(1),
 
-});
+        mapLink: mapLink,
+
+        link: `https://www.strava.com/activities/${a.id}`
+      });
+    }
 
     console.log(`✅ ${displayName}: ${outsideActivities.length} outside`);
 
     return outsideActivities;
 
   } catch (err) {
-    console.error("❌ ERROR USER:", user.name, err);
+    console.error("❌ USER ERROR:", user.name, err);
     return [];
   }
 }
@@ -176,10 +217,8 @@ async function main() {
       tokens.map(user => processUser(user, CLIENT_ID, CLIENT_SECRET))
     );
 
-    // ✅ spłaszcz tablicę
     const flat = results.flat();
 
-    // ✅ zapis
     fs.writeFileSync("outside.json", JSON.stringify(flat, null, 2));
 
     console.log("✅ outside.json zapisany");
