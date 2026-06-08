@@ -126,6 +126,11 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
   if (!a.start_latlng) return;
 
   const [lat, lng] = a.start_latlng;
+  const [endLat, endLng] = a.end_latlng; // nowe
+  
+  const mapLink =
+  `https://www.openstreetmap.org/directions?engine=fossgis_osrm_bike` +
+  `&route=${lat}%2C${lng}%3B${endLat}%2C${endLng}`;
 
   const dist = getDistance(lat, lng, CITY.lat, CITY.lng);
 
@@ -143,7 +148,8 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
       ? new Date(a.start_date_local).toISOString().split("T")[0]
       : null,
 
-    mapLink: `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lng}#map=12/${lat}/${lng}`,
+   // mapLink: `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lng}#map=12/${lat}/${lng}`,
+    mapLink: mapLink,
 
     distance: +(a.distance / 1000).toFixed(1),
 
