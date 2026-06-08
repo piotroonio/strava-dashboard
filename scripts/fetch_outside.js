@@ -127,7 +127,7 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
 
   const [lat, lng] = a.start_latlng;
 
-  const dist = getDistance(lat, lng, WROCLAW.lat, WROCLAW.lng);
+  const dist = getDistance(lat, lng, CITY.lat, CITY.lng);
 
   // ✅ poza miastem
   if (dist < RADIUS_KM) return;
