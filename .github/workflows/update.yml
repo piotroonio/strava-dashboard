@@ -10,26 +10,42 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # ✅ 1. check repo
       - name: Checkout repo
         uses: actions/checkout@v3
 
+      # ✅ 2. Node.js
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: 18
-
-      - name: Run script
+          
+      # ✅ 3. install deps (jeśli używasz package.json)
+      - name: Install dependencies
+        run: npm install || true
+      
+      # ✅ 4. fetch głównych danych
+      - name: Fetch Strava data
         run: node scripts/fetch_strava.js
         env:
           CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
-          REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
+          # REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
+          TOKENS_JSON: ${{ secrets.TOKENS_JSON }}
+      
+      # ✅ 5. fetch aktywności poza Wrocławiem
+      - name: Fetch outside activities
+        run: node scripts/fetch_outside.js
+        env:
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
           TOKENS_JSON: ${{ secrets.TOKENS_JSON }}
 
+      # ✅ 6. commit zmian
       - name: Commit & push
         run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add -A
-          git commit -m "daily update $(date)" || echo "no changes"
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Action"
+          git add data.json outside.json
+          git commit -m "daily update $(date)" || echo "no changes to commit"
           git push
