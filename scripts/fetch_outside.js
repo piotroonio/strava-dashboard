@@ -137,11 +137,24 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
       if (a.trainer === true) return;
       if (!ALLOWED_CYCLING_TYPES.includes(a.sport_type)) return;
 
+      
       outsideActivities.push({
-        name: displayName,
-        distance: +(a.distance / 1000).toFixed(1),
-        link: `https://www.strava.com/activities/${a.id}`
+      name: displayName,
+
+      date: a.start_date_local
+      ? new Date(a.start_date_local).toISOString().split("T")[0]
+      : null,
+
+      location: [
+      a.location_city,
+      a.location_country
+      ].filter(Boolean).join(", "),
+
+      distance: +(a.distance / 1000).toFixed(1),
+
+      link: `https://www.strava.com/activities/${a.id}`
       });
+
 
     });
 
