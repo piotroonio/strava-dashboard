@@ -178,7 +178,7 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
       // ✅ routing (OSM) - poniżej w routingu brakuje "C2"
       const mapLink =
         `https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle` +
-        `&route=${lat}%2C${lng}%2C${endLat}%2C${endLng}`;
+        `&route=${lat}%2C${lng}%3B${endLat}%2C${endLng}`;
 
       outsideActivities.push({
         name: displayName,
