@@ -117,46 +117,47 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
     // ✅ filtr poza Wrocławiem
     const outsideActivities = [];
 
-    allActivities.forEach(a => {
+  allActivities.forEach(a => {
 
-      if (!a.start_latlng) return;
+  // ❌ brak dystansu lub za krótka aktywność
+  if (!a.distance || a.distance < 1000) return;
 
-      const [lat, lng] = a.start_latlng;
+  // ❌ brak GPS
+  if (!a.start_latlng) return;
 
-      const dist = getDistance(
-        lat,
-        lng,
-        CITY.lat,
-        CITY.lng
-      );
+  const [lat, lng] = a.start_latlng;
 
-      // ✅ poza Wrocławiem
-      if (dist < RADIUS_KM) return;
+  const dist = getDistance(lat, lng, WROCLAW.lat, WROCLAW.lng);
 
-      // ✅ tylko rowerowe
-      if (a.trainer === true) return;
-      if (!ALLOWED_CYCLING_TYPES.includes(a.sport_type)) return;
+  // ✅ poza miastem
+  if (dist < RADIUS_KM) return;
 
-      
-      outsideActivities.push({
-      name: displayName,
+  // ✅ tylko rowerowe
+  if (a.trainer === true) return;
+  if (!ALLOWED_CYCLING_TYPES.includes(a.sport_type)) return;
 
-      date: a.start_date_local
+  outsideActivities.push({
+    name: displayName,
+
+    date: a.start_date_local
       ? new Date(a.start_date_local).toISOString().split("T")[0]
       : null,
 
-      location: [
-      a.location_city,
-      a.location_country
-      ].filter(Boolean).join(", "),
+    location:
+      [a.location_city, a.location_country]
+        .filter(Boolean)
+        .join(", ") || "Unknown",
 
-      distance: +(a.distance / 1000).toFixed(1),
+    coordinates: a.start_latlng
+      ? `${a.start_latlng[0]}, ${a.start_latlng[1]}`
+      : null,
 
-      link: `https://www.strava.com/activities/${a.id}`
-      });
+    distance: +(a.distance / 1000).toFixed(1),
 
+    link: `https://www.strava.com/activities/${a.id}`
+  });
 
-    });
+});
 
     console.log(`✅ ${displayName}: ${outsideActivities.length} outside`);
 
