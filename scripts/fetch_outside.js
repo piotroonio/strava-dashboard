@@ -3,7 +3,8 @@ const fs = require("fs");
 const tokens = JSON.parse(process.env.TOKENS_JSON);
 
 // ✅ współrzędne Wrocławia
-const WROCLAW = { lat: 51.107883, lng: 17.038538 };
+// const CITY = { lat: 51.107883, lng: 17.038538 }; //Wrocław
+const CITY = { lat: 52.406374, lng: 16.925168 }; // ✅ Poznań
 
 // ✅ promień (km)
 const RADIUS_KM = 20;
@@ -125,8 +126,8 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
       const dist = getDistance(
         lat,
         lng,
-        WROCLAW.lat,
-        WROCLAW.lng
+        CITY.lat,
+        CITY.lng
       );
 
       // ✅ poza Wrocławiem
