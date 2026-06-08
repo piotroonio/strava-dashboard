@@ -7,7 +7,7 @@ const CITY = { lat: 51.107883, lng: 17.038538 }; //Wrocław
 // const CITY = { lat: 52.406374, lng: 16.925168 }; // ✅ Poznań
 
 // ✅ promień (km)
-const RADIUS_KM = 200;
+const RADIUS_KM = 70;
 
 // ✅ dozwolone typy rowerowe
 const ALLOWED_CYCLING_TYPES = [
