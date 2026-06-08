@@ -62,7 +62,7 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
     const tokenData = await tokenRes.json();
 
     if (!tokenData.access_token) {
-      console.error("❌ TOKEN ERROR:", user.name);
+      console.error("❌ TOKEN ERROR:", user.name, tokenData);
       return [];
     }
 
