@@ -128,9 +128,13 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
   const [lat, lng] = a.start_latlng;
   const [endLat, endLng] = a.end_latlng; // nowe
   
+  // const mapLink = `https://www.openstreetmap.org/directions?engine=fossgis_osrm_bike` + `&route=${lat}%2C${lng}%3B${endLat}%2C${endLng}`; Wytyczanie trasy
+  
   const mapLink =
-  `https://www.openstreetmap.org/directions?engine=fossgis_osrm_bike` +
-  `&route=${lat}%2C${lng}%3B${endLat}%2C${endLng}`;
+    `https://www.openstreetmap.org/?` +
+    `mlat=${lat}&mlon=${lng}` +
+    `&#map=12/${lat}/${lng}` +
+    `&markers=${lat},${lng},red;${endLat},${endLng},blue`;
 
   const dist = getDistance(lat, lng, CITY.lat, CITY.lng);
 
