@@ -4,7 +4,7 @@
     "date": "2026-06-06",
     "location": "Deszkowice Drugie",
     "distance": 104,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.749227%2C23.06069%2C51.231704%2C22.568437",
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.749227%2C23.06069%3B51.231704%2C22.568437",
     "link": "https://www.strava.com/activities/18810759761"
   },
   {
@@ -12,7 +12,7 @@
     "date": "2026-06-05",
     "location": "Częstochowa",
     "distance": 322,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.808753%2C19.209999%2C50.750157%2C23.060241",
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.808753%2C19.209999%3B50.750157%2C23.060241",
     "link": "https://www.strava.com/activities/18801645188"
   },
   {
@@ -20,7 +20,7 @@
     "date": "2026-05-05",
     "location": "München",
     "distance": 9.4,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=48.135445%2C11.689716%2C48.130717%2C11.589669",
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=48.135445%2C11.689716%3B48.130717%2C11.589669",
     "link": "https://www.strava.com/activities/18386320302"
   },
   {
@@ -28,7 +28,7 @@
     "date": "2026-05-05",
     "location": "München",
     "distance": 9.2,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=48.133243%2C11.592837%2C48.137387%2C11.68975",
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=48.133243%2C11.592837%3B48.137387%2C11.68975",
     "link": "https://www.strava.com/activities/18382242588"
   }
 ]
