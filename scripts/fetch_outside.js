@@ -6,7 +6,7 @@ const tokens = JSON.parse(process.env.TOKENS_JSON);
 const CITY = { lat: 51.107883, lng: 17.038538 };
 
 // ✅ promień
-const RADIUS_KM = 20;
+const RADIUS_KM = 70;
 
 const ALLOWED_CYCLING_TYPES = [
   "Ride",
@@ -175,10 +175,10 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
       // ✅ geocoding
       const locationName = await getLocationName(lat, lng);
 
-      // ✅ routing (OSM)
+      // ✅ routing (OSM) - poniżej w routingu brakuje "C2"
       const mapLink =
         `https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle` +
-        `&route=${lat},${lng};${endLat},${endLng}`;
+        `&route=${lat}%2C${lng}%2C${endLat}%2C${endLng}`;
 
       outsideActivities.push({
         name: displayName,
