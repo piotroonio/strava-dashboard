@@ -12,7 +12,7 @@
     "totalElevation": 3500,
     "count": 53,
     "avgDistancePerRide": 18.1,
-    "updatedAt": "2026-06-08T13:23:59.018Z"
+    "updatedAt": "2026-06-08T13:29:08.988Z"
   },
   {
     "name": "Małgorzata Dziuban",
@@ -27,7 +27,7 @@
     "totalElevation": 234,
     "count": 24,
     "avgDistancePerRide": 6.6,
-    "updatedAt": "2026-06-08T13:23:58.961Z"
+    "updatedAt": "2026-06-08T13:29:09.009Z"
   },
   {
     "name": "Adam Zuzel 🇯🇲",
@@ -43,7 +43,7 @@
     "totalElevation": 6197,
     "count": 39,
     "avgDistancePerRide": 37.2,
-    "updatedAt": "2026-06-08T13:23:59.301Z"
+    "updatedAt": "2026-06-08T13:29:09.227Z"
   },
   {
     "name": "Grzegorz Domagała",
@@ -58,7 +58,7 @@
     "totalElevation": 671,
     "count": 27,
     "avgDistancePerRide": 13.7,
-    "updatedAt": "2026-06-08T13:23:58.942Z"
+    "updatedAt": "2026-06-08T13:29:08.984Z"
   },
   {
     "name": "Norbert Nowak",
@@ -73,7 +73,7 @@
     "totalElevation": 1536,
     "count": 31,
     "avgDistancePerRide": 12.8,
-    "updatedAt": "2026-06-08T13:23:58.971Z"
+    "updatedAt": "2026-06-08T13:29:09.010Z"
   },
   {
     "name": "Jaroslaw Pasierski",
@@ -88,7 +88,7 @@
     "totalElevation": 579,
     "count": 43,
     "avgDistancePerRide": 7.6,
-    "updatedAt": "2026-06-08T13:23:58.989Z"
+    "updatedAt": "2026-06-08T13:29:09.020Z"
   },
   {
     "name": "Aga Pa",
@@ -97,13 +97,13 @@
     "activityTypes": [
       "Ride"
     ],
-    "totalDistance": 116.3,
-    "avgSpeed": 14.1,
+    "totalDistance": 121.6,
+    "avgSpeed": 14,
     "avgElevation": 7,
-    "totalElevation": 164,
-    "count": 22,
+    "totalElevation": 168,
+    "count": 23,
     "avgDistancePerRide": 5.3,
-    "updatedAt": "2026-06-08T13:23:58.882Z"
+    "updatedAt": "2026-06-08T13:29:08.930Z"
   },
   {
     "name": "Marcin K.",
@@ -118,7 +118,7 @@
     "totalElevation": 459,
     "count": 39,
     "avgDistancePerRide": 11.3,
-    "updatedAt": "2026-06-08T13:23:58.981Z"
+    "updatedAt": "2026-06-08T13:29:09.020Z"
   },
   {
     "name": "Kasia Sch",
@@ -134,6 +134,6 @@
     "totalElevation": 2996,
     "count": 46,
     "avgDistancePerRide": 23,
-    "updatedAt": "2026-06-08T13:23:59.227Z"
+    "updatedAt": "2026-06-08T13:29:09.250Z"
   }
 ]
