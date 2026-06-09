@@ -1,130 +1,133 @@
-[
-  {
-    "name": "Piotr Sieradzki",
-    "athleteId": 58678501,
-    "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/58678501/24592063/1/large.jpg",
-    "totalDistance": 996,
-    "totalElevation": 3643,
-    "avgElevation": 64,
-    "totalTime": 47,
-    "totalActivities": 57,
-    "avgSpeed": 21.05,
-    "activityTypes": [
-      "GravelRide"
-    ]
-  },
-  {
-    "name": "Małgorzata Dziuban",
-    "athleteId": 205584164,
-    "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLj7ZxH7LqEiLQLch-qYNNziNU-GraS1vybOapfvdnEADpSYg=s96-c",
-    "totalDistance": 164.2,
-    "totalElevation": 245,
-    "avgElevation": 10,
-    "totalTime": 21,
-    "totalActivities": 25,
-    "avgSpeed": 7.86,
-    "activityTypes": [
-      "Ride"
-    ]
-  },
-  {
-    "name": "Adam Zuzel 🇯🇲",
-    "athleteId": 103614137,
-    "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/103614137/42125689/2/large.jpg",
-    "totalDistance": 1450.8,
-    "totalElevation": 6197,
-    "avgElevation": 159,
-    "totalTime": 64,
-    "totalActivities": 39,
-    "avgSpeed": 22.81,
-    "activityTypes": [
-      "Ride",
-      "GravelRide"
-    ]
-  },
-  {
-    "name": "Grzegorz Domagała",
-    "athleteId": 136459343,
-    "avatar": "avatar/athlete/large.png",
-    "totalDistance": 392.6,
-    "totalElevation": 693,
-    "avgElevation": 25,
-    "totalTime": 32,
-    "totalActivities": 28,
-    "avgSpeed": 12.29,
-    "activityTypes": [
-      "Ride"
-    ]
-  },
-  {
-    "name": "Norbert Nowak",
-    "athleteId": 136614767,
-    "avatar": "avatar/athlete/large.png",
-    "totalDistance": 413.1,
-    "totalElevation": 1571,
-    "avgElevation": 49,
-    "totalTime": 23,
-    "totalActivities": 32,
-    "avgSpeed": 18.15,
-    "activityTypes": [
-      "Ride"
-    ]
-  },
-  {
-    "name": "Jaroslaw Pasierski",
-    "athleteId": 113908907,
-    "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLqZaHeWhuV-T8lwuUfP7M6sSekNuDl5DnyzcKB4l7GX1gr6n_l=s96-c",
-    "totalDistance": 344.1,
-    "totalElevation": 606,
-    "avgElevation": 14,
-    "totalTime": 18,
-    "totalActivities": 44,
-    "avgSpeed": 18.8,
-    "activityTypes": [
-      "Ride"
-    ]
-  },
-  {
-    "name": "Aga Pa",
-    "athleteId": 71275400,
-    "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/71275400/17411106/1/large.jpg",
-    "totalDistance": 141.2,
-    "totalElevation": 195,
-    "avgElevation": 8,
-    "totalTime": 10,
-    "totalActivities": 26,
-    "avgSpeed": 14.22,
-    "activityTypes": [
-      "Ride"
-    ]
-  },
-  {
-    "name": "Marcin K.",
-    "athleteId": 167001309,
-    "avatar": "avatar/athlete/large.png",
-    "totalDistance": 479.1,
-    "totalElevation": 491,
-    "avgElevation": 12,
-    "totalTime": 74,
-    "totalActivities": 42,
-    "avgSpeed": 6.46,
-    "activityTypes": [
-      "Ride"
-    ]
-  },
-  {
-    "name": "Kasia Sch",
-    "athleteId": 133627842,
-    "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIq9cxp2BfbtWstPkkkFl-wwGt8Oj5YKQwm-3vkjKqI=s96-c",
-    "totalDistance": 1113.4,
-    "totalElevation": 3105,
-    "avgElevation": 63,
-    "totalTime": 57,
-    "totalActivities": 49,
-    "avgSpeed": 19.57,
-    "activityTypes": [
-      "Ride",
-      "GravelRide"
-    ]
-  }
-]
+{
+  "updatedAt": "2026-06-09T18:33:15.906Z",
+  "users": [
+    {
+      "name": "Piotr Sieradzki",
+      "athleteId": 58678501,
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/58678501/24592063/1/large.jpg",
+      "totalDistance": 996,
+      "totalElevation": 3643,
+      "avgElevation": 64,
+      "totalTime": 47,
+      "totalActivities": 57,
+      "avgSpeed": 21.05,
+      "activityTypes": [
+        "GravelRide"
+      ]
+    },
+    {
+      "name": "Małgorzata Dziuban",
+      "athleteId": 205584164,
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLj7ZxH7LqEiLQLch-qYNNziNU-GraS1vybOapfvdnEADpSYg=s96-c",
+      "totalDistance": 164.2,
+      "totalElevation": 245,
+      "avgElevation": 10,
+      "totalTime": 21,
+      "totalActivities": 25,
+      "avgSpeed": 7.86,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Adam Zuzel 🇯🇲",
+      "athleteId": 103614137,
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/103614137/42125689/2/large.jpg",
+      "totalDistance": 1450.8,
+      "totalElevation": 6197,
+      "avgElevation": 159,
+      "totalTime": 64,
+      "totalActivities": 39,
+      "avgSpeed": 22.81,
+      "activityTypes": [
+        "Ride",
+        "GravelRide"
+      ]
+    },
+    {
+      "name": "Grzegorz Domagała",
+      "athleteId": 136459343,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 392.6,
+      "totalElevation": 693,
+      "avgElevation": 25,
+      "totalTime": 32,
+      "totalActivities": 28,
+      "avgSpeed": 12.29,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Norbert Nowak",
+      "athleteId": 136614767,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 413.1,
+      "totalElevation": 1571,
+      "avgElevation": 49,
+      "totalTime": 23,
+      "totalActivities": 32,
+      "avgSpeed": 18.15,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Jaroslaw Pasierski",
+      "athleteId": 113908907,
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLqZaHeWhuV-T8lwuUfP7M6sSekNuDl5DnyzcKB4l7GX1gr6n_l=s96-c",
+      "totalDistance": 344.1,
+      "totalElevation": 606,
+      "avgElevation": 14,
+      "totalTime": 18,
+      "totalActivities": 44,
+      "avgSpeed": 18.8,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Aga Pa",
+      "athleteId": 71275400,
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/71275400/17411106/1/large.jpg",
+      "totalDistance": 141.2,
+      "totalElevation": 195,
+      "avgElevation": 8,
+      "totalTime": 10,
+      "totalActivities": 26,
+      "avgSpeed": 14.22,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Marcin K.",
+      "athleteId": 167001309,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 479.1,
+      "totalElevation": 491,
+      "avgElevation": 12,
+      "totalTime": 74,
+      "totalActivities": 42,
+      "avgSpeed": 6.46,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Kasia Sch",
+      "athleteId": 133627842,
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIq9cxp2BfbtWstPkkkFl-wwGt8Oj5YKQwm-3vkjKqI=s96-c",
+      "totalDistance": 1113.4,
+      "totalElevation": 3105,
+      "avgElevation": 63,
+      "totalTime": 57,
+      "totalActivities": 49,
+      "avgSpeed": 19.57,
+      "activityTypes": [
+        "Ride",
+        "GravelRide"
+      ]
+    }
+  ]
+}
