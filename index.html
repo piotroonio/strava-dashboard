@@ -264,13 +264,11 @@ function updateSortIndicators() {
 
     if (!span) return;
 
-    if (key === currentSort) {
-      span.textContent = "";
-      span.className = sortAsc ? "arrow up" : "arrow down";
+    span.classList.remove("arrow", "up", "down");
 
-    } else {
-      span.textContent = "";
-      span.className = "";
+    if (key === currentSort) {
+      span.classList.add("arrow");
+      span.classList.add(sortAsc ? "up" : "down");
     }
   });
 }
