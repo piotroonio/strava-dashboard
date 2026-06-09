@@ -1,6 +1,14 @@
 {
-  "ignoreActivities": [123456],
+  "ignoreActivities": [
+    18810028931,
+    18823536110
+  ],
   "overrideDistances": {
-    "987654": 45.0
-  }
+    "111111111": 42.0,
+    "222222222": 100.0
+  },
+  "excludeUsers": [
+    "Bot Test",
+    "Old Account"
+  ]
 }
