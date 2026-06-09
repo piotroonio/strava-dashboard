@@ -288,7 +288,7 @@ const row = `
         u.avatar
           ? `<img src="${u.avatar}" alt="${u.name}" class="avatar"
               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-             <div class="avatar-fallback" style="background:${getColor(u.name)}">
+             <div class="avatar-fallback" style="display:none">
                ${getInitials(u.name)}
              </div>`
           : `<div class="avatar-fallback" style="background:${getColor(u.name)}">
