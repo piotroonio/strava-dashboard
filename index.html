@@ -101,13 +101,6 @@ th span {
   display: inline-block;
 }
 
-.avatar-badge {
-  position: absolute;
-  bottom: -3px;
-  right: -3px;
-  font-size: 12px;
-}
-
   </style>
 </head>
 
@@ -291,17 +284,11 @@ const row = `
              <div class="avatar-fallback" style="display:none">
                ${getInitials(u.name)}
              </div>`
-          : `<div class="avatar-fallback" style="background:${getColor(u.name)}">
+          : `<div class="avatar-fallback">
                ${getInitials(u.name)}
              </div>`
       }
 
-      ${
-        i === 0 ? `<div class="avatar-badge">🥇</div>` :
-        i === 1 ? `<div class="avatar-badge">🥈</div>` :
-        i === 2 ? `<div class="avatar-badge">🥉</div>` :
-        ""
-      }
     </div>
   </td>
 
