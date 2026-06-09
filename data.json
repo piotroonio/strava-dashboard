@@ -2,12 +2,12 @@
   {
     "name": "Piotr Sieradzki",
     "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/58678501/24592063/1/large.jpg",
-    "totalDistance": 897.9,
-    "totalElevation": 3036,
-    "avgElevation": 56,
-    "totalTime": 42,
-    "totalActivities": 54,
-    "avgSpeed": 21.26,
+    "totalDistance": 988.5,
+    "totalElevation": 3617,
+    "avgElevation": 65,
+    "totalTime": 47,
+    "totalActivities": 56,
+    "avgSpeed": 21.08,
     "activityTypes": [
       "GravelRide"
     ]
@@ -94,12 +94,12 @@
   {
     "name": "Marcin K.",
     "avatar": "avatar/athlete/large.png",
-    "totalDistance": 455.3,
-    "totalElevation": 470,
+    "totalDistance": 464.5,
+    "totalElevation": 481,
     "avgElevation": 12,
     "totalTime": 72,
-    "totalActivities": 40,
-    "avgSpeed": 6.36,
+    "totalActivities": 41,
+    "avgSpeed": 6.41,
     "activityTypes": [
       "Ride"
     ]
