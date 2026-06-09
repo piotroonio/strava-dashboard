@@ -258,9 +258,14 @@ async function main() {
     );
 
     // ✅ clean data
-    const data = results
+
+  const data = {
+    updatedAt: new Date().toISOString(),
+    users: results
       .map(r => r.data)
-      .filter(Boolean);
+      .filter(Boolean)
+  };
+
 
     fs.writeFileSync("data.json", JSON.stringify(data, null, 2));
 
