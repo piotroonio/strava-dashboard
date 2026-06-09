@@ -3,12 +3,12 @@
     "name": "Piotr Sieradzki",
     "athleteId": 58678501,
     "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/58678501/24592063/1/large.jpg",
-    "totalDistance": 988.5,
-    "totalElevation": 3617,
-    "avgElevation": 65,
+    "totalDistance": 996,
+    "totalElevation": 3643,
+    "avgElevation": 64,
     "totalTime": 47,
-    "totalActivities": 56,
-    "avgSpeed": 21.08,
+    "totalActivities": 57,
+    "avgSpeed": 21.05,
     "activityTypes": [
       "GravelRide"
     ]
@@ -88,12 +88,12 @@
     "name": "Aga Pa",
     "athleteId": 71275400,
     "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/71275400/17411106/1/large.jpg",
-    "totalDistance": 136.2,
-    "totalElevation": 189,
+    "totalDistance": 141.2,
+    "totalElevation": 195,
     "avgElevation": 8,
     "totalTime": 10,
-    "totalActivities": 25,
-    "avgSpeed": 14.19,
+    "totalActivities": 26,
+    "avgSpeed": 14.22,
     "activityTypes": [
       "Ride"
     ]
@@ -102,12 +102,12 @@
     "name": "Marcin K.",
     "athleteId": 167001309,
     "avatar": "avatar/athlete/large.png",
-    "totalDistance": 464.5,
-    "totalElevation": 481,
+    "totalDistance": 479.1,
+    "totalElevation": 491,
     "avgElevation": 12,
-    "totalTime": 72,
-    "totalActivities": 41,
-    "avgSpeed": 6.41,
+    "totalTime": 74,
+    "totalActivities": 42,
+    "avgSpeed": 6.46,
     "activityTypes": [
       "Ride"
     ]
@@ -116,11 +116,11 @@
     "name": "Kasia Sch",
     "athleteId": 133627842,
     "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIq9cxp2BfbtWstPkkkFl-wwGt8Oj5YKQwm-3vkjKqI=s96-c",
-    "totalDistance": 1096.1,
-    "totalElevation": 3083,
-    "avgElevation": 64,
-    "totalTime": 56,
-    "totalActivities": 48,
+    "totalDistance": 1113.4,
+    "totalElevation": 3105,
+    "avgElevation": 63,
+    "totalTime": 57,
+    "totalActivities": 49,
     "avgSpeed": 19.57,
     "activityTypes": [
       "Ride",
