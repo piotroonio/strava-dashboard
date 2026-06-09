@@ -260,6 +260,23 @@ fetch("./data.json")
     
 let users = Array.isArray(data) ? data : data.users || [];
 
+    
+// 🔥 TEST USERS (tymczasowe)
+const testUsers = Array.from({ length: 10 }, (_, i) => ({
+  name: `Test User ${i + 1}`,
+  avatar: null,
+  totalDistance: Math.round(Math.random() * 500),
+  totalElevation: Math.round(Math.random() * 5000),
+  avgElevation: Math.round(Math.random() * 300),
+  totalActivities: Math.floor(Math.random() * 20 + 1),
+  avgSpeed: (20 + Math.random() * 10).toFixed(1),
+  activityTypes: ["Ride"]
+}));
+
+// ✅ dodaj testowych userów do listy wszystkich userów (tymczasowe)
+users = users.concat(testUsers);
+
+
     const tbody = document.querySelector("#table tbody");
     const searchInput = document.getElementById("searchUser");
     const activityFilter = document.getElementById("activityFilter");
