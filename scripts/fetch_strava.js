@@ -219,9 +219,9 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
         totalDistance: +(totalDistance / 1000).toFixed(1),
         totalElevation: Math.round(totalElevation),
 
-       // avgElevation: totalActivities
-       // ? Math.round(totalElevation / totalActivities)
-       // : 0
+        avgElevation: totalActivities
+        ? Math.round(totalElevation / totalActivities)
+        : 0
         
         totalTime: Math.round(totalMovingTime / 3600),
         totalActivities,
