@@ -113,7 +113,7 @@ th span {
       <th data-sort="avgSpeed">Śr. prędkość <span></span></th>
       <th data-sort="avgElevation">Śr. przewyższenie <span></span></th>
       <th data-sort="totalElevation">Suma przewyższeń <span></span></th>
-      <th data-sort="count">Aktywności <span></span></th>
+      <th data-sort="totalActivities">Aktywności <span></span></th>
     </tr>
   </thead>
   <tbody></tbody>
@@ -216,7 +216,7 @@ let users = Array.isArray(data) ? data : data.users || [];
       list.forEach((u, i) => {
 
         totalDistance += u.totalDistance;
-        totalActivities += u.count;
+        totalActivities += u.totalActivities;
 
         let cls = "";
         if (i === 0) cls = "gold";
@@ -269,8 +269,8 @@ const row = `
       ${u.totalElevation}
     </td>
 
-    <td class="${currentSort === 'count' ? 'highlight' : ''}">
-      ${u.count}
+    <td class="${currentSort === 'totalActivities' ? 'highlight' : ''}">
+      ${u.totalActivities}
     </td>
   </tr>
 `;
