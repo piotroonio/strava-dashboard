@@ -1,0 +1,6 @@
+{
+  "ignoreActivities": [123456],
+  "overrideDistances": {
+    "987654": 45.0
+  }
+}
