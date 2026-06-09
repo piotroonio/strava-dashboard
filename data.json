@@ -1,6 +1,7 @@
 [
   {
     "name": "Piotr Sieradzki",
+    "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/58678501/24592063/1/large.jpg",
     "totalDistance": 897.9,
     "totalElevation": 3036,
     "totalTime": 42,
@@ -12,6 +13,7 @@
   },
   {
     "name": "Małgorzata Dziuban",
+    "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLj7ZxH7LqEiLQLch-qYNNziNU-GraS1vybOapfvdnEADpSYg=s96-c",
     "totalDistance": 164.2,
     "totalElevation": 245,
     "totalTime": 21,
@@ -23,6 +25,7 @@
   },
   {
     "name": "Adam Zuzel 🇯🇲",
+    "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/103614137/42125689/2/large.jpg",
     "totalDistance": 1450.8,
     "totalElevation": 6197,
     "totalTime": 64,
@@ -35,6 +38,7 @@
   },
   {
     "name": "Grzegorz Domagała",
+    "avatar": "avatar/athlete/large.png",
     "totalDistance": 392.6,
     "totalElevation": 693,
     "totalTime": 32,
@@ -46,6 +50,7 @@
   },
   {
     "name": "Norbert Nowak",
+    "avatar": "avatar/athlete/large.png",
     "totalDistance": 413.1,
     "totalElevation": 1571,
     "totalTime": 23,
@@ -57,6 +62,7 @@
   },
   {
     "name": "Jaroslaw Pasierski",
+    "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLqZaHeWhuV-T8lwuUfP7M6sSekNuDl5DnyzcKB4l7GX1gr6n_l=s96-c",
     "totalDistance": 344.1,
     "totalElevation": 606,
     "totalTime": 18,
@@ -68,6 +74,7 @@
   },
   {
     "name": "Aga Pa",
+    "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/71275400/17411106/1/large.jpg",
     "totalDistance": 136.2,
     "totalElevation": 189,
     "totalTime": 10,
@@ -79,6 +86,7 @@
   },
   {
     "name": "Marcin K.",
+    "avatar": "avatar/athlete/large.png",
     "totalDistance": 455.3,
     "totalElevation": 470,
     "totalTime": 72,
@@ -90,6 +98,7 @@
   },
   {
     "name": "Kasia Sch",
+    "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIq9cxp2BfbtWstPkkkFl-wwGt8Oj5YKQwm-3vkjKqI=s96-c",
     "totalDistance": 1096.1,
     "totalElevation": 3083,
     "totalTime": 56,
