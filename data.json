@@ -6,13 +6,13 @@
     "activityTypes": [
       "GravelRide"
     ],
-    "totalDistance": 975.2,
+    "totalDistance": 988.5,
     "avgSpeed": 21.1,
     "avgElevation": 65,
-    "totalElevation": 3559,
-    "count": 55,
+    "totalElevation": 3617,
+    "count": 56,
     "avgDistancePerRide": 17.7,
-    "updatedAt": "2026-06-08T19:30:22.034Z"
+    "updatedAt": "2026-06-09T06:15:42.811Z"
   },
   {
     "name": "Małgorzata Dziuban",
@@ -27,7 +27,7 @@
     "totalElevation": 245,
     "count": 25,
     "avgDistancePerRide": 6.6,
-    "updatedAt": "2026-06-08T19:30:21.568Z"
+    "updatedAt": "2026-06-09T06:15:42.533Z"
   },
   {
     "name": "Adam Zuzel 🇯🇲",
@@ -43,7 +43,7 @@
     "totalElevation": 6197,
     "count": 39,
     "avgDistancePerRide": 37.2,
-    "updatedAt": "2026-06-08T19:30:22.053Z"
+    "updatedAt": "2026-06-09T06:15:43.170Z"
   },
   {
     "name": "Grzegorz Domagała",
@@ -58,7 +58,7 @@
     "totalElevation": 693,
     "count": 28,
     "avgDistancePerRide": 14,
-    "updatedAt": "2026-06-08T19:30:21.608Z"
+    "updatedAt": "2026-06-09T06:15:42.587Z"
   },
   {
     "name": "Norbert Nowak",
@@ -73,7 +73,7 @@
     "totalElevation": 1571,
     "count": 32,
     "avgDistancePerRide": 12.9,
-    "updatedAt": "2026-06-08T19:30:21.581Z"
+    "updatedAt": "2026-06-09T06:15:42.942Z"
   },
   {
     "name": "Jaroslaw Pasierski",
@@ -88,7 +88,7 @@
     "totalElevation": 606,
     "count": 45,
     "avgDistancePerRide": 7.6,
-    "updatedAt": "2026-06-08T19:30:21.622Z"
+    "updatedAt": "2026-06-09T06:15:42.654Z"
   },
   {
     "name": "Aga Pa",
@@ -97,13 +97,13 @@
     "activityTypes": [
       "Ride"
     ],
-    "totalDistance": 131.1,
-    "avgSpeed": 14.1,
+    "totalDistance": 136.2,
+    "avgSpeed": 14.2,
     "avgElevation": 8,
-    "totalElevation": 181,
-    "count": 24,
-    "avgDistancePerRide": 5.5,
-    "updatedAt": "2026-06-08T19:30:21.501Z"
+    "totalElevation": 189,
+    "count": 25,
+    "avgDistancePerRide": 5.4,
+    "updatedAt": "2026-06-09T06:15:42.360Z"
   },
   {
     "name": "Marcin K.",
@@ -118,7 +118,7 @@
     "totalElevation": 470,
     "count": 40,
     "avgDistancePerRide": 11.4,
-    "updatedAt": "2026-06-08T19:30:21.677Z"
+    "updatedAt": "2026-06-09T06:15:42.740Z"
   },
   {
     "name": "Kasia Sch",
@@ -128,12 +128,12 @@
       "Ride",
       "GravelRide"
     ],
-    "totalDistance": 1077,
-    "avgSpeed": 19.5,
-    "avgElevation": 65,
-    "totalElevation": 3032,
-    "count": 47,
-    "avgDistancePerRide": 22.9,
-    "updatedAt": "2026-06-08T19:30:21.894Z"
+    "totalDistance": 1096.1,
+    "avgSpeed": 19.6,
+    "avgElevation": 64,
+    "totalElevation": 3083,
+    "count": 48,
+    "avgDistancePerRide": 22.8,
+    "updatedAt": "2026-06-09T06:15:42.885Z"
   }
 ]
