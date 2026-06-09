@@ -128,6 +128,7 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
     );
 
     const athlete = await athleteRes.json();
+    const avatar = athlete.profile;
 
     const displayName =
       [athlete.firstname, athlete.lastname]
@@ -213,8 +214,15 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
     return {
       data: {
         name: displayName,
+        avatar: avatar,
+        
         totalDistance: +(totalDistance / 1000).toFixed(1),
         totalElevation: Math.round(totalElevation),
+
+       // avgElevation: totalActivities
+       // ? Math.round(totalElevation / totalActivities)
+       // : 0
+        
         totalTime: Math.round(totalMovingTime / 3600),
         totalActivities,
         avgSpeed: totalDistance
