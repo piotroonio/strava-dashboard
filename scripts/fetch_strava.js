@@ -221,7 +221,7 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
 
         avgElevation: totalActivities
         ? Math.round(totalElevation / totalActivities)
-        : 0
+        : 0,
         
         totalTime: Math.round(totalMovingTime / 3600),
         totalActivities,
