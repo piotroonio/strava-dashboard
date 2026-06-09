@@ -261,8 +261,8 @@ fetch("./data.json")
 let users = Array.isArray(data) ? data : data.users || [];
 
     
-// 🔥 TEST USERS (tymczasowe)
-const testUsers = Array.from({ length: 10 }, (_, i) => ({
+// 🔥 100 TEST USERÓW (tymczasowe)
+const testUsers = Array.from({ length: 100 }, (_, i) => ({
   name: `Test User ${i + 1}`,
   avatar: null,
   totalDistance: Math.round(Math.random() * 500),
