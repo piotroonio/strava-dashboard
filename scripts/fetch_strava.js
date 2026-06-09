@@ -1,42 +1,102 @@
 const fs = require("fs");
 
-// ✅ tokens z GitHub Secrets
-//const tokens = JSON.parse(process.env.TOKENS_JSON);
-let tokens;
+const tokens = JSON.parse(process.env.TOKENS_JSON);
 
-try {
-  tokens = JSON.parse(process.env.TOKENS_JSON);
-} catch (e) {
-  console.error("❌ TOKENS_JSON invalid:", process.env.TOKENS_JSON);
-  throw e;
+// ✅ typy rowerowe
+const ALLOWED_CYCLING_TYPES = [
+  "Ride",
+  "MountainBikeRide",
+  "GravelRide",
+  "EBikeRide",
+  "EMountainBikeRide"
+];
+
+// ✅ funkcja odległości
+function getDistance(lat1, lon1, lat2, lon2) {
+  const R = 6371;
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLon = (lon2 - lon1) * Math.PI / 180;
+
+  const a =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(lat1 * Math.PI / 180) *
+    Math.cos(lat2 * Math.PI / 180) *
+    Math.sin(dLon / 2) ** 2;
+
+  return R * (2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)));
 }
 
-// ✅ limiter (ms)
-const DELAY_MS = 200;
+// ✅ wykrywanie duplikatów (TEN SAM USER)
+function isDuplicate(a, b) {
+  if (!a.start_latlng || !b.start_latlng) return false;
 
-// ✅ helper sleep
+  const timeDiff = Math.abs(
+    new Date(a.start_date).getTime() -
+    new Date(b.start_date).getTime()
+  );
+
+  const distDiff = Math.abs(a.distance - b.distance);
+
+  const geoDiff = getDistance(
+    a.start_latlng[0],
+    a.start_latlng[1],
+    b.start_latlng[0],
+    b.start_latlng[1]
+  );
+
+  return (
+    timeDiff < 10 * 60 * 1000 && // 10 min
+    distDiff < 500 &&            // 0.5 km
+    geoDiff < 0.5                // 0.5 km
+  );
+}
+
+// ✅ znajdowanie duplikatów
+function findDuplicates(activities) {
+  const duplicateIds = new Set();
+  const duplicatePairs = [];
+
+  for (let i = 0; i < activities.length; i++) {
+    for (let j = i + 1; j < activities.length; j++) {
+
+      if (isDuplicate(activities[i], activities[j])) {
+
+        duplicateIds.add(activities[j].id);
+
+        duplicatePairs.push({
+          activity1: activities[i].id,
+          activity2: activities[j].id
+        });
+      }
+    }
+  }
+
+  return { duplicateIds, duplicatePairs };
+}
+
+// ✅ delay
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-// ✅ przetwarzanie jednego użytkownika
+// ✅ przetwarzanie usera
 async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
 
-  await sleep(DELAY_MS); // ✅ limiter
+  await sleep(200);
 
   try {
     console.log("👤 USER:", user.name);
 
-    const REFRESH_TOKEN = user.refresh_token;
-
-    // 🔄 TOKEN REFRESH
+    // 🔐 refresh token
     const tokenRes = await fetch("https://www.strava.com/oauth/token", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json"
+      },
       body: JSON.stringify({
         client_id: CLIENT_ID,
         client_secret: CLIENT_SECRET,
-        refresh_token: REFRESH_TOKEN,
+        refresh_token: user.refresh_token,
         grant_type: "refresh_token"
       })
     });
@@ -45,12 +105,12 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
 
     if (!tokenData.access_token) {
       console.error("❌ TOKEN ERROR:", user.name, tokenData);
-      return null;
+      return { user: user.name, data: null, duplicates: [] };
     }
 
     const accessToken = tokenData.access_token;
 
-    // ✅ ATHLETE
+    // ✅ athlete data
     const athleteRes = await fetch(
       "https://www.strava.com/api/v3/athlete",
       {
@@ -60,23 +120,22 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
       }
     );
 
-    const athleteData = await athleteRes.json();
+    const athlete = await athleteRes.json();
 
-    const displayName = [athleteData.firstname, athleteData.lastname]
-      .filter(Boolean)
-      .join(" ");
+    const displayName =
+      [athlete.firstname, athlete.lastname]
+        .filter(Boolean)
+        .join(" ") || user.name;
 
-    // 📅 zakres dat
+    // 📅 zakres
     const year = new Date().getFullYear();
     const after = Math.floor(new Date(`${year}-05-01`).getTime() / 1000);
     const before = Math.floor(new Date(`${year}-09-30`).getTime() / 1000);
 
-    // 🚴 pobieranie aktywności (pagination)
     let page = 1;
     let allActivities = [];
 
     while (true) {
-
       const res = await fetch(
         `https://www.strava.com/api/v3/athlete/activities?after=${after}&before=${before}&per_page=200&page=${page}`,
         {
@@ -88,119 +147,106 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
 
       const data = await res.json();
 
-      if (!Array.isArray(data)) {
-        console.error("❌ API ERROR:", user.name, data);
-        break;
-      }
-
-      if (data.length === 0) break;
-
-      console.log(`📄 ${user.name} page ${page}: ${data.length}`);
+      if (!Array.isArray(data) || data.length === 0) break;
 
       allActivities = allActivities.concat(data);
       page++;
     }
-    //Sprawdzenie liczby aktywności użytkownika
-    console.log(`📊 ${user.name} total downloaded: ${allActivities.length}`);
-    //Sprawdzenie rodzajów aktywności użytkownika
-    console.log(`${user.name} types:`,  [...new Set(allActivities.map(a => a.sport_type))]);
 
-    
+    console.log(`📊 ${displayName}: ${allActivities.length} activities`);
 
-    // 📊 agregacja
-    const ALLOWED_CYCLING_TYPES = [
-      "Ride",
-      "MountainBikeRide",
-      "GravelRide",
-      "Velomobile",
-      "Handcycle",
-      "EBikeRide",
-      "EMountainBikeRide"
-    ];
+    // ✅ wykryj duplikaty
+    const { duplicateIds, duplicatePairs } = findDuplicates(allActivities);
 
+    console.log(`⚠️ ${displayName}: ${duplicateIds.size} duplicates`);
+
+    // ✅ agregacja
     let totalDistance = 0;
     let totalElevation = 0;
-    let totalTime = 0;
+    let totalMovingTime = 0;
     let totalActivities = 0;
-    let activityTypesSet = new Set();
+
+    let activityTypes = new Set();
 
     allActivities.forEach(a => {
 
+      // ❌ duplikaty
+      if (duplicateIds.has(a.id)) return;
+
+      // ❌ śmieciowe
+      if (!a.distance || a.distance < 1000) return;
+
+      // ❌ brak GPS
+      if (!a.start_latlng) return;
+
+      // ❌ indoor
       if (a.trainer === true) return;
+
+      // ❌ nie rower
       if (!ALLOWED_CYCLING_TYPES.includes(a.sport_type)) return;
 
-      activityTypesSet.add(a.sport_type);
-
       totalDistance += a.distance;
-      totalElevation += a.total_elevation_gain;
-      totalTime += a.moving_time;
+      totalElevation += a.total_elevation_gain || 0;
+      totalMovingTime += a.moving_time || 0;
       totalActivities++;
+
+      activityTypes.add(a.sport_type);
     });
 
-    console.log(`✅ ${user.name}: ${totalActivities} activities`);
-
-    // ✅ wynik pojedynczego usera
     return {
-      name: displayName || user.name,
-      athleteId: athleteData.id,
-      avatar: athleteData.profile,
-
-      activityTypes: Array.from(activityTypesSet),
-
-      totalDistance: +(totalDistance / 1000).toFixed(1),
-
-      avgSpeed:
-        totalTime > 0
-          ? +((totalDistance / totalTime) * 3.6).toFixed(1)
+      user: displayName,
+      data: {
+        name: displayName,
+        totalDistance: +(totalDistance / 1000).toFixed(1),
+        totalElevation: Math.round(totalElevation),
+        totalTime: Math.round(totalMovingTime / 3600),
+        totalActivities,
+        avgSpeed: totalDistance
+          ? +((totalDistance / 1000) / (totalMovingTime / 3600)).toFixed(2)
           : 0,
-
-      avgElevation:
-        totalActivities > 0
-          ? Math.round(totalElevation / totalActivities)
-          : 0,
-
-      totalElevation: Math.round(totalElevation),
-
-      count: totalActivities,
-
-      avgDistancePerRide:
-        totalActivities > 0
-          ? +((totalDistance / 1000) / totalActivities).toFixed(1)
-          : 0,
-
-      updatedAt: new Date().toISOString()
+        activityTypes: Array.from(activityTypes)
+      },
+      duplicates: duplicatePairs.map(p => ({
+        user: displayName,
+        ...p
+      }))
     };
 
   } catch (err) {
     console.error("❌ USER ERROR:", user.name, err);
-    return null;
+    return { user: user.name, data: null, duplicates: [] };
   }
 }
 
-
 // ✅ MAIN
-async function fetchData() {
+async function main() {
+
   const CLIENT_ID = process.env.CLIENT_ID;
   const CLIENT_SECRET = process.env.CLIENT_SECRET;
 
   try {
-
-    // 🔥 równoległe wykonanie
     const results = await Promise.all(
-      tokens.map(user => processUser(user, CLIENT_ID, CLIENT_SECRET))
+      tokens.map(u => processUser(u, CLIENT_ID, CLIENT_SECRET))
     );
 
-    // ✅ usunięcie null (userów z błędem)
-    const cleanResults = results.filter(Boolean);
+    // ✅ dane
+    const data = results
+      .map(r => r.data)
+      .filter(Boolean);
 
-    // 💾 zapis
-    fs.writeFileSync("data.json", JSON.stringify(cleanResults, null, 2));
+    fs.writeFileSync("data.json", JSON.stringify(data, null, 2));
 
-    console.log("✅ data.json updated (multi-user)");
+    // ✅ duplikaty
+    const duplicates = results
+      .flatMap(r => r.duplicates);
+
+    fs.writeFileSync("duplicates.json", JSON.stringify(duplicates, null, 2));
+
+    console.log("✅ data.json + duplicates.json zapisane");
 
   } catch (err) {
     console.error("❌ GLOBAL ERROR:", err);
   }
 }
 
-fetchData();
+main();
