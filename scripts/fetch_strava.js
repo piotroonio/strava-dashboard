@@ -128,7 +128,10 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
     );
 
     const athlete = await athleteRes.json();
+    
     const avatar = athlete.profile;
+
+    const athleteId = athlete.id;
 
     const displayName =
       [athlete.firstname, athlete.lastname]
@@ -214,6 +217,7 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
     return {
       data: {
         name: displayName,
+        athleteId: athleteId,
         avatar: avatar,
         
         totalDistance: +(totalDistance / 1000).toFixed(1),
