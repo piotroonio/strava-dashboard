@@ -2,6 +2,16 @@ const fs = require("fs");
 
 const tokens = JSON.parse(process.env.TOKENS_JSON);
 
+// ✅ corrections
+let corrections = {};
+try {
+  corrections = JSON.parse(fs.readFileSync("corrections.json"));
+  console.log("✅ corrections.json loaded");
+} catch {
+  console.log("⚠️ No corrections.json found");
+  corrections = {};
+}
+
 // ✅ typy rowerowe
 const ALLOWED_CYCLING_TYPES = [
   "Ride",
@@ -11,7 +21,7 @@ const ALLOWED_CYCLING_TYPES = [
   "EMountainBikeRide"
 ];
 
-// ✅ funkcja odległości
+// ✅ odległość
 function getDistance(lat1, lon1, lat2, lon2) {
   const R = 6371;
   const dLat = (lat2 - lat1) * Math.PI / 180;
@@ -26,7 +36,7 @@ function getDistance(lat1, lon1, lat2, lon2) {
   return R * (2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)));
 }
 
-// ✅ wykrywanie duplikatów (TEN SAM USER)
+// ✅ duplikat (TEN SAM USER)
 function isDuplicate(a, b) {
   if (!a.start_latlng || !b.start_latlng) return false;
 
@@ -45,13 +55,13 @@ function isDuplicate(a, b) {
   );
 
   return (
-    timeDiff < 10 * 60 * 1000 && // 10 min
-    distDiff < 500 &&            // 0.5 km
-    geoDiff < 0.5                // 0.5 km
+    timeDiff < 10 * 60 * 1000 &&
+    distDiff < 500 &&
+    geoDiff < 0.5
   );
 }
 
-// ✅ znajdowanie duplikatów
+// ✅ znajdź duplikaty
 function findDuplicates(activities) {
   const duplicateIds = new Set();
   const duplicatePairs = [];
@@ -76,7 +86,7 @@ function findDuplicates(activities) {
 
 // ✅ delay
 function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise(r => setTimeout(r, ms));
 }
 
 // ✅ przetwarzanie usera
@@ -87,7 +97,6 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
   try {
     console.log("👤 USER:", user.name);
 
-    // 🔐 refresh token
     const tokenRes = await fetch("https://www.strava.com/oauth/token", {
       method: "POST",
       headers: {
@@ -105,18 +114,16 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
 
     if (!tokenData.access_token) {
       console.error("❌ TOKEN ERROR:", user.name, tokenData);
-      return { user: user.name, data: null, duplicates: [] };
+      return { data: null, duplicates: [] };
     }
 
     const accessToken = tokenData.access_token;
 
-    // ✅ athlete data
+    // ✅ dane użytkownika
     const athleteRes = await fetch(
       "https://www.strava.com/api/v3/athlete",
       {
-        headers: {
-          Authorization: `Bearer ${accessToken}`
-        }
+        headers: { Authorization: `Bearer ${accessToken}` }
       }
     );
 
@@ -127,7 +134,13 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
         .filter(Boolean)
         .join(" ") || user.name;
 
-    // 📅 zakres
+    // ✅ exclude user
+    if (corrections.excludeUsers?.includes(displayName)) {
+      console.log(`🚫 Skipping user: ${displayName}`);
+      return { data: null, duplicates: [] };
+    }
+
+    // 📅 zakres dat
     const year = new Date().getFullYear();
     const after = Math.floor(new Date(`${year}-05-01`).getTime() / 1000);
     const before = Math.floor(new Date(`${year}-09-30`).getTime() / 1000);
@@ -139,9 +152,7 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
       const res = await fetch(
         `https://www.strava.com/api/v3/athlete/activities?after=${after}&before=${before}&per_page=200&page=${page}`,
         {
-          headers: {
-            Authorization: `Bearer ${accessToken}`
-          }
+          headers: { Authorization: `Bearer ${accessToken}` }
         }
       );
 
@@ -153,39 +164,45 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
       page++;
     }
 
-    console.log(`📊 ${displayName}: ${allActivities.length} activities`);
+    console.log(`📊 ${displayName}: ${allActivities.length}`);
 
-    // ✅ wykryj duplikaty
+    // ✅ duplikaty
     const { duplicateIds, duplicatePairs } = findDuplicates(allActivities);
 
     console.log(`⚠️ ${displayName}: ${duplicateIds.size} duplicates`);
+
+    // ✅ merge duplicate + manual ignore
+    const ignoredActivities = new Set([
+      ...(corrections.ignoreActivities || []),
+      ...duplicateIds
+    ]);
 
     // ✅ agregacja
     let totalDistance = 0;
     let totalElevation = 0;
     let totalMovingTime = 0;
     let totalActivities = 0;
-
     let activityTypes = new Set();
 
     allActivities.forEach(a => {
 
-      // ❌ duplikaty
-      if (duplicateIds.has(a.id)) return;
+      // ❌ ignore (manual + dup)
+      if (ignoredActivities.has(a.id)) return;
 
-      // ❌ śmieciowe
       if (!a.distance || a.distance < 1000) return;
-
-      // ❌ brak GPS
       if (!a.start_latlng) return;
-
-      // ❌ indoor
       if (a.trainer === true) return;
-
-      // ❌ nie rower
       if (!ALLOWED_CYCLING_TYPES.includes(a.sport_type)) return;
 
-      totalDistance += a.distance;
+      // ✅ override dystansu
+      let distance = a.distance;
+
+      if (corrections.overrideDistances?.[a.id]) {
+        distance = corrections.overrideDistances[a.id] * 1000;
+        console.log(`✏️ Override ${a.id}`);
+      }
+
+      totalDistance += distance;
       totalElevation += a.total_elevation_gain || 0;
       totalMovingTime += a.moving_time || 0;
       totalActivities++;
@@ -194,7 +211,6 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
     });
 
     return {
-      user: displayName,
       data: {
         name: displayName,
         totalDistance: +(totalDistance / 1000).toFixed(1),
@@ -214,7 +230,7 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
 
   } catch (err) {
     console.error("❌ USER ERROR:", user.name, err);
-    return { user: user.name, data: null, duplicates: [] };
+    return { data: null, duplicates: [] };
   }
 }
 
@@ -229,20 +245,19 @@ async function main() {
       tokens.map(u => processUser(u, CLIENT_ID, CLIENT_SECRET))
     );
 
-    // ✅ dane
+    // ✅ clean data
     const data = results
       .map(r => r.data)
       .filter(Boolean);
 
     fs.writeFileSync("data.json", JSON.stringify(data, null, 2));
 
-    // ✅ duplikaty
-    const duplicates = results
-      .flatMap(r => r.duplicates);
+    // ✅ duplicates
+    const duplicates = results.flatMap(r => r.duplicates);
 
     fs.writeFileSync("duplicates.json", JSON.stringify(duplicates, null, 2));
 
-    console.log("✅ data.json + duplicates.json zapisane");
+    console.log("✅ data.json + duplicates.json updated");
 
   } catch (err) {
     console.error("❌ GLOBAL ERROR:", err);
