@@ -155,6 +155,21 @@ th span.arrow.up::after {
 th span.arrow.down::after {
   content: "▾";
 }
+
+th span.sort-icon {
+  display: inline-block;
+  width: 12px;   /* ✅ STAŁA SZEROKOŚĆ */
+  height: 12px;
+  margin-left: 5px;
+}
+
+th span.sort-icon svg {
+  width: 10px;
+  height: 10px;
+  vertical-align: middle;
+  color: #999;
+}
+
   </style>
 </head>
 
@@ -182,12 +197,12 @@ th span.arrow.down::after {
     <tr>
       <th>👤</th>
       <th data-sort="position">#</th>
-      <th data-sort="name">Użytkownik <span></span></th>
-      <th data-sort="totalDistance">Dystans (km) <span></span></th>
-      <th data-sort="avgSpeed">Śr. prędkość <span></span></th>
-      <th data-sort="avgElevation">Śr. przewyższenie <span></span></th>
-      <th data-sort="totalElevation">Suma przewyższeń <span></span></th>
-      <th data-sort="totalActivities">Aktywności <span></span></th>
+      <th data-sort="name">Użytkownik <span class="sort-icon"></span></th>
+      <th data-sort="totalDistance">Dystans (km) <span class="sort-icon"></span></th>
+      <th data-sort="avgSpeed">Śr. prędkość <span class="sort-icon"></span></th>
+      <th data-sort="avgElevation">Śr. przewyższenie <span class="sort-icon"></span></th>
+      <th data-sort="totalElevation">Suma przewyższeń <span class="sort-icon"></span></th>
+      <th data-sort="totalActivities">Aktywności <span class="sort-icon"></span></th>
     </tr>
   </thead>
   <tbody></tbody>
@@ -257,21 +272,28 @@ function getColor(name) {
 }
 
   
+
 function updateSortIndicators() {
   document.querySelectorAll("th").forEach(th => {
     const key = th.dataset.sort;
-    const span = th.querySelector("span");
+    const span = th.querySelector(".sort-icon");
 
     if (!span) return;
 
-    span.classList.remove("arrow", "up", "down");
+    span.style.visibility = "hidden";
+    span.innerHTML = "";
 
     if (key === currentSort) {
-      span.classList.add("arrow");
-      span.classList.add(sortAsc ? "up" : "down");
+      const svg = sortAsc
+        ? `<svg viewBox="0 0 24 24"><path d="M7 14l5-5 5 5z"/></svg>`
+        : `<svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>`;
+
+      span.innerHTML = svg;
+      span.style.visibility = "visible";
     }
   });
 }
+
 
 
 fetch("./data.json")
