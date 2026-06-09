@@ -142,6 +142,19 @@ th span {
 }
 
 
+th span.arrow::after {
+  font-size: 12px;
+  margin-left: 5px;
+  color: #999;
+}
+
+th span.arrow.up::after {
+  content: "▴";
+}
+
+th span.arrow.down::after {
+  content: "▾";
+}
   </style>
 </head>
 
@@ -252,7 +265,9 @@ function updateSortIndicators() {
     if (!span) return;
 
     if (key === currentSort) {
-      span.textContent = sortAsc ? "↑" : "↓";
+      span.textContent = "";
+      span.className = sortAsc ? "arrow up" : "arrow down";
+
     } else {
       span.textContent = "";
     }
