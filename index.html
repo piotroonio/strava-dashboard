@@ -197,6 +197,18 @@ function getInitials(name) {
     .slice(0, 2);
 }
 
+
+function getColor(name) {
+  const colors = ["#fc4c02", "#ff7f50", "#ff4500", "#ff6b35"];
+
+  let hash = 0;
+  for (let i = 0; i < name.length; i++) {
+    hash = name.charCodeAt(i) + ((hash << 5) - hash);
+  }
+
+  return colors[Math.abs(hash) % colors.length];
+}
+
   
 function updateSortIndicators() {
   document.querySelectorAll("th").forEach(th => {
@@ -279,7 +291,7 @@ const row = `
              <div class="avatar-fallback" style="display:none">
                ${getInitials(u.name)}
              </div>`
-          : `<div class="avatar-fallback">
+          : `<div class="avatar-fallback" style="background:${getColor(u.name)}">
                ${getInitials(u.name)}
              </div>`
       }
