@@ -274,7 +274,13 @@ const testUsers = Array.from({ length: 100 }, (_, i) => ({
 }));
 
 // ✅ dodaj testowych userów do listy wszystkich userów (tymczasowe)
-users = users.concat(testUsers);
+//ustaw DEBUG = true; jeśli todać 100 testowych userów do tabeli
+const DEBUG = false;
+
+if (DEBUG) {
+  users = users.concat(testUsers);
+}
+
 
 
     const tbody = document.querySelector("#table tbody");
