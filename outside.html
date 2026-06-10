@@ -61,6 +61,16 @@
 
 <script>
 
+function formatDate(dateString) {
+  const d = new Date(dateString);
+
+  const day = String(d.getDate()).padStart(2, "0");
+  const month = String(d.getMonth() + 1).padStart(2, "0");
+  const year = d.getFullYear();
+
+  return `${day}-${month}-${year} ${d.getHours()}:${String(d.getMinutes()).padStart(2, "0")}`;
+}
+  
 fetch("./outside.json")
   .then(r => r.json())
   .then(data => {
@@ -74,7 +84,7 @@ fetch("./outside.json")
       const row = `
         <tr>
           <td>${a.name}</td>
-          <td>${a.date}</td>
+          <td>${formatDate(a.date)}</td>
           <td>${a.location || "-"}</td>
           <td>${a.distance}</td>
           <td>
