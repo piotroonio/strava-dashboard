@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Outside Activities</title>
+</head>
+<body>
+
+<h1>🚴 Aktywności poza Wrocławiem</h1>
+
+<ul id="list"></ul>
+
+<script>
+fetch("./outside.json")
+  .then(r => r.json())
+  .then(data => {
+    const list = document.getElementById("list");
+
+    data.forEach(a => {
+      const li = document.createElement("li");
+      li.textContent = `${a.name} – ${a.distance} km`;
+      list.appendChild(li);
+    });
+  });
+</script>
+
+</body>
+</html>
