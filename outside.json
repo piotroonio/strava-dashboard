@@ -30,5 +30,21 @@
     "distance": 9.2,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=48.133243%2C11.592837%3B48.137387%2C11.68975",
     "link": "https://www.strava.com/activities/18382242588"
+  },
+  {
+    "name": "Małgorzata Żółtowska",
+    "date": "2026-05-23",
+    "location": "Bad Schandau",
+    "distance": 10.9,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.919337%2C14.137057%3B50.873755%2C14.237337",
+    "link": "https://www.strava.com/activities/18624389662"
+  },
+  {
+    "name": "Małgorzata Żółtowska",
+    "date": "2026-05-23",
+    "location": "Schöna",
+    "distance": 32.4,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.87614%2C14.234993%3B50.962646%2C13.942243",
+    "link": "https://www.strava.com/activities/18621075503"
   }
 ]

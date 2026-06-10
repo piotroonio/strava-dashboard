@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-10T06:37:54.132Z",
+  "updatedAt": "2026-06-10T06:49:37.742Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -127,6 +127,20 @@
       "activityTypes": [
         "Ride",
         "GravelRide"
+      ]
+    },
+    {
+      "name": "Małgorzata Żółtowska",
+      "athleteId": 66600706,
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/66600706/16617639/1/large.jpg",
+      "totalDistance": 477,
+      "totalElevation": 659,
+      "avgElevation": 13,
+      "totalTime": 30,
+      "totalActivities": 50,
+      "avgSpeed": 16.12,
+      "activityTypes": [
+        "Ride"
       ]
     }
   ]
