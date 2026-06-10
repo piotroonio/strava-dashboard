@@ -170,6 +170,11 @@ th span.sort-icon svg {
   color: #999;
 }
 
+.duplicate {
+  color: #d9534f;
+  font-weight: bold;
+}
+
   </style>
 </head>
 
@@ -293,16 +298,20 @@ function updateSortIndicators() {
   });
 }
 
+//fetch("./data.json")
+//  .then(res => res.json())
+//  .then(data => {
 
-
-fetch("./data.json")
-  .then(res => res.json())
-  .then(data => {
-
-    //const users = Array.isArray(data) ? data : data.users || [];
-    
+Promise.all([
+  fetch("./data.json").then(r => r.json()),
+  fetch("./duplicates.json").then(r => r.json())
+]).then(([data, duplicates]) => {
+  
 let users = Array.isArray(data) ? data : data.users || [];
 
+const usersWithDuplicates = new Set(
+  duplicates.map(d => d.user)
+);
     
 // 🔥 100 TEST USERÓW (tymczasowe)
 const testUsers = Array.from({ length: 100 }, (_, i) => ({
@@ -319,11 +328,14 @@ const testUsers = Array.from({ length: 100 }, (_, i) => ({
 // ✅ dodaj testowych userów do listy wszystkich userów (tymczasowe)
 //ustaw DEBUG = true; jeśli todać 100 testowych userów do tabeli
 const DEBUG = false;
-
 if (DEBUG) {
   users = users.concat(testUsers);
 }
 
+  users = users.map(u => ({
+    ...u,
+    hasDuplicates: usersWithDuplicates.has(u.name)
+  }));
 
 
     const tbody = document.querySelector("#table tbody");
@@ -402,7 +414,10 @@ const row = `
       ${pos}
     </td>
 
-    <td class="${currentSort === 'name' ? 'highlight' : ''}">
+    
+    <td class="${currentSort === 'name' ? 'highlight' : ''} ${u.hasDuplicates ? 'duplicate' : ''}"
+    title="${u.hasDuplicates ? 'Wykryto duplikaty aktywności' : ''}">
+
       ${
         u.athleteId
           ? `<a href="https://www.strava.com/athletes/${u.athleteId}" target="_blank">${u.name}</a>`
