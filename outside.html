@@ -69,16 +69,16 @@ fetch("./outside.json")
 
     data.forEach(a => {
 
-      const distance = (a.distance / 1000).toFixed(1);
+      //const distance = (a.distance / 1000).toFixed(1);
 
       const row = `
         <tr>
           <td>${a.name}</td>
           <td>${a.date}</td>
           <td>${a.location || "-"}</td>
-          <td>${distance}</td>
+          <td>${a.distance}</td>
           <td>
-            <a href="https://www.strava.com/activities/${a.link}" target="_blank          </a>
+            <a href="https://www.strava.com/activities/${a.link}" target="_blank">kliknij</a>
           </td>
         </tr>
       `;
