@@ -75,7 +75,7 @@ fetch("./outside.json")
   .then(r => r.json())
   .then(data => {
 
-    // ✅ SORTOWANIE PO DACIE
+    // ✅ SORTOWANIE PO DACIE: b - a → malejąco (najnowsze na górze) ✅ a - b → rosnąco
     data.sort((a, b) => new Date(b.date) - new Date(a.date));
 
     const tbody = document.getElementById("table");
