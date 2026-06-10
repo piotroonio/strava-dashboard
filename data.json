@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-06-09T18:33:15.906Z",
+  "updatedAt": "2026-06-10T06:37:54.132Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
       "athleteId": 58678501,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/58678501/24592063/1/large.jpg",
-      "totalDistance": 996,
-      "totalElevation": 3643,
-      "avgElevation": 64,
-      "totalTime": 47,
-      "totalActivities": 57,
+      "totalDistance": 1009.3,
+      "totalElevation": 3681,
+      "avgElevation": 63,
+      "totalTime": 48,
+      "totalActivities": 58,
       "avgSpeed": 21.05,
       "activityTypes": [
         "GravelRide"
@@ -19,12 +19,12 @@
       "name": "Małgorzata Dziuban",
       "athleteId": 205584164,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLj7ZxH7LqEiLQLch-qYNNziNU-GraS1vybOapfvdnEADpSYg=s96-c",
-      "totalDistance": 164.2,
-      "totalElevation": 245,
+      "totalDistance": 168.7,
+      "totalElevation": 252,
       "avgElevation": 10,
       "totalTime": 21,
-      "totalActivities": 25,
-      "avgSpeed": 7.86,
+      "totalActivities": 26,
+      "avgSpeed": 7.96,
       "activityTypes": [
         "Ride"
       ]
@@ -62,12 +62,12 @@
       "name": "Norbert Nowak",
       "athleteId": 136614767,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 413.1,
-      "totalElevation": 1571,
+      "totalDistance": 423.5,
+      "totalElevation": 1608,
       "avgElevation": 49,
       "totalTime": 23,
-      "totalActivities": 32,
-      "avgSpeed": 18.15,
+      "totalActivities": 33,
+      "avgSpeed": 18.17,
       "activityTypes": [
         "Ride"
       ]
@@ -118,12 +118,12 @@
       "name": "Kasia Sch",
       "athleteId": 133627842,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIq9cxp2BfbtWstPkkkFl-wwGt8Oj5YKQwm-3vkjKqI=s96-c",
-      "totalDistance": 1113.4,
-      "totalElevation": 3105,
+      "totalDistance": 1132.5,
+      "totalElevation": 3138,
       "avgElevation": 63,
-      "totalTime": 57,
-      "totalActivities": 49,
-      "avgSpeed": 19.57,
+      "totalTime": 58,
+      "totalActivities": 50,
+      "avgSpeed": 19.58,
       "activityTypes": [
         "Ride",
         "GravelRide"
