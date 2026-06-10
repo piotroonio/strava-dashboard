@@ -1,28 +1,97 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <title>Outside Activities</title>
+  <title>Aktywności poza Wrocławiem</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background: #f5f5f5;
+    }
+
+    tr:hover {
+      background: #fafafa;
+    }
+
+    a {
+      color: #fc4c02;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
 </head>
 <body>
 
 <h1>🚴 Aktywności poza Wrocławiem</h1>
 
-<ul id="list"></ul>
+<table>
+  <thead>
+    <tr>
+      <th>Użytkownik</th>
+      <th>Data</th>
+      <th>Lokalizacja</th>
+      <th>Dystans (km)</th>
+      <th>Strava</th>
+    </tr>
+  </thead>
+  <tbody id="table"></tbody>
+</table>
 
 <script>
+
 fetch("./outside.json")
   .then(r => r.json())
   .then(data => {
-    const list = document.getElementById("list");
+
+    const tbody = document.getElementById("table");
 
     data.forEach(a => {
-      const li = document.createElement("li");
-      li.textContent = `${a.name} – ${a.distance} km`;
-      list.appendChild(li);
+
+      const distance = (a.distance / 1000).toFixed(1);
+
+      const row = `
+        <tr>
+          <td>${a.name}</td>
+          <td>${a.date}</td>
+          <td>${a.location || "-"}</td>
+          <td>${distance}</td>
+          <td>
+            <a href="https://www.strava.com/activities/${a.link}" target="_blank          </a>
+          </td>
+        </tr>
+      `;
+
+      tbody.innerHTML += row;
     });
+
+  })
+  .catch(err => {
+    document.body.innerHTML += "<p>Błąd ładowania danych</p>";
+    console.error(err);
   });
+
 </script>
 
 </body>
