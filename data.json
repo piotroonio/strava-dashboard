@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-11T13:04:33.200Z",
+  "updatedAt": "2026-06-11T13:16:46.636Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -214,15 +214,15 @@
       ]
     },
     {
-      "name": "Hubert Rusinowicz",
-      "athleteId": 120390623,
-      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJVWNVO3Qx-Dp36SYhyWm2OTHOXjvUgH09He4pigGRMaa5VAxs=s96-c",
-      "totalDistance": 433.4,
-      "totalElevation": 1116,
-      "avgElevation": 51,
-      "totalTime": 25,
-      "totalActivities": 22,
-      "avgSpeed": 17.6,
+      "name": "Marty Ban",
+      "athleteId": 166073255,
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKZlMscdkA0aphO_hzLQe_2pTXW1mD4UnQuzGAEmO8SZZ-vo1o=s96-c",
+      "totalDistance": 31.7,
+      "totalElevation": 136,
+      "avgElevation": 7,
+      "totalTime": 2,
+      "totalActivities": 20,
+      "avgSpeed": 13.53,
       "activityTypes": [
         "Ride"
       ]
@@ -394,6 +394,20 @@
       "avgSpeed": 16.01,
       "activityTypes": [
         "Ride"
+      ]
+    },
+    {
+      "name": "Anna Giniowiec",
+      "athleteId": 1278382665,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 29.2,
+      "totalElevation": 29,
+      "avgElevation": 14,
+      "totalTime": 3,
+      "totalActivities": 2,
+      "avgSpeed": 10.89,
+      "activityTypes": [
+        "MountainBikeRide"
       ]
     }
   ]
