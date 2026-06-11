@@ -270,7 +270,7 @@ async function main() {
     fs.writeFileSync("data.json", JSON.stringify(data, null, 2));
 
     // ✅ duplicates
-    const duplicates = results.flatMap(r => r.duplicates);
+    const duplicates = results.flatMap(r => r.duplicates || []);
 
     fs.writeFileSync("duplicates.json", JSON.stringify(duplicates, null, 2));
 
