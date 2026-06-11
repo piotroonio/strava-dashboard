@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-06-10T06:49:37.742Z",
+  "updatedAt": "2026-06-11T06:56:52.023Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
       "athleteId": 58678501,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/58678501/24592063/1/large.jpg",
-      "totalDistance": 1009.3,
-      "totalElevation": 3681,
-      "avgElevation": 63,
-      "totalTime": 48,
-      "totalActivities": 58,
-      "avgSpeed": 21.05,
+      "totalDistance": 1028.1,
+      "totalElevation": 3739,
+      "avgElevation": 62,
+      "totalTime": 49,
+      "totalActivities": 60,
+      "avgSpeed": 21.02,
       "activityTypes": [
         "GravelRide"
       ]
@@ -19,11 +19,11 @@
       "name": "Małgorzata Dziuban",
       "athleteId": 205584164,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLj7ZxH7LqEiLQLch-qYNNziNU-GraS1vybOapfvdnEADpSYg=s96-c",
-      "totalDistance": 168.7,
-      "totalElevation": 252,
+      "totalDistance": 179.4,
+      "totalElevation": 272,
       "avgElevation": 10,
-      "totalTime": 21,
-      "totalActivities": 26,
+      "totalTime": 23,
+      "totalActivities": 27,
       "avgSpeed": 7.96,
       "activityTypes": [
         "Ride"
@@ -133,12 +133,12 @@
       "name": "Małgorzata Żółtowska",
       "athleteId": 66600706,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/66600706/16617639/1/large.jpg",
-      "totalDistance": 477,
-      "totalElevation": 659,
+      "totalDistance": 480.3,
+      "totalElevation": 664,
       "avgElevation": 13,
       "totalTime": 30,
-      "totalActivities": 50,
-      "avgSpeed": 16.12,
+      "totalActivities": 51,
+      "avgSpeed": 16.17,
       "activityTypes": [
         "Ride"
       ]
