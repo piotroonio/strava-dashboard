@@ -62,5 +62,29 @@
     "distance": 21.2,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.253995%2C16.602481%3B50.254287%2C16.602724",
     "link": "https://www.strava.com/activities/18781824129"
+  },
+  {
+    "name": "Karolina Szumiło",
+    "date": "2026-06-04",
+    "location": "Unknown",
+    "distance": 50.2,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.769926%2C15.365358%3B50.753494%2C15.30952",
+    "link": "https://www.strava.com/activities/18785250470"
+  },
+  {
+    "name": "Karolina Szumiło",
+    "date": "2026-05-31",
+    "location": "Polubný",
+    "distance": 21.5,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.756581%2C15.358728%3B50.766162%2C15.384284",
+    "link": "https://www.strava.com/activities/18730164749"
+  },
+  {
+    "name": "Karolina Szumiło",
+    "date": "2026-05-30",
+    "location": "Szklarska Poręba",
+    "distance": 35.9,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.816535%2C15.431801%3B50.816494%2C15.431858",
+    "link": "https://www.strava.com/activities/18718442222"
   }
 ]
