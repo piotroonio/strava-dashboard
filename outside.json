@@ -26,7 +26,7 @@
   {
     "name": "Adam Zuzel 🇯🇲",
     "date": "2026-05-05",
-    "location": "München",
+    "location": "Unknown",
     "distance": 9.2,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=48.133243%2C11.592837%3B48.137387%2C11.68975",
     "link": "https://www.strava.com/activities/18382242588"
@@ -186,7 +186,7 @@
   {
     "name": "Tomasz Imielski",
     "date": "2026-06-03",
-    "location": "Bled",
+    "location": "Unknown",
     "distance": 6.7,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=46.361467%2C14.080834%3B46.361902%2C14.081713",
     "link": "https://www.strava.com/activities/18772996361"
@@ -214,5 +214,29 @@
     "distance": 29.4,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.52582%2C16.511485%3B50.525605%2C16.511835",
     "link": "https://www.strava.com/activities/18344951357"
+  },
+  {
+    "name": "Milosz D",
+    "date": "2026-05-22",
+    "location": "Bardo",
+    "distance": 123.7,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.505037%2C16.734295%3B51.123565%2C16.998959",
+    "link": "https://www.strava.com/activities/18607850986"
+  },
+  {
+    "name": "Milosz D",
+    "date": "2026-05-08",
+    "location": "Καρδάμαινα",
+    "distance": 13.1,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=36.796237%2C27.156462%3B36.796057%2C27.156702",
+    "link": "https://www.strava.com/activities/18426112248"
+  },
+  {
+    "name": "Milosz D",
+    "date": "2026-05-08",
+    "location": "Καρδάμαινα",
+    "distance": 46.5,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=36.796224%2C27.156435%3B36.796634%2C27.156571",
+    "link": "https://www.strava.com/activities/18424536876"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-12T09:29:56.324Z",
+  "updatedAt": "2026-06-12T11:18:51.566Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -245,12 +245,12 @@
       "name": "Łukasz Grudzień",
       "athleteId": 23910672,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/23910672/51334192/1/large.jpg",
-      "totalDistance": 197.7,
-      "totalElevation": 678,
-      "avgElevation": 97,
-      "totalTime": 12,
-      "totalActivities": 7,
-      "avgSpeed": 15.96,
+      "totalDistance": 228.7,
+      "totalElevation": 797,
+      "avgElevation": 100,
+      "totalTime": 14,
+      "totalActivities": 8,
+      "avgSpeed": 16.47,
       "activityTypes": [
         "Ride"
       ]
@@ -576,6 +576,62 @@
       "activityTypes": [
         "Ride",
         "EBikeRide"
+      ]
+    },
+    {
+      "name": "Milosz D",
+      "athleteId": 136332796,
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/136332796/36921510/1/large.jpg",
+      "totalDistance": 1398,
+      "totalElevation": 3361,
+      "avgElevation": 49,
+      "totalTime": 81,
+      "totalActivities": 68,
+      "avgSpeed": 17.27,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Marcin Mak777 Grzywa",
+      "athleteId": 33439441,
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/33439441/31486664/2/large.jpg",
+      "totalDistance": 181,
+      "totalElevation": 328,
+      "avgElevation": 9,
+      "totalTime": 11,
+      "totalActivities": 36,
+      "avgSpeed": 16.78,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Mark Kida",
+      "athleteId": 132334925,
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJYlsVzlrTjzsvjPR63PVNKDbJQ4h3GisAl8NSHTTXQ4tbBtByt5w=s96-c",
+      "totalDistance": 183.5,
+      "totalElevation": 688,
+      "avgElevation": 31,
+      "totalTime": 10,
+      "totalActivities": 22,
+      "avgSpeed": 18.63,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Raf Fariano",
+      "athleteId": 2048039827,
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/2048039827/44062006/2/large.jpg",
+      "totalDistance": 174.1,
+      "totalElevation": 451,
+      "avgElevation": 25,
+      "totalTime": 9,
+      "totalActivities": 18,
+      "avgSpeed": 19.21,
+      "activityTypes": [
+        "Ride"
       ]
     }
   ]
