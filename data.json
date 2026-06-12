@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-12T11:18:51.566Z",
+  "updatedAt": "2026-06-12T11:38:51.226Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -630,6 +630,34 @@
       "totalTime": 9,
       "totalActivities": 18,
       "avgSpeed": 19.21,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Katarzyna Warchulska",
+      "athleteId": 23728360,
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/23728360/37258231/1/large.jpg",
+      "totalDistance": 27.2,
+      "totalElevation": 19,
+      "avgElevation": 10,
+      "totalTime": 2,
+      "totalActivities": 2,
+      "avgSpeed": 16.01,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Tomasz Warchulski",
+      "athleteId": 17810483,
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/17810483/46095081/1/large.jpg",
+      "totalDistance": 27.3,
+      "totalElevation": 39,
+      "avgElevation": 20,
+      "totalTime": 2,
+      "totalActivities": 2,
+      "avgSpeed": 16.08,
       "activityTypes": [
         "Ride"
       ]
