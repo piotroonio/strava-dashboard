@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-12T11:38:51.226Z",
+  "updatedAt": "2026-06-12T12:06:57.827Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -658,6 +658,20 @@
       "totalTime": 2,
       "totalActivities": 2,
       "avgSpeed": 16.08,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Małgorzata Nowakowska",
+      "athleteId": 132023142,
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/132023142/30083977/2/large.jpg",
+      "totalDistance": 110.8,
+      "totalElevation": 160,
+      "avgElevation": 13,
+      "totalTime": 8,
+      "totalActivities": 12,
+      "avgSpeed": 13.06,
       "activityTypes": [
         "Ride"
       ]
