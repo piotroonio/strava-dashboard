@@ -18,7 +18,7 @@
   {
     "name": "Adam Zuzel 🇯🇲",
     "date": "2026-05-05",
-    "location": "München",
+    "location": "Unknown",
     "distance": 9.4,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=48.135445%2C11.689716%3B48.130717%2C11.589669",
     "link": "https://www.strava.com/activities/18386320302"
@@ -216,6 +216,14 @@
     "link": "https://www.strava.com/activities/18344951357"
   },
   {
+    "name": "Piotr Korczowski",
+    "date": "2026-06-13",
+    "location": "Łagów",
+    "distance": 1.9,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=52.3326%2C15.292513%3B52.33319%2C15.293348",
+    "link": "https://www.strava.com/activities/18904306504"
+  },
+  {
     "name": "Milosz D",
     "date": "2026-05-22",
     "location": "Bardo",
@@ -241,6 +249,14 @@
   },
   {
     "name": "Stanisława Olejniczak",
+    "date": "2026-06-13",
+    "location": "Międzywodzie",
+    "distance": 45.6,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.009223%2C14.697369%3B54.008949%2C14.697143",
+    "link": "https://www.strava.com/activities/18905855241"
+  },
+  {
+    "name": "Stanisława Olejniczak",
     "date": "2026-06-12",
     "location": "Międzywodzie",
     "distance": 50.7,
@@ -258,7 +274,7 @@
   {
     "name": "Stanisława Olejniczak",
     "date": "2026-06-11",
-    "location": "Międzywodzie",
+    "location": "Unknown",
     "distance": 11.7,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.009501%2C14.69807%3B54.009018%2C14.697562",
     "link": "https://www.strava.com/activities/18876712159"
