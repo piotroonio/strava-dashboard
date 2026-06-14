@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-14T06:48:30.631Z",
+  "updatedAt": "2026-06-14T12:10:38.212Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -316,12 +316,12 @@
       "name": "Agnieszka Różowa",
       "athleteId": 132023534,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKpr3ffGrStt3YbqvuKZijD2nk6FzeeaktXhJRkaZaKXdICbEM=s96-c",
-      "totalDistance": 374.3,
-      "totalElevation": 515,
-      "avgElevation": 13,
-      "totalTime": 37,
-      "totalActivities": 41,
-      "avgSpeed": 10.21,
+      "totalDistance": 387.1,
+      "totalElevation": 525,
+      "avgElevation": 12,
+      "totalTime": 38,
+      "totalActivities": 43,
+      "avgSpeed": 10.26,
       "activityTypes": [
         "Ride"
       ]
@@ -451,18 +451,6 @@
       "activityTypes": [
         "Ride"
       ]
-    },
-    {
-      "name": "Jacek Przyszlak",
-      "athleteId": 1881605565,
-      "avatar": "avatar/athlete/large.png",
-      "totalDistance": 0,
-      "totalElevation": 0,
-      "avgElevation": 0,
-      "totalTime": 0,
-      "totalActivities": 0,
-      "avgSpeed": 0,
-      "activityTypes": []
     },
     {
       "name": "Magdalena Zalewska",
