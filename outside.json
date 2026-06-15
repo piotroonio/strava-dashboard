@@ -1,67 +1,51 @@
 [
   {
-    "name": "Agata Walkowiak",
+    "name": "Adam Zuzel 🇯🇲",
     "date": "2026-06-06",
-    "location": "Krzeczów",
-    "distance": 42,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=51.18538%2C18.761983%3B51.18564%2C18.746802",
-    "link": "https://www.strava.com/activities/18811442940"
+    "location": "Deszkowice Drugie",
+    "distance": 104,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.749227%2C23.06069%3B51.231704%2C22.568437",
+    "link": "https://www.strava.com/activities/18810759761"
   },
   {
-    "name": "Agata Walkowiak",
-    "date": "2026-06-01",
-    "location": "Złoty Potok",
-    "distance": 44.7,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.706625%2C19.435905%3B50.799228%2C19.108292",
-    "link": "https://www.strava.com/activities/18741548214"
+    "name": "Adam Zuzel 🇯🇲",
+    "date": "2026-06-05",
+    "location": "Częstochowa",
+    "distance": 322,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.808753%2C19.209999%3B50.750157%2C23.060241",
+    "link": "https://www.strava.com/activities/18801645188"
   },
   {
-    "name": "Agata Walkowiak",
-    "date": "2026-05-31",
-    "location": "Ogrodzieniec",
-    "distance": 54.7,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.449776%2C19.512538%3B50.706672%2C19.436285",
-    "link": "https://www.strava.com/activities/18731703326"
+    "name": "Adam Zuzel 🇯🇲",
+    "date": "2026-05-05",
+    "location": "München",
+    "distance": 9.4,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=48.135445%2C11.689716%3B48.130717%2C11.589669",
+    "link": "https://www.strava.com/activities/18386320302"
   },
   {
-    "name": "Agata Walkowiak",
-    "date": "2026-05-30",
-    "location": "Godawica",
-    "distance": 19,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.382474%2C19.549082%3B50.450142%2C19.5132",
-    "link": "https://www.strava.com/activities/18718683320"
+    "name": "Adam Zuzel 🇯🇲",
+    "date": "2026-05-05",
+    "location": "München",
+    "distance": 9.2,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=48.133243%2C11.592837%3B48.137387%2C11.68975",
+    "link": "https://www.strava.com/activities/18382242588"
   },
   {
-    "name": "Agata Walkowiak",
-    "date": "2026-05-30",
-    "location": "Olkusz",
-    "distance": 21,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.28321%2C19.550997%3B50.382463%2C19.549027",
-    "link": "https://www.strava.com/activities/18715306515"
+    "name": "Justyna M Górna",
+    "date": "2026-06-04",
+    "location": "Ponikwa",
+    "distance": 5.7,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.254323%2C16.602657%3B50.220822%2C16.648702",
+    "link": "https://www.strava.com/activities/18786350202"
   },
   {
-    "name": "Agata Walkowiak",
-    "date": "2026-05-30",
-    "location": "Osiek",
-    "distance": 6.9,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.243685%2C19.60762%3B50.28321%2C19.550997",
-    "link": "https://www.strava.com/activities/18712842955"
-  },
-  {
-    "name": "Agata Walkowiak",
-    "date": "2026-05-29",
-    "location": "Balice",
-    "distance": 47.1,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.095083%2C19.789615%3B50.243805%2C19.607642",
-    "link": "https://www.strava.com/activities/18704603118"
-  },
-  {
-    "name": "Agata Walkowiak",
-    "date": "2026-05-29",
-    "location": "Kraków",
-    "distance": 11.8,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.068454%2C19.945073%3B50.095083%2C19.789615",
-    "link": "https://www.strava.com/activities/18700006350"
+    "name": "Justyna M Górna",
+    "date": "2026-06-04",
+    "location": "Ponikwa",
+    "distance": 21.2,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.253995%2C16.602481%3B50.254287%2C16.602724",
+    "link": "https://www.strava.com/activities/18781824129"
   },
   {
     "name": "Piotr Korczowski",
@@ -70,61 +54,5 @@
     "distance": 1.9,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=52.3326%2C15.292513%3B52.33319%2C15.293348",
     "link": "https://www.strava.com/activities/18904306504"
-  },
-  {
-    "name": "Stanisława Olejniczak",
-    "date": "2026-06-14",
-    "location": "Międzywodzie",
-    "distance": 30.8,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.009035%2C14.697842%3B54.008933%2C14.697643",
-    "link": "https://www.strava.com/activities/18920532349"
-  },
-  {
-    "name": "Stanisława Olejniczak",
-    "date": "2026-06-13",
-    "location": "Międzywodzie",
-    "distance": 45.6,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.009223%2C14.697369%3B54.008949%2C14.697143",
-    "link": "https://www.strava.com/activities/18905855241"
-  },
-  {
-    "name": "Stanisława Olejniczak",
-    "date": "2026-06-12",
-    "location": "Międzywodzie",
-    "distance": 50.7,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.008897%2C14.697879%3B54.008944%2C14.697672",
-    "link": "https://www.strava.com/activities/18893052612"
-  },
-  {
-    "name": "Stanisława Olejniczak",
-    "date": "2026-06-11",
-    "location": "Międzywodzie",
-    "distance": 40.5,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.00908%2C14.697633%3B54.009137%2C14.696992",
-    "link": "https://www.strava.com/activities/18880173017"
-  },
-  {
-    "name": "Stanisława Olejniczak",
-    "date": "2026-06-11",
-    "location": "Międzywodzie",
-    "distance": 11.7,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.009501%2C14.69807%3B54.009018%2C14.697562",
-    "link": "https://www.strava.com/activities/18876712159"
-  },
-  {
-    "name": "Stanisława Olejniczak",
-    "date": "2026-06-10",
-    "location": "Międzywodzie",
-    "distance": 54.8,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.008884%2C14.697679%3B54.009101%2C14.697004",
-    "link": "https://www.strava.com/activities/18867532055"
-  },
-  {
-    "name": "Stanisława Olejniczak",
-    "date": "2026-06-09",
-    "location": "Międzywodzie",
-    "distance": 50.9,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.008991%2C14.697776%3B54.009013%2C14.697537",
-    "link": "https://www.strava.com/activities/18849181650"
   }
 ]

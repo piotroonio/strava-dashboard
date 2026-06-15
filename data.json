@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-15T07:28:44.912Z",
+  "updatedAt": "2026-06-15T08:14:24.551Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -960,6 +960,75 @@
       "activityTypes": [
         "Ride",
         "EBikeRide"
+      ]
+    },
+    {
+      "name": "Mateusz Witkowski",
+      "athleteId": 83777531,
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIbF85a0zV_9ioPI6vK8QD0wRFxqFDrxnJlpspcWMLJBehTwg=s96-c",
+      "totalDistance": 161.1,
+      "totalElevation": 601,
+      "avgElevation": 46,
+      "totalTime": 8,
+      "totalActivities": 13,
+      "avgSpeed": 19.87,
+      "activityTypes": [
+        "GravelRide",
+        "Ride"
+      ]
+    },
+    {
+      "name": "Strava Athlete",
+      "athleteId": 520374807,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 0,
+      "totalElevation": 0,
+      "avgElevation": 0,
+      "totalTime": 0,
+      "totalActivities": 0,
+      "avgSpeed": 0,
+      "activityTypes": []
+    },
+    {
+      "name": "Ryszard RwieSerce",
+      "athleteId": 28247115,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 330.2,
+      "totalElevation": 595,
+      "avgElevation": 11,
+      "totalTime": 50,
+      "totalActivities": 52,
+      "avgSpeed": 6.56,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Paweł Opszalski",
+      "athleteId": 165720425,
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/165720425/37079607/2/large.jpg",
+      "totalDistance": 29.5,
+      "totalElevation": 30,
+      "avgElevation": 10,
+      "totalTime": 2,
+      "totalActivities": 3,
+      "avgSpeed": 12.08,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Jakub Krawiec",
+      "athleteId": 76772718,
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKhPujo8lpurQm5Byxzozda9AdtExhhrkTmP95dwfUqhdKQDg=s96-c",
+      "totalDistance": 1177,
+      "totalElevation": 4436,
+      "avgElevation": 70,
+      "totalTime": 80,
+      "totalActivities": 63,
+      "avgSpeed": 14.68,
+      "activityTypes": [
+        "Ride"
       ]
     }
   ]
