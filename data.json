@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-15T12:22:36.532Z",
+  "updatedAt": "2026-06-15T13:30:41.656Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -570,11 +570,11 @@
       "name": "Milosz D",
       "athleteId": 136332796,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/136332796/36921510/1/large.jpg",
-      "totalDistance": 1421.8,
-      "totalElevation": 3415,
+      "totalDistance": 1428.1,
+      "totalElevation": 3435,
       "avgElevation": 48,
-      "totalTime": 83,
-      "totalActivities": 71,
+      "totalTime": 84,
+      "totalActivities": 72,
       "avgSpeed": 17.08,
       "activityTypes": [
         "Ride"
@@ -752,12 +752,12 @@
       "name": "Marek K",
       "athleteId": 132215488,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKKn1sBY9uHB6ekNGxlAGK5FdDTCrxS30Bd0w4w5Zz5m-a_-Q=s96-c",
-      "totalDistance": 96.9,
-      "totalElevation": 60,
+      "totalDistance": 102.9,
+      "totalElevation": 65,
       "avgElevation": 5,
       "totalTime": 6,
-      "totalActivities": 12,
-      "avgSpeed": 16,
+      "totalActivities": 13,
+      "avgSpeed": 16.11,
       "activityTypes": [
         "Ride"
       ]
@@ -1048,27 +1048,15 @@
       ]
     },
     {
-      "name": "Jacek Przyszlak",
-      "athleteId": 1881605565,
-      "avatar": "avatar/athlete/large.png",
-      "totalDistance": 0,
-      "totalElevation": 0,
-      "avgElevation": 0,
-      "totalTime": 0,
-      "totalActivities": 0,
-      "avgSpeed": 0,
-      "activityTypes": []
-    },
-    {
       "name": "Dariusz Wasilewski",
       "athleteId": 136143229,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocINp_30gEGbN6V8Zc8Z9KdxUbupaWzEGu4dwBOR_k62GZmFlA=s96-c",
-      "totalDistance": 448.9,
-      "totalElevation": 709,
-      "avgElevation": 9,
-      "totalTime": 29,
-      "totalActivities": 75,
-      "avgSpeed": 15.38,
+      "totalDistance": 457.2,
+      "totalElevation": 727,
+      "avgElevation": 10,
+      "totalTime": 30,
+      "totalActivities": 76,
+      "avgSpeed": 15.4,
       "activityTypes": [
         "Ride"
       ]
@@ -1099,6 +1087,34 @@
       "avgSpeed": 21.08,
       "activityTypes": [
         "Ride"
+      ]
+    },
+    {
+      "name": "Dawid Moszowski",
+      "athleteId": 133598764,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 421.4,
+      "totalElevation": 1539,
+      "avgElevation": 41,
+      "totalTime": 25,
+      "totalActivities": 38,
+      "avgSpeed": 16.75,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Marcin Sawicki",
+      "athleteId": 108970726,
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/108970726/31106130/1/large.jpg",
+      "totalDistance": 261.2,
+      "totalElevation": 1553,
+      "avgElevation": 222,
+      "totalTime": 12,
+      "totalActivities": 7,
+      "avgSpeed": 21.89,
+      "activityTypes": [
+        "GravelRide"
       ]
     }
   ]
