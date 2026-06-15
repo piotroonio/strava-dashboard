@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-15T07:12:06.273Z",
+  "updatedAt": "2026-06-15T07:28:44.912Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -945,6 +945,21 @@
       "activityTypes": [
         "Ride",
         "MountainBikeRide"
+      ]
+    },
+    {
+      "name": "Marcin Wulczyński",
+      "athleteId": 163834196,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 452.1,
+      "totalElevation": 1059,
+      "avgElevation": 28,
+      "totalTime": 21,
+      "totalActivities": 38,
+      "avgSpeed": 21.92,
+      "activityTypes": [
+        "Ride",
+        "EBikeRide"
       ]
     }
   ]
