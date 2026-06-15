@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-15T08:14:24.551Z",
+  "updatedAt": "2026-06-15T09:32:59.802Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -936,12 +936,12 @@
       "name": "Ma Żu",
       "athleteId": 167129711,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIdUiOW32mtyzUxNdosW_FGzALBNh6JYiSfkM8eY0VXlfnipQ=s96-c",
-      "totalDistance": 326.7,
-      "totalElevation": 243,
+      "totalDistance": 335.2,
+      "totalElevation": 249,
       "avgElevation": 7,
       "totalTime": 85,
-      "totalActivities": 36,
-      "avgSpeed": 3.86,
+      "totalActivities": 37,
+      "avgSpeed": 3.92,
       "activityTypes": [
         "Ride",
         "MountainBikeRide"
@@ -976,18 +976,6 @@
         "GravelRide",
         "Ride"
       ]
-    },
-    {
-      "name": "Strava Athlete",
-      "athleteId": 520374807,
-      "avatar": "avatar/athlete/large.png",
-      "totalDistance": 0,
-      "totalElevation": 0,
-      "avgElevation": 0,
-      "totalTime": 0,
-      "totalActivities": 0,
-      "avgSpeed": 0,
-      "activityTypes": []
     },
     {
       "name": "Ryszard RwieSerce",
@@ -1027,6 +1015,34 @@
       "totalTime": 80,
       "totalActivities": 63,
       "avgSpeed": 14.68,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Sławek Świokło",
+      "athleteId": 133857860,
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIrY8bR0GAyTYlj-ZB6tjeqpSduB5lr991yg5kK339DPbCj9IhIDQ=s96-c",
+      "totalDistance": 243.8,
+      "totalElevation": 211,
+      "avgElevation": 7,
+      "totalTime": 17,
+      "totalActivities": 32,
+      "avgSpeed": 14.37,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Kamil Byszewski",
+      "athleteId": 132621732,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 69.7,
+      "totalElevation": 144,
+      "avgElevation": 8,
+      "totalTime": 6,
+      "totalActivities": 18,
+      "avgSpeed": 12.34,
       "activityTypes": [
         "Ride"
       ]
