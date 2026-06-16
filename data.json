@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-16T08:10:40.300Z",
+  "updatedAt": "2026-06-16T11:18:30.627Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -1037,12 +1037,12 @@
       "name": "Kamil Byszewski",
       "athleteId": 132621732,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 69.7,
-      "totalElevation": 144,
-      "avgElevation": 8,
-      "totalTime": 6,
-      "totalActivities": 18,
-      "avgSpeed": 12.34,
+      "totalDistance": 141.8,
+      "totalElevation": 256,
+      "avgElevation": 13,
+      "totalTime": 12,
+      "totalActivities": 19,
+      "avgSpeed": 12.08,
       "activityTypes": [
         "Ride"
       ]
@@ -1121,12 +1121,12 @@
       "name": "Janek Fuławka",
       "athleteId": 132024542,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/132024542/30075721/2/large.jpg",
-      "totalDistance": 395.7,
-      "totalElevation": 2227,
-      "avgElevation": 111,
-      "totalTime": 18,
-      "totalActivities": 20,
-      "avgSpeed": 21.77,
+      "totalDistance": 411.1,
+      "totalElevation": 2291,
+      "avgElevation": 109,
+      "totalTime": 19,
+      "totalActivities": 21,
+      "avgSpeed": 21.81,
       "activityTypes": [
         "Ride"
       ]
@@ -1352,6 +1352,48 @@
       "totalTime": 123,
       "totalActivities": 33,
       "avgSpeed": 1.49,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Mateusz Kołodziejczyk",
+      "athleteId": 452960185,
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocK1gpPTXSU7W8_Ty52QtlZoiM7p25U9p916njGnwhSCgHJkEHrB=s96-c",
+      "totalDistance": 95.3,
+      "totalElevation": 149,
+      "avgElevation": 30,
+      "totalTime": 6,
+      "totalActivities": 5,
+      "avgSpeed": 15.1,
+      "activityTypes": [
+        "MountainBikeRide"
+      ]
+    },
+    {
+      "name": "Chemiczny Ahmed",
+      "athleteId": 135990927,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 1103,
+      "totalElevation": 936,
+      "avgElevation": 8,
+      "totalTime": 63,
+      "totalActivities": 118,
+      "avgSpeed": 17.63,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Tomasz Glinkowski",
+      "athleteId": 382115636,
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIho6yq5xgFE4UvZdYH22qxp0oiQgBr3SdTfiAEKyEe2hmuFadl=s96-c",
+      "totalDistance": 142.8,
+      "totalElevation": 172,
+      "avgElevation": 17,
+      "totalTime": 8,
+      "totalActivities": 10,
+      "avgSpeed": 17.54,
       "activityTypes": [
         "Ride"
       ]
