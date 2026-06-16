@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-16T07:34:34.868Z",
+  "updatedAt": "2026-06-16T08:10:40.300Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -1296,6 +1296,62 @@
       "totalTime": 4,
       "totalActivities": 14,
       "avgSpeed": 13.56,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Iwona S-Ch",
+      "athleteId": 132027349,
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/132027349/30872817/1/large.jpg",
+      "totalDistance": 321.5,
+      "totalElevation": 721,
+      "avgElevation": 55,
+      "totalTime": 24,
+      "totalActivities": 13,
+      "avgSpeed": 13.23,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Jacek Przyszlak",
+      "athleteId": 132758676,
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLamO6_wSnZNCAf1aUAXPFaPsUZ3uYciTh81m2ldBfY=s96-c",
+      "totalDistance": 987.7,
+      "totalElevation": 1986,
+      "avgElevation": 57,
+      "totalTime": 60,
+      "totalActivities": 35,
+      "avgSpeed": 16.52,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Maciej Mirowski",
+      "athleteId": 135999165,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 96.7,
+      "totalElevation": 166,
+      "avgElevation": 13,
+      "totalTime": 8,
+      "totalActivities": 13,
+      "avgSpeed": 12.03,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Małgorzata Antoniak",
+      "athleteId": 593911092,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 183.2,
+      "totalElevation": 164,
+      "avgElevation": 5,
+      "totalTime": 123,
+      "totalActivities": 33,
+      "avgSpeed": 1.49,
       "activityTypes": [
         "Ride"
       ]
