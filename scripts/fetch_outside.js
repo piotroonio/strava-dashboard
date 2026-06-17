@@ -67,7 +67,7 @@ if (lat == null || lon == null) {
     geoCache[key] = location;
 
     // ✅ limiter (ważne)
-    await new Promise(r => setTimeout(r, 300));
+    await new Promise(r => setTimeout(r, 1000));
 
     return location;
 
@@ -216,15 +216,15 @@ async function main() {
   const CLIENT_SECRET = process.env.CLIENT_SECRET;
 
   try {
-    //const results = await Promise.all(
-    //  tokens.map(user => processUser(user, CLIENT_ID, CLIENT_SECRET))
-    //);
+    const results = await Promise.all(
+      tokens.map(user => processUser(user, CLIENT_ID, CLIENT_SECRET))
+    );
     
-    const results = [];
+   // const results = [];
 
-    for (const user of tokens) {
-    const res = await processUser(user, CLIENT_ID, CLIENT_SECRET);
-    results.push(res);
+   // for (const user of tokens) {
+   // const res = await processUser(user, CLIENT_ID, CLIENT_SECRET);
+   // results.push(res);
     }
 
 
