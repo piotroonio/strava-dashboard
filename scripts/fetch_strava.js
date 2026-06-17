@@ -1,7 +1,7 @@
 //Główny pipeline
 
 const fs = require("fs");
-const fetch = require("node-fetch");
+//const fetch = require("node-fetch");
 
 const TOKENS = JSON.parse(process.env.TOKENS_JSON);
 
