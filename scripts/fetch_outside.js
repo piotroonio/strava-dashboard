@@ -36,10 +36,7 @@ function getDistance(lat1, lon1, lat2, lon2) {
 
 // ✅ geocoding OSM (miasto)
 async function getLocationName(lat, lon) {
-  
-//if (lat == null || lon == null) {
-//    return "Unknown";
-//  }
+
   const key = `${lat.toFixed(3)},${lon.toFixed(3)}`;
 
   if (geoCache[key]) return geoCache[key];
@@ -219,14 +216,6 @@ async function main() {
     const results = await Promise.all(
       tokens.map(user => processUser(user, CLIENT_ID, CLIENT_SECRET))
     );
-    
-   // const results = [];
-
-   // for (const user of tokens) {
-   // const res = await processUser(user, CLIENT_ID, CLIENT_SECRET);
-   // results.push(res);
-   //}
-
 
     const flat = results.flat();
 
