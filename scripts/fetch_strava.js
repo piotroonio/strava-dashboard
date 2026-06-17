@@ -35,10 +35,13 @@ async function getActivities(user) {
     });
 
     const activities = await res.json();
+	const cutoff = new Date("2026-05-01"); // początek wyzwania
 
     console.log(`📊 ${user.name}: ${activities.length} activities`);
 
-    return activities.map(a => ({
+    return activities
+		.filter(a => new Date(a.start_date) >= cutoff
+		.map(a => ({
       id: a.id,
       name: user.name,
       athleteId: user.athleteId,
