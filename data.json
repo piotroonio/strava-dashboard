@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-17T11:16:34.186Z",
+  "updatedAt": "2026-06-17T12:34:35.168Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -344,12 +344,12 @@
       "name": "Mateusz Galusik",
       "athleteId": 108932364,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/108932364/55840450/1/large.jpg",
-      "totalDistance": 312.5,
-      "totalElevation": 526,
+      "totalDistance": 328.8,
+      "totalElevation": 546,
       "avgElevation": 14,
-      "totalTime": 23,
-      "totalActivities": 38,
-      "avgSpeed": 13.6,
+      "totalTime": 24,
+      "totalActivities": 39,
+      "avgSpeed": 13.62,
       "activityTypes": [
         "Ride"
       ]
@@ -470,12 +470,12 @@
       "name": "rafael och",
       "athleteId": 133597206,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/133597206/33119988/4/large.jpg",
-      "totalDistance": 469.9,
-      "totalElevation": 875,
-      "avgElevation": 17,
+      "totalDistance": 476.7,
+      "totalElevation": 885,
+      "avgElevation": 16,
       "totalTime": 27,
-      "totalActivities": 53,
-      "avgSpeed": 17.6,
+      "totalActivities": 54,
+      "avgSpeed": 17.61,
       "activityTypes": [
         "Ride"
       ]
@@ -570,12 +570,12 @@
       "name": "Milosz D",
       "athleteId": 136332796,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/136332796/36921510/1/large.jpg",
-      "totalDistance": 1450.7,
-      "totalElevation": 3471,
-      "avgElevation": 48,
+      "totalDistance": 1457.5,
+      "totalElevation": 3485,
+      "avgElevation": 47,
       "totalTime": 85,
-      "totalActivities": 73,
-      "avgSpeed": 17.07,
+      "totalActivities": 74,
+      "avgSpeed": 17.06,
       "activityTypes": [
         "Ride"
       ]
@@ -752,12 +752,12 @@
       "name": "Marek K",
       "athleteId": 132215488,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKKn1sBY9uHB6ekNGxlAGK5FdDTCrxS30Bd0w4w5Zz5m-a_-Q=s96-c",
-      "totalDistance": 124.7,
-      "totalElevation": 81,
+      "totalDistance": 130.8,
+      "totalElevation": 85,
       "avgElevation": 5,
       "totalTime": 8,
-      "totalActivities": 16,
-      "avgSpeed": 15.57,
+      "totalActivities": 17,
+      "avgSpeed": 15.66,
       "activityTypes": [
         "Ride"
       ]
@@ -1051,12 +1051,12 @@
       "name": "Dariusz Wasilewski",
       "athleteId": 136143229,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocINp_30gEGbN6V8Zc8Z9KdxUbupaWzEGu4dwBOR_k62GZmFlA=s96-c",
-      "totalDistance": 486.3,
-      "totalElevation": 767,
-      "avgElevation": 9,
+      "totalDistance": 492.2,
+      "totalElevation": 784,
+      "avgElevation": 10,
       "totalTime": 32,
-      "totalActivities": 81,
-      "avgSpeed": 15.43,
+      "totalActivities": 82,
+      "avgSpeed": 15.44,
       "activityTypes": [
         "Ride"
       ]
@@ -1542,11 +1542,11 @@
       "name": "Paweł Cierniak",
       "athleteId": 136057999,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/136057999/36727020/1/large.jpg",
-      "totalDistance": 991.2,
-      "totalElevation": 1307,
+      "totalDistance": 996.4,
+      "totalElevation": 1316,
       "avgElevation": 15,
       "totalTime": 50,
-      "totalActivities": 87,
+      "totalActivities": 88,
       "avgSpeed": 19.9,
       "activityTypes": [
         "Ride"
@@ -1578,6 +1578,48 @@
       "avgSpeed": 14.95,
       "activityTypes": [
         "Ride"
+      ]
+    },
+    {
+      "name": "Tomasz  Motyka",
+      "athleteId": 323054211,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 441.9,
+      "totalElevation": 381,
+      "avgElevation": 10,
+      "totalTime": 285,
+      "totalActivities": 40,
+      "avgSpeed": 1.55,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Piotr Sendor",
+      "athleteId": 136645165,
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKQE7uTJi_Cgrg8vW_N3gJjaOzPC7POhgwYX6mEtUley-9GFQ=s96-c",
+      "totalDistance": 220.2,
+      "totalElevation": 277,
+      "avgElevation": 11,
+      "totalTime": 14,
+      "totalActivities": 26,
+      "avgSpeed": 15.44,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Damian Baran",
+      "athleteId": 116503735,
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/116503735/27238469/1/large.jpg",
+      "totalDistance": 17.2,
+      "totalElevation": 42,
+      "avgElevation": 42,
+      "totalTime": 1,
+      "totalActivities": 1,
+      "avgSpeed": 13.43,
+      "activityTypes": [
+        "GravelRide"
       ]
     }
   ]
