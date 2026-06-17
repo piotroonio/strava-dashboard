@@ -12,11 +12,11 @@ jobs:
     steps:
       # ✅ 1. check repo
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # ✅ 2. Node.js
-      - name: Setup Node
-        uses: actions/setup-node@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 18
           
@@ -30,7 +30,6 @@ jobs:
         env:
           CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
-          # REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
           TOKENS_JSON: ${{ secrets.TOKENS_JSON }}
       
       # ✅ 5. commit zmian
@@ -38,6 +37,6 @@ jobs:
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Action"
-          git add data.json
+          git add data.json duplicates.json outside.json
           git commit -m "daily update $(date)" || echo "no changes to commit"
           git push
