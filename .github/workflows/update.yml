@@ -33,19 +33,11 @@ jobs:
           # REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
           TOKENS_JSON: ${{ secrets.TOKENS_JSON }}
       
-      # ✅ 5. fetch aktywności poza Wrocławiem
-      - name: Fetch outside activities
-        run: node scripts/fetch_outside.js
-        env:
-          CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
-          CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
-          TOKENS_JSON: ${{ secrets.TOKENS_JSON }}
-
-      # ✅ 6. commit zmian
+      # ✅ 5. commit zmian
       - name: Commit & push
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Action"
-          git add data.json outside.json
+          git add data.json
           git commit -m "daily update $(date)" || echo "no changes to commit"
           git push
