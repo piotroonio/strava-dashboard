@@ -1,18 +1,32 @@
 [
   {
-    "id": 14741800160,
-    "name": "Cichoń Kamil",
-    "athleteId": 136921808,
-    "distance": 44235.8,
-    "date": "2025-06-09T04:56:34Z",
-    "location": "52.330427,23.044626"
+    "user": "Mateusz Galusik",
+    "activity1": 18765218379,
+    "activity2": 18765217208
   },
   {
-    "id": 12021404836,
-    "name": "Konarski Piotr",
-    "athleteId": 139109438,
-    "distance": 25519.7,
-    "date": "2024-07-30T16:43:41Z",
-    "location": "51.172223361209035,17.199728675186634"
+    "user": "Mateusz Galusik",
+    "activity1": 18620586104,
+    "activity2": 18620122155
+  },
+  {
+    "user": "Tomasz Imielski",
+    "activity1": 18812269584,
+    "activity2": 18812308739
+  },
+  {
+    "user": "Małgorzata Nowakowska",
+    "activity1": 18944317274,
+    "activity2": 18944263147
+  },
+  {
+    "user": "Małgorzata Nowakowska",
+    "activity1": 18648468498,
+    "activity2": 18648321580
+  },
+  {
+    "user": "Małgorzata Nowakowska",
+    "activity1": 18594362922,
+    "activity2": 18387534794
   }
 ]
