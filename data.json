@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-18T08:37:02.721Z",
+  "updatedAt": "2026-06-18T10:10:37.858Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -766,11 +766,11 @@
       "name": "magdalena szmara",
       "athleteId": 134151181,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocL0dqNaWQbDviYosdxbRtZmaqkiXdKlLWeGkTvfxARDF16XyQ=s96-c",
-      "totalDistance": 293.7,
-      "totalElevation": 396,
-      "avgElevation": 21,
+      "totalDistance": 299.6,
+      "totalElevation": 399,
+      "avgElevation": 20,
       "totalTime": 18,
-      "totalActivities": 19,
+      "totalActivities": 20,
       "avgSpeed": 16.33,
       "activityTypes": [
         "Ride"
@@ -1731,6 +1731,35 @@
       "totalTime": 18,
       "totalActivities": 30,
       "avgSpeed": 18.79,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Krzysztof Słoma",
+      "athleteId": 167471849,
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJ3qh3XaoGrL3Paruinh8L6MgB066siJzLzO5n5jX2kARcGyKZt=s96-c",
+      "totalDistance": 30.1,
+      "totalElevation": 90,
+      "avgElevation": 8,
+      "totalTime": 2,
+      "totalActivities": 11,
+      "avgSpeed": 12.68,
+      "activityTypes": [
+        "MountainBikeRide",
+        "GravelRide"
+      ]
+    },
+    {
+      "name": "Alex Rutkowski",
+      "athleteId": 134085378,
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocL0aZ8UQUF6aIdLZABEGhir_AZIEEUerU9RUVXlZuAlC-qDRA=s96-c",
+      "totalDistance": 213.6,
+      "totalElevation": 227,
+      "avgElevation": 13,
+      "totalTime": 13,
+      "totalActivities": 17,
+      "avgSpeed": 15.88,
       "activityTypes": [
         "Ride"
       ]
