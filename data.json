@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-19T06:11:02.609Z",
+  "updatedAt": "2026-06-19T07:19:33.483Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -1206,12 +1206,12 @@
       "name": "Arkadiusz Sobański",
       "athleteId": 132457993,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/132457993/38573531/1/large.jpg",
-      "totalDistance": 297.3,
-      "totalElevation": 772,
+      "totalDistance": 304.8,
+      "totalElevation": 793,
       "avgElevation": 26,
-      "totalTime": 19,
-      "totalActivities": 30,
-      "avgSpeed": 15.27,
+      "totalTime": 20,
+      "totalActivities": 31,
+      "avgSpeed": 15.3,
       "activityTypes": [
         "Ride"
       ]
@@ -1782,12 +1782,12 @@
       "name": "Grzegorz Grabowski",
       "athleteId": 167010585,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/167010585/55479335/2/large.jpg",
-      "totalDistance": 172.6,
-      "totalElevation": 197,
+      "totalDistance": 185.4,
+      "totalElevation": 220,
       "avgElevation": 12,
-      "totalTime": 10,
-      "totalActivities": 17,
-      "avgSpeed": 17.4,
+      "totalTime": 11,
+      "totalActivities": 18,
+      "avgSpeed": 17.34,
       "activityTypes": [
         "Ride"
       ]
