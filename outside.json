@@ -250,7 +250,7 @@
   {
     "name": "Stanisława Olejniczak",
     "date": "2026-06-17",
-    "location": "Międzywodzie",
+    "location": "Unknown",
     "distance": 50.2,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.009121%2C14.697392%3B54.009122%2C14.696972",
     "link": "https://www.strava.com/activities/18958752520"
@@ -258,7 +258,7 @@
   {
     "name": "Stanisława Olejniczak",
     "date": "2026-06-16",
-    "location": "Międzywodzie",
+    "location": "Unknown",
     "distance": 14.1,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.009065%2C14.69742%3B54.009086%2C14.697029",
     "link": "https://www.strava.com/activities/18948495747"
@@ -266,7 +266,7 @@
   {
     "name": "Stanisława Olejniczak",
     "date": "2026-06-16",
-    "location": "Międzywodzie",
+    "location": "Unknown",
     "distance": 62.2,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.008875%2C14.696999%3B54.008892%2C14.6976",
     "link": "https://www.strava.com/activities/18942172675"
@@ -282,7 +282,7 @@
   {
     "name": "Stanisława Olejniczak",
     "date": "2026-06-13",
-    "location": "Międzywodzie",
+    "location": "Unknown",
     "distance": 45.6,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.009223%2C14.697369%3B54.008949%2C14.697143",
     "link": "https://www.strava.com/activities/18905855241"
@@ -825,6 +825,14 @@
   },
   {
     "name": "Krzysztof Tworzydło",
+    "date": "2026-06-20",
+    "location": "Ustroń",
+    "distance": 14.1,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=49.726175%2C18.818113%3B49.726176%2C18.818166",
+    "link": "https://www.strava.com/activities/18993369618"
+  },
+  {
+    "name": "Krzysztof Tworzydło",
     "date": "2026-06-19",
     "location": "Ustroń",
     "distance": 41.4,
@@ -970,7 +978,7 @@
   {
     "name": "Piotr Krzęć",
     "date": "2026-06-07",
-    "location": "Unknown",
+    "location": "Szklarska Poręba",
     "distance": 1.5,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.814686%2C15.429061%3B50.820177%2C15.438598",
     "link": "https://www.strava.com/activities/18824967109"
@@ -986,7 +994,7 @@
   {
     "name": "Piotr Krzęć",
     "date": "2026-06-07",
-    "location": "Unknown",
+    "location": "Szklarska Poręba",
     "distance": 32.7,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.815192%2C15.429048%3B50.815482%2C15.429477",
     "link": "https://www.strava.com/activities/18823902567"
@@ -1018,7 +1026,7 @@
   {
     "name": "Piotr Krzęć",
     "date": "2026-05-09",
-    "location": "Unknown",
+    "location": "Szklarska Poręba",
     "distance": 1.3,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.815235%2C15.429357%3B50.820294%2C15.438812",
     "link": "https://www.strava.com/activities/18438602044"
