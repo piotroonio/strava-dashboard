@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-22T10:05:44.243Z",
+  "updatedAt": "2026-06-22T11:55:49.812Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -1023,12 +1023,12 @@
       "name": "Sławek Świokło",
       "athleteId": 133857860,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIrY8bR0GAyTYlj-ZB6tjeqpSduB5lr991yg5kK339DPbCj9IhIDQ=s96-c",
-      "totalDistance": 296.2,
-      "totalElevation": 260,
+      "totalDistance": 303.8,
+      "totalElevation": 266,
       "avgElevation": 7,
       "totalTime": 22,
-      "totalActivities": 37,
-      "avgSpeed": 13.61,
+      "totalActivities": 38,
+      "avgSpeed": 13.65,
       "activityTypes": [
         "Ride"
       ]
@@ -1696,12 +1696,12 @@
       "name": "Piotr Dębowicz",
       "athleteId": 136263780,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKTVs0WXGRB98B9U33TZVfz5Rr0MlQBdDNJjIRUGzaP5Uct=s96-c",
-      "totalDistance": 634.3,
-      "totalElevation": 818,
+      "totalDistance": 637.6,
+      "totalElevation": 822,
       "avgElevation": 10,
       "totalTime": 44,
-      "totalActivities": 83,
-      "avgSpeed": 14.49,
+      "totalActivities": 84,
+      "avgSpeed": 14.46,
       "activityTypes": [
         "Ride",
         "EBikeRide"
@@ -1894,7 +1894,7 @@
     {
       "name": "Arkadiusz Cisło",
       "athleteId": 132033584,
-      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/132033584/31092201/1/large.jpg",
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/132033584/31092201/2/large.jpg",
       "totalDistance": 411.1,
       "totalElevation": 1189,
       "avgElevation": 33,
@@ -1960,6 +1960,104 @@
       "activityTypes": [
         "MountainBikeRide",
         "EMountainBikeRide"
+      ]
+    },
+    {
+      "name": "Łukasz Reizer",
+      "athleteId": 136001435,
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/136001435/49746536/1/large.jpg",
+      "totalDistance": 192.2,
+      "totalElevation": 285,
+      "avgElevation": 6,
+      "totalTime": 14,
+      "totalActivities": 46,
+      "avgSpeed": 13.54,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "K Krzyżostaniak",
+      "athleteId": 137668578,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 274.9,
+      "totalElevation": 231,
+      "avgElevation": 8,
+      "totalTime": 21,
+      "totalActivities": 29,
+      "avgSpeed": 13.36,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Łukasz C",
+      "athleteId": 136024825,
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/136024825/31073124/2/large.jpg",
+      "totalDistance": 115.5,
+      "totalElevation": 514,
+      "avgElevation": 73,
+      "totalTime": 4,
+      "totalActivities": 7,
+      "avgSpeed": 32.04,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Anna P",
+      "athleteId": 169074979,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 48.4,
+      "totalElevation": 72,
+      "avgElevation": 72,
+      "totalTime": 3,
+      "totalActivities": 1,
+      "avgSpeed": 16.49,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Aneta Bagińska",
+      "athleteId": 167472844,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 27.9,
+      "totalElevation": 61,
+      "avgElevation": 61,
+      "totalTime": 2,
+      "totalActivities": 1,
+      "avgSpeed": 17.58,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Radosław Siśkiewicz",
+      "athleteId": 165573715,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 36.2,
+      "totalElevation": 190,
+      "avgElevation": 95,
+      "totalTime": 2,
+      "totalActivities": 2,
+      "avgSpeed": 14.59,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Sławomir Chruściel",
+      "athleteId": 850541575,
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLrTkSZZVMQbLIDUtDqbB0qKHo8drNTTyjfVcS8MUAyQFt3-A=s96-c",
+      "totalDistance": 269.9,
+      "totalElevation": 317,
+      "avgElevation": 7,
+      "totalTime": 19,
+      "totalActivities": 43,
+      "avgSpeed": 13.88,
+      "activityTypes": [
+        "Ride"
       ]
     }
   ]
