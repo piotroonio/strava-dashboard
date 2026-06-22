@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-22T07:32:51.889Z",
+  "updatedAt": "2026-06-22T10:05:44.243Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -1121,12 +1121,12 @@
       "name": "Janek Fuławka",
       "athleteId": 132024542,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/132024542/30075721/2/large.jpg",
-      "totalDistance": 631.2,
-      "totalElevation": 3413,
-      "avgElevation": 100,
-      "totalTime": 28,
-      "totalActivities": 34,
-      "avgSpeed": 22.45,
+      "totalDistance": 646.5,
+      "totalElevation": 3469,
+      "avgElevation": 99,
+      "totalTime": 29,
+      "totalActivities": 35,
+      "avgSpeed": 22.49,
       "activityTypes": [
         "Ride"
       ]
@@ -1810,12 +1810,12 @@
       "name": "Krzysztof Tworzydło",
       "athleteId": 132646759,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKWMJdok0A58yi9IWxvFxCv4Lb8Yo5_n7UBfEpuggj0=s96-c",
-      "totalDistance": 892,
-      "totalElevation": 4184,
-      "avgElevation": 71,
-      "totalTime": 54,
-      "totalActivities": 59,
-      "avgSpeed": 16.51,
+      "totalDistance": 945.3,
+      "totalElevation": 4527,
+      "avgElevation": 75,
+      "totalTime": 57,
+      "totalActivities": 60,
+      "avgSpeed": 16.71,
       "activityTypes": [
         "Ride"
       ]
@@ -1917,6 +1917,49 @@
       "avgSpeed": 11.2,
       "activityTypes": [
         "Ride"
+      ]
+    },
+    {
+      "name": "Alicja Ka",
+      "athleteId": 132698330,
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJRDvaLCrDd3lfrE4v_Oz0QAXNTGnyG6sEiUPPAHcyVfDPb=s96-c",
+      "totalDistance": 532.9,
+      "totalElevation": 1019,
+      "avgElevation": 16,
+      "totalTime": 38,
+      "totalActivities": 63,
+      "avgSpeed": 14.07,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Magdalena Ostojska-Korpas",
+      "athleteId": 135518653,
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJ1TnRb2b_YaoBo9JGRGzr7S05xwQppBX3edH6esTTI8T_XYXM=s96-c",
+      "totalDistance": 397.2,
+      "totalElevation": 551,
+      "avgElevation": 11,
+      "totalTime": 30,
+      "totalActivities": 52,
+      "avgSpeed": 13.25,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Jacek Korfanty",
+      "athleteId": 42438120,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 875.2,
+      "totalElevation": 7674,
+      "avgElevation": 108,
+      "totalTime": 49,
+      "totalActivities": 71,
+      "avgSpeed": 17.87,
+      "activityTypes": [
+        "MountainBikeRide",
+        "EMountainBikeRide"
       ]
     }
   ]
