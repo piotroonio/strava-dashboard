@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23T09:28:23.580Z",
+  "updatedAt": "2026-06-23T11:50:36.558Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -1626,12 +1626,12 @@
       "name": "Adam Filimonowicz",
       "athleteId": 136439695,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJSHLNIc0PvhLucqTSFlKsdxjPT-J219Rzgll5Rfew8Jl8hQA=s96-c",
-      "totalDistance": 1167.2,
-      "totalElevation": 1648,
+      "totalDistance": 1184.7,
+      "totalElevation": 1687,
       "avgElevation": 23,
-      "totalTime": 58,
-      "totalActivities": 72,
-      "avgSpeed": 20.05,
+      "totalTime": 61,
+      "totalActivities": 74,
+      "avgSpeed": 19.48,
       "activityTypes": [
         "EBikeRide"
       ]
@@ -1782,12 +1782,12 @@
       "name": "Grzegorz Grabowski",
       "athleteId": 167010585,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/167010585/55479335/2/large.jpg",
-      "totalDistance": 185.4,
-      "totalElevation": 220,
+      "totalDistance": 193.8,
+      "totalElevation": 227,
       "avgElevation": 12,
       "totalTime": 11,
-      "totalActivities": 18,
-      "avgSpeed": 17.34,
+      "totalActivities": 19,
+      "avgSpeed": 17.48,
       "activityTypes": [
         "Ride"
       ]
@@ -2168,6 +2168,34 @@
       "totalTime": 17,
       "totalActivities": 39,
       "avgSpeed": 15.86,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Grzegorz Januszek",
+      "athleteId": 1853591038,
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/1853591038/49193614/1/large.jpg",
+      "totalDistance": 118.2,
+      "totalElevation": 936,
+      "avgElevation": 117,
+      "totalTime": 7,
+      "totalActivities": 8,
+      "avgSpeed": 16.62,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Karolina Kończarek",
+      "athleteId": 137547058,
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/137547058/32371139/2/large.jpg",
+      "totalDistance": 343.6,
+      "totalElevation": 1078,
+      "avgElevation": 90,
+      "totalTime": 19,
+      "totalActivities": 12,
+      "avgSpeed": 18.39,
       "activityTypes": [
         "Ride"
       ]
