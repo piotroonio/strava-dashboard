@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23T06:15:03.448Z",
+  "updatedAt": "2026-06-23T07:00:49.646Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -133,11 +133,11 @@
       "name": "Małgorzata Żółtowska",
       "athleteId": 66600706,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/66600706/16617639/1/large.jpg",
-      "totalDistance": 662.1,
-      "totalElevation": 857,
+      "totalDistance": 665.9,
+      "totalElevation": 861,
       "avgElevation": 13,
-      "totalTime": 41,
-      "totalActivities": 66,
+      "totalTime": 42,
+      "totalActivities": 67,
       "avgSpeed": 15.97,
       "activityTypes": [
         "Ride"
@@ -951,12 +951,12 @@
       "name": "Marcin Wulczyński",
       "athleteId": 163834196,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 573.9,
-      "totalElevation": 1344,
-      "avgElevation": 29,
-      "totalTime": 28,
-      "totalActivities": 47,
-      "avgSpeed": 20.4,
+      "totalDistance": 610,
+      "totalElevation": 1419,
+      "avgElevation": 28,
+      "totalTime": 30,
+      "totalActivities": 50,
+      "avgSpeed": 20.52,
       "activityTypes": [
         "Ride",
         "EBikeRide"
@@ -1121,12 +1121,12 @@
       "name": "Janek Fuławka",
       "athleteId": 132024542,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/132024542/30075721/2/large.jpg",
-      "totalDistance": 665.1,
-      "totalElevation": 3566,
-      "avgElevation": 94,
+      "totalDistance": 680.5,
+      "totalElevation": 3617,
+      "avgElevation": 93,
       "totalTime": 30,
-      "totalActivities": 38,
-      "avgSpeed": 22.49,
+      "totalActivities": 39,
+      "avgSpeed": 22.52,
       "activityTypes": [
         "Ride"
       ]
@@ -1402,13 +1402,15 @@
       "name": "Grzegorz Kamiński",
       "athleteId": 606557143,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocL72QU9GZ366hWreZ3iBTwF_R0PpZfatJvbOO81htvpptLQDA=s96-c",
-      "totalDistance": 0,
-      "totalElevation": 0,
-      "avgElevation": 0,
-      "totalTime": 0,
-      "totalActivities": 0,
-      "avgSpeed": 0,
-      "activityTypes": []
+      "totalDistance": 186,
+      "totalElevation": 1435,
+      "avgElevation": 103,
+      "totalTime": 12,
+      "totalActivities": 14,
+      "avgSpeed": 16.01,
+      "activityTypes": [
+        "Ride"
+      ]
     },
     {
       "name": "Mariusz lepczyński",
@@ -1794,13 +1796,15 @@
       "name": "Ewelina Strzelecka",
       "athleteId": 137024121,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocI1OzHfns57aYiWcR3ImkwG_tIEh93VxSyEKWxuW_qzbV2WzG3p=s96-c",
-      "totalDistance": 0,
-      "totalElevation": 0,
-      "avgElevation": 0,
-      "totalTime": 0,
-      "totalActivities": 0,
-      "avgSpeed": 0,
-      "activityTypes": []
+      "totalDistance": 208.6,
+      "totalElevation": 261,
+      "avgElevation": 6,
+      "totalTime": 18,
+      "totalActivities": 41,
+      "avgSpeed": 11.68,
+      "activityTypes": [
+        "Ride"
+      ]
     },
     {
       "name": "Krzysztof Tworzydło",
@@ -2124,6 +2128,20 @@
       "avgSpeed": 16.4,
       "activityTypes": [
         "Ride"
+      ]
+    },
+    {
+      "name": "Krzysztof Szpala",
+      "athleteId": 136611785,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 412.7,
+      "totalElevation": 744,
+      "avgElevation": 32,
+      "totalTime": 24,
+      "totalActivities": 23,
+      "avgSpeed": 16.99,
+      "activityTypes": [
+        "MountainBikeRide"
       ]
     }
   ]
