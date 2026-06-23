@@ -253,9 +253,28 @@ async function main() {
   const CLIENT_SECRET = process.env.CLIENT_SECRET;
 
   try {
-    const results = await Promise.all(
-      tokens.map(u => processUser(u, CLIENT_ID, CLIENT_SECRET))
-    );
+
+const BATCH_SIZE = 80; // bezpieczne
+const results = [];
+
+for (let i = 0; i < tokens.length; i += BATCH_SIZE) {
+
+  const batch = tokens.slice(i, i + BATCH_SIZE);
+
+  console.log(`🚀 Processing batch ${i / BATCH_SIZE + 1}`);
+
+  for (const user of batch) {
+    const res = await processUser(user, CLIENT_ID, CLIENT_SECRET);
+    results.push(res);
+  }
+
+  // ❗ NIE czekaj po ostatnim batchu
+  if (i + BATCH_SIZE < tokens.length) {
+    console.log("⏳ Waiting 15 minutes to respect rate limits...");
+    await sleep(15 * 60 * 1000); // 15 min
+  }
+}
+
 
     // ✅ clean data
 
