@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23T07:00:49.646Z",
+  "updatedAt": "2026-06-23T09:28:23.580Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -2142,6 +2142,34 @@
       "avgSpeed": 16.99,
       "activityTypes": [
         "MountainBikeRide"
+      ]
+    },
+    {
+      "name": "Zbigniew Bilski",
+      "athleteId": 136058528,
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLQ-cSfpV5Hzsraf-msFjB8a8DMx5yG5ivXqEeHbFg9HaKf-Q=s96-c",
+      "totalDistance": 1522.8,
+      "totalElevation": 1703,
+      "avgElevation": 43,
+      "totalTime": 101,
+      "totalActivities": 40,
+      "avgSpeed": 15.01,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Marek M",
+      "athleteId": 157600170,
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/157600170/37019301/1/large.jpg",
+      "totalDistance": 263.8,
+      "totalElevation": 321,
+      "avgElevation": 8,
+      "totalTime": 17,
+      "totalActivities": 39,
+      "avgSpeed": 15.86,
+      "activityTypes": [
+        "Ride"
       ]
     }
   ]
