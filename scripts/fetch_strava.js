@@ -254,7 +254,7 @@ async function main() {
 
   try {
 
-const BATCH_SIZE = 80; // bezpieczne
+const BATCH_SIZE = 90; // było 80
 const results = [];
 
 for (let i = 0; i < tokens.length; i += BATCH_SIZE) {
