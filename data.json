@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-25T10:44:08.016Z",
+  "updatedAt": "2026-06-25T12:34:52.727Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -570,12 +570,12 @@
       "name": "Milosz D",
       "athleteId": 136332796,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/136332796/36921510/1/large.jpg",
-      "totalDistance": 1816,
-      "totalElevation": 4463,
+      "totalDistance": 1826,
+      "totalElevation": 4483,
       "avgElevation": 48,
-      "totalTime": 106,
-      "totalActivities": 93,
-      "avgSpeed": 17.11,
+      "totalTime": 107,
+      "totalActivities": 94,
+      "avgSpeed": 17.08,
       "activityTypes": [
         "Ride"
       ]
@@ -752,12 +752,12 @@
       "name": "Marek K",
       "athleteId": 132215488,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKKn1sBY9uHB6ekNGxlAGK5FdDTCrxS30Bd0w4w5Zz5m-a_-Q=s96-c",
-      "totalDistance": 165,
-      "totalElevation": 112,
+      "totalDistance": 171,
+      "totalElevation": 117,
       "avgElevation": 5,
       "totalTime": 11,
-      "totalActivities": 22,
-      "avgSpeed": 15.61,
+      "totalActivities": 23,
+      "avgSpeed": 15.55,
       "activityTypes": [
         "Ride"
       ]
@@ -921,12 +921,12 @@
       "name": "Ka St",
       "athleteId": 163435604,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/163435604/43559119/2/large.jpg",
-      "totalDistance": 1631,
-      "totalElevation": 8255,
-      "avgElevation": 359,
+      "totalDistance": 1636.1,
+      "totalElevation": 8263,
+      "avgElevation": 344,
       "totalTime": 64,
-      "totalActivities": 23,
-      "avgSpeed": 25.65,
+      "totalActivities": 24,
+      "avgSpeed": 25.62,
       "activityTypes": [
         "GravelRide",
         "Ride"
@@ -1023,12 +1023,12 @@
       "name": "Sławek Świokło",
       "athleteId": 133857860,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIrY8bR0GAyTYlj-ZB6tjeqpSduB5lr991yg5kK339DPbCj9IhIDQ=s96-c",
-      "totalDistance": 342.6,
-      "totalElevation": 297,
+      "totalDistance": 350.2,
+      "totalElevation": 303,
       "avgElevation": 7,
-      "totalTime": 25,
-      "totalActivities": 43,
-      "avgSpeed": 13.68,
+      "totalTime": 26,
+      "totalActivities": 44,
+      "avgSpeed": 13.7,
       "activityTypes": [
         "Ride"
       ]
@@ -1290,12 +1290,12 @@
       "name": "Paweł Jamka",
       "athleteId": 2029052381,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKWn3MzsGZMjzgk5zxWl19cNyIbTXV1RxXo18LeA0cruimofxts=s96-c",
-      "totalDistance": 74.4,
-      "totalElevation": 103,
+      "totalDistance": 77.6,
+      "totalElevation": 106,
       "avgElevation": 5,
       "totalTime": 6,
-      "totalActivities": 20,
-      "avgSpeed": 12.96,
+      "totalActivities": 21,
+      "avgSpeed": 12.94,
       "activityTypes": [
         "Ride"
       ]
@@ -1374,11 +1374,11 @@
       "name": "Chemiczny Ahmed",
       "athleteId": 135990927,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 1231.8,
-      "totalElevation": 1041,
+      "totalDistance": 1237.9,
+      "totalElevation": 1048,
       "avgElevation": 8,
       "totalTime": 71,
-      "totalActivities": 133,
+      "totalActivities": 134,
       "avgSpeed": 17.46,
       "activityTypes": [
         "Ride"
@@ -1951,12 +1951,12 @@
       "name": "Jacek Korfanty",
       "athleteId": 42438120,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 924.2,
-      "totalElevation": 7793,
-      "avgElevation": 101,
+      "totalDistance": 932.4,
+      "totalElevation": 7818,
+      "avgElevation": 100,
       "totalTime": 52,
-      "totalActivities": 77,
-      "avgSpeed": 17.85,
+      "totalActivities": 78,
+      "avgSpeed": 17.84,
       "activityTypes": [
         "MountainBikeRide",
         "EMountainBikeRide"
@@ -2284,6 +2284,35 @@
       "avgSpeed": 18.72,
       "activityTypes": [
         "Ride"
+      ]
+    },
+    {
+      "name": "Przemysław  Koćma ",
+      "athleteId": 166454136,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 592.7,
+      "totalElevation": 1368,
+      "avgElevation": 22,
+      "totalTime": 37,
+      "totalActivities": 61,
+      "avgSpeed": 15.87,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Tomasz Hus",
+      "athleteId": 137543811,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 234.8,
+      "totalElevation": 283,
+      "avgElevation": 24,
+      "totalTime": 12,
+      "totalActivities": 12,
+      "avgSpeed": 19.47,
+      "activityTypes": [
+        "Ride",
+        "EBikeRide"
       ]
     }
   ]
