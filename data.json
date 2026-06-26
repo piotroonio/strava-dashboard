@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-26T06:35:14.252Z",
+  "updatedAt": "2026-06-26T09:39:23.885Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -570,11 +570,11 @@
       "name": "Milosz D",
       "athleteId": 136332796,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/136332796/36921510/1/large.jpg",
-      "totalDistance": 1833.2,
-      "totalElevation": 4494,
+      "totalDistance": 1845.8,
+      "totalElevation": 4519,
       "avgElevation": 47,
-      "totalTime": 107,
-      "totalActivities": 95,
+      "totalTime": 108,
+      "totalActivities": 96,
       "avgSpeed": 17.09,
       "activityTypes": [
         "Ride"
@@ -766,12 +766,12 @@
       "name": "magdalena szmara",
       "athleteId": 134151181,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocL0dqNaWQbDviYosdxbRtZmaqkiXdKlLWeGkTvfxARDF16XyQ=s96-c",
-      "totalDistance": 489.3,
-      "totalElevation": 602,
+      "totalDistance": 497.2,
+      "totalElevation": 604,
       "avgElevation": 18,
-      "totalTime": 30,
-      "totalActivities": 33,
-      "avgSpeed": 16.25,
+      "totalTime": 31,
+      "totalActivities": 34,
+      "avgSpeed": 16.2,
       "activityTypes": [
         "Ride"
       ]
@@ -1374,12 +1374,12 @@
       "name": "Chemiczny Ahmed",
       "athleteId": 135990927,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 1260.7,
-      "totalElevation": 1063,
+      "totalDistance": 1271.5,
+      "totalElevation": 1072,
       "avgElevation": 8,
-      "totalTime": 72,
-      "totalActivities": 136,
-      "avgSpeed": 17.47,
+      "totalTime": 73,
+      "totalActivities": 137,
+      "avgSpeed": 17.45,
       "activityTypes": [
         "Ride"
       ]
@@ -1696,12 +1696,12 @@
       "name": "Piotr Dębowicz",
       "athleteId": 136263780,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKTVs0WXGRB98B9U33TZVfz5Rr0MlQBdDNJjIRUGzaP5Uct=s96-c",
-      "totalDistance": 699,
-      "totalElevation": 897,
+      "totalDistance": 706.3,
+      "totalElevation": 904,
       "avgElevation": 10,
-      "totalTime": 49,
-      "totalActivities": 92,
-      "avgSpeed": 14.39,
+      "totalTime": 50,
+      "totalActivities": 93,
+      "avgSpeed": 14.21,
       "activityTypes": [
         "Ride",
         "EBikeRide"
@@ -1810,12 +1810,12 @@
       "name": "Krzysztof Tworzydło",
       "athleteId": 132646759,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKWMJdok0A58yi9IWxvFxCv4Lb8Yo5_n7UBfEpuggj0=s96-c",
-      "totalDistance": 1111.2,
-      "totalElevation": 5494,
-      "avgElevation": 85,
-      "totalTime": 65,
-      "totalActivities": 65,
-      "avgSpeed": 16.98,
+      "totalDistance": 1114.5,
+      "totalElevation": 5517,
+      "avgElevation": 84,
+      "totalTime": 66,
+      "totalActivities": 66,
+      "avgSpeed": 16.96,
       "activityTypes": [
         "Ride"
       ]
@@ -2327,6 +2327,48 @@
       "avgSpeed": 12.17,
       "activityTypes": [
         "Ride"
+      ]
+    },
+    {
+      "name": "Marek Skrzypczak",
+      "athleteId": 30981470,
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/30981470/30431845/2/large.jpg",
+      "totalDistance": 579.1,
+      "totalElevation": 1342,
+      "avgElevation": 31,
+      "totalTime": 27,
+      "totalActivities": 44,
+      "avgSpeed": 21.83,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Marzena Marciniak",
+      "athleteId": 137186247,
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/137186247/36952535/1/large.jpg",
+      "totalDistance": 143.6,
+      "totalElevation": 671,
+      "avgElevation": 112,
+      "totalTime": 8,
+      "totalActivities": 6,
+      "avgSpeed": 17.48,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Mateusz Białka",
+      "athleteId": 166736057,
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJYH57Co7TqPDKOLdVo1PaDoEKL0dTCyKIRh0yNz94nRypo_g=s96-c",
+      "totalDistance": 124.9,
+      "totalElevation": 1422,
+      "avgElevation": 474,
+      "totalTime": 9,
+      "totalActivities": 3,
+      "avgSpeed": 13.73,
+      "activityTypes": [
+        "MountainBikeRide"
       ]
     }
   ]
