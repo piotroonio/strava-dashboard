@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T07:15:24.770Z",
+  "updatedAt": "2026-06-29T11:03:53.103Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -118,15 +118,15 @@
       "name": "Kasia Sch",
       "athleteId": 133627842,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIq9cxp2BfbtWstPkkkFl-wwGt8Oj5YKQwm-3vkjKqI=s96-c",
-      "totalDistance": 1680.7,
-      "totalElevation": 5445,
-      "avgElevation": 75,
-      "totalTime": 87,
-      "totalActivities": 73,
-      "avgSpeed": 19.26,
+      "totalDistance": 1771.7,
+      "totalElevation": 5616,
+      "avgElevation": 76,
+      "totalTime": 92,
+      "totalActivities": 74,
+      "avgSpeed": 19.34,
       "activityTypes": [
-        "GravelRide",
-        "Ride"
+        "Ride",
+        "GravelRide"
       ]
     },
     {
@@ -710,12 +710,12 @@
       "name": "Mario GROBLA bwn Minions",
       "athleteId": 133151873,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/133151873/30330104/1/large.jpg",
-      "totalDistance": 1147.6,
-      "totalElevation": 1606,
+      "totalDistance": 1154.5,
+      "totalElevation": 1614,
       "avgElevation": 12,
       "totalTime": 77,
-      "totalActivities": 133,
-      "avgSpeed": 14.92,
+      "totalActivities": 134,
+      "avgSpeed": 14.91,
       "activityTypes": [
         "Ride"
       ]
@@ -1374,12 +1374,12 @@
       "name": "Chemiczny Ahmed",
       "athleteId": 135990927,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 1357.9,
-      "totalElevation": 1140,
+      "totalDistance": 1368.3,
+      "totalElevation": 1147,
       "avgElevation": 8,
       "totalTime": 78,
-      "totalActivities": 145,
-      "avgSpeed": 17.51,
+      "totalActivities": 146,
+      "avgSpeed": 17.52,
       "activityTypes": [
         "Ride"
       ]
@@ -1416,12 +1416,12 @@
       "name": "Mariusz lepczyński",
       "athleteId": 133666679,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJyrTAYzYGPXAgjdzMeRe7nn3EhVXtPE4a5rVXRBmkOD8ANeg=s96-c",
-      "totalDistance": 551.4,
-      "totalElevation": 555,
+      "totalDistance": 583.5,
+      "totalElevation": 579,
       "avgElevation": 12,
-      "totalTime": 30,
-      "totalActivities": 48,
-      "avgSpeed": 18.45,
+      "totalTime": 38,
+      "totalActivities": 49,
+      "avgSpeed": 15.31,
       "activityTypes": [
         "Ride"
       ]
@@ -2398,6 +2398,63 @@
       "activityTypes": [
         "Ride",
         "MountainBikeRide"
+      ]
+    },
+    {
+      "name": "Mariusz Lis",
+      "athleteId": 132065953,
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/132065953/36583108/1/large.jpg",
+      "totalDistance": 397.9,
+      "totalElevation": 492,
+      "avgElevation": 16,
+      "totalTime": 18,
+      "totalActivities": 31,
+      "avgSpeed": 22.04,
+      "activityTypes": [
+        "EBikeRide",
+        "Ride"
+      ]
+    },
+    {
+      "name": "Kasia Miazga",
+      "athleteId": 137180430,
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/137180430/36842822/1/large.jpg",
+      "totalDistance": 10.5,
+      "totalElevation": 12,
+      "avgElevation": 3,
+      "totalTime": 1,
+      "totalActivities": 4,
+      "avgSpeed": 12.79,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Janek S.",
+      "athleteId": 140743685,
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKfTDksoCO9RCGpjRR1p8asOLEfUmKBDNXFSX8u6LGFeGy2XoOT=s96-c",
+      "totalDistance": 180.7,
+      "totalElevation": 266,
+      "avgElevation": 27,
+      "totalTime": 14,
+      "totalActivities": 10,
+      "avgSpeed": 13.13,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "PAWEŁ KEMPA",
+      "athleteId": 136100892,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 220.2,
+      "totalElevation": 879,
+      "avgElevation": 49,
+      "totalTime": 15,
+      "totalActivities": 18,
+      "avgSpeed": 14.78,
+      "activityTypes": [
+        "Ride"
       ]
     }
   ]
