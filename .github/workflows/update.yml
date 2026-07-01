@@ -2,7 +2,7 @@ name: Update Data
 
 on:
   schedule:
-    - cron: "0 2 * * *"   # codziennie o 02:00
+    - cron: "0 2,14 * * *"   # codziennie o 02:00
   workflow_dispatch:      # manualne uruchomienie
 
 jobs:
