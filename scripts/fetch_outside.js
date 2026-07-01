@@ -27,8 +27,8 @@ function getDistance(lat1, lon1, lat2, lon2) {
 
   const a =
     Math.sin(dLat / 2) ** 2 +
-    Math.cos(lat1 * Math.PI / 180) *
-    Math.cos(lat2 * Math.PI / 180) *
+    Math.cos(lat1 * Math.PI / 1) *
+    Math.cos(lat2 * Math.PI / 1) *
     Math.sin(dLon / 2) ** 2;
 
   return R * (2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)));
@@ -217,7 +217,7 @@ async function main() {
   //tokens.map(user => processUser(user, CLIENT_ID, CLIENT_SECRET))
   //);
 
-const BATCH_SIZE = 80; // bezpieczne
+const BATCH_SIZE = 90; // było 80
 const results = [];
 
 for (let i = 0; i < tokens.length; i += BATCH_SIZE) {
