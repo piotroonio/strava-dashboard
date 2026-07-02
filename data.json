@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-02T06:24:41.832Z",
+  "updatedAt": "2026-07-02T09:33:15.638Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -133,12 +133,12 @@
       "name": "Małgorzata Żółtowska",
       "athleteId": 66600706,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/66600706/16617639/1/large.jpg",
-      "totalDistance": 725.3,
-      "totalElevation": 936,
+      "totalDistance": 729,
+      "totalElevation": 940,
       "avgElevation": 12,
-      "totalTime": 45,
-      "totalActivities": 77,
-      "avgSpeed": 15.99,
+      "totalTime": 46,
+      "totalActivities": 78,
+      "avgSpeed": 16,
       "activityTypes": [
         "Ride"
       ]
@@ -358,12 +358,12 @@
       "name": "Ptysiowe Cudeńka",
       "athleteId": 135587161,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/135587161/30866936/1/large.jpg",
-      "totalDistance": 124.5,
-      "totalElevation": 230,
-      "avgElevation": 18,
+      "totalDistance": 128.4,
+      "totalElevation": 242,
+      "avgElevation": 17,
       "totalTime": 11,
-      "totalActivities": 13,
-      "avgSpeed": 11.81,
+      "totalActivities": 14,
+      "avgSpeed": 11.83,
       "activityTypes": [
         "Ride"
       ]
@@ -372,12 +372,12 @@
       "name": "Karolina Szumiło",
       "athleteId": 135990427,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/135990427/31097894/1/large.jpg",
-      "totalDistance": 542.3,
-      "totalElevation": 2286,
-      "avgElevation": 41,
+      "totalDistance": 549.5,
+      "totalElevation": 2302,
+      "avgElevation": 40,
       "totalTime": 44,
-      "totalActivities": 56,
-      "avgSpeed": 12.46,
+      "totalActivities": 57,
+      "avgSpeed": 12.49,
       "activityTypes": [
         "Ride"
       ]
@@ -584,13 +584,15 @@
       "name": "Marcin Mak777 Grzywa",
       "athleteId": 33439441,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/33439441/31486664/2/large.jpg",
-      "totalDistance": 0,
-      "totalElevation": 0,
-      "avgElevation": 0,
-      "totalTime": 0,
-      "totalActivities": 0,
-      "avgSpeed": 0,
-      "activityTypes": []
+      "totalDistance": 182.8,
+      "totalElevation": 331,
+      "avgElevation": 9,
+      "totalTime": 11,
+      "totalActivities": 37,
+      "avgSpeed": 16.76,
+      "activityTypes": [
+        "Ride"
+      ]
     },
     {
       "name": "Mark Kida",
@@ -1907,12 +1909,12 @@
       "name": "Wiolka Jarczak",
       "athleteId": 135525520,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKq2W-QEhycNF-wtlk9I9jFUPkLdAgQpjI6R8d2cIVl8ptbIw=s96-c",
-      "totalDistance": 621.9,
-      "totalElevation": 768,
+      "totalDistance": 630.4,
+      "totalElevation": 773,
       "avgElevation": 8,
-      "totalTime": 58,
-      "totalActivities": 92,
-      "avgSpeed": 10.71,
+      "totalTime": 59,
+      "totalActivities": 93,
+      "avgSpeed": 10.64,
       "activityTypes": [
         "Ride"
       ]
@@ -2466,6 +2468,34 @@
       "totalTime": 9,
       "totalActivities": 17,
       "avgSpeed": 15.37,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Paweł Sroczyński",
+      "athleteId": 135987212,
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/135987212/30948428/2/large.jpg",
+      "totalDistance": 602.1,
+      "totalElevation": 1051,
+      "avgElevation": 29,
+      "totalTime": 28,
+      "totalActivities": 36,
+      "avgSpeed": 21.18,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "edi 007",
+      "athleteId": 136463127,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 397.8,
+      "totalElevation": 331,
+      "avgElevation": 8,
+      "totalTime": 25,
+      "totalActivities": 40,
+      "avgSpeed": 16.01,
       "activityTypes": [
         "Ride"
       ]
