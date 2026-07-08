@@ -145,11 +145,27 @@
   },
   {
     "name": "Marcin B",
+    "date": "2026-07-03",
+    "location": "Wola Żyzna",
+    "distance": 2.9,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.575989%2C20.990448%3B50.589412%2C20.99999",
+    "link": "https://www.strava.com/activities/19159708160"
+  },
+  {
+    "name": "Marcin B",
     "date": "2026-06-28",
     "location": "Wola Żyzna",
     "distance": 18.2,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.575847%2C20.990498%3B50.578281%2C21.012128",
     "link": "https://www.strava.com/activities/19102724354"
+  },
+  {
+    "name": "Katarzyna Dutkowska",
+    "date": "2026-07-04",
+    "location": "Grzybowo",
+    "distance": 80.6,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.157902%2C15.491442%3B54.157701%2C15.491398",
+    "link": "https://www.strava.com/activities/19179221915"
   },
   {
     "name": "Mateusz Galusik",
@@ -312,30 +328,6 @@
     "link": "https://www.strava.com/activities/19075777368"
   },
   {
-    "name": "Monia Bąk-Berdychowska",
-    "date": "2026-05-02",
-    "location": "Ścinawka Średnia",
-    "distance": 29.4,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.52582%2C16.511485%3B50.525605%2C16.511835",
-    "link": "https://www.strava.com/activities/18344951357"
-  },
-  {
-    "name": "Piotr Korczowski",
-    "date": "2026-06-13",
-    "location": "Łagów",
-    "distance": 1.9,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=52.3326%2C15.292513%3B52.33319%2C15.293348",
-    "link": "https://www.strava.com/activities/18904306504"
-  },
-  {
-    "name": "Milosz D",
-    "date": "2026-05-22",
-    "location": "Bardo",
-    "distance": 123.7,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.505037%2C16.734295%3B51.123565%2C16.998959",
-    "link": "https://www.strava.com/activities/18607850986"
-  },
-  {
     "name": "Milosz D",
     "date": "2026-05-08",
     "location": "Καρδάμαινα",
@@ -449,6 +441,14 @@
   },
   {
     "name": "Przeme k BLACK WIRE TEAM",
+    "date": "2026-07-02",
+    "location": "Blachownia",
+    "distance": 73.6,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.771298%2C18.973393%3B50.770859%2C18.973234",
+    "link": "https://www.strava.com/activities/19152559637"
+  },
+  {
+    "name": "Przeme k BLACK WIRE TEAM",
     "date": "2026-06-30",
     "location": "Blachownia",
     "distance": 36.8,
@@ -502,6 +502,30 @@
     "distance": 141.2,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=53.152273%2C15.434603%3B54.098385%2C15.090066",
     "link": "https://www.strava.com/activities/19009230161"
+  },
+  {
+    "name": "Ryszard RwieSerce",
+    "date": "2026-07-08",
+    "location": "Lubiatowo",
+    "distance": 6,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.798477%2C17.859022%3B54.798539%2C17.858917",
+    "link": "https://www.strava.com/activities/19223916278"
+  },
+  {
+    "name": "Ryszard RwieSerce",
+    "date": "2026-07-05",
+    "location": "Lubiatowo",
+    "distance": 14,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.798539%2C17.858987%3B54.798428%2C17.858998",
+    "link": "https://www.strava.com/activities/19192983916"
+  },
+  {
+    "name": "Ryszard RwieSerce",
+    "date": "2026-07-04",
+    "location": "Lubiatowo",
+    "distance": 5.9,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.798466%2C17.859157%3B54.798521%2C17.859048",
+    "link": "https://www.strava.com/activities/19180880137"
   },
   {
     "name": "Jakub Krawiec",
@@ -617,11 +641,11 @@
   },
   {
     "name": "Jakub Krawiec",
-    "date": "2026-06-04",
-    "location": "Salzburg",
-    "distance": 25.7,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=47.769698%2C13.072188%3B47.597544%2C13.16531",
-    "link": "https://www.strava.com/activities/18784970349"
+    "date": "2026-05-30",
+    "location": "Strzegom",
+    "distance": 5.3,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.963977%2C16.339499%3B50.963936%2C16.33958",
+    "link": "https://www.strava.com/activities/18716836953"
   },
   {
     "name": "Jakub Krawiec",
@@ -694,6 +718,14 @@
     "distance": 2,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=51.044349%2C15.250721%3B51.048103%2C15.230252",
     "link": "https://www.strava.com/activities/18347884797"
+  },
+  {
+    "name": "Marcelina Mikoda",
+    "date": "2026-07-03",
+    "location": "Slano",
+    "distance": 2.7,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=42.779979%2C17.870104%3B42.779786%2C17.869958",
+    "link": "https://www.strava.com/activities/19165763701"
   },
   {
     "name": "Adam Muca",
@@ -913,14 +945,6 @@
   },
   {
     "name": "Piotr Konarski",
-    "date": "2026-05-10",
-    "location": "Góra Świętej Anny",
-    "distance": 103.5,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.454148%2C18.171711%3B51.181046%2C18.144782",
-    "link": "https://www.strava.com/activities/18454785039"
-  },
-  {
-    "name": "Piotr Konarski",
     "date": "2026-05-09",
     "location": "Siemianice",
     "distance": 109,
@@ -934,6 +958,30 @@
     "distance": 14.6,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=51.675464%2C7.872026%3B51.675398%2C7.872112",
     "link": "https://www.strava.com/activities/18372548041"
+  },
+  {
+    "name": "Piotrek G",
+    "date": "2026-07-07",
+    "location": "Grudziądz",
+    "distance": 151.9,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=53.468359%2C18.741988%3B54.35336%2C18.661184",
+    "link": "https://www.strava.com/activities/19218383189"
+  },
+  {
+    "name": "Piotrek G",
+    "date": "2026-07-06",
+    "location": "Włocławek",
+    "distance": 168.1,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=52.642595%2C19.054922%3B53.468013%2C18.742558",
+    "link": "https://www.strava.com/activities/19206323670"
+  },
+  {
+    "name": "Piotrek G",
+    "date": "2026-07-05",
+    "location": "Warszawa",
+    "distance": 187.7,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=52.225886%2C21.045853%3B52.641879%2C19.055389",
+    "link": "https://www.strava.com/activities/19194085684"
   },
   {
     "name": "Damian Baran",
@@ -1294,94 +1342,6 @@
     "distance": 6.4,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=51.321085%2C21.947507%3B51.329034%2C21.955754",
     "link": "https://www.strava.com/activities/18794457840"
-  },
-  {
-    "name": "Jacek Korfanty",
-    "date": "2026-06-30",
-    "location": "Bardo",
-    "distance": 5.7,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.505261%2C16.732748%3B50.495274%2C16.697715",
-    "link": "https://www.strava.com/activities/19126781030"
-  },
-  {
-    "name": "Jacek Korfanty",
-    "date": "2026-06-30",
-    "location": "Morzyszów",
-    "distance": 6,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.495268%2C16.697802%3B50.50589%2C16.739747",
-    "link": "https://www.strava.com/activities/19125217738"
-  },
-  {
-    "name": "Jacek Korfanty",
-    "date": "2026-06-27",
-    "location": "Morzyszów",
-    "distance": 9.5,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.495233%2C16.697846%3B50.450192%2C16.657579",
-    "link": "https://www.strava.com/activities/19081065733"
-  },
-  {
-    "name": "Jacek Korfanty",
-    "date": "2026-06-20",
-    "location": "Podtynie",
-    "distance": 38.4,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.486277%2C16.681507%3B50.495726%2C16.697632",
-    "link": "https://www.strava.com/activities/18997571061"
-  },
-  {
-    "name": "Jacek Korfanty",
-    "date": "2026-06-13",
-    "location": "Morzyszów",
-    "distance": 30,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.486837%2C16.702417%3B50.495724%2C16.697602",
-    "link": "https://www.strava.com/activities/18904865507"
-  },
-  {
-    "name": "Jacek Korfanty",
-    "date": "2026-06-06",
-    "location": "Morzyszów",
-    "distance": 20.4,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.495757%2C16.697585%3B50.572328%2C16.648263",
-    "link": "https://www.strava.com/activities/18830344436"
-  },
-  {
-    "name": "Jacek Korfanty",
-    "date": "2026-05-10",
-    "location": "Morzyszów",
-    "distance": 48.2,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.49573%2C16.697638%3B50.495561%2C16.697751",
-    "link": "https://www.strava.com/activities/18455285170"
-  },
-  {
-    "name": "Jacek Korfanty",
-    "date": "2026-05-04",
-    "location": "Morzyszów",
-    "distance": 35.1,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.495694%2C16.697706%3B50.495664%2C16.697574",
-    "link": "https://www.strava.com/activities/18372702082"
-  },
-  {
-    "name": "Jacek Korfanty",
-    "date": "2026-05-03",
-    "location": "Bardo",
-    "distance": 10.8,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.505071%2C16.734338%3B50.495662%2C16.697621",
-    "link": "https://www.strava.com/activities/18362533095"
-  },
-  {
-    "name": "Jacek Korfanty",
-    "date": "2026-05-03",
-    "location": "Morzyszów",
-    "distance": 14.7,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.495684%2C16.697673%3B50.505023%2C16.734108",
-    "link": "https://www.strava.com/activities/18361598569"
-  },
-  {
-    "name": "Jacek Korfanty",
-    "date": "2026-05-02",
-    "location": "Morzyszów",
-    "distance": 48.1,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.495715%2C16.697634%3B50.495708%2C16.697589",
-    "link": "https://www.strava.com/activities/18346343618"
   },
   {
     "name": "Radosław Siśkiewicz",
