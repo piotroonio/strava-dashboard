@@ -1,6 +1,22 @@
 [
   {
     "name": "Adam Zuzel 🇯🇲",
+    "date": "2026-07-11",
+    "location": "Szklarska Poręba",
+    "distance": 6,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.815205%2C15.38279%3B50.820298%2C15.438688",
+    "link": "https://www.strava.com/activities/19268072888"
+  },
+  {
+    "name": "Adam Zuzel 🇯🇲",
+    "date": "2026-07-11",
+    "location": "Szklarska Poręba",
+    "distance": 18.3,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.820308%2C15.438718%3B50.815149%2C15.383032",
+    "link": "https://www.strava.com/activities/19267676270"
+  },
+  {
+    "name": "Adam Zuzel 🇯🇲",
     "date": "2026-06-06",
     "location": "Deszkowice Drugie",
     "distance": 104,
@@ -30,6 +46,22 @@
     "distance": 9.2,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=48.133243%2C11.592837%3B48.137387%2C11.68975",
     "link": "https://www.strava.com/activities/18382242588"
+  },
+  {
+    "name": "Kasia Sch",
+    "date": "2026-07-12",
+    "location": "Jelenia Góra",
+    "distance": 72.9,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.921496%2C15.75643%3B51.265347%2C15.568356",
+    "link": "https://www.strava.com/activities/19284675689"
+  },
+  {
+    "name": "Kasia Sch",
+    "date": "2026-07-11",
+    "location": "Královec",
+    "distance": 56.6,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.673043%2C15.971104%3B50.920964%2C15.757351",
+    "link": "https://www.strava.com/activities/19266880873"
   },
   {
     "name": "Kasia Sch",
@@ -425,6 +457,46 @@
   },
   {
     "name": "Sebastian S",
+    "date": "2026-07-12",
+    "location": "Wypalanki",
+    "distance": 56.6,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=52.718634%2C16.676559%3B52.402644%2C16.91449",
+    "link": "https://www.strava.com/activities/19285755668"
+  },
+  {
+    "name": "Sebastian S",
+    "date": "2026-07-11",
+    "location": "Skrzatusz",
+    "distance": 60.3,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=53.195958%2C16.615322%3B52.718598%2C16.676461",
+    "link": "https://www.strava.com/activities/19278915681"
+  },
+  {
+    "name": "Sebastian S",
+    "date": "2026-07-10",
+    "location": "Złocieniec",
+    "distance": 77.2,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=53.568056%2C16.036833%3B53.195912%2C16.615288",
+    "link": "https://www.strava.com/activities/19278912334"
+  },
+  {
+    "name": "Sebastian S",
+    "date": "2026-07-09",
+    "location": "Gruszewo",
+    "distance": 59.6,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=53.95728%2C15.975761%3B53.567344%2C16.032591",
+    "link": "https://www.strava.com/activities/19244547724"
+  },
+  {
+    "name": "Sebastian S",
+    "date": "2026-07-08",
+    "location": "Kołobrzeg",
+    "distance": 66.9,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.182079%2C15.595075%3B53.948994%2C15.976479",
+    "link": "https://www.strava.com/activities/19231072842"
+  },
+  {
+    "name": "Sebastian S",
     "date": "2026-06-28",
     "location": "Szczytna",
     "distance": 7.1,
@@ -438,6 +510,54 @@
     "distance": 9.7,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.417317%2C16.475162%3B50.417306%2C16.475097",
     "link": "https://www.strava.com/activities/19097857284"
+  },
+  {
+    "name": "Monika Serwin-Herezo",
+    "date": "2026-07-10",
+    "location": "Rowy",
+    "distance": 3.9,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.660048%2C17.051847%3B54.652513%2C17.052761",
+    "link": "https://www.strava.com/activities/19259212707"
+  },
+  {
+    "name": "Rafal Dzimiński ",
+    "date": "2026-07-14",
+    "location": "Kołobrzeg",
+    "distance": 3.3,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.189244%2C15.607657%3B54.189585%2C15.608366",
+    "link": "https://www.strava.com/activities/19305236529"
+  },
+  {
+    "name": "Rafal Dzimiński ",
+    "date": "2026-07-13",
+    "location": "Kołobrzeg",
+    "distance": 16.2,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.189394%2C15.606767%3B54.188879%2C15.608016",
+    "link": "https://www.strava.com/activities/19298105241"
+  },
+  {
+    "name": "Rafal Dzimiński ",
+    "date": "2026-07-13",
+    "location": "Kołobrzeg",
+    "distance": 8.6,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.189553%2C15.606795%3B54.189998%2C15.607908",
+    "link": "https://www.strava.com/activities/19294025185"
+  },
+  {
+    "name": "Rafal Dzimiński ",
+    "date": "2026-07-13",
+    "location": "Kołobrzeg",
+    "distance": 6.9,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.19091%2C15.608759%3B54.189576%2C15.608418",
+    "link": "https://www.strava.com/activities/19291475699"
+  },
+  {
+    "name": "Rafal Dzimiński ",
+    "date": "2026-07-12",
+    "location": "Kołobrzeg",
+    "distance": 7.6,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.19077%2C15.605988%3B54.189642%2C15.608219",
+    "link": "https://www.strava.com/activities/19286184340"
   },
   {
     "name": "Przeme k BLACK WIRE TEAM",
@@ -505,6 +625,102 @@
   },
   {
     "name": "Ryszard RwieSerce",
+    "date": "2026-07-13",
+    "location": "Kopalino",
+    "distance": 2.7,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.810367%2C17.833271%3B54.798298%2C17.85963",
+    "link": "https://www.strava.com/activities/19299422635"
+  },
+  {
+    "name": "Ryszard RwieSerce",
+    "date": "2026-07-13",
+    "location": "Lubiatowo",
+    "distance": 3,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.798446%2C17.858975%3B54.810787%2C17.831589",
+    "link": "https://www.strava.com/activities/19299020538"
+  },
+  {
+    "name": "Ryszard RwieSerce",
+    "date": "2026-07-13",
+    "location": "Dębki",
+    "distance": 18,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.829098%2C18.092327%3B54.798359%2C17.859523",
+    "link": "https://www.strava.com/activities/19298018521"
+  },
+  {
+    "name": "Ryszard RwieSerce",
+    "date": "2026-07-13",
+    "location": "Lubiatowo",
+    "distance": 23.5,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.798439%2C17.859126%3B54.832311%2C18.088167",
+    "link": "https://www.strava.com/activities/19294026298"
+  },
+  {
+    "name": "Ryszard RwieSerce",
+    "date": "2026-07-12",
+    "location": "Lubiatowo",
+    "distance": 2.3,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.798529%2C17.859017%3B54.813812%2C17.847724",
+    "link": "https://www.strava.com/activities/19279828264"
+  },
+  {
+    "name": "Ryszard RwieSerce",
+    "date": "2026-07-11",
+    "location": "Lubiatowo",
+    "distance": 9,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.798469%2C17.859189%3B54.810624%2C17.831171",
+    "link": "https://www.strava.com/activities/19279477113"
+  },
+  {
+    "name": "Ryszard RwieSerce",
+    "date": "2026-07-10",
+    "location": "Lubiatowo",
+    "distance": 7.1,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.798356%2C17.858916%3B54.798474%2C17.858998",
+    "link": "https://www.strava.com/activities/19259336151"
+  },
+  {
+    "name": "Ryszard RwieSerce",
+    "date": "2026-07-10",
+    "location": "Lubiatowo",
+    "distance": 6,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.798477%2C17.859186%3B54.798498%2C17.859021",
+    "link": "https://www.strava.com/activities/19256683800"
+  },
+  {
+    "name": "Ryszard RwieSerce",
+    "date": "2026-07-09",
+    "location": "Lubiatowo",
+    "distance": 2.4,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.798528%2C17.859013%3B54.8142%2C17.848094",
+    "link": "https://www.strava.com/activities/19253949169"
+  },
+  {
+    "name": "Ryszard RwieSerce",
+    "date": "2026-07-08",
+    "location": "Lubiatowo",
+    "distance": 6.2,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.798532%2C17.85888%3B54.798535%2C17.858872",
+    "link": "https://www.strava.com/activities/19233997209"
+  },
+  {
+    "name": "Ryszard RwieSerce",
+    "date": "2026-07-08",
+    "location": "Lubiatowo",
+    "distance": 4.6,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.798561%2C17.858859%3B54.79849%2C17.858999",
+    "link": "https://www.strava.com/activities/19230413493"
+  },
+  {
+    "name": "Ryszard RwieSerce",
+    "date": "2026-07-08",
+    "location": "Lubiatowo",
+    "distance": 12,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.79846%2C17.859175%3B54.798526%2C17.858996",
+    "link": "https://www.strava.com/activities/19226684763"
+  },
+  {
+    "name": "Ryszard RwieSerce",
     "date": "2026-07-08",
     "location": "Lubiatowo",
     "distance": 6,
@@ -554,7 +770,7 @@
   {
     "name": "Jakub Krawiec",
     "date": "2026-06-12",
-    "location": "Grado / Grau",
+    "location": "Grado / Gravo - Grao",
     "distance": 14.2,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=45.722104%2C13.378035%3B45.823938%2C13.343013",
     "link": "https://www.strava.com/activities/18888385267"
@@ -562,7 +778,7 @@
   {
     "name": "Jakub Krawiec",
     "date": "2026-06-12",
-    "location": "Grado / Grau",
+    "location": "Grado / Gravo - Grao",
     "distance": 7.2,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=45.722171%2C13.377692%3B45.722095%2C13.378103",
     "link": "https://www.strava.com/activities/18886460437"
@@ -570,7 +786,7 @@
   {
     "name": "Jakub Krawiec",
     "date": "2026-06-11",
-    "location": "Grado / Grau",
+    "location": "Grado / Gravo - Grao",
     "distance": 17.7,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=45.72225%2C13.377764%3B45.722122%2C13.378096",
     "link": "https://www.strava.com/activities/18880085632"
@@ -578,7 +794,7 @@
   {
     "name": "Jakub Krawiec",
     "date": "2026-06-11",
-    "location": "Grado / Grau",
+    "location": "Grado / Gravo - Grao",
     "distance": 7.8,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=45.722232%2C13.377846%3B45.722078%2C13.378075",
     "link": "https://www.strava.com/activities/18874145267"
@@ -697,11 +913,43 @@
   },
   {
     "name": "Dawid Moszowski",
+    "date": "2026-07-11",
+    "location": "Gdańsk",
+    "distance": 4.5,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.421809%2C18.60171%3B54.448514%2C18.561492",
+    "link": "https://www.strava.com/activities/19269907087"
+  },
+  {
+    "name": "Dawid Moszowski",
+    "date": "2026-07-11",
+    "location": "Sopot",
+    "distance": 4.8,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.43279%2C18.58636%3B54.41146%2C18.572773",
+    "link": "https://www.strava.com/activities/19265920807"
+  },
+  {
+    "name": "Dawid Moszowski",
+    "date": "2026-07-11",
+    "location": "Gdańsk",
+    "distance": 6.8,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.402617%2C18.610911%3B54.445256%2C18.571194",
+    "link": "https://www.strava.com/activities/19265117839"
+  },
+  {
+    "name": "Dawid Moszowski",
     "date": "2026-05-02",
     "location": "Zielona Góra",
     "distance": 77.8,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=51.938432%2C15.484327%3B51.938672%2C15.484555",
     "link": "https://www.strava.com/activities/18348931503"
+  },
+  {
+    "name": "Marcin Sawicki",
+    "date": "2026-07-11",
+    "location": "Δημοτική Ενότητα Μεγαρέων",
+    "distance": 12.5,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=37.988508%2C23.33719%3B37.988603%2C23.33732",
+    "link": "https://www.strava.com/activities/19264394932"
   },
   {
     "name": "Krystian Januszewicz",
@@ -734,6 +982,54 @@
     "distance": 38.2,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.073724%2C17.090342%3B50.073705%2C17.090421",
     "link": "https://www.strava.com/activities/18453058040"
+  },
+  {
+    "name": "Jacek Przyszlak",
+    "date": "2026-07-13",
+    "location": "Sianożęty",
+    "distance": 22.2,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.207846%2C15.724005%3B54.207903%2C15.723712",
+    "link": "https://www.strava.com/activities/19296426559"
+  },
+  {
+    "name": "Jacek Przyszlak",
+    "date": "2026-07-12",
+    "location": "Sianożęty",
+    "distance": 62.4,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.207804%2C15.723742%3B54.208051%2C15.723542",
+    "link": "https://www.strava.com/activities/19284985166"
+  },
+  {
+    "name": "Jacek Przyszlak",
+    "date": "2026-07-11",
+    "location": "Sianożęty",
+    "distance": 45.3,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.207834%2C15.723776%3B54.207918%2C15.723637",
+    "link": "https://www.strava.com/activities/19272683746"
+  },
+  {
+    "name": "Jacek Przyszlak",
+    "date": "2026-07-10",
+    "location": "Sianożęty",
+    "distance": 26.8,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.207949%2C15.723754%3B54.207975%2C15.723562",
+    "link": "https://www.strava.com/activities/19259862506"
+  },
+  {
+    "name": "Jacek Przyszlak",
+    "date": "2026-07-09",
+    "location": "Sianożęty",
+    "distance": 31.1,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.207901%2C15.723803%3B54.207987%2C15.723685",
+    "link": "https://www.strava.com/activities/19244417018"
+  },
+  {
+    "name": "Jacek Przyszlak",
+    "date": "2026-07-08",
+    "location": "Sianożęty",
+    "distance": 52.6,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.207737%2C15.723307%3B54.207952%2C15.723618",
+    "link": "https://www.strava.com/activities/19231260203"
   },
   {
     "name": "Jacek Przyszlak",
@@ -958,6 +1254,22 @@
     "distance": 14.6,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=51.675464%2C7.872026%3B51.675398%2C7.872112",
     "link": "https://www.strava.com/activities/18372548041"
+  },
+  {
+    "name": "Piotrek G",
+    "date": "2026-07-11",
+    "location": "Kosewo",
+    "distance": 44.5,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=52.41392%2C17.943353%3B52.41399%2C17.943174",
+    "link": "https://www.strava.com/activities/19269045485"
+  },
+  {
+    "name": "Piotrek G",
+    "date": "2026-07-10",
+    "location": "Kosewo",
+    "distance": 49.7,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=52.413743%2C17.943632%3B52.414361%2C17.942589",
+    "link": "https://www.strava.com/activities/19256669407"
   },
   {
     "name": "Piotrek G",
