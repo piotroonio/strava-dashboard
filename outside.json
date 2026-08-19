@@ -1,67 +1,27 @@
 [
   {
-    "name": "Piotr Sieradzki",
-    "date": "2026-08-03",
-    "location": "Międzywodzie",
-    "distance": 61.9,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.001685%2C14.677705%3B54.003486%2C14.674914",
-    "link": "https://www.strava.com/activities/19581750226"
+    "name": "Adam Zuzel 🇯🇲",
+    "date": "2026-08-16",
+    "location": "Gdynia",
+    "distance": 7,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.517425%2C18.544467%3B54.521183%2C18.530802",
+    "link": "https://www.strava.com/activities/19765127119"
   },
   {
-    "name": "Piotr Sieradzki",
-    "date": "2026-08-01",
-    "location": "Międzywodzie",
-    "distance": 80.4,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.002317%2C14.677342%3B54.00227%2C14.677168",
-    "link": "https://www.strava.com/activities/19558300482"
+    "name": "Adam Zuzel 🇯🇲",
+    "date": "2026-08-15",
+    "location": "Gdynia",
+    "distance": 7.7,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.518018%2C18.544152%3B54.517492%2C18.544103",
+    "link": "https://www.strava.com/activities/19756424004"
   },
   {
-    "name": "Piotr Sieradzki",
-    "date": "2026-07-31",
-    "location": "Międzywodzie",
-    "distance": 3.4,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.002293%2C14.67738%3B54.002257%2C14.677243",
-    "link": "https://www.strava.com/activities/19539931513"
-  },
-  {
-    "name": "Piotr Sieradzki",
-    "date": "2026-07-28",
-    "location": "Międzywodzie",
-    "distance": 73.6,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=53.997278%2C14.680034%3B54.002213%2C14.677224",
-    "link": "https://www.strava.com/activities/19499188541"
-  },
-  {
-    "name": "Piotr Sieradzki",
-    "date": "2026-07-27",
-    "location": "Międzywodzie",
-    "distance": 63.7,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.002207%2C14.677303%3B54.002215%2C14.677216",
-    "link": "https://www.strava.com/activities/19485871937"
-  },
-  {
-    "name": "Piotr Sieradzki",
-    "date": "2026-07-26",
-    "location": "Międzywodzie",
-    "distance": 70.1,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.00247%2C14.677055%3B54.002269%2C14.677157",
-    "link": "https://www.strava.com/activities/19472889923"
-  },
-  {
-    "name": "Piotr Sieradzki",
-    "date": "2026-07-22",
-    "location": "Międzywodzie",
-    "distance": 54.8,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.002243%2C14.676805%3B54.002244%2C14.67721",
-    "link": "https://www.strava.com/activities/19416910002"
-  },
-  {
-    "name": "Piotr Sieradzki",
-    "date": "2026-07-21",
-    "location": "Międzywodzie",
-    "distance": 64,
-    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.002238%2C14.676964%3B54.002252%2C14.677147",
-    "link": "https://www.strava.com/activities/19401893382"
+    "name": "Adam Zuzel 🇯🇲",
+    "date": "2026-08-14",
+    "location": "Gdynia",
+    "distance": 53.8,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.517332%2C18.54424%3B54.518228%2C18.544511",
+    "link": "https://www.strava.com/activities/19742130438"
   },
   {
     "name": "Adam Zuzel 🇯🇲",
@@ -174,6 +134,14 @@
     "distance": 9.2,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=48.133243%2C11.592837%3B48.137387%2C11.68975",
     "link": "https://www.strava.com/activities/18382242588"
+  },
+  {
+    "name": "Kasia Sch",
+    "date": "2026-08-10",
+    "location": "Stegna",
+    "distance": 81.8,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.338924%2C19.12967%3B54.347408%2C18.65854",
+    "link": "https://www.strava.com/activities/19689948795"
   },
   {
     "name": "Kasia Sch",
@@ -433,6 +401,30 @@
   },
   {
     "name": "Anna Giniowiec",
+    "date": "2026-08-13",
+    "location": "Sława",
+    "distance": 5.8,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=51.874777%2C16.05212%3B51.873271%2C16.052267",
+    "link": "https://www.strava.com/activities/19725447573"
+  },
+  {
+    "name": "Anna Giniowiec",
+    "date": "2026-08-12",
+    "location": "Sława",
+    "distance": 16,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=51.872645%2C16.052111%3B51.873102%2C16.052162",
+    "link": "https://www.strava.com/activities/19715673942"
+  },
+  {
+    "name": "Anna Giniowiec",
+    "date": "2026-08-11",
+    "location": "Sława",
+    "distance": 6.8,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=51.8733%2C16.052201%3B51.873052%2C16.052225",
+    "link": "https://www.strava.com/activities/19700006396"
+  },
+  {
+    "name": "Anna Giniowiec",
     "date": "2026-08-09",
     "location": "Sława",
     "distance": 8.3,
@@ -553,6 +545,14 @@
   },
   {
     "name": "Tomasz Imielski",
+    "date": "2026-08-15",
+    "location": "Łęknica",
+    "distance": 48.9,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=51.544972%2C14.734957%3B51.544962%2C14.734845",
+    "link": "https://www.strava.com/activities/19755610698"
+  },
+  {
+    "name": "Tomasz Imielski",
     "date": "2026-08-08",
     "location": "Otmuchów",
     "distance": 49.3,
@@ -662,6 +662,22 @@
     "distance": 20.7,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=44.032806%2C12.617862%3B44.03262%2C12.617611",
     "link": "https://www.strava.com/activities/19075777368"
+  },
+  {
+    "name": "Milosz D",
+    "date": "2026-08-18",
+    "location": "Wisełka",
+    "distance": 25.3,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=53.966347%2C14.573335%3B53.96636%2C14.573262",
+    "link": "https://www.strava.com/activities/19794950919"
+  },
+  {
+    "name": "Milosz D",
+    "date": "2026-08-18",
+    "location": "Międzyzdroje",
+    "distance": 14.9,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=53.924977%2C14.455637%3B53.96623%2C14.571035",
+    "link": "https://www.strava.com/activities/19791957888"
   },
   {
     "name": "Milosz D",
@@ -1017,6 +1033,14 @@
   },
   {
     "name": "Ryszard RwieSerce",
+    "date": "2026-08-10",
+    "location": "Nowe Warpno",
+    "distance": 57.9,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=53.721316%2C14.295291%3B53.432577%2C14.548531",
+    "link": "https://www.strava.com/activities/19679204107"
+  },
+  {
+    "name": "Ryszard RwieSerce",
     "date": "2026-08-09",
     "location": "Stahlbrode",
     "distance": 126.9,
@@ -1198,6 +1222,38 @@
     "distance": 5.9,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.798466%2C17.859157%3B54.798521%2C17.859048",
     "link": "https://www.strava.com/activities/19180880137"
+  },
+  {
+    "name": "Jakub Krawiec",
+    "date": "2026-08-15",
+    "location": "Goleniów",
+    "distance": 4.7,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=53.558805%2C14.839203%3B53.533272%2C14.883766",
+    "link": "https://www.strava.com/activities/19758036653"
+  },
+  {
+    "name": "Jakub Krawiec",
+    "date": "2026-08-15",
+    "location": "Goleniów",
+    "distance": 84.9,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=53.559039%2C14.822758%3B53.905912%2C14.267654",
+    "link": "https://www.strava.com/activities/19757072050"
+  },
+  {
+    "name": "Jakub Krawiec",
+    "date": "2026-08-15",
+    "location": "Podańsko",
+    "distance": 5.4,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=53.53325%2C14.88374%3B53.558841%2C14.822732",
+    "link": "https://www.strava.com/activities/19752053366"
+  },
+  {
+    "name": "Jakub Krawiec",
+    "date": "2026-08-14",
+    "location": "Podańsko",
+    "distance": 7.2,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=53.533109%2C14.883624%3B53.533152%2C14.88344",
+    "link": "https://www.strava.com/activities/19738035989"
   },
   {
     "name": "Jakub Krawiec",
@@ -1384,6 +1440,14 @@
     "link": "https://www.strava.com/activities/18331146449"
   },
   {
+    "name": "Sziva PL",
+    "date": "2026-08-16",
+    "location": "Budy Zaklasztorne",
+    "distance": 19.5,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=51.989407%2C20.330836%3B51.989351%2C20.330618",
+    "link": "https://www.strava.com/activities/19767461601"
+  },
+  {
     "name": "Dawid Moszowski",
     "date": "2026-07-11",
     "location": "Gdańsk",
@@ -1454,6 +1518,14 @@
     "distance": 38.2,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.073724%2C17.090342%3B50.073705%2C17.090421",
     "link": "https://www.strava.com/activities/18453058040"
+  },
+  {
+    "name": "Anna D.",
+    "date": "2026-08-14",
+    "location": "Ełk",
+    "distance": 23.5,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=53.826821%2C22.344337%3B53.825479%2C22.358078",
+    "link": "https://www.strava.com/activities/19739405540"
   },
   {
     "name": "Jacek Przyszlak",
@@ -1736,6 +1808,86 @@
     "link": "https://www.strava.com/activities/18580358857"
   },
   {
+    "name": "Chemiczny Ahmed",
+    "date": "2026-08-14",
+    "location": "Władysławowo",
+    "distance": 5.1,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.801584%2C18.391878%3B54.823931%2C18.333109",
+    "link": "https://www.strava.com/activities/19739822510"
+  },
+  {
+    "name": "Chemiczny Ahmed",
+    "date": "2026-08-14",
+    "location": "Rozewie",
+    "distance": 6.1,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.824036%2C18.333044%3B54.797568%2C18.400367",
+    "link": "https://www.strava.com/activities/19738118299"
+  },
+  {
+    "name": "Chemiczny Ahmed",
+    "date": "2026-08-12",
+    "location": "Jastrzębia Góra",
+    "distance": 3.4,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.833373%2C18.311275%3B54.82395%2C18.332494",
+    "link": "https://www.strava.com/activities/19712424406"
+  },
+  {
+    "name": "Chemiczny Ahmed",
+    "date": "2026-08-11",
+    "location": "Rozewie",
+    "distance": 87.7,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.823441%2C18.335785%3B54.82414%2C18.332585",
+    "link": "https://www.strava.com/activities/19697020787"
+  },
+  {
+    "name": "Chemiczny Ahmed",
+    "date": "2026-08-10",
+    "location": "Władysławowo",
+    "distance": 6.8,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.7956%2C18.402447%3B54.824022%2C18.332885",
+    "link": "https://www.strava.com/activities/19678925388"
+  },
+  {
+    "name": "Grzegorz Kamiński",
+    "date": "2026-08-16",
+    "location": "Kładno",
+    "distance": 26.3,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.217501%2C15.834178%3B54.217344%2C15.83424",
+    "link": "https://www.strava.com/activities/19764381483"
+  },
+  {
+    "name": "Grzegorz Kamiński",
+    "date": "2026-08-15",
+    "location": "Pleśna",
+    "distance": 41.1,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.226453%2C15.834212%3B54.217338%2C15.834206",
+    "link": "https://www.strava.com/activities/19756591545"
+  },
+  {
+    "name": "Piotr Konarski",
+    "date": "2026-08-13",
+    "location": "Zabłotczyzna",
+    "distance": 79,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=52.840493%2C23.742234%3B52.840511%2C23.74225",
+    "link": "https://www.strava.com/activities/19728402410"
+  },
+  {
+    "name": "Piotr Konarski",
+    "date": "2026-08-12",
+    "location": "Budy",
+    "distance": 10.4,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=52.761326%2C23.763723%3B52.840442%2C23.742193",
+    "link": "https://www.strava.com/activities/19713040253"
+  },
+  {
+    "name": "Piotr Konarski",
+    "date": "2026-08-12",
+    "location": "Zabłotczyzna",
+    "distance": 46,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=52.84057%2C23.742332%3B52.761325%2C23.763724",
+    "link": "https://www.strava.com/activities/19712600270"
+  },
+  {
     "name": "Piotr Konarski",
     "date": "2026-05-09",
     "location": "Siemianice",
@@ -1750,6 +1902,14 @@
     "distance": 14.6,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=51.675464%2C7.872026%3B51.675398%2C7.872112",
     "link": "https://www.strava.com/activities/18372548041"
+  },
+  {
+    "name": "Piotrek G",
+    "date": "2026-08-16",
+    "location": "Kłodzko",
+    "distance": 116.9,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.435188%2C16.657408%3B51.106881%2C17.123276",
+    "link": "https://www.strava.com/activities/19765442207"
   },
   {
     "name": "Piotrek G",
@@ -1822,6 +1982,38 @@
     "distance": 17.2,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.760271%2C17.541035%3B54.760133%2C17.540946",
     "link": "https://www.strava.com/activities/18460872404"
+  },
+  {
+    "name": "Piotr Dębowicz",
+    "date": "2026-08-19",
+    "location": "Ustronie Morskie",
+    "distance": 10.9,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.220305%2C15.784737%3B54.220336%2C15.784766",
+    "link": "https://www.strava.com/activities/19804920201"
+  },
+  {
+    "name": "Piotr Dębowicz",
+    "date": "2026-08-18",
+    "location": "Ustronie Morskie",
+    "distance": 15.4,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.220284%2C15.784762%3B54.220317%2C15.784705",
+    "link": "https://www.strava.com/activities/19789270563"
+  },
+  {
+    "name": "Piotr Dębowicz",
+    "date": "2026-08-17",
+    "location": "Ustronie Morskie",
+    "distance": 4.9,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.220307%2C15.784667%3B54.220263%2C15.784685",
+    "link": "https://www.strava.com/activities/19781366221"
+  },
+  {
+    "name": "Piotr Dębowicz",
+    "date": "2026-08-17",
+    "location": "Ustronie Morskie",
+    "distance": 2.6,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.220258%2C15.784633%3B54.220311%2C15.784681",
+    "link": "https://www.strava.com/activities/19780138321"
   },
   {
     "name": "Piotr Dębowicz",
@@ -2248,6 +2440,78 @@
     "link": "https://www.strava.com/activities/18794457840"
   },
   {
+    "name": "Jacek Korfanty",
+    "date": "2026-08-16",
+    "location": "Nowa Wieś",
+    "distance": 19.5,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.193102%2C16.764588%3B50.192172%2C16.765016",
+    "link": "https://www.strava.com/activities/19766279619"
+  },
+  {
+    "name": "Jacek Korfanty",
+    "date": "2026-08-15",
+    "location": "Nowa Wieś",
+    "distance": 29.6,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.192154%2C16.765004%3B50.192078%2C16.764883",
+    "link": "https://www.strava.com/activities/19754522837"
+  },
+  {
+    "name": "Aneta Bagińska",
+    "date": "2026-08-15",
+    "location": "Nürnberg",
+    "distance": 1.2,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=49.445207%2C11.082808%3B49.446291%2C11.073364",
+    "link": "https://www.strava.com/activities/19757760726"
+  },
+  {
+    "name": "Aneta Bagińska",
+    "date": "2026-08-15",
+    "location": "Ingolstadt",
+    "distance": 4.5,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=48.754001%2C11.46611%3B48.744493%2C11.436917",
+    "link": "https://www.strava.com/activities/19747902119"
+  },
+  {
+    "name": "Aneta Bagińska",
+    "date": "2026-08-14",
+    "location": "Neuburg an der Donau",
+    "distance": 34.9,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=48.739627%2C11.186796%3B48.753993%2C11.466019",
+    "link": "https://www.strava.com/activities/19739328887"
+  },
+  {
+    "name": "Aneta Bagińska",
+    "date": "2026-08-13",
+    "location": "Donauwörth",
+    "distance": 39.2,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=48.723923%2C10.769293%3B48.737385%2C11.183143",
+    "link": "https://www.strava.com/activities/19723491566"
+  },
+  {
+    "name": "Aneta Bagińska",
+    "date": "2026-08-12",
+    "location": "Günzburg",
+    "distance": 63.5,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=48.48757%2C10.256202%3B48.724186%2C10.769273",
+    "link": "https://www.strava.com/activities/19710630300"
+  },
+  {
+    "name": "Aneta Bagińska",
+    "date": "2026-08-11",
+    "location": "Erbach",
+    "distance": 50.7,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=48.290533%2C9.849664%3B48.487166%2C10.256096",
+    "link": "https://www.strava.com/activities/19693935477"
+  },
+  {
+    "name": "Aneta Bagińska",
+    "date": "2026-08-10",
+    "location": "Riedlingen (Kernstadt)",
+    "distance": 49.7,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=48.159642%2C9.493328%3B48.29059%2C9.849247",
+    "link": "https://www.strava.com/activities/19680496416"
+  },
+  {
     "name": "Aneta Bagińska",
     "date": "2026-08-09",
     "location": "Hausen im Tal",
@@ -2465,6 +2729,22 @@
   },
   {
     "name": "Karolina Kończarek",
+    "date": "2026-08-15",
+    "location": "Lohsa - Łaz",
+    "distance": 66.3,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=51.371932%2C14.393473%3B51.371931%2C14.39337",
+    "link": "https://www.strava.com/activities/19756149950"
+  },
+  {
+    "name": "Karolina Kończarek",
+    "date": "2026-08-14",
+    "location": "Boxberg/O.L. - Hamor",
+    "distance": 71.7,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=51.37253%2C14.511102%3B51.371557%2C14.510998",
+    "link": "https://www.strava.com/activities/19739580277"
+  },
+  {
+    "name": "Karolina Kończarek",
     "date": "2026-08-02",
     "location": "Małe Olecko",
     "distance": 40.1,
@@ -2486,6 +2766,38 @@
     "distance": 45,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=53.973963%2C22.539638%3B53.973966%2C22.539682",
     "link": "https://www.strava.com/activities/19512785005"
+  },
+  {
+    "name": "Magdalena Lasota",
+    "date": "2026-08-15",
+    "location": "Rokitno",
+    "distance": 2.5,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=52.531196%2C15.628016%3B52.547002%2C15.63879",
+    "link": "https://www.strava.com/activities/19755542160"
+  },
+  {
+    "name": "Magdalena Lasota",
+    "date": "2026-08-15",
+    "location": "Rokitno",
+    "distance": 2.4,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=52.547063%2C15.639182%3B52.530846%2C15.62809",
+    "link": "https://www.strava.com/activities/19754790019"
+  },
+  {
+    "name": "Magdalena Lasota",
+    "date": "2026-08-14",
+    "location": "Rokitno",
+    "distance": 10.2,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=52.531376%2C15.628%3B52.572671%2C15.648164",
+    "link": "https://www.strava.com/activities/19742375928"
+  },
+  {
+    "name": "Magdalena Lasota",
+    "date": "2026-08-14",
+    "location": "Rokitno",
+    "distance": 2.6,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=52.547295%2C15.639163%3B52.531001%2C15.628185",
+    "link": "https://www.strava.com/activities/19741300896"
   },
   {
     "name": "Magdalena Lasota",
