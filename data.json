@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-08-28T14:49:49.612Z",
+  "updatedAt": "2026-08-29T09:26:06.009Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
       "athleteId": 58678501,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/58678501/24592063/1/large.jpg",
-      "totalDistance": 2847.3,
-      "totalElevation": 13240,
+      "totalDistance": 2874.2,
+      "totalElevation": 13438,
       "avgElevation": 82,
-      "totalTime": 141,
-      "totalActivities": 162,
+      "totalTime": 142,
+      "totalActivities": 164,
       "avgSpeed": 20.17,
       "activityTypes": [
         "GravelRide"
@@ -33,15 +33,15 @@
       "name": "Adam Zuzel 🇯🇲",
       "athleteId": 103614137,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/103614137/42125689/2/large.jpg",
-      "totalDistance": 2892,
-      "totalElevation": 12073,
-      "avgElevation": 120,
-      "totalTime": 138,
-      "totalActivities": 101,
-      "avgSpeed": 20.97,
+      "totalDistance": 2916.5,
+      "totalElevation": 12129,
+      "avgElevation": 119,
+      "totalTime": 139,
+      "totalActivities": 102,
+      "avgSpeed": 20.99,
       "activityTypes": [
-        "Ride",
-        "GravelRide"
+        "GravelRide",
+        "Ride"
       ]
     },
     {
@@ -161,12 +161,12 @@
       "name": "Krzysztof Pach",
       "athleteId": 133363477,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/133363477/36641164/1/large.jpg",
-      "totalDistance": 714,
+      "totalDistance": 716.3,
       "totalElevation": 1428,
-      "avgElevation": 21,
-      "totalTime": 56,
-      "totalActivities": 69,
-      "avgSpeed": 12.7,
+      "avgElevation": 20,
+      "totalTime": 57,
+      "totalActivities": 70,
+      "avgSpeed": 12.65,
       "activityTypes": [
         "Ride"
       ]
@@ -302,12 +302,12 @@
       "name": "Katarzyna Dutkowska",
       "athleteId": 122485288,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/122485288/28138721/1/large.jpg",
-      "totalDistance": 915,
-      "totalElevation": 690,
+      "totalDistance": 937.6,
+      "totalElevation": 699,
       "avgElevation": 21,
-      "totalTime": 56,
-      "totalActivities": 33,
-      "avgSpeed": 16.45,
+      "totalTime": 57,
+      "totalActivities": 34,
+      "avgSpeed": 16.46,
       "activityTypes": [
         "Ride"
       ]
@@ -386,12 +386,12 @@
       "name": "Justyna Goławska",
       "athleteId": 132125498,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/132125498/31676683/3/large.jpg",
-      "totalDistance": 540.2,
-      "totalElevation": 858,
+      "totalDistance": 556.1,
+      "totalElevation": 877,
       "avgElevation": 24,
-      "totalTime": 34,
-      "totalActivities": 36,
-      "avgSpeed": 16.12,
+      "totalTime": 35,
+      "totalActivities": 37,
+      "avgSpeed": 16.1,
       "activityTypes": [
         "Ride"
       ]
@@ -414,12 +414,12 @@
       "name": "Aleksander B.",
       "athleteId": 138637736,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocII38ufXzmLldFtu8pxlun0cDWT0jB-L_eBV-J88EHJu0Fikrc=s96-c",
-      "totalDistance": 713.3,
-      "totalElevation": 1162,
+      "totalDistance": 722,
+      "totalElevation": 1175,
       "avgElevation": 7,
-      "totalTime": 68,
-      "totalActivities": 162,
-      "avgSpeed": 10.44,
+      "totalTime": 69,
+      "totalActivities": 164,
+      "avgSpeed": 10.48,
       "activityTypes": [
         "Ride"
       ]
@@ -456,12 +456,12 @@
       "name": "Magdalena Zalewska",
       "athleteId": 132062099,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKszU5AR91Zz385q3YXipVDyetOHT3f28mi6_uTBVp-HZJdpA=s96-c",
-      "totalDistance": 920.1,
-      "totalElevation": 1536,
-      "avgElevation": 17,
-      "totalTime": 120,
-      "totalActivities": 91,
-      "avgSpeed": 7.66,
+      "totalDistance": 956.8,
+      "totalElevation": 1667,
+      "avgElevation": 18,
+      "totalTime": 124,
+      "totalActivities": 92,
+      "avgSpeed": 7.7,
       "activityTypes": [
         "Ride"
       ]
@@ -541,12 +541,12 @@
       "name": "Karo Lina",
       "athleteId": 135989411,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/135989411/37156560/1/large.jpg",
-      "totalDistance": 698.5,
-      "totalElevation": 857,
-      "avgElevation": 17,
-      "totalTime": 48,
-      "totalActivities": 49,
-      "avgSpeed": 14.57,
+      "totalDistance": 715.1,
+      "totalElevation": 893,
+      "avgElevation": 18,
+      "totalTime": 49,
+      "totalActivities": 50,
+      "avgSpeed": 14.51,
       "activityTypes": [
         "Ride"
       ]
@@ -768,12 +768,12 @@
       "name": "magdalena szmara",
       "athleteId": 134151181,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocL0dqNaWQbDviYosdxbRtZmaqkiXdKlLWeGkTvfxARDF16XyQ=s96-c",
-      "totalDistance": 2116.7,
-      "totalElevation": 2980,
-      "avgElevation": 28,
-      "totalTime": 134,
-      "totalActivities": 105,
-      "avgSpeed": 15.83,
+      "totalDistance": 2159.8,
+      "totalElevation": 3026,
+      "avgElevation": 29,
+      "totalTime": 137,
+      "totalActivities": 106,
+      "avgSpeed": 15.82,
       "activityTypes": [
         "Ride"
       ]
@@ -811,12 +811,12 @@
       "name": "Wojciech Skowroński",
       "athleteId": 167168065,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 2214.3,
-      "totalElevation": 7724,
-      "avgElevation": 60,
-      "totalTime": 105,
-      "totalActivities": 128,
-      "avgSpeed": 21.04,
+      "totalDistance": 2226.1,
+      "totalElevation": 7819,
+      "avgElevation": 61,
+      "totalTime": 106,
+      "totalActivities": 129,
+      "avgSpeed": 21,
       "activityTypes": [
         "Ride"
       ]
@@ -867,12 +867,12 @@
       "name": "Jacek Krok",
       "athleteId": 133764870,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 358.3,
-      "totalElevation": 479,
+      "totalDistance": 374.4,
+      "totalElevation": 494,
       "avgElevation": 8,
-      "totalTime": 32,
-      "totalActivities": 57,
-      "avgSpeed": 11.26,
+      "totalTime": 33,
+      "totalActivities": 60,
+      "avgSpeed": 11.28,
       "activityTypes": [
         "Ride"
       ]
@@ -984,11 +984,11 @@
       "name": "Ryszard RwieSerce",
       "athleteId": 28247115,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 1290.9,
-      "totalElevation": 2899,
+      "totalDistance": 1294.6,
+      "totalElevation": 2903,
       "avgElevation": 19,
       "totalTime": 134,
-      "totalActivities": 151,
+      "totalActivities": 152,
       "avgSpeed": 9.64,
       "activityTypes": [
         "Ride"
@@ -998,12 +998,12 @@
       "name": "Paweł Opszalski",
       "athleteId": 165720425,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/165720425/37079607/4/large.jpg",
-      "totalDistance": 528.3,
-      "totalElevation": 551,
-      "avgElevation": 11,
-      "totalTime": 38,
-      "totalActivities": 48,
-      "avgSpeed": 14,
+      "totalDistance": 550.6,
+      "totalElevation": 599,
+      "avgElevation": 12,
+      "totalTime": 39,
+      "totalActivities": 49,
+      "avgSpeed": 14.13,
       "activityTypes": [
         "Ride"
       ]
@@ -1012,12 +1012,12 @@
       "name": "Jakub Krawiec",
       "athleteId": 76772718,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKhPujo8lpurQm5Byxzozda9AdtExhhrkTmP95dwfUqhdKQDg=s96-c",
-      "totalDistance": 2242.5,
-      "totalElevation": 7173,
-      "avgElevation": 57,
-      "totalTime": 146,
-      "totalActivities": 126,
-      "avgSpeed": 15.32,
+      "totalDistance": 2259.3,
+      "totalElevation": 7210,
+      "avgElevation": 56,
+      "totalTime": 148,
+      "totalActivities": 128,
+      "avgSpeed": 15.3,
       "activityTypes": [
         "Ride"
       ]
@@ -1140,12 +1140,12 @@
       "name": "Dariusz Jasak",
       "athleteId": 136357549,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLPDV8lXjTtZRFerHHr_DWBDzelOa41EzmpF71KESn_7FJFoA=s96-c",
-      "totalDistance": 453.8,
-      "totalElevation": 517,
-      "avgElevation": 8,
-      "totalTime": 27,
-      "totalActivities": 61,
-      "avgSpeed": 16.5,
+      "totalDistance": 479.7,
+      "totalElevation": 582,
+      "avgElevation": 9,
+      "totalTime": 29,
+      "totalActivities": 62,
+      "avgSpeed": 16.68,
       "activityTypes": [
         "Ride"
       ]
@@ -1323,11 +1323,11 @@
       "name": "Jacek Przyszlak",
       "athleteId": 132758676,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLamO6_wSnZNCAf1aUAXPFaPsUZ3uYciTh81m2ldBfY=s96-c",
-      "totalDistance": 2953.4,
-      "totalElevation": 4479,
+      "totalDistance": 3000.6,
+      "totalElevation": 4505,
       "avgElevation": 45,
-      "totalTime": 171,
-      "totalActivities": 100,
+      "totalTime": 174,
+      "totalActivities": 101,
       "avgSpeed": 17.23,
       "activityTypes": [
         "Ride"
@@ -1351,11 +1351,11 @@
       "name": "Małgorzata Antoniak",
       "athleteId": 593911092,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 668.6,
-      "totalElevation": 607,
+      "totalDistance": 671.7,
+      "totalElevation": 610,
       "avgElevation": 4,
-      "totalTime": 261,
-      "totalActivities": 138,
+      "totalTime": 262,
+      "totalActivities": 139,
       "avgSpeed": 2.56,
       "activityTypes": [
         "Ride"
@@ -1478,12 +1478,12 @@
       "name": "Jowita Tazbir",
       "athleteId": 168401872,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 914.1,
-      "totalElevation": 1920,
+      "totalDistance": 923.9,
+      "totalElevation": 1936,
       "avgElevation": 12,
-      "totalTime": 61,
-      "totalActivities": 157,
-      "avgSpeed": 14.89,
+      "totalTime": 62,
+      "totalActivities": 159,
+      "avgSpeed": 14.88,
       "activityTypes": [
         "Ride"
       ]
@@ -1506,12 +1506,12 @@
       "name": "Wiktoria  Błocian",
       "athleteId": 163338133,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIPkzcX7vHRsDYqUmuL-8Qn1VlgHW-cZoSFZFOUmTnTltqEXA=s96-c",
-      "totalDistance": 755,
-      "totalElevation": 1599,
+      "totalDistance": 764.3,
+      "totalElevation": 1622,
       "avgElevation": 20,
-      "totalTime": 40,
-      "totalActivities": 79,
-      "avgSpeed": 18.73,
+      "totalTime": 41,
+      "totalActivities": 80,
+      "avgSpeed": 18.74,
       "activityTypes": [
         "Ride"
       ]
@@ -1520,12 +1520,12 @@
       "name": "Piotr Konarski",
       "athleteId": 139109438,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKhFHl5vhC-f5TmbIcfI77BLT5TJRXWoyrV_876iJFIbcUJPQ=s96-c",
-      "totalDistance": 621,
-      "totalElevation": 1758,
-      "avgElevation": 98,
-      "totalTime": 39,
-      "totalActivities": 18,
-      "avgSpeed": 16.13,
+      "totalDistance": 647,
+      "totalElevation": 1812,
+      "avgElevation": 95,
+      "totalTime": 40,
+      "totalActivities": 19,
+      "avgSpeed": 16.15,
       "activityTypes": [
         "Ride"
       ]
@@ -1576,12 +1576,12 @@
       "name": "Tomasz Konieczny",
       "athleteId": 164870994,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/164870994/36951872/1/large.jpg",
-      "totalDistance": 1326.9,
-      "totalElevation": 3502,
+      "totalDistance": 1332.5,
+      "totalElevation": 3512,
       "avgElevation": 20,
       "totalTime": 90,
-      "totalActivities": 178,
-      "avgSpeed": 14.72,
+      "totalActivities": 179,
+      "avgSpeed": 14.73,
       "activityTypes": [
         "Ride"
       ]
@@ -1789,12 +1789,12 @@
       "name": "Grzegorz Grabowski",
       "athleteId": 167010585,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/167010585/55479335/2/large.jpg",
-      "totalDistance": 304.4,
-      "totalElevation": 375,
+      "totalDistance": 313.5,
+      "totalElevation": 383,
       "avgElevation": 12,
-      "totalTime": 17,
-      "totalActivities": 31,
-      "avgSpeed": 17.53,
+      "totalTime": 18,
+      "totalActivities": 32,
+      "avgSpeed": 17.6,
       "activityTypes": [
         "Ride"
       ]
@@ -1916,12 +1916,12 @@
       "name": "Wiolka Jarczak",
       "athleteId": 135525520,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKq2W-QEhycNF-wtlk9I9jFUPkLdAgQpjI6R8d2cIVl8ptbIw=s96-c",
-      "totalDistance": 1418.2,
-      "totalElevation": 1322,
+      "totalDistance": 1423.8,
+      "totalElevation": 1329,
       "avgElevation": 6,
       "totalTime": 132,
-      "totalActivities": 226,
-      "avgSpeed": 10.76,
+      "totalActivities": 228,
+      "avgSpeed": 10.75,
       "activityTypes": [
         "Ride"
       ]
@@ -1944,12 +1944,12 @@
       "name": "Magdalena Ostojska-Korpas",
       "athleteId": 135518653,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJ1TnRb2b_YaoBo9JGRGzr7S05xwQppBX3edH6esTTI8T_XYXM=s96-c",
-      "totalDistance": 1132.5,
-      "totalElevation": 1371,
+      "totalDistance": 1142.3,
+      "totalElevation": 1379,
       "avgElevation": 10,
       "totalTime": 81,
-      "totalActivities": 137,
-      "avgSpeed": 14.01,
+      "totalActivities": 138,
+      "avgSpeed": 14.02,
       "activityTypes": [
         "Ride"
       ]
@@ -1958,12 +1958,12 @@
       "name": "Jacek Korfanty",
       "athleteId": 42438120,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 1854.9,
-      "totalElevation": 19454,
+      "totalDistance": 1860.4,
+      "totalElevation": 19533,
       "avgElevation": 132,
-      "totalTime": 116,
-      "totalActivities": 147,
-      "avgSpeed": 15.96,
+      "totalTime": 117,
+      "totalActivities": 148,
+      "avgSpeed": 15.93,
       "activityTypes": [
         "MountainBikeRide",
         "EMountainBikeRide",
@@ -2114,11 +2114,11 @@
       "name": "Robert Kunysz",
       "athleteId": 78397546,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/78397546/49682450/1/large.jpg",
-      "totalDistance": 3050.9,
-      "totalElevation": 25616,
-      "avgElevation": 152,
-      "totalTime": 134,
-      "totalActivities": 169,
+      "totalDistance": 3082.9,
+      "totalElevation": 25673,
+      "avgElevation": 149,
+      "totalTime": 135,
+      "totalActivities": 172,
       "avgSpeed": 22.84,
       "activityTypes": [
         "Ride",
@@ -2157,12 +2157,12 @@
       "name": "Zbigniew Bilski",
       "athleteId": 136058528,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLQ-cSfpV5Hzsraf-msFjB8a8DMx5yG5ivXqEeHbFg9HaKf-Q=s96-c",
-      "totalDistance": 2722.6,
-      "totalElevation": 2924,
+      "totalDistance": 2756,
+      "totalElevation": 2956,
       "avgElevation": 39,
-      "totalTime": 185,
-      "totalActivities": 75,
-      "avgSpeed": 14.69,
+      "totalTime": 188,
+      "totalActivities": 76,
+      "avgSpeed": 14.68,
       "activityTypes": [
         "Ride"
       ]
@@ -2228,12 +2228,12 @@
       "name": "Mariusz Makuchowski",
       "athleteId": 136734584,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/136734584/47436714/1/large.jpg",
-      "totalDistance": 4835,
-      "totalElevation": 6585,
+      "totalDistance": 4890.8,
+      "totalElevation": 6664,
       "avgElevation": 24,
-      "totalTime": 358,
-      "totalActivities": 279,
-      "avgSpeed": 13.51,
+      "totalTime": 362,
+      "totalActivities": 282,
+      "avgSpeed": 13.52,
       "activityTypes": [
         "Ride"
       ]
@@ -2256,11 +2256,11 @@
       "name": "Damian Trociński",
       "athleteId": 171577106,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 823.9,
-      "totalElevation": 1286,
+      "totalDistance": 832.5,
+      "totalElevation": 1299,
       "avgElevation": 13,
-      "totalTime": 46,
-      "totalActivities": 98,
+      "totalTime": 47,
+      "totalActivities": 99,
       "avgSpeed": 17.85,
       "activityTypes": [
         "Ride"
@@ -2355,12 +2355,12 @@
       "name": "Marzena Marciniak",
       "athleteId": 137186247,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/137186247/36952535/1/large.jpg",
-      "totalDistance": 522.7,
-      "totalElevation": 1920,
-      "avgElevation": 91,
-      "totalTime": 27,
-      "totalActivities": 21,
-      "avgSpeed": 19.15,
+      "totalDistance": 556.5,
+      "totalElevation": 2084,
+      "avgElevation": 95,
+      "totalTime": 29,
+      "totalActivities": 22,
+      "avgSpeed": 19.12,
       "activityTypes": [
         "Ride"
       ]
@@ -2441,12 +2441,12 @@
       "name": "Janek S.",
       "athleteId": 140743685,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKfTDksoCO9RCGpjRR1p8asOLEfUmKBDNXFSX8u6LGFeGy2XoOT=s96-c",
-      "totalDistance": 553.7,
-      "totalElevation": 843,
-      "avgElevation": 27,
-      "totalTime": 44,
-      "totalActivities": 31,
-      "avgSpeed": 12.69,
+      "totalDistance": 587,
+      "totalElevation": 893,
+      "avgElevation": 28,
+      "totalTime": 46,
+      "totalActivities": 32,
+      "avgSpeed": 12.83,
       "activityTypes": [
         "Ride"
       ]
@@ -2497,11 +2497,11 @@
       "name": "edi 007",
       "athleteId": 136463127,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 1325.3,
-      "totalElevation": 986,
-      "avgElevation": 8,
-      "totalTime": 93,
-      "totalActivities": 116,
+      "totalDistance": 1335,
+      "totalElevation": 995,
+      "avgElevation": 9,
+      "totalTime": 94,
+      "totalActivities": 117,
       "avgSpeed": 14.21,
       "activityTypes": [
         "Ride"
@@ -2511,12 +2511,12 @@
       "name": "Piotr Niesobski",
       "athleteId": 138278075,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKEcasxi3iwyW3vpSJE1Y53LEoJx8j0wyFXCxGNfT6C2lqRTQ=s96-c",
-      "totalDistance": 1581.9,
-      "totalElevation": 3839,
-      "avgElevation": 32,
-      "totalTime": 122,
-      "totalActivities": 121,
-      "avgSpeed": 12.96,
+      "totalDistance": 1603.1,
+      "totalElevation": 3853,
+      "avgElevation": 31,
+      "totalTime": 123,
+      "totalActivities": 123,
+      "avgSpeed": 13.01,
       "activityTypes": [
         "EBikeRide"
       ]
@@ -2593,12 +2593,12 @@
       "name": "Konrad Tymczyszyn",
       "athleteId": 136550138,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLD4GwY0Z8LO5978LC0YbuE4JeF8KhiiPIcf1SYXHk90XxokA=s96-c",
-      "totalDistance": 369.1,
-      "totalElevation": 633,
+      "totalDistance": 376,
+      "totalElevation": 678,
       "avgElevation": 18,
-      "totalTime": 20,
-      "totalActivities": 36,
-      "avgSpeed": 18.09,
+      "totalTime": 21,
+      "totalActivities": 37,
+      "avgSpeed": 18.12,
       "activityTypes": [
         "Ride"
       ]
