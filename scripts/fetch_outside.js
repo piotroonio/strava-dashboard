@@ -36,6 +36,13 @@ function getDistance(lat1, lon1, lat2, lon2) {
 
 // ✅ geocoding OSM (miasto)
 async function getLocationName(lat, lon) {
+  
+  if (
+  typeof lat !== "number" ||
+  typeof lon !== "number"
+  ) {
+  return "Unknown";
+  }
 
   const key = `${lat.toFixed(3)},${lon.toFixed(3)}`;
 
