@@ -553,6 +553,14 @@
   },
   {
     "name": "Justyna Goławska",
+    "date": "2026-09-07",
+    "location": "Unknown",
+    "distance": 2.4,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=undefined%2Cundefined%3Bundefined%2Cundefined",
+    "link": "https://www.strava.com/activities/20069595338"
+  },
+  {
+    "name": "Justyna Goławska",
     "date": "2026-07-04",
     "location": "Unknown",
     "distance": 2.1,
@@ -889,6 +897,14 @@
   },
   {
     "name": "Milosz D",
+    "date": "2026-09-08",
+    "location": "Bolesławiec",
+    "distance": 140,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=51.266092%2C15.569377%3B51.123639%2C16.998856",
+    "link": "https://www.strava.com/activities/20091062160"
+  },
+  {
+    "name": "Milosz D",
     "date": "2026-08-24",
     "location": "Wisełka",
     "distance": 8.3,
@@ -1006,6 +1022,22 @@
     "distance": 46.5,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=36.796224%2C27.156435%3B36.796634%2C27.156571",
     "link": "https://www.strava.com/activities/18424536876"
+  },
+  {
+    "name": "Raf Fariano",
+    "date": "2026-09-08",
+    "location": "Ryn",
+    "distance": 7.4,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=53.937305%2C21.544241%3B53.880326%2C21.556052",
+    "link": "https://www.strava.com/activities/20090834976"
+  },
+  {
+    "name": "Raf Fariano",
+    "date": "2026-09-08",
+    "location": "Ławki (osada)",
+    "distance": 8.1,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=53.880452%2C21.556459%3B53.937764%2C21.544447",
+    "link": "https://www.strava.com/activities/20089605917"
   },
   {
     "name": "Jacek P",
@@ -1177,6 +1209,22 @@
   },
   {
     "name": "Stanisława Olejniczak",
+    "date": "2026-09-08",
+    "location": "Mikołajki",
+    "distance": 102.8,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=53.799944%2C21.56693%3B53.799566%2C21.547284",
+    "link": "https://www.strava.com/activities/20090812542"
+  },
+  {
+    "name": "Stanisława Olejniczak",
+    "date": "2026-09-07",
+    "location": "Prawdowo",
+    "distance": 31.9,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=53.802019%2C21.548327%3B53.799563%2C21.547332",
+    "link": "https://www.strava.com/activities/20075008649"
+  },
+  {
+    "name": "Stanisława Olejniczak",
     "date": "2026-06-17",
     "location": "Międzywodzie",
     "distance": 50.2,
@@ -1278,6 +1326,38 @@
     "distance": 33.1,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=54.686852%2C18.708543%3B54.686562%2C18.707273",
     "link": "https://www.strava.com/activities/19841442009"
+  },
+  {
+    "name": "Sebastian S",
+    "date": "2026-09-08",
+    "location": "Łukanowice",
+    "distance": 66.1,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=49.967379%2C20.881731%3B49.967377%2C20.881736",
+    "link": "https://www.strava.com/activities/20088597152"
+  },
+  {
+    "name": "Sebastian S",
+    "date": "2026-09-07",
+    "location": "Nowy Korczyn",
+    "distance": 47.9,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=50.299329%2C20.808326%3B50.29935%2C20.808323",
+    "link": "https://www.strava.com/activities/20074546415"
+  },
+  {
+    "name": "Sebastian S",
+    "date": "2026-09-05",
+    "location": "Ciechocinek",
+    "distance": 9.5,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=52.882894%2C18.78143%3B52.882911%2C18.781473",
+    "link": "https://www.strava.com/activities/20046077845"
+  },
+  {
+    "name": "Sebastian S",
+    "date": "2026-09-03",
+    "location": "Toruń",
+    "distance": 10.2,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=52.993443%2C18.608468%3B52.993518%2C18.608405",
+    "link": "https://www.strava.com/activities/20022847317"
   },
   {
     "name": "Sebastian S",
@@ -2569,6 +2649,22 @@
   },
   {
     "name": "Piotr Konarski",
+    "date": "2026-09-06",
+    "location": "Kolonia Skarszewek",
+    "distance": 126.9,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=51.791471%2C18.104939%3B51.295747%2C17.73782",
+    "link": "https://www.strava.com/activities/20065755555"
+  },
+  {
+    "name": "Piotr Konarski",
+    "date": "2026-09-05",
+    "location": "Siemianice",
+    "distance": 84.1,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=51.180802%2C18.14472%3B51.791327%2C18.104583",
+    "link": "https://www.strava.com/activities/20047030083"
+  },
+  {
+    "name": "Piotr Konarski",
     "date": "2026-08-13",
     "location": "Zabłotczyzna",
     "distance": 79,
@@ -2654,6 +2750,102 @@
     "distance": 187.7,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=52.225886%2C21.045853%3B52.641879%2C19.055389",
     "link": "https://www.strava.com/activities/19194085684"
+  },
+  {
+    "name": "Tomasz Konieczny",
+    "date": "2026-09-09",
+    "location": "Unknown",
+    "distance": 3.3,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=undefined%2Cundefined%3Bundefined%2Cundefined",
+    "link": "https://www.strava.com/activities/20098110004"
+  },
+  {
+    "name": "Tomasz Konieczny",
+    "date": "2026-09-08",
+    "location": "Unknown",
+    "distance": 16,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=undefined%2Cundefined%3Bundefined%2Cundefined",
+    "link": "https://www.strava.com/activities/20092763340"
+  },
+  {
+    "name": "Tomasz Konieczny",
+    "date": "2026-09-08",
+    "location": "Unknown",
+    "distance": 8,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=undefined%2Cundefined%3Bundefined%2Cundefined",
+    "link": "https://www.strava.com/activities/20091114242"
+  },
+  {
+    "name": "Tomasz Konieczny",
+    "date": "2026-09-08",
+    "location": "Unknown",
+    "distance": 2.7,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=undefined%2Cundefined%3Bundefined%2Cundefined",
+    "link": "https://www.strava.com/activities/20084058435"
+  },
+  {
+    "name": "Tomasz Konieczny",
+    "date": "2026-09-07",
+    "location": "Unknown",
+    "distance": 6.9,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=undefined%2Cundefined%3Bundefined%2Cundefined",
+    "link": "https://www.strava.com/activities/20078658209"
+  },
+  {
+    "name": "Tomasz Konieczny",
+    "date": "2026-09-07",
+    "location": "Unknown",
+    "distance": 7.8,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=undefined%2Cundefined%3Bundefined%2Cundefined",
+    "link": "https://www.strava.com/activities/20074232225"
+  },
+  {
+    "name": "Tomasz Konieczny",
+    "date": "2026-09-07",
+    "location": "Unknown",
+    "distance": 3,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=undefined%2Cundefined%3Bundefined%2Cundefined",
+    "link": "https://www.strava.com/activities/20069376057"
+  },
+  {
+    "name": "Tomasz Konieczny",
+    "date": "2026-09-06",
+    "location": "Unknown",
+    "distance": 7.9,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=undefined%2Cundefined%3Bundefined%2Cundefined",
+    "link": "https://www.strava.com/activities/20065834335"
+  },
+  {
+    "name": "Tomasz Konieczny",
+    "date": "2026-09-06",
+    "location": "Unknown",
+    "distance": 10.7,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=undefined%2Cundefined%3Bundefined%2Cundefined",
+    "link": "https://www.strava.com/activities/20061459712"
+  },
+  {
+    "name": "Tomasz Konieczny",
+    "date": "2026-09-04",
+    "location": "Unknown",
+    "distance": 3.7,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=undefined%2Cundefined%3Bundefined%2Cundefined",
+    "link": "https://www.strava.com/activities/20035383701"
+  },
+  {
+    "name": "Tomasz Konieczny",
+    "date": "2026-09-04",
+    "location": "Unknown",
+    "distance": 3.1,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=undefined%2Cundefined%3Bundefined%2Cundefined",
+    "link": "https://www.strava.com/activities/20029318168"
+  },
+  {
+    "name": "Tomasz Konieczny",
+    "date": "2026-09-03",
+    "location": "Unknown",
+    "distance": 3.6,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=undefined%2Cundefined%3Bundefined%2Cundefined",
+    "link": "https://www.strava.com/activities/20021365936"
   },
   {
     "name": "Tomasz Konieczny",
@@ -4217,6 +4409,14 @@
   },
   {
     "name": "Grzegorz Grabowski",
+    "date": "2026-09-07",
+    "location": "Unknown",
+    "distance": 1.6,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=undefined%2Cundefined%3Bundefined%2Cundefined",
+    "link": "https://www.strava.com/activities/20079131562"
+  },
+  {
+    "name": "Grzegorz Grabowski",
     "date": "2026-08-22",
     "location": "Unknown",
     "distance": 9.1,
@@ -4518,6 +4718,22 @@
     "distance": 24.8,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=49.726123%2C18.818205%3B49.726174%2C18.818152",
     "link": "https://www.strava.com/activities/18845684363"
+  },
+  {
+    "name": "Mar Wie",
+    "date": "2026-09-06",
+    "location": "Wojnowo",
+    "distance": 5.7,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=52.109552%2C15.775495%3B52.108153%2C15.777384",
+    "link": "https://www.strava.com/activities/20058278349"
+  },
+  {
+    "name": "Mar Wie",
+    "date": "2026-09-05",
+    "location": "Wojnowo",
+    "distance": 7.2,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=52.109575%2C15.778131%3B52.10817%2C15.777282",
+    "link": "https://www.strava.com/activities/20048976915"
   },
   {
     "name": "Piotr Krzęć",
@@ -4990,6 +5206,86 @@
     "distance": 41.6,
     "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=49.472501%2C20.184884%3B49.472742%2C20.185319",
     "link": "https://www.strava.com/activities/18811597911"
+  },
+  {
+    "name": "Robert Kunysz",
+    "date": "2026-09-09",
+    "location": "Unknown",
+    "distance": 14.6,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=undefined%2Cundefined%3Bundefined%2Cundefined",
+    "link": "https://www.strava.com/activities/20096127826"
+  },
+  {
+    "name": "Robert Kunysz",
+    "date": "2026-09-08",
+    "location": "Unknown",
+    "distance": 15.1,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=undefined%2Cundefined%3Bundefined%2Cundefined",
+    "link": "https://www.strava.com/activities/20086564402"
+  },
+  {
+    "name": "Robert Kunysz",
+    "date": "2026-09-08",
+    "location": "Unknown",
+    "distance": 5.5,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=undefined%2Cundefined%3Bundefined%2Cundefined",
+    "link": "https://www.strava.com/activities/20083895815"
+  },
+  {
+    "name": "Robert Kunysz",
+    "date": "2026-09-07",
+    "location": "Unknown",
+    "distance": 13.6,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=undefined%2Cundefined%3Bundefined%2Cundefined",
+    "link": "https://www.strava.com/activities/20079949666"
+  },
+  {
+    "name": "Robert Kunysz",
+    "date": "2026-09-07",
+    "location": "Unknown",
+    "distance": 15.7,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=undefined%2Cundefined%3Bundefined%2Cundefined",
+    "link": "https://www.strava.com/activities/20072248562"
+  },
+  {
+    "name": "Robert Kunysz",
+    "date": "2026-09-05",
+    "location": "Unknown",
+    "distance": 106.4,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=undefined%2Cundefined%3Bundefined%2Cundefined",
+    "link": "https://www.strava.com/activities/20050003774"
+  },
+  {
+    "name": "Robert Kunysz",
+    "date": "2026-09-04",
+    "location": "Unknown",
+    "distance": 1.3,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=undefined%2Cundefined%3Bundefined%2Cundefined",
+    "link": "https://www.strava.com/activities/20042690432"
+  },
+  {
+    "name": "Robert Kunysz",
+    "date": "2026-09-04",
+    "location": "Unknown",
+    "distance": 13.5,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=undefined%2Cundefined%3Bundefined%2Cundefined",
+    "link": "https://www.strava.com/activities/20033058913"
+  },
+  {
+    "name": "Robert Kunysz",
+    "date": "2026-09-04",
+    "location": "Unknown",
+    "distance": 14,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=undefined%2Cundefined%3Bundefined%2Cundefined",
+    "link": "https://www.strava.com/activities/20028386294"
+  },
+  {
+    "name": "Robert Kunysz",
+    "date": "2026-09-03",
+    "location": "Unknown",
+    "distance": 39.8,
+    "mapLink": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=undefined%2Cundefined%3Bundefined%2Cundefined",
+    "link": "https://www.strava.com/activities/20021936265"
   },
   {
     "name": "Robert Kunysz",
