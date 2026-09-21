@@ -81,6 +81,46 @@ async function getActivities(token) {
     `\nPobrano ${activities.length} aktywności`
   );
 
+  // ===== DIAGNOSTYKA < 1 km =====
+
+const shortActivities = activities.filter(
+    a => a.distance < 1000
+);
+
+const shortDistance =
+    shortActivities.reduce(
+        (sum, a) => sum + a.distance,
+        0
+    ) / 1000;
+
+console.log("\n=== AKTYWNOŚCI < 1 km ===");
+
+console.log(
+    `Liczba: ${shortActivities.length}`
+);
+
+console.log(
+    `Suma: ${shortDistance.toFixed(1)} km`
+);
+
+shortActivities
+    .sort((a, b) => a.distance - b.distance)
+    .forEach(a => {
+        console.log(
+            `${a.start_date_local.substring(0,10)} | ` +
+            `${(a.distance / 1000).toFixed(3)} km | ` +
+            `${a.name}`
+        );
+    });
+
+// ===== KONIEC DIAGNOSTYKI =====
+
+
+
+
+
+  
+
   const monthly = {};
   const byType = {};
 
@@ -97,7 +137,7 @@ async function getActivities(token) {
     if (a.type === "Ride") {
       totalRide += distance;
     }
-
+        
     const month =
       a.start_date_local.substring(0, 7);
 
