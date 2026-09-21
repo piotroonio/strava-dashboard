@@ -2,8 +2,7 @@ const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
 
 // <-- WSTAW REFRESH TOKEN ANETY
-const REFRESH_TOKEN =
-  "babf41bf358bf1ab81ca066bb7cdd43254a7af21";
+const REFRESH_TOKEN = "babf41bf358bf1ab81ca066bb7cdd43254a7af21";
 
 async function getAccessToken() {
   const response = await fetch(
@@ -23,16 +22,20 @@ async function getAccessToken() {
     }
   );
 
-  const data = await response.json();
+const data = await response.json();
 
-  if (!response.ok) {
-    console.error(data);
+console.log("Token response:");
+console.log(JSON.stringify(data, null, 2));
+
+if (!response.ok) {
     process.exit(1);
-  }
+}
 
-  console.log(
-    `Athlete: ${data.athlete.firstname} ${data.athlete.lastname}`
-  );
+if (data.athlete) {
+    console.log(
+        `Athlete: ${data.athlete.firstname} ${data.athlete.lastname}`
+    );
+}
 
   return data.access_token;
 }
