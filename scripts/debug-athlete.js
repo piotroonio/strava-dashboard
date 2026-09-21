@@ -1,7 +1,7 @@
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
 
-// <-- WSTAW REFRESH TOKEN ANETY
+// <-- WSTAW REFRESH TOKEN TESTOWANEGO UCZESTNIKA
 const REFRESH_TOKEN = "babf41bf358bf1ab81ca066bb7cdd43254a7af21";
 
 async function getAccessToken() {
