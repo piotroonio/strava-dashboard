@@ -1,8 +1,8 @@
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
 
-// <-- WSTAW REFRESH TOKEN TESTOWANEGO UCZESTNIKA
-const REFRESH_TOKEN = "babf41bf358bf1ab81ca066bb7cdd43254a7af21";
+// <-- PONIŻEJ WSTAW REFRESH TOKEN TESTOWANEGO UCZESTNIKA
+const REFRESH_TOKEN = "67e5c8bd060c363d25288c86ae310ff1141b6a3a";
 
 async function getAccessToken() {
   const response = await fetch(
@@ -113,13 +113,8 @@ shortActivities
         );
     });
 
-// ===== KONIEC DIAGNOSTYKI =====
+// ===== KONIEC DIAGNOSTYKI < 1km =====
 
-
-
-
-
-  
 
   const monthly = {};
   const byType = {};
