@@ -1,3 +1,6 @@
+// SKRYPT SPRAWDZA WSZYSTKIE AKTYWNOŚCI UŻYTKOWNIKA STRAVY O PODANYM NIŻEJ REFRESH_TOKENIE
+// BY URUCHOMIĆ SKRYPT NALEŻY WYWOŁAĆ RĘCZNIE WORKFLOW "Debug Athlete" i odczytać zawartość 
+// Debug -> Run node scripts/debug-athlete.js
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
 
