@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T08:50:32.667Z",
+  "updatedAt": "2026-09-30T19:35:49.244Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -77,12 +77,12 @@
       "name": "Jaroslaw Pasierski",
       "athleteId": 113908907,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLqZaHeWhuV-T8lwuUfP7M6sSekNuDl5DnyzcKB4l7GX1gr6n_l=s96-c",
-      "totalDistance": 1126.5,
-      "totalElevation": 1828,
+      "totalDistance": 1141.9,
+      "totalElevation": 1849,
       "avgElevation": 13,
-      "totalTime": 58,
-      "totalActivities": 143,
-      "avgSpeed": 19.43,
+      "totalTime": 59,
+      "totalActivities": 145,
+      "avgSpeed": 19.44,
       "activityTypes": [
         "Ride"
       ]
