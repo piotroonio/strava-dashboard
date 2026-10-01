@@ -147,7 +147,7 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
     // 📅 zakres dat
     const year = new Date().getFullYear();
     const after = Math.floor(new Date(`${year}-05-01`).getTime() / 1000);
-    const before = Math.floor(new Date(`${year}-09-30`).getTime() / 1000);
+    const before = Math.floor(new Date(`${year}-10-01`).getTime() / 1000);
 
     let page = 1;
     let allActivities = [];
