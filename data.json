@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T09:13:39.258Z",
+  "updatedAt": "2026-10-01T19:58:01.854Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -528,12 +528,12 @@
       "name": "Piotr Korczowski",
       "athleteId": 132342922,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLObigJBg_Dtdyzr-RlnUYWJ_0C6iXiWJ-_D1VPP88YSM9j4w=s96-c",
-      "totalDistance": 2004.3,
-      "totalElevation": 3065,
+      "totalDistance": 1965.9,
+      "totalElevation": 2993,
       "avgElevation": 15,
-      "totalTime": 217,
-      "totalActivities": 207,
-      "avgSpeed": 9.23,
+      "totalTime": 214,
+      "totalActivities": 204,
+      "avgSpeed": 9.18,
       "activityTypes": [
         "Ride"
       ]
@@ -2060,12 +2060,12 @@
       "name": "Sławomir Chruściel",
       "athleteId": 850541575,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLrTkSZZVMQbLIDUtDqbB0qKHo8drNTTyjfVcS8MUAyQFt3-A=s96-c",
-      "totalDistance": 1301.9,
-      "totalElevation": 1299,
+      "totalDistance": 1330.1,
+      "totalElevation": 1323,
       "avgElevation": 7,
-      "totalTime": 99,
-      "totalActivities": 182,
-      "avgSpeed": 13.1,
+      "totalTime": 111,
+      "totalActivities": 183,
+      "avgSpeed": 11.95,
       "activityTypes": [
         "Ride"
       ]
