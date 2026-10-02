@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T19:58:01.854Z",
+  "updatedAt": "2026-10-02T08:50:29.932Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -585,12 +585,12 @@
       "name": "Marcin Mak777 Grzywa",
       "athleteId": 33439441,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/33439441/31486664/2/large.jpg",
-      "totalDistance": 461.8,
+      "totalDistance": 465.8,
       "totalElevation": 755,
       "avgElevation": 7,
       "totalTime": 26,
-      "totalActivities": 114,
-      "avgSpeed": 17.84,
+      "totalActivities": 116,
+      "avgSpeed": 17.88,
       "activityTypes": [
         "Ride"
       ]
