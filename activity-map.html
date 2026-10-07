@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Strava Activity Map</title>
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+<style>
+
+html,
+body{
+    margin:0;
+    height:100%;
+    font-family:Arial,sans-serif;
+}
+
+#header{
+    padding:10px;
+    background:#fc4c02;
+    color:white;
+}
+
+#map{
+    height:calc(100vh - 60px);
+}
+
+.photo-thumb{
+    width:200px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#lightbox{
+    position:fixed;
+    inset:0;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,.9);
+    z-index:9999;
+}
+
+#lightbox img{
+    max-width:95%;
+    max-height:95%;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="header">
+    <h2 id="activityName">
+        Ładowanie...
+    </h2>
+</div>
+
+<div id="map"></div>
+
+<div id="lightbox">
+    <img id="lightboxImage">
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script src="https://unpkg.com/@mapboxpt>
+
+<script>
+
+const map = L.map("map");
+
+L.tileLayer(
+  "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+  {
+    attribution: "© OpenStreetMap"
+  }
+).addTo(map);
+
+async function loadData() {
+
+    const activity =
+        await fetch(
+            "data/activity-detail.json"
+        ).then(r => r.json());
+
+    const photos =
+        await fetch(
+            "data/activity-photos.json"
+        ).then(r => r.json());
+
+    document.getElementById(
+        "activityName"
+    ).textContent = activity.name;
+
+    const polylinePoints =
+        polyline.decode(
+            activity.map.summary_polyline
+        );
+
+    const route =
+        polylinePoints.map(
+            p => [p[0], p[1]]
+        );
+
+    const track = L.polyline(
+        route,
+        {
+            color: "#fc4c02",
+            weight: 5
+        }
+    ).addTo(map);
+
+    map.fitBounds(track.getBounds());
+
+    const cameraIcon = L.divIcon({
+        html: "📷",
+        className: "",
+        iconSize: [30,30]
+    });
+
+    photos.forEach(photo => {
+
+        const lat =
+            photo.location[0];
+
+        const lon =
+            photo.location[1];
+
+        const imageUrl =
+            photo.urls["600"];
+
+        const popupHtml = `
+            <div>
+                <img
+                    src="${imageUrl}"
+                    class="photo-thumb"
+                    onclick="showPhoto('${imageUrl}')"
+                >
+            </div>
+        `;
+
+        L.marker(
+            [lat, lon],
+            {
+                icon: cameraIcon
+            }
+        )
+        .addTo(map)
+        .bindPopup(popupHtml);
+    });
+
+}
+
+function showPhoto(url){
+
+    document.getElementById(
+        "lightboxImage"
+    ).src = url;
+
+    document.getElementById(
+        "lightbox"
+    ).style.display = "flex";
+}
+
+document
+.getElementById("lightbox")
+.addEventListener(
+    "click",
+    () => {
+        document.getElementById(
+            "lightbox"
+        ).style.display = "none";
+    }
+);
+
+loadData();
+
+</script>
+
+</body>
+</html>
