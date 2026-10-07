@@ -1,0 +1,32 @@
+name: Test Single Activity
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run script
+        env:
+          STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
+          STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
+          TOKENS_JSON: ${{ secrets.TOKENS_JSON }}
+          ACTIVITY_ID: ${{ secrets.ACTIVITY_ID }}
+        run: |
+          node fetch_single_activity.js
+
+      - name: Upload JSON
+        uses: actions/upload-artifact@v4
+        with:
+          name: activity-detail
+          path: activity-detail.json
