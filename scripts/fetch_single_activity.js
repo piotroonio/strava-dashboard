@@ -80,9 +80,6 @@ async function main() {
 
   console.log("=== FULL ACTIVITY ===");
 
-  fs.writeFileSync("activity-detail.json", JSON.stringify(detail, null, 2));
-
-  console.log("✅ zapisano activity-detail.json");
 const photoRes = await fetch(
   `https://www.strava.com/api/v3/activities/${ACTIVITY_ID}/photos?size=600`,
   {
@@ -99,10 +96,23 @@ console.log(
   JSON.stringify(photos, null, 2)
 );
 
+// utworzenie katalogu data jeśli nie istnieje
+fs.mkdirSync("data", {
+  recursive: true
+});
+
 fs.writeFileSync(
-  "activity-photos.json",
+  "data/activity-detail.json",
+  JSON.stringify(detail, null, 2)
+);
+
+fs.writeFileSync(
+  "data/activity-photos.json",
   JSON.stringify(photos, null, 2)
 );
+
+console.log("✅ zapisano data/activity-detail.json");
+console.log("✅ zapisano data/activity-photos.json");
   
 }
 
