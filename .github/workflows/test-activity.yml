@@ -30,3 +30,9 @@ jobs:
         with:
           name: activity-detail
           path: activity-detail.json
+      
+      - name: Upload photos
+        uses: actions/upload-artifact@v4
+        with:
+          name: activity-photos
+          path: activity-photos.json
