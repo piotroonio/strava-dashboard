@@ -23,7 +23,7 @@ jobs:
           TOKENS_JSON: ${{ secrets.TOKENS_JSON }}
           ACTIVITY_ID: ${{ secrets.ACTIVITY_ID }}
         run: |
-          node fetch_single_activity.js
+          node scripts/fetch_single_activity.js
 
       - name: Upload JSON
         uses: actions/upload-artifact@v4
