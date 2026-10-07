@@ -83,6 +83,27 @@ async function main() {
   fs.writeFileSync("activity-detail.json", JSON.stringify(detail, null, 2));
 
   console.log("✅ zapisano activity-detail.json");
+const photoRes = await fetch(
+  `https://www.strava.com/api/v3/activities/${ACTIVITY_ID}/photos?size=600`,
+  {
+    headers: {
+      Authorization: `Bearer ${accessToken}`
+    }
+  }
+);
+
+const photos = await photoRes.json();
+
+console.log("=== ALL PHOTOS ===");
+console.log(
+  JSON.stringify(photos, null, 2)
+);
+
+fs.writeFileSync(
+  "activity-photos.json",
+  JSON.stringify(photos, null, 2)
+);
+  
 }
 
 main().catch(console.error);
