@@ -48,6 +48,20 @@ body{
     max-height:95%;
 }
 
+.photo-marker {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    border: 3px solid #fc4c02;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,.35);
+
+    background: white;
+}
+    
 </style>
 </head>
 
@@ -120,10 +134,15 @@ async function loadData() {
 
     map.fitBounds(track.getBounds());
 
-    const cameraIcon = L.divIcon({
-        html: "📷",
-        className: "",
-        iconSize: [30,30]
+    const photoIcon = L.divIcon({
+    html: `
+        <div class="photo-marker">
+            ${imageUrl}
+        </div>
+    `,
+    className: "",
+    iconSize: [40, 40],
+    iconAnchor: [20, 20]
     });
 
     photos.forEach(photo => {
@@ -150,7 +169,7 @@ async function loadData() {
         L.marker(
             [lat, lon],
             {
-                icon: cameraIcon
+                icon: photoIcon
             }
         )
         .addTo(map)
