@@ -78,14 +78,11 @@ async function main() {
     )
   );
 
-  fs.writeFileSync(
-    "activity-detail.json",
-    JSON.stringify(detail, null, 2)
-  );
+  console.log("=== FULL ACTIVITY ===");
 
-  console.log(
-    "✅ zapisano activity-detail.json"
-  );
+  fs.writeFileSync("activity-detail.json", JSON.stringify(detail, null, 2));
+
+  console.log("✅ zapisano activity-detail.json");
 }
 
 main().catch(console.error);
