@@ -80,15 +80,21 @@ L.tileLayer(
 
 async function loadData() {
 
+    console.log("START");
     const activity =
         await fetch(
             "data/activity-detail.json"
         ).then(r => r.json());
+    console.log("ACTIVITY OK");
 
     const photos =
         await fetch(
             "data/activity-photos.json"
         ).then(r => r.json());
+    console.log("PHOTOS OK");
+    
+    console.log(activity);
+    console.log(photos);
 
     document.getElementById(
         "activityName"
