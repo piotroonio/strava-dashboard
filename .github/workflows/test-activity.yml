@@ -24,18 +24,6 @@ jobs:
           ACTIVITY_ID: ${{ secrets.ACTIVITY_ID }}
         run: |
           node scripts/fetch_single_activity.js
-
-      - name: Upload JSON
-        uses: actions/upload-artifact@v4
-        with:
-          name: activity-detail
-          path: activity-detail.json
-      
-      - name: Upload photos
-        uses: actions/upload-artifact@v4
-        with:
-          name: activity-photos
-          path: activity-photos.json
       
       - name: Commit updated files
         run: |
