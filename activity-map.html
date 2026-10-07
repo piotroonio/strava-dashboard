@@ -134,17 +134,6 @@ async function loadData() {
 
     map.fitBounds(track.getBounds());
 
-    const photoIcon = L.divIcon({
-    html: `
-        <div class="photo-marker">
-            ${imageUrl}
-        </div>
-    `,
-    className: "",
-    iconSize: [40, 40],
-    iconAnchor: [20, 20]
-    });
-
     photos.forEach(photo => {
 
         const lat =
@@ -156,6 +145,17 @@ async function loadData() {
         const imageUrl =
             photo.urls["600"];
 
+        const photoIcon = L.divIcon({
+        html: `
+        <div class="photo-marker">
+        ${imageUrl}
+        </div>
+            `,
+        className: "",
+        iconSize: [50, 50],
+        iconAnchor: [25, 25]
+        });
+        
         const popupHtml = `
             <div>
                 <img
