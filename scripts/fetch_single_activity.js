@@ -22,7 +22,8 @@ async function main() {
       body: JSON.stringify({
         client_id: process.env.STRAVA_CLIENT_ID,
         client_secret: process.env.STRAVA_CLIENT_SECRET,
-        refresh_token: user.refresh_token,
+        refresh_token:
+          process.env.STRAVA_PERSONAL_REFRESH_TOKEN,
         grant_type: "refresh_token"
       })
     }
