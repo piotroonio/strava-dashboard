@@ -33,6 +33,7 @@ jobs:
         
           git add data/activity-detail.json
           git add data/activity-photos.json
+          git add data/activity-streams.json
         
           git commit -m "Update activity data" || echo "No changes"
           git push   
