@@ -170,25 +170,30 @@ L.tileLayer(
 
 async function loadData() {
 
-    console.log("START");
     const activity =
         await fetch(
             "data/activity-detail.json"
         ).then(r => r.json());
-    console.log("ACTIVITY OK");
 
     const photos =
         await fetch(
             "data/activity-photos.json"
         ).then(r => r.json());
-    console.log("PHOTOS OK");
-    
-    console.log(activity);
-    console.log(photos);
+
+    const streams =
+        await fetch(
+            "data/activity-streams.json"
+        ).then(r => r.json());
 
     document.getElementById(
         "activityName"
     ).textContent = activity.name;
+
+    const timeData =
+        streams.time.data;
+
+    const latlngData =
+        streams.latlng.data;
 
     const polylinePoints =
         polyline.decode(
@@ -208,46 +213,113 @@ async function loadData() {
         }
     ).addTo(map);
 
-    map.fitBounds(track.getBounds());
+    map.fitBounds(
+        track.getBounds()
+    );
+
+    const activityStart =
+        new Date(
+            activity.start_date
+        );
 
     photos.forEach(photo => {
 
+        let lat;
+        let lon;
+
+        /*
+         * Zdjęcie posiada GPS
+         */
         if (
-            !photo.location ||
-            photo.location.length < 2
+            photo.location &&
+            photo.location.length === 2
         ) {
 
-            console.log(
-                "Pominięto zdjęcie bez GPS:",
-                photo.unique_id
-        );
+            lat = photo.location[0];
+            lon = photo.location[1];
 
-            return;
+        } else {
+
+            /*
+             * Zdjęcie bez GPS
+             * Wyznaczamy pozycję na podstawie czasu
+             */
+
+            const photoTime =
+                new Date(
+                    photo.created_at
+                );
+
+            const elapsedSeconds =
+                Math.floor(
+                    (
+                        photoTime -
+                        activityStart
+                    ) / 1000
+                );
+
+            let closestIndex = 0;
+            let smallestDiff = Number.MAX_SAFE_INTEGER;
+
+            timeData.forEach(
+                (t, idx) => {
+
+                    const diff =
+                        Math.abs(
+                            t -
+                            elapsedSeconds
+                        );
+
+                    if (
+                        diff <
+                        smallestDiff
+                    ) {
+
+                        smallestDiff =
+                            diff;
+
+                        closestIndex =
+                            idx;
+                    }
+
+                }
+            );
+
+            lat =
+                latlngData[closestIndex][0];
+
+            lon =
+                latlngData[closestIndex][1];
         }
-        
-        const lat = photo.location[0];
-        const lon = photo.location[1];
 
-        const imageUrl = photo.urls["2048"];
+        const imageUrl =
+            photo.urls["2048"];
 
-        const photoIcon = L.divIcon({
-        html: `
-            <div class="photo-marker">
-            <img src="${imageUrl}">
-            </div>
-        `,
-        className: "",
-        iconSize: [50, 50],
-        iconAnchor: [25, 25]
-        });
-        
+        const photoIcon =
+            L.divIcon({
+
+                html: `
+                    <div class="photo-marker">
+                        ${imageUrl}
+                    </div>
+                `,
+
+                className: "",
+                iconSize: [50, 50],
+                iconAnchor: [25, 25]
+
+            });
+
         L.marker(
             [lat, lon],
-            { icon: photoIcon }
+            {
+                icon: photoIcon
+            }
         )
         .addTo(map)
         .bindPopup(`
-            <img src="${imageUrl}" class="popup-photo" onclick="showPhoto('${imageUrl}')" >
+            ${imageUrl}"
+            >
         `);
 
     });
