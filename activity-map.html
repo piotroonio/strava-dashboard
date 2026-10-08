@@ -300,7 +300,7 @@ async function loadData() {
 
                 html: `
                     <div class="photo-marker">
-                        ${imageUrl}
+                      <img src="${imageUrl}">
                     </div>
                 `,
 
@@ -318,8 +318,8 @@ async function loadData() {
         )
         .addTo(map)
         .bindPopup(`
-            ${imageUrl}"
-            >
+           <img src="${imageUrl}">
+            
         `);
 
     });
