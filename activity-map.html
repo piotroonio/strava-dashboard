@@ -136,40 +136,32 @@ async function loadData() {
 
     photos.forEach(photo => {
 
-        const lat =
-            photo.location[0];
+        const lat = photo.location[0];
+        const lon = photo.location[1];
 
-        const lon =
-            photo.location[1];
-
-        const imageUrl =
-            photo.urls["600"];
+        const imageUrl = photo.urls["600"];
 
         const photoIcon = L.divIcon({
         html: `
-        <div class="photo-marker">
-        ${imageUrl}
-        </div>
-            `,
+            <div class="photo-marker">
+            ${imageUrl}
+            </div>
+        `,
         className: "",
         iconSize: [50, 50],
         iconAnchor: [25, 25]
         });
         
-        const popupHtml = `
-            <div>
-                <img src="${imageUrl}" class="photo-thumb" onclick="showPhoto('${imageUrl}')">
-            </div>
-        `;
-
         L.marker(
             [lat, lon],
-            {
-                icon: photoIcon
-            }
+            { icon: photoIcon }
         )
         .addTo(map)
-        .bindPopup(popupHtml);
+        .bindPopup(`
+            ${imageUrl}"
+            >
+        `);
+
     });
 
 }
