@@ -220,7 +220,7 @@ async function loadData() {
         const photoIcon = L.divIcon({
         html: `
             <div class="photo-marker">
-            <img src="${imageUrl}"
+            <img src="${imageUrl}">
             </div>
         `,
         className: "",
@@ -243,7 +243,7 @@ async function loadData() {
 
 function showPhoto(url){
 
-    document.getElementById("lightboxImage").src = imageUrl;
+    document.getElementById("lightboxImage").src = url;
 
     document.getElementById(
         "lightbox"
