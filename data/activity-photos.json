@@ -158,5 +158,229 @@
       54.19608899999999,
       15.640728
     ]
+  },
+  {
+    "unique_id": "33d05386-7164-41f9-b3e4-7037014358be",
+    "athlete_id": 58678501,
+    "activity_id": 20338955873,
+    "activity_name": "Morning Gravel Ride",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2026-10-07T18:39:50Z",
+    "created_at": "2026-10-07T18:39:31Z",
+    "created_at_local": "2026-10-07T20:39:31Z",
+    "urls": {
+      "600": "https://dgtzuqphqg23d.cloudfront.net/LiIzuXheEreFTXptZz_lMLRHAnMPEdj-bdMtF68wAEA-768x432.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "600": [
+        768,
+        432
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false,
+    "location": [
+      54.196872,
+      15.646920999999999
+    ]
+  },
+  {
+    "unique_id": "f004e0d8-5466-4409-9b15-4ad753be2a5a",
+    "athlete_id": 58678501,
+    "activity_id": 20338955873,
+    "activity_name": "Morning Gravel Ride",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2026-10-07T18:44:52Z",
+    "created_at": "2026-10-07T18:44:37Z",
+    "created_at_local": "2026-10-07T20:44:37Z",
+    "urls": {
+      "600": "https://dgtzuqphqg23d.cloudfront.net/FmAs3fuAt3IwOPxMHt5frbSZW7M9seLzQ-s3e_KalTY-768x432.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "600": [
+        768,
+        432
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false,
+    "location": [
+      54.21685633333333,
+      15.755633666666666
+    ]
+  },
+  {
+    "unique_id": "37dce9ef-d92e-4d2b-8aec-6a293151565f",
+    "athlete_id": 58678501,
+    "activity_id": 20338955873,
+    "activity_name": "Morning Gravel Ride",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2026-10-07T18:51:05Z",
+    "created_at": "2026-10-07T18:50:28Z",
+    "created_at_local": "2026-10-07T20:50:28Z",
+    "urls": {
+      "600": "https://dgtzuqphqg23d.cloudfront.net/QpLiKNtPh5Opo10FzDuhimDY7ZeZ7v3r38bwIBTal40-768x432.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "600": [
+        768,
+        432
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false,
+    "location": [
+      54.216889333333334,
+      15.755815333333333
+    ]
+  },
+  {
+    "unique_id": "e1873fe5-b8e3-4aee-89d9-63bd0440aa7d",
+    "athlete_id": 58678501,
+    "activity_id": 20338955873,
+    "activity_name": "Morning Gravel Ride",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2026-10-07T18:56:53Z",
+    "created_at": "2026-10-07T18:56:03Z",
+    "created_at_local": "2026-10-07T20:56:03Z",
+    "urls": {
+      "600": "https://dgtzuqphqg23d.cloudfront.net/ritcAwC1DmmycKPk38W0QoYe89QPVSi8NCRA-gApm-Y-768x432.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "600": [
+        768,
+        432
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false,
+    "location": [
+      54.22760674998373,
+      15.798876846171325
+    ]
+  },
+  {
+    "unique_id": "9abaaa6c-2d4f-42e4-a3b4-eebc5f8790d9",
+    "athlete_id": 58678501,
+    "activity_id": 20338955873,
+    "activity_name": "Morning Gravel Ride",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2026-10-07T19:23:17Z",
+    "created_at": "2026-10-07T19:23:03Z",
+    "created_at_local": "2026-10-07T21:23:03Z",
+    "urls": {
+      "600": "https://dgtzuqphqg23d.cloudfront.net/5vvG4J_gLD6jQz05BMdN_278IQSNTpo0_v1rLwuz3uw-768x432.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "600": [
+        768,
+        432
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false,
+    "location": [
+      54.241036,
+      15.871663
+    ]
+  },
+  {
+    "unique_id": "fbcb37c8-f2f1-4c8e-b554-cadc5eac0d00",
+    "athlete_id": 58678501,
+    "activity_id": 20338955873,
+    "activity_name": "Morning Gravel Ride",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2026-10-07T19:28:10Z",
+    "created_at": "2026-10-07T19:27:54Z",
+    "created_at_local": "2026-10-07T21:27:54Z",
+    "urls": {
+      "600": "https://dgtzuqphqg23d.cloudfront.net/couhYJx5U3y_Au4NroVTnKq32gBe3som-lA3OcmVXWk-768x432.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "600": [
+        768,
+        432
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false,
+    "location": [
+      54.249062,
+      15.958179
+    ]
+  },
+  {
+    "unique_id": "97c7d71f-75fa-44bd-8684-552cc952fadb",
+    "athlete_id": 58678501,
+    "activity_id": 20338955873,
+    "activity_name": "Morning Gravel Ride",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2026-10-07T19:45:07Z",
+    "created_at": "2026-10-07T19:44:30Z",
+    "created_at_local": "2026-10-07T21:44:30Z",
+    "urls": {
+      "600": "https://dgtzuqphqg23d.cloudfront.net/gVjP_uwAvFIUrLBoib1mzAR9NuJpFW6uCYOy66LGog8-768x432.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "600": [
+        768,
+        432
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false,
+    "location": [
+      54.249022999868195,
+      15.961621999999998
+    ]
   }
 ]
