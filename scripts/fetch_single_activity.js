@@ -107,6 +107,22 @@ fs.writeFileSync(
 
 console.log("✅ zapisano data/activity-detail.json");
 console.log("✅ zapisano data/activity-photos.json");
+
+const streamRes = await fetch(
+  `https://www.strava.com/api/v3/activities/${ACTIVITY_ID}/streams?keys=time,latlng&key_by_type=true`,
+  {
+    headers: {
+      Authorization: `Bearer ${accessToken}`
+    }
+  }
+);
+
+const streams = await streamRes.json();
+
+fs.writeFileSync(
+  "data/activity-streams.json",
+  JSON.stringify(streams, null, 2)
+);
   
 }
 
