@@ -1,52 +1,172 @@
 [
   {
-    "unique_id": "45b339af-a9e2-4813-a0fd-0ff32c50171b",
+    "unique_id": "366B5749-030E-4C8C-9830-190DEF792C29",
     "athlete_id": 58678501,
-    "activity_id": 20338955873,
-    "activity_name": "Morning Gravel Ride",
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
     "post_id": null,
     "resource_state": 2,
     "caption": "",
     "type": 1,
     "source": 1,
     "status": 3,
-    "uploaded_at": "2026-10-06T17:07:21Z",
-    "created_at": "2026-10-06T17:02:30Z",
-    "created_at_local": "2026-10-06T19:02:30Z",
+    "uploaded_at": "2025-08-11T10:18:14Z",
+    "created_at": "2025-05-25T07:52:39Z",
+    "created_at_local": "2025-05-25T09:52:39Z",
     "urls": {
-      "2048": "https://dgtzuqphqg23d.cloudfront.net/Ry7FDwAtho3Drznuo2chrTy2iX7dDZNYr0o5LOukSsk-2048x1152.jpg"
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/CQQtCOSzZqwqlMOuX4FDRSWc_usK6Y4_aTo4n70iNzE-2048x1536.jpg"
     },
     "placeholder_image": null,
     "sizes": {
       "2048": [
         2048,
-        1152
+        1536
       ]
     },
     "default_photo": true,
     "cursor": null,
     "is_strava_strength": false,
     "location": [
-      54.18055919987042,
-      15.559689300004397
+      54.81782166666667,
+      17.955928333333333
     ]
   },
   {
-    "unique_id": "87f61227-2c2c-465f-b98a-057edebffc8e",
+    "unique_id": "3951023D-E868-44F2-8376-16DEAEDBAF8F",
     "athlete_id": 58678501,
-    "activity_id": 20338955873,
-    "activity_name": "Morning Gravel Ride",
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
     "post_id": null,
     "resource_state": 2,
     "caption": "",
     "type": 1,
     "source": 1,
     "status": 3,
-    "uploaded_at": "2026-10-06T17:51:02Z",
-    "created_at": "2026-10-06T17:49:12Z",
-    "created_at_local": "2026-10-06T19:49:12Z",
+    "uploaded_at": "2025-08-11T10:18:14Z",
+    "created_at": "2025-05-25T09:19:28Z",
+    "created_at_local": "2025-05-25T11:19:28Z",
     "urls": {
-      "2048": "https://dgtzuqphqg23d.cloudfront.net/6m6Gh37cPr0sb16dkKcPyoxOg0VGaOgR8nEk4n2Gb3c-2048x1152.jpg"
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/1YjMMPLZrNq1VyFaTsgXTLUE9nmjRy4dB5MxSffvDpQ-1536x2048.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "2048": [
+        1536,
+        2048
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false,
+    "location": [
+      54.815803333333335,
+      17.961491666666667
+    ]
+  },
+  {
+    "unique_id": "DA7CD138-D1AB-418C-980D-709E24566E90",
+    "athlete_id": 58678501,
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2025-08-11T10:18:14Z",
+    "created_at": "2025-05-25T09:34:44Z",
+    "created_at_local": "2025-05-25T11:34:44Z",
+    "urls": {
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/WXjZ5Vx3OZu1vZbuZrI9bZndLTA0L4bhTQo57osqfQU-2048x1536.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "2048": [
+        2048,
+        1536
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false,
+    "location": [
+      54.817863333333335,
+      17.954945
+    ]
+  },
+  {
+    "unique_id": "84850BD2-5B39-49D1-B2C8-B1812F2370FE",
+    "athlete_id": 58678501,
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2025-08-11T10:21:54Z",
+    "created_at": "2025-05-25T14:47:43Z",
+    "created_at_local": "2025-05-25T16:47:43Z",
+    "urls": {
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/0M0kCMRmAjUFAp6WGDfwaqe6vt5SGnGu1GKOBwvMBrA-2048x1536.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "2048": [
+        2048,
+        1536
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false
+  },
+  {
+    "unique_id": "0C9EEBA7-E775-48ED-801B-892C233B7149",
+    "athlete_id": 58678501,
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2025-08-11T10:22:06Z",
+    "created_at": "2025-05-25T14:48:05Z",
+    "created_at_local": "2025-05-25T16:48:05Z",
+    "urls": {
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/2EwQJfK06roBvkI4orSbVqL0Ng3AZBtms5GPxqinAv8-2048x1536.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "2048": [
+        2048,
+        1536
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false
+  },
+  {
+    "unique_id": "37d42a88-44b8-49d2-867f-831060feb765",
+    "athlete_id": 58678501,
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2025-09-11T19:12:35Z",
+    "created_at": "2025-09-11T19:11:18Z",
+    "created_at_local": "2025-09-11T21:11:18Z",
+    "urls": {
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/4Vuqwm7p1aCCGz5hzjAvmFwc7C4Dd-rspT-tQMR3myA-2048x1152.jpg"
     },
     "placeholder_image": null,
     "sizes": {
@@ -59,26 +179,26 @@
     "cursor": null,
     "is_strava_strength": false,
     "location": [
-      54.189339,
-      15.602208
+      54.808029999999995,
+      17.914856999856998
     ]
   },
   {
-    "unique_id": "ae1da249-37a4-452d-a9e0-b895bde71777",
+    "unique_id": "bae7f9f0-752d-4613-827c-9190e7f2474a",
     "athlete_id": 58678501,
-    "activity_id": 20338955873,
-    "activity_name": "Morning Gravel Ride",
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
     "post_id": null,
     "resource_state": 2,
     "caption": "",
     "type": 1,
     "source": 1,
     "status": 3,
-    "uploaded_at": "2026-10-06T18:54:24Z",
-    "created_at": "2026-10-06T18:53:44Z",
-    "created_at_local": "2026-10-06T20:53:44Z",
+    "uploaded_at": "2025-09-15T19:34:19Z",
+    "created_at": "2025-09-15T17:33:49Z",
+    "created_at_local": "2025-09-15T19:33:49Z",
     "urls": {
-      "2048": "https://dgtzuqphqg23d.cloudfront.net/2ov68Oqsh5U-QDelGhLH9wFC3Xc_EVn5OXqOEOnu9D0-2048x1152.jpg"
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/fhfogKEhhdLK7t9TlhGwFL62mR2sSuFvGBbGSsSY4TU-2048x1152.jpg"
     },
     "placeholder_image": null,
     "sizes": {
@@ -91,26 +211,26 @@
     "cursor": null,
     "is_strava_strength": false,
     "location": [
-      54.191213999999995,
-      15.611439777777777
+      54.81918,
+      17.95452298335945
     ]
   },
   {
-    "unique_id": "86d62c93-baf6-44f0-be2c-bce9a061f764",
+    "unique_id": "57e2cdd9-bc82-43b4-81fa-b7a70a591b3a",
     "athlete_id": 58678501,
-    "activity_id": 20338955873,
-    "activity_name": "Morning Gravel Ride",
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
     "post_id": null,
     "resource_state": 2,
     "caption": "",
     "type": 1,
     "source": 1,
     "status": 3,
-    "uploaded_at": "2026-10-06T19:18:40Z",
-    "created_at": "2026-10-06T19:18:29Z",
-    "created_at_local": "2026-10-06T21:18:29Z",
+    "uploaded_at": "2025-09-15T19:34:19Z",
+    "created_at": "2025-09-12T19:37:46Z",
+    "created_at_local": "2025-09-12T21:37:46Z",
     "urls": {
-      "2048": "https://dgtzuqphqg23d.cloudfront.net/N2x_7ig5R3NilarnUMoBpLxkVomMdJPzOwQ4pD5f0mI-2048x1152.jpg"
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/WO9NY1pVuqnCFJY9VdEMcM5HRzTCjjml0LuzwEnwcPw-2048x1152.jpg"
     },
     "placeholder_image": null,
     "sizes": {
@@ -123,26 +243,26 @@
     "cursor": null,
     "is_strava_strength": false,
     "location": [
-      54.19421450002459,
-      15.6300465
+      54.808029999999995,
+      17.914856999856998
     ]
   },
   {
-    "unique_id": "ca142d69-a7f1-47ad-861a-e92c1fe16d8c",
+    "unique_id": "7ea6fc64-487b-4457-aed9-a9c0fb1042a7",
     "athlete_id": 58678501,
-    "activity_id": 20338955873,
-    "activity_name": "Morning Gravel Ride",
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
     "post_id": null,
     "resource_state": 2,
     "caption": "",
     "type": 1,
     "source": 1,
     "status": 3,
-    "uploaded_at": "2026-10-06T19:24:11Z",
-    "created_at": "2026-10-06T19:23:53Z",
-    "created_at_local": "2026-10-06T21:23:53Z",
+    "uploaded_at": "2025-09-15T19:34:19Z",
+    "created_at": "2025-09-15T17:31:18Z",
+    "created_at_local": "2025-09-15T19:31:18Z",
     "urls": {
-      "2048": "https://dgtzuqphqg23d.cloudfront.net/xTCgL9vUf5Oo4aU_9_dj3sEIE_QQkTbbnb0hDn7CPCg-2048x1152.jpg"
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/LSxkfhwUNxCDstUDA8dOyzak5xlG4F03PEU5f58g1FY-2048x1152.jpg"
     },
     "placeholder_image": null,
     "sizes": {
@@ -155,26 +275,26 @@
     "cursor": null,
     "is_strava_strength": false,
     "location": [
-      54.19608899999999,
-      15.640728
+      54.79901798330122,
+      17.848468
     ]
   },
   {
-    "unique_id": "33d05386-7164-41f9-b3e4-7037014358be",
+    "unique_id": "3da76213-5bb0-44b5-a4d0-7458c56a1e7d",
     "athlete_id": 58678501,
-    "activity_id": 20338955873,
-    "activity_name": "Morning Gravel Ride",
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
     "post_id": null,
     "resource_state": 2,
     "caption": "",
     "type": 1,
     "source": 1,
     "status": 3,
-    "uploaded_at": "2026-10-07T18:39:50Z",
-    "created_at": "2026-10-07T18:39:31Z",
-    "created_at_local": "2026-10-07T20:39:31Z",
+    "uploaded_at": "2025-09-15T19:34:19Z",
+    "created_at": "2025-09-15T17:36:30Z",
+    "created_at_local": "2025-09-15T19:36:30Z",
     "urls": {
-      "2048": "https://dgtzuqphqg23d.cloudfront.net/LiIzuXheEreFTXptZz_lMLRHAnMPEdj-bdMtF68wAEA-2048x1152.jpg"
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/eE82QdqyZqhCSKjmHiAHalzKnVeqNJxcOiI-HRPf0ck-2048x1152.jpg"
     },
     "placeholder_image": null,
     "sizes": {
@@ -187,26 +307,26 @@
     "cursor": null,
     "is_strava_strength": false,
     "location": [
-      54.196872,
-      15.646920999999999
+      54.804572983331525,
+      17.836164999999998
     ]
   },
   {
-    "unique_id": "f004e0d8-5466-4409-9b15-4ad753be2a5a",
+    "unique_id": "c190fe31-c973-4a18-b2ad-634263e03dc4",
     "athlete_id": 58678501,
-    "activity_id": 20338955873,
-    "activity_name": "Morning Gravel Ride",
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
     "post_id": null,
     "resource_state": 2,
     "caption": "",
     "type": 1,
     "source": 1,
     "status": 3,
-    "uploaded_at": "2026-10-07T18:44:52Z",
-    "created_at": "2026-10-07T18:44:37Z",
-    "created_at_local": "2026-10-07T20:44:37Z",
+    "uploaded_at": "2025-09-15T19:34:19Z",
+    "created_at": "2025-09-15T17:55:07Z",
+    "created_at_local": "2025-09-15T19:55:07Z",
     "urls": {
-      "2048": "https://dgtzuqphqg23d.cloudfront.net/FmAs3fuAt3IwOPxMHt5frbSZW7M9seLzQ-s3e_KalTY-2048x1152.jpg"
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/wnt1O-iJGhwTmF1Oo3OcuGvxUlfzG-L9fqWn9zLLssk-2048x1152.jpg"
     },
     "placeholder_image": null,
     "sizes": {
@@ -219,26 +339,26 @@
     "cursor": null,
     "is_strava_strength": false,
     "location": [
-      54.21685633333333,
-      15.755633666666666
+      54.804186983326325,
+      17.79223
     ]
   },
   {
-    "unique_id": "37dce9ef-d92e-4d2b-8aec-6a293151565f",
+    "unique_id": "b91c072b-9439-444e-a3bc-e5e706b447eb",
     "athlete_id": 58678501,
-    "activity_id": 20338955873,
-    "activity_name": "Morning Gravel Ride",
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
     "post_id": null,
     "resource_state": 2,
     "caption": "",
     "type": 1,
     "source": 1,
     "status": 3,
-    "uploaded_at": "2026-10-07T18:51:05Z",
-    "created_at": "2026-10-07T18:50:28Z",
-    "created_at_local": "2026-10-07T20:50:28Z",
+    "uploaded_at": "2025-09-15T19:34:19Z",
+    "created_at": "2025-09-15T17:55:08Z",
+    "created_at_local": "2025-09-15T19:55:08Z",
     "urls": {
-      "2048": "https://dgtzuqphqg23d.cloudfront.net/QpLiKNtPh5Opo10FzDuhimDY7ZeZ7v3r38bwIBTal40-2048x1152.jpg"
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/zpLOnjVbL96IQk0gPt_nJlM_nvS6NURP_x9DIYiYUFY-2048x1152.jpg"
     },
     "placeholder_image": null,
     "sizes": {
@@ -251,26 +371,26 @@
     "cursor": null,
     "is_strava_strength": false,
     "location": [
-      54.216889333333334,
-      15.755815333333333
+      54.800514983331496,
+      17.782879983388703
     ]
   },
   {
-    "unique_id": "e1873fe5-b8e3-4aee-89d9-63bd0440aa7d",
+    "unique_id": "fd7c1440-517b-4912-bc3d-9dcf232c541e",
     "athlete_id": 58678501,
-    "activity_id": 20338955873,
-    "activity_name": "Morning Gravel Ride",
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
     "post_id": null,
     "resource_state": 2,
     "caption": "",
     "type": 1,
     "source": 1,
     "status": 3,
-    "uploaded_at": "2026-10-07T18:56:53Z",
-    "created_at": "2026-10-07T18:56:03Z",
-    "created_at_local": "2026-10-07T20:56:03Z",
+    "uploaded_at": "2025-09-15T19:34:20Z",
+    "created_at": "2025-09-15T17:55:08Z",
+    "created_at_local": "2025-09-15T19:55:08Z",
     "urls": {
-      "2048": "https://dgtzuqphqg23d.cloudfront.net/ritcAwC1DmmycKPk38W0QoYe89QPVSi8NCRA-gApm-Y-2048x1152.jpg"
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/A77j-HjjGLOE6SDEEOc7tDlY2tLBGUcUSW3_zFfd8zY-2048x1152.jpg"
     },
     "placeholder_image": null,
     "sizes": {
@@ -283,26 +403,54 @@
     "cursor": null,
     "is_strava_strength": false,
     "location": [
-      54.22760674998373,
-      15.798876846171325
+      54.78305398322851,
+      17.741301
     ]
   },
   {
-    "unique_id": "9abaaa6c-2d4f-42e4-a3b4-eebc5f8790d9",
+    "unique_id": "fbbe8496-9616-4f4e-9442-ebc27a092416",
     "athlete_id": 58678501,
-    "activity_id": 20338955873,
-    "activity_name": "Morning Gravel Ride",
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
     "post_id": null,
     "resource_state": 2,
     "caption": "",
     "type": 1,
     "source": 1,
     "status": 3,
-    "uploaded_at": "2026-10-07T19:23:17Z",
-    "created_at": "2026-10-07T19:23:03Z",
-    "created_at_local": "2026-10-07T21:23:03Z",
+    "uploaded_at": "2025-09-15T19:34:19Z",
+    "created_at": "2025-09-15T17:40:32Z",
+    "created_at_local": "2025-09-15T19:40:32Z",
     "urls": {
-      "2048": "https://dgtzuqphqg23d.cloudfront.net/5vvG4J_gLD6jQz05BMdN_278IQSNTpo0_v1rLwuz3uw-2048x1152.jpg"
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/_JFWAVXCk24t_MUAHummrZ2H4xZ7V30OLhTu7JhLpwM-2048x1152.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "2048": [
+        2048,
+        1152
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false
+  },
+  {
+    "unique_id": "08aa7987-51d3-4163-90ce-19f1e6423b52",
+    "athlete_id": 58678501,
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2025-09-15T19:34:19Z",
+    "created_at": "2025-09-15T17:55:08Z",
+    "created_at_local": "2025-09-15T19:55:08Z",
+    "urls": {
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/Cz3hd5kPjr52-9s-rTYHJAyLer-BwL67Bf1APkSCpTw-2048x1152.jpg"
     },
     "placeholder_image": null,
     "sizes": {
@@ -315,26 +463,54 @@
     "cursor": null,
     "is_strava_strength": false,
     "location": [
-      54.241036,
-      15.871663
+      54.7606639833525,
+      17.567837
     ]
   },
   {
-    "unique_id": "fbcb37c8-f2f1-4c8e-b554-cadc5eac0d00",
+    "unique_id": "8b8b832a-41fa-435d-adf8-805e26529145",
     "athlete_id": 58678501,
-    "activity_id": 20338955873,
-    "activity_name": "Morning Gravel Ride",
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
     "post_id": null,
     "resource_state": 2,
     "caption": "",
     "type": 1,
     "source": 1,
     "status": 3,
-    "uploaded_at": "2026-10-07T19:28:10Z",
-    "created_at": "2026-10-07T19:27:54Z",
-    "created_at_local": "2026-10-07T21:27:54Z",
+    "uploaded_at": "2025-09-15T19:34:20Z",
+    "created_at": "2025-09-15T17:41:02Z",
+    "created_at_local": "2025-09-15T19:41:02Z",
     "urls": {
-      "2048": "https://dgtzuqphqg23d.cloudfront.net/couhYJx5U3y_Au4NroVTnKq32gBe3som-lA3OcmVXWk-2048x1152.jpg"
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/ad04hEMwIPYZGvPuh3ZLR-xnWPijcLFW_QPW7H_PNsg-2048x1152.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "2048": [
+        2048,
+        1152
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false
+  },
+  {
+    "unique_id": "6a1a5898-d899-4a8c-96fa-cf560b79804e",
+    "athlete_id": 58678501,
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2025-09-15T19:34:19Z",
+    "created_at": "2025-09-15T17:55:08Z",
+    "created_at_local": "2025-09-15T19:55:08Z",
+    "urls": {
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/OaOMe8i9rCItGBWhb3Xzhuxr5tc5yd0VxzAwvZO-DzM-2048x1152.jpg"
     },
     "placeholder_image": null,
     "sizes": {
@@ -347,26 +523,54 @@
     "cursor": null,
     "is_strava_strength": false,
     "location": [
-      54.249062,
-      15.958179
+      54.710551983310474,
+      17.525306999999998
     ]
   },
   {
-    "unique_id": "97c7d71f-75fa-44bd-8684-552cc952fadb",
+    "unique_id": "e03650a3-284d-4534-8c24-8b8700959ce3",
     "athlete_id": 58678501,
-    "activity_id": 20338955873,
-    "activity_name": "Morning Gravel Ride",
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
     "post_id": null,
     "resource_state": 2,
     "caption": "",
     "type": 1,
     "source": 1,
     "status": 3,
-    "uploaded_at": "2026-10-07T19:45:07Z",
-    "created_at": "2026-10-07T19:44:30Z",
-    "created_at_local": "2026-10-07T21:44:30Z",
+    "uploaded_at": "2025-09-15T19:34:19Z",
+    "created_at": "2025-09-15T17:41:34Z",
+    "created_at_local": "2025-09-15T19:41:34Z",
     "urls": {
-      "2048": "https://dgtzuqphqg23d.cloudfront.net/gVjP_uwAvFIUrLBoib1mzAR9NuJpFW6uCYOy66LGog8-2048x1152.jpg"
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/6w8jU2YzNghIb3gd1s2vgDWwR79uP8upxALG5lv_LNo-2048x1152.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "2048": [
+        2048,
+        1152
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false
+  },
+  {
+    "unique_id": "2e4470d6-bff5-451a-98c8-024f92d73270",
+    "athlete_id": 58678501,
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2025-09-15T19:34:20Z",
+    "created_at": "2025-09-15T17:55:09Z",
+    "created_at_local": "2025-09-15T19:55:09Z",
+    "urls": {
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/Z6JE6sPNCW_9zQw1xzOTOCTtErZzxYji4oWidZjnOrM-2048x1152.jpg"
     },
     "placeholder_image": null,
     "sizes": {
@@ -379,8 +583,368 @@
     "cursor": null,
     "is_strava_strength": false,
     "location": [
-      54.249022999868195,
-      15.961621999999998
+      54.698540983326495,
+      17.502299
+    ]
+  },
+  {
+    "unique_id": "6fac669b-7cc5-4cfb-97fd-d940db9104bd",
+    "athlete_id": 58678501,
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2025-09-15T19:34:19Z",
+    "created_at": "2025-09-15T17:55:13Z",
+    "created_at_local": "2025-09-15T19:55:13Z",
+    "urls": {
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/ciePARENzCqliZ7pc1KnlCD55sH6F1yFkKj-dY-jKw8-2048x1152.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "2048": [
+        2048,
+        1152
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false,
+    "location": [
+      54.69902798333607,
+      17.494938983279397
+    ]
+  },
+  {
+    "unique_id": "90c61b1e-758c-467e-b63b-67ab065c79be",
+    "athlete_id": 58678501,
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2025-09-15T19:34:20Z",
+    "created_at": "2025-09-15T17:41:53Z",
+    "created_at_local": "2025-09-15T19:41:53Z",
+    "urls": {
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/-wPydjk7VsTl4u3N4bse-aTy2X16-48hkx05rMYcCeU-2048x1152.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "2048": [
+        2048,
+        1152
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false
+  },
+  {
+    "unique_id": "fd52cc8f-b8dd-43d0-9b66-025d3760ff5e",
+    "athlete_id": 58678501,
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2025-09-15T19:34:20Z",
+    "created_at": "2025-09-15T17:55:14Z",
+    "created_at_local": "2025-09-15T19:55:14Z",
+    "urls": {
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/Lm02a5cUPKamuIC0rFke_r8IRDJbCGw1IqwregtJsv4-2048x1152.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "2048": [
+        2048,
+        1152
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false,
+    "location": [
+      54.692809999999994,
+      17.44890398337646
+    ]
+  },
+  {
+    "unique_id": "7b99f1ca-ec41-4896-ab10-4735d99040d9",
+    "athlete_id": 58678501,
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2025-09-15T19:34:20Z",
+    "created_at": "2025-09-15T17:55:14Z",
+    "created_at_local": "2025-09-15T19:55:14Z",
+    "urls": {
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/luC1x7i6861vDByJx2-BwQEbmhhQZcS5g32zRpgEim0-2048x1152.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "2048": [
+        2048,
+        1152
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false,
+    "location": [
+      54.639639,
+      17.410750999999998
+    ]
+  },
+  {
+    "unique_id": "e3454500-42b6-4ad3-8d27-603c12a27bc1",
+    "athlete_id": 58678501,
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2025-09-15T19:34:20Z",
+    "created_at": "2025-09-15T17:43:17Z",
+    "created_at_local": "2025-09-15T19:43:17Z",
+    "urls": {
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/n3JIskcWj3x88IiquiYblGW2NlNfsuGwQQyqVEJRzvw-2048x1152.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "2048": [
+        2048,
+        1152
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false
+  },
+  {
+    "unique_id": "b378c625-c689-48b9-95b1-23aae458307b",
+    "athlete_id": 58678501,
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2025-09-15T19:34:20Z",
+    "created_at": "2025-09-15T17:55:14Z",
+    "created_at_local": "2025-09-15T19:55:14Z",
+    "urls": {
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/bANHvR3jvyFV_RbU_yQEeh5MPw9zOtyPiyrX6lEC-tE-2048x1152.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "2048": [
+        2048,
+        1152
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false,
+    "location": [
+      54.621738983337565,
+      17.359462
+    ]
+  },
+  {
+    "unique_id": "4c46afec-b3a8-44a3-a737-ad57db1ce307",
+    "athlete_id": 58678501,
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2025-09-15T19:34:20Z",
+    "created_at": "2025-09-15T17:43:29Z",
+    "created_at_local": "2025-09-15T19:43:29Z",
+    "urls": {
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/r1homKKJ71iOAcquYDrBIhUiL0XMmrRhuhe4Of9Tmdc-2048x1152.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "2048": [
+        2048,
+        1152
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false
+  },
+  {
+    "unique_id": "27947f64-6a8b-45de-ba1c-45b07321071b",
+    "athlete_id": 58678501,
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2025-09-15T19:34:20Z",
+    "created_at": "2025-09-15T17:43:31Z",
+    "created_at_local": "2025-09-15T19:43:31Z",
+    "urls": {
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/wJFCs_-BHDf55sL11B7PyR0K9Bzu1OSLTrqLumli3HE-2048x1152.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "2048": [
+        2048,
+        1152
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false
+  },
+  {
+    "unique_id": "42e50f65-91f6-4159-9248-814d69a86eaa",
+    "athlete_id": 58678501,
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2025-09-15T19:34:20Z",
+    "created_at": "2025-09-15T17:43:41Z",
+    "created_at_local": "2025-09-15T19:43:41Z",
+    "urls": {
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/uiE9FxsccLxwm7z9fkVLoLJEgKfR7Vn68zSGOj8javw-2048x1152.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "2048": [
+        2048,
+        1152
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false
+  },
+  {
+    "unique_id": "ebf92bb2-57c2-4168-a3c2-7adb7d7ad5c9",
+    "athlete_id": 58678501,
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2025-09-15T19:34:20Z",
+    "created_at": "2025-09-15T17:55:14Z",
+    "created_at_local": "2025-09-15T19:55:14Z",
+    "urls": {
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/1RjoV28OuuHKFMifNWsYObFVLSIhhGwTh4MeccnGVF0-2048x1152.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "2048": [
+        2048,
+        1152
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false,
+    "location": [
+      54.619402,
+      17.323802
+    ]
+  },
+  {
+    "unique_id": "54ccd285-70b1-40d1-9a24-eeb0b5628711",
+    "athlete_id": 58678501,
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2025-09-15T19:34:20Z",
+    "created_at": "2025-09-15T17:44:00Z",
+    "created_at_local": "2025-09-15T19:44:00Z",
+    "urls": {
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/ljPYgQDq7LWUNvDy3vGkELu9b9Z4nzhqwfxio6D-cW4-2048x1152.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "2048": [
+        2048,
+        1152
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false
+  },
+  {
+    "unique_id": "336cdbc8-dd1f-403c-b9c3-cf9323fd8430",
+    "athlete_id": 58678501,
+    "activity_id": 14593680981,
+    "activity_name": "Lunch Gravel Ride - z Białogóry",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2025-09-15T19:34:20Z",
+    "created_at": "2025-09-15T17:55:15Z",
+    "created_at_local": "2025-09-15T19:55:15Z",
+    "urls": {
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/KIfB_IGvYHTXFEE8iEARpYi3FSIBY7EXS0FHTylquLY-2048x1152.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "2048": [
+        2048,
+        1152
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false,
+    "location": [
+      54.627091983287634,
+      17.290236
     ]
   }
 ]
