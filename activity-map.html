@@ -66,6 +66,12 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+}
+    
+.photo-thumb {
+    width: 250px;
+    cursor: pointer;
 }
     
 </style>
@@ -150,7 +156,7 @@ async function loadData() {
         const photoIcon = L.divIcon({
         html: `
             <div class="photo-marker">
-            ${imageUrl}
+            <img src="${imageUrl}"
             </div>
         `,
         className: "",
@@ -164,8 +170,7 @@ async function loadData() {
         )
         .addTo(map)
         .bindPopup(`
-            ${imageUrl}"
-            >
+            <img src="${imageUrl}" class="photo-thumb" onclick="showPhoto('${imageUrl}')" >
         `);
 
     });
