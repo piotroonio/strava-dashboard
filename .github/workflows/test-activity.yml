@@ -20,8 +20,9 @@ jobs:
         env:
           STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
           STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
-          TOKENS_JSON: ${{ secrets.TOKENS_JSON }}
           ACTIVITY_ID: ${{ secrets.ACTIVITY_ID }}
+          STRAVA_PERSONAL_ATHLETE_ID: ${{ secrets.STRAVA_PERSONAL_ATHLETE_ID }}
+          STRAVA_PERSONAL_REFRESH_TOKEN: ${{ secrets.STRAVA_PERSONAL_REFRESH_TOKEN }}
         run: |
           node scripts/fetch_single_activity.js
       
