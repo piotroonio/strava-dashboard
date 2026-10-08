@@ -212,6 +212,19 @@ async function loadData() {
 
     photos.forEach(photo => {
 
+        if (
+            !photo.location ||
+            photo.location.length < 2
+        ) {
+
+            console.log(
+                "Pominięto zdjęcie bez GPS:",
+                photo.unique_id
+        );
+
+            return;
+        }
+        
         const lat = photo.location[0];
         const lon = photo.location[1];
 
