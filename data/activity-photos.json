@@ -382,5 +382,33 @@
       54.249022999868195,
       15.961621999999998
     ]
+  },
+  {
+    "unique_id": "e7ae8123-34db-4917-91f1-7caf8c2ab9cb",
+    "athlete_id": 58678501,
+    "activity_id": 20338955873,
+    "activity_name": "Morning Gravel Ride",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2026-10-08T12:56:15Z",
+    "created_at": "2026-10-08T12:55:21Z",
+    "created_at_local": "2026-10-08T14:55:21Z",
+    "urls": {
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/1q8Hsub1qiy4JG9l0lK-CuVgZ6Z4_DiP4uoufEXm8A4-2048x1536.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "2048": [
+        2048,
+        1536
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false
   }
 ]

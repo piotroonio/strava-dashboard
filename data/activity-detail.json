@@ -67,7 +67,7 @@
   "external_id": "garmin_ping_634317032140",
   "from_accepted_tag": false,
   "pr_count": 4,
-  "total_photo_count": 12,
+  "total_photo_count": 13,
   "has_kudoed": false,
   "suffer_score": 300,
   "description": "-- myWindsock Report --\r\nWeather Impact™: -16.7%\r\nHeadwind: 11% @ 2.5 - 7.5 m/s\r\nTemp: 10.9-16.4 °C\r\nPrecip: 0% @ 0 Inch/hr\r\n-- END --",
@@ -5752,7 +5752,7 @@
       "media_type": 1
     },
     "use_primary_photo": true,
-    "count": 12
+    "count": 13
   },
   "stats_visibility": [
     {
