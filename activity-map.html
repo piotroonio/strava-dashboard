@@ -73,6 +73,20 @@ body{
     width: 250px;
     cursor: pointer;
 }
+
+.leaflet-popup-content-wrapper {
+    padding: 0;
+}
+
+.leaflet-popup-content {
+    margin: 0;
+}
+
+.popup-photo {
+    display: block;
+    width: 220px;
+    border-radius: 8px;
+}
     
 </style>
 </head>
@@ -170,7 +184,7 @@ async function loadData() {
         )
         .addTo(map)
         .bindPopup(`
-            <img src="${imageUrl}" class="photo-thumb" onclick="showPhoto('${imageUrl}')" >
+            <img src="${imageUrl}" class="popup-photo" onclick="showPhoto('${imageUrl}')" >
         `);
 
     });
