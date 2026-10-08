@@ -123,6 +123,8 @@ fs.writeFileSync(
   "data/activity-streams.json",
   JSON.stringify(streams, null, 2)
 );
+
+console.log("✅ zapisano data/activity-streams.json");
   
 }
 
