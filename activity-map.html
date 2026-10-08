@@ -318,7 +318,7 @@ async function loadData() {
         )
         .addTo(map)
         .bindPopup(`
-           <img src="${imageUrl}">
+           <img src="${imageUrl}" class="popup-photo" onclick="showPhoto('${imageUrl}')">
             
         `);
 
