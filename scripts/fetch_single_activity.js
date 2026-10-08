@@ -1,23 +1,16 @@
 const fs = require("fs");
 
-const tokens = JSON.parse(process.env.TOKENS_JSON);
-
 const ACTIVITY_ID = process.env.ACTIVITY_ID;
-
-// nazwa dokładnie taka jak w TOKENS_JSON
-const MY_NAME = "Piotr Sieradzki";
 
 async function main() {
 
-  const user = tokens.find(
-    t => t.name === MY_NAME
-  );
+  const REFRESH_TOKEN =
+    process.env.STRAVA_PERSONAL_REFRESH_TOKEN;
 
-  if (!user) {
-    throw new Error(
-      `Nie znaleziono użytkownika ${MY_NAME}`
+  const ATHLETE_ID =
+    Number(
+      process.env.STRAVA_PERSONAL_ATHLETE_ID
     );
-  }
 
   const tokenRes = await fetch(
     "https://www.strava.com/oauth/token",
