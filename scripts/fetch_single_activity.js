@@ -81,7 +81,7 @@ async function main() {
   console.log("=== FULL ACTIVITY ===");
 
 const photoRes = await fetch(
-  `https://www.strava.com/api/v3/activities/${ACTIVITY_ID}/photos?size=600`,
+  `https://www.strava.com/api/v3/activities/${ACTIVITY_ID}/photos?size=2048`,
   {
     headers: {
       Authorization: `Bearer ${accessToken}`
