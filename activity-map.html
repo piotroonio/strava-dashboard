@@ -229,23 +229,29 @@ async function loadData() {
     const latlngData =
         streams.latlng.data;
 
-    const polylinePoints =
-        polyline.decode(
-            activity.map.summary_polyline
-        );
+    let route;
 
-    const route =
-        polylinePoints.map(
-            p => [p[0], p[1]]
-        );
+    if (
+        streams.latlng &&
+        streams.latlng.data
+    ) {
 
-    const track = L.polyline(
-        route,
-        {
-            color: "#fc4c02",
-            weight: 5
-        }
-    ).addTo(map);
+        route =
+            streams.latlng.data.map(
+                p => [p[0], p[1]]
+            );
+
+    } else {
+
+        route =
+            polyline.decode(
+                activity.map.summary_polyline
+            )
+            .map(
+                p => [p[0], p[1]]
+            );
+    }
+
 
     map.fitBounds(
         track.getBounds()
