@@ -162,6 +162,7 @@ body{
 <script>
 
 const map = L.map("map");
+    
 const osm = L.tileLayer(
   "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
   {
@@ -173,6 +174,20 @@ const topo = L.tileLayer(
   "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
   {
     attribution: "© OpenTopoMap"
+  }
+);
+
+const cartovoyager = L.tileLayer(
+  "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
+  {
+    attribution: "© OpenStreetMap © CARTO"
+  }
+);
+
+const cartopositron = L.tileLayer(
+  "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+  {
+    attribution: "© OpenStreetMap © CARTO"
   }
 );
 
@@ -189,6 +204,8 @@ L.control.layers(
   {
     "OSM": osm,
     "Topo": topo,
+    "Carto Voyager": cartovoyager,
+    "Carto Positron": cartopositron,
     "Satellite": satellite
   }
 ).addTo(map);
