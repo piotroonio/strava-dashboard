@@ -177,17 +177,10 @@ const topo = L.tileLayer(
   }
 );
 
-const cartovoyager = L.tileLayer(
-  "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
+const esriStreet = L.tileLayer(
+  "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
   {
-    attribution: "© OpenStreetMap © CARTO"
-  }
-);
-
-const cartopositron = L.tileLayer(
-  "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
-  {
-    attribution: "© OpenStreetMap © CARTO"
+    attribution: "Tiles © Esri"
   }
 );
 
@@ -204,8 +197,7 @@ L.control.layers(
   {
     "OSM": osm,
     "Topo": topo,
-    "Carto Voyager": cartovoyager,
-    "Carto Positron": cartopositron,
+    "Esri Street": esriStreet,
     "Satellite": satellite
   }
 ).addTo(map);
