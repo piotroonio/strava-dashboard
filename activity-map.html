@@ -159,14 +159,25 @@ body{
 
 <script src="https://unpkg.com/@mapbox/polyline"></script>
 <script>
-const map = L.map("map");
+const osm = L.tileLayer(
+  "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+);
 
-L.tileLayer(
-  "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-  {
-    attribution: "© OpenStreetMap"
-  }
-).addTo(map);
+const topo = L.tileLayer(
+  "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png"
+);
+
+const satellite = L.tileLayer(
+  "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+);
+
+osm.addTo(map);
+
+L.control.layers({
+  "OSM": osm,
+  "Topo": topo,
+  "Satellite": satellite
+}).addTo(map);
 
 async function loadData() {
 
