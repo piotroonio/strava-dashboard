@@ -158,26 +158,38 @@ body{
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
 <script src="https://unpkg.com/@mapbox/polyline"></script>
+
 <script>
 const osm = L.tileLayer(
-  "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+  "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+  {
+    attribution: "© OpenStreetMap"
+  }
 );
 
 const topo = L.tileLayer(
-  "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png"
+  "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+  {
+    attribution: "© OpenTopoMap"
+  }
 );
 
 const satellite = L.tileLayer(
-  "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+  "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+  {
+    attribution: "Tiles © Esri"
+  }
 );
 
 osm.addTo(map);
 
-L.control.layers({
-  "OSM": osm,
-  "Topo": topo,
-  "Satellite": satellite
-}).addTo(map);
+L.control.layers(
+  {
+    "OSM": osm,
+    "Topo": topo,
+    "Satellite": satellite
+  }
+).addTo(map);
 
 async function loadData() {
 
