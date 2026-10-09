@@ -131,6 +131,20 @@ body{
     box-shadow:
         0 0 20px rgba(0,0,0,.5);
 }
+
+.start-marker {
+    width: 20px;
+    height: 20px;
+
+    background: #2ecc71;
+
+    border-radius: 50%;
+
+    border: 3px solid white;
+
+    box-shadow: 0 2px 6px rgba(0,0,0,.3);
+}
+
 </style>
     
 </head>
@@ -264,16 +278,19 @@ async function loadData() {
         track.getBounds()
     );
 
-    const start = route[0];
-    const finish = route[route.length - 1];
+const startIcon = L.divIcon({
+    html: `<div class="start-marker"></div>`,
+    className: "",
+    iconSize: [20, 20],
+    iconAnchor: [10, 10]
+});
 
-    L.marker(start)
-      .addTo(map)
-      .bindPopup("Start");
-
-    L.marker(finish)
-      .addTo(map)
-      .bindPopup("Meta");
+const finishIcon = L.divIcon({
+    html: "🏁",
+    className: "",
+    iconSize: [30, 30],
+    iconAnchor: [15, 15]
+});
     
     const activityStart =
         new Date(
