@@ -264,6 +264,17 @@ async function loadData() {
         track.getBounds()
     );
 
+    const start = route[0];
+    const finish = route[route.length - 1];
+
+    L.marker(start)
+      .addTo(map)
+      .bindPopup("Start");
+
+    L.marker(finish)
+      .addTo(map)
+      .bindPopup("Meta");
+    
     const activityStart =
         new Date(
             activity.start_date
