@@ -252,7 +252,14 @@ async function loadData() {
             );
     }
 
-
+    const track = L.polyline(
+        route,
+        {
+            color: "#fc4c02",
+            weight: 5
+        }
+    ).addTo(map);
+    
     map.fitBounds(
         track.getBounds()
     );
