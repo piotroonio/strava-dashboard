@@ -291,6 +291,16 @@ const finishIcon = L.divIcon({
     iconSize: [30, 30],
     iconAnchor: [15, 15]
 });
+
+L.marker(
+    route[0],
+    { icon: startIcon }
+).addTo(map);
+
+L.marker(
+    route[route.length - 1],
+    { icon: finishIcon }
+).addTo(map);
     
     const activityStart =
         new Date(
