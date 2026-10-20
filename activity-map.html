@@ -330,10 +330,19 @@ async function loadData() {
         "activityName"
     ).textContent = activity.name;
 
-    document.getElementById(
-    "activityStats"
-).innerHTML = `
+const avgSpeed =
+    activity.average_speed
+        ? activity.average_speed * 3.6
+        : (
+            activity.distance /
+            activity.moving_time
+          ) * 3.6;
 
+const maxSpeed =
+    activity.max_speed
+        ? activity.max_speed * 3.6
+        : 0;    
+    
 document.getElementById(
     "activityStats"
 ).innerHTML = `
