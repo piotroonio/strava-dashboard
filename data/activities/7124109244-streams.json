@@ -1,0 +1,35 @@
+{
+  "time": {
+    "data": [
+      0,
+      1
+    ],
+    "series_type": "distance",
+    "original_size": 2,
+    "resolution": "high"
+  },
+  "latlng": {
+    "data": [
+      [
+        40.464616,
+        -3.57213
+      ],
+      [
+        40.46462,
+        -3.572125
+      ]
+    ],
+    "series_type": "distance",
+    "original_size": 2,
+    "resolution": "high"
+  },
+  "distance": {
+    "data": [
+      0,
+      0.3
+    ],
+    "series_type": "distance",
+    "original_size": 2,
+    "resolution": "high"
+  }
+}

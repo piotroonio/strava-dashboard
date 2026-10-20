@@ -1,0 +1,1071 @@
+{
+  "resource_state": 3,
+  "athlete": {
+    "id": 58678501,
+    "id_str": "58678501",
+    "resource_state": 1
+  },
+  "name": "Morning Gravel Ride",
+  "distance": 13369.3,
+  "moving_time": 2188,
+  "elapsed_time": 2286,
+  "total_elevation_gain": 110,
+  "type": "Ride",
+  "sport_type": "GravelRide",
+  "workout_type": null,
+  "device_name": "Garmin Instinct 2",
+  "id": 19209986434,
+  "id_str": "19209986434",
+  "start_date": "2026-07-07T05:16:42Z",
+  "start_date_local": "2026-07-07T07:16:42Z",
+  "timezone": "(GMT+01:00) Europe/Warsaw",
+  "utc_offset": 7200,
+  "location_city": null,
+  "location_state": null,
+  "location_country": null,
+  "achievement_count": 0,
+  "kudos_count": 3,
+  "comment_count": 0,
+  "athlete_count": 1,
+  "photo_count": 0,
+  "map": {
+    "id": "a19209986434",
+    "polyline": "gccwHuc`gB`@KKMJC\\@~@OV@FRHtA?z@ExCDd@PVVDt@IjEs@B@FLVdDl@lKXfEBt@Hv@l@pJHpA?z@B@r@C~COz@RTNj@d@|BlA\\?zKcFJKJm@@m@?OY{Bk@eDeB_J{AyIa@kDOoBEwA?oFVmJb@oJVuCL_Az@}Ev@yCTw@pAeDTmArA_Er@uCRq@|AoDrAuCh@eAlBkDNSHADBDPuAxEWp@G?CCIQu@uCiE_OCS?k@v@oENcA\\yCZgDTaEJ}DVwh@DcUHeE?wABgBBEDAdABbCTbFRZDHN@LKjEGJEOC}CIi@I_@Cs@Be@Vu@De@JgGBc@DM\\]Hm@LwAXeBB{ACaDFYLUZYHMJ]b@wBTg@V]dAs@HKNu@f@mBFKNSJAHBxAn@j@ZRPt@`@xAp@r@RVGz@TvAj@t@`@dA`AdChD~@fA~@j@`ChAvD|BxAlAnAlARLTHVCh@OZ[j@aAPu@JO^DNCLYRgA\\s@H]n@wEXwDAkC[cFLYd@e@hAqA|DcE~@gArAiAjBgB^e@Pa@tA_CRKnF[|BGjETr@FdBDvEPhBP|CJlBRbA^lAl@dDpAz@VrBb@bBt@|@f@rAj@hAl@~AfAf@d@hAn@dKzI~ElEpAtAzAjBxAzBdGfLp@`Bz@`B~CvGx@vANh@RtAVnAJd@Xv@Rb@lBvCZp@n@dAj@hABHBVGlBQr@C\\~@ZjB`@PJRBXHFJ?DK@]IMBc@vBWdA]^c@NiAl@UTSXWp@G`@Az@Bd@PjADd@AP]fCyAxGEl@C~DAdGEb@y@bFeA`CYb@mBrBkC|D_@|@yBbHkAdDgAbCi@`AE`@?RCFkB`AeAlAWLkAd@mATiBO_B{@K?OXWlAc@j@sBnBi@p@KDy@Lq@Xg@X_@LU?s@U}@JsA@UHUXMEsBkCu@q@mAyAI]A_@p@eHLUH@RJ`Bp@dCpAnAXPH?RS|@Pw@T]BM",
+    "resource_state": 3,
+    "summary_polyline": "gvbwHkz_gBt@MB@FLVdDl@lKXfEBt@Hv@l@pJHpA?z@B@r@C~COz@RTNj@d@|BlA\\?zKcFJKJm@@m@?OY{Bk@eDeB_J{AyIa@kDOoBEwA?oFVmJb@oJVuCL_Az@}Ev@yCTw@pAeDTmArA_Er@uCRq@|AoDrAuCh@eAlBkDNSHADBDPuAxEWp@G?CCIQu@uCiE_OCS?k@v@oENcA\\yCZgDTaEJ}DVwh@DcUHeE?wABgBBEDAdABbCTbFRZDHN@LKjEGJEOC}CIi@I_@Cs@Be@Vu@De@JgGBc@DM\\]Hm@LwAXeBB{ACaDFYLUZYHMJ]b@wBTg@V]dAs@HKNu@f@mBFKNSJAHBxAn@j@ZRPt@`@xAp@r@RVGz@TvAj@t@`@dA`AdChD~@fA~@j@`ChAvD|BxAlAnAlARLTHVCh@OZ[j@aAPu@JO^DNCLYRgA\\s@H]n@wEXwDAkC[cFLYd@e@hAqA|DcE~@gArAiAjBgB^e@Pa@tA_CRKnF[|BGjETr@FdBDvEPhBP|CJlBRbA^lAl@dDpAz@VrBb@bBt@|@f@rAj@hAl@~AfAf@d@hAn@dKzI~ElEpAtAzAjBxAzBdGfLp@`Bz@`B~CvGx@vANh@RtAVnAJd@Xv@Rb@lBvCZp@n@dAj@hABHBVGlBQr@C\\~@ZjB`@PJRBXHFJ?DK@]IMBc@vBWdA]^c@NiAl@UTSXWp@G`@Az@Bd@PjADd@AP]fCyAxGEl@C~DAdGEb@y@bFeA`CYb@mBrBkC|D_@|@yBbHkAdDgAbCi@`AE`@?RCFkB`AeAlAWLkAd@mATiBO_B{@K?OXWlAc@j@}BxB_@f@KDy@L"
+  },
+  "trainer": false,
+  "commute": false,
+  "manual": false,
+  "private": false,
+  "visibility": "followers_only",
+  "flagged": false,
+  "gear_id": "b12994442",
+  "start_latlng": [
+    51.13924,
+    17.045232
+  ],
+  "end_latlng": [
+    51.102141,
+    17.057291
+  ],
+  "average_speed": 6.11,
+  "max_speed": 10.157,
+  "average_temp": 24,
+  "average_watts": 158,
+  "device_watts": false,
+  "kilojoules": 345.6,
+  "has_heartrate": true,
+  "average_heartrate": 105.2,
+  "max_heartrate": 132,
+  "heartrate_opt_out": false,
+  "display_hide_heartrate_option": true,
+  "elev_high": 131.2,
+  "elev_low": 107.4,
+  "upload_id": 20326966629,
+  "upload_id_str": "20326966629",
+  "external_id": "garmin_ping_595044909970",
+  "from_accepted_tag": false,
+  "pr_count": 0,
+  "total_photo_count": 0,
+  "has_kudoed": false,
+  "suffer_score": 11,
+  "description": "-- myWindsock Report --\r\nWeather Impact™: 1.7%\r\nHeadwind: 56% @ 5.6 - 13.4 m/s\r\nTemp: 18.5 °C\r\nPrecip: 0% @ 0 Inch/hr\r\n-- END --",
+  "calories": 230,
+  "perceived_exertion": null,
+  "prefer_perceived_exertion": null,
+  "segment_efforts": [
+    {
+      "id": 3509453846411805000,
+      "resource_state": 2,
+      "name": "Mosty Trzebnickie → South",
+      "activity": {
+        "id": 19209986434,
+        "id_str": "19209986434",
+        "visibility": "followers_only",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 58678501,
+        "id_str": "58678501",
+        "resource_state": 1
+      },
+      "elapsed_time": 39,
+      "moving_time": 39,
+      "start_date": "2026-07-07T05:21:25Z",
+      "start_date_local": "2026-07-07T07:21:25Z",
+      "distance": 236,
+      "start_index": 75,
+      "end_index": 83,
+      "device_watts": false,
+      "average_heartrate": 66.9,
+      "max_heartrate": 68,
+      "segment": {
+        "id": 9151684,
+        "resource_state": 2,
+        "name": "Mosty Trzebnickie → South",
+        "activity_type": "Ride",
+        "distance": 236,
+        "average_grade": 0.2,
+        "maximum_grade": 3.9,
+        "elevation_high": 112.8,
+        "elevation_low": 109.5,
+        "start_latlng": [
+          51.133467,
+          17.03611
+        ],
+        "end_latlng": [
+          51.131451,
+          17.037119
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Wrocław",
+        "state": "Województwo dolnośląskie",
+        "country": "Poland",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "followers_only",
+      "kom_rank": null,
+      "hidden": false
+    },
+    {
+      "id": 3509453846411950600,
+      "resource_state": 2,
+      "name": "Ścieżka z Trzebnicki",
+      "activity": {
+        "id": 19209986434,
+        "id_str": "19209986434",
+        "visibility": "followers_only",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 58678501,
+        "id_str": "58678501",
+        "resource_state": 1
+      },
+      "elapsed_time": 155,
+      "moving_time": 155,
+      "start_date": "2026-07-07T05:22:14Z",
+      "start_date_local": "2026-07-07T07:22:14Z",
+      "distance": 1176,
+      "start_index": 88,
+      "end_index": 122,
+      "device_watts": false,
+      "average_heartrate": 81.7,
+      "max_heartrate": 110,
+      "segment": {
+        "id": 14955257,
+        "resource_state": 2,
+        "name": "Ścieżka z Trzebnicki",
+        "activity_type": "Ride",
+        "distance": 1176,
+        "average_grade": 0.1,
+        "maximum_grade": 8.8,
+        "elevation_high": 115.3,
+        "elevation_low": 107.1,
+        "start_latlng": [
+          51.131321,
+          17.037846
+        ],
+        "end_latlng": [
+          51.131324,
+          17.053651
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": null,
+        "state": null,
+        "country": null,
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "followers_only",
+      "kom_rank": null,
+      "hidden": false
+    },
+    {
+      "id": 3509453846414323000,
+      "resource_state": 2,
+      "name": "Trzebnicki-Warszawski i wjazd na most",
+      "activity": {
+        "id": 19209986434,
+        "id_str": "19209986434",
+        "visibility": "followers_only",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 58678501,
+        "id_str": "58678501",
+        "resource_state": 1
+      },
+      "elapsed_time": 246,
+      "moving_time": 246,
+      "start_date": "2026-07-07T05:22:14Z",
+      "start_date_local": "2026-07-07T07:22:14Z",
+      "distance": 1789.9,
+      "start_index": 88,
+      "end_index": 159,
+      "device_watts": false,
+      "average_heartrate": 91.6,
+      "max_heartrate": 114,
+      "segment": {
+        "id": 17327922,
+        "resource_state": 2,
+        "name": "Trzebnicki-Warszawski i wjazd na most",
+        "activity_type": "Ride",
+        "distance": 1789.9,
+        "average_grade": 0,
+        "maximum_grade": 12.7,
+        "elevation_high": 1401,
+        "elevation_low": 1395,
+        "start_latlng": [
+          51.131337,
+          17.037893
+        ],
+        "end_latlng": [
+          51.129143,
+          17.057443
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Wrocław",
+        "state": "Województwo dolnośląskie",
+        "country": "Poland",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "followers_only",
+      "kom_rank": null,
+      "hidden": false
+    },
+    {
+      "id": 3509453846415026700,
+      "resource_state": 2,
+      "name": "Wałek krótszy",
+      "activity": {
+        "id": 19209986434,
+        "id_str": "19209986434",
+        "visibility": "followers_only",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 58678501,
+        "id_str": "58678501",
+        "resource_state": 1
+      },
+      "elapsed_time": 142,
+      "moving_time": 142,
+      "start_date": "2026-07-07T05:22:48Z",
+      "start_date_local": "2026-07-07T07:22:48Z",
+      "distance": 1113.7,
+      "start_index": 94,
+      "end_index": 133,
+      "device_watts": false,
+      "average_heartrate": 89.4,
+      "max_heartrate": 112,
+      "segment": {
+        "id": 8773581,
+        "resource_state": 2,
+        "name": "Wałek krótszy",
+        "activity_type": "Ride",
+        "distance": 1113.7,
+        "average_grade": 0.1,
+        "maximum_grade": 2.8,
+        "elevation_high": 115.7,
+        "elevation_low": 111.9,
+        "start_latlng": [
+          51.13222,
+          17.041319
+        ],
+        "end_latlng": [
+          51.13024,
+          17.055899
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Wrocław",
+        "state": "Województwo dolnośląskie",
+        "country": "Poland",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "followers_only",
+      "kom_rank": null,
+      "hidden": false
+    },
+    {
+      "id": 3509453846414402000,
+      "resource_state": 2,
+      "name": "Nawrot na Warszawski",
+      "activity": {
+        "id": 19209986434,
+        "id_str": "19209986434",
+        "visibility": "followers_only",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 58678501,
+        "id_str": "58678501",
+        "resource_state": 1
+      },
+      "elapsed_time": 88,
+      "moving_time": 88,
+      "start_date": "2026-07-07T05:25:02Z",
+      "start_date_local": "2026-07-07T07:25:02Z",
+      "distance": 543.2,
+      "start_index": 129,
+      "end_index": 165,
+      "device_watts": false,
+      "average_heartrate": 108.7,
+      "max_heartrate": 116,
+      "segment": {
+        "id": 17146502,
+        "resource_state": 2,
+        "name": "Nawrot na Warszawski",
+        "activity_type": "Ride",
+        "distance": 543.2,
+        "average_grade": 0.7,
+        "maximum_grade": 8.2,
+        "elevation_high": 120,
+        "elevation_low": 113,
+        "start_latlng": [
+          51.130842,
+          17.054988
+        ],
+        "end_latlng": [
+          51.129378,
+          17.0579
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Wrocław",
+        "state": "Województwo dolnośląskie",
+        "country": "Poland",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "followers_only",
+      "kom_rank": null,
+      "hidden": false
+    },
+    {
+      "id": 3509453846411887000,
+      "resource_state": 2,
+      "name": "Most Warszawski - Mosty Jagiellońskie Północ",
+      "activity": {
+        "id": 19209986434,
+        "id_str": "19209986434",
+        "visibility": "followers_only",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 58678501,
+        "id_str": "58678501",
+        "resource_state": 1
+      },
+      "elapsed_time": 161,
+      "moving_time": 161,
+      "start_date": "2026-07-07T05:27:11Z",
+      "start_date_local": "2026-07-07T07:27:11Z",
+      "distance": 1196.6,
+      "start_index": 174,
+      "end_index": 208,
+      "device_watts": false,
+      "average_heartrate": 112.2,
+      "max_heartrate": 121,
+      "segment": {
+        "id": 6935216,
+        "resource_state": 2,
+        "name": "Most Warszawski - Mosty Jagiellońskie Północ",
+        "activity_type": "Ride",
+        "distance": 1196.6,
+        "average_grade": 0,
+        "maximum_grade": 3.3,
+        "elevation_high": 115,
+        "elevation_low": 110.4,
+        "start_latlng": [
+          51.130527,
+          17.061249
+        ],
+        "end_latlng": [
+          51.129461,
+          17.078146
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Wroclaw",
+        "state": "Lower Silesian Voivodeship",
+        "country": "Poland",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "followers_only",
+      "kom_rank": null,
+      "hidden": false
+    },
+    {
+      "id": 3509453846411944400,
+      "resource_state": 2,
+      "name": "AWW - sam podjazd od Olszewskiego",
+      "activity": {
+        "id": 19209986434,
+        "id_str": "19209986434",
+        "visibility": "followers_only",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 58678501,
+        "id_str": "58678501",
+        "resource_state": 1
+      },
+      "elapsed_time": 125,
+      "moving_time": 125,
+      "start_date": "2026-07-07T05:41:35Z",
+      "start_date_local": "2026-07-07T07:41:35Z",
+      "distance": 814.3,
+      "start_index": 439,
+      "end_index": 477,
+      "device_watts": false,
+      "average_heartrate": 120.1,
+      "max_heartrate": 132,
+      "segment": {
+        "id": 38420363,
+        "resource_state": 2,
+        "name": "AWW - sam podjazd od Olszewskiego",
+        "activity_type": "Ride",
+        "distance": 814.3,
+        "average_grade": 1.4,
+        "maximum_grade": 2.9,
+        "elevation_high": 129.4,
+        "elevation_low": 117.6,
+        "start_latlng": [
+          51.103597,
+          17.089586
+        ],
+        "end_latlng": [
+          51.097168,
+          17.084141
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Wrocław",
+        "state": "Lower Silesian Voivodeship",
+        "country": "Poland",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "followers_only",
+      "kom_rank": null,
+      "hidden": false
+    },
+    {
+      "id": 3509453846411987500,
+      "resource_state": 2,
+      "name": "RURA!",
+      "activity": {
+        "id": 19209986434,
+        "id_str": "19209986434",
+        "visibility": "followers_only",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 58678501,
+        "id_str": "58678501",
+        "resource_state": 1
+      },
+      "elapsed_time": 106,
+      "moving_time": 106,
+      "start_date": "2026-07-07T05:44:00Z",
+      "start_date_local": "2026-07-07T07:44:00Z",
+      "distance": 846.2,
+      "start_index": 480,
+      "end_index": 532,
+      "device_watts": false,
+      "average_heartrate": 115.6,
+      "max_heartrate": 128,
+      "segment": {
+        "id": 39874561,
+        "resource_state": 2,
+        "name": "RURA!",
+        "activity_type": "Ride",
+        "distance": 846.2,
+        "average_grade": -0.4,
+        "maximum_grade": 3.8,
+        "elevation_high": 129.2,
+        "elevation_low": 120.4,
+        "start_latlng": [
+          51.096582,
+          17.083346
+        ],
+        "end_latlng": [
+          51.091402,
+          17.074573
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Wrocław",
+        "state": "Lower Silesian Voivodeship",
+        "country": "Poland",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "followers_only",
+      "kom_rank": null,
+      "hidden": false
+    },
+    {
+      "id": 3509453846412604000,
+      "resource_state": 2,
+      "name": "Młoda West",
+      "activity": {
+        "id": 19209986434,
+        "id_str": "19209986434",
+        "visibility": "followers_only",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 58678501,
+        "id_str": "58678501",
+        "resource_state": 1
+      },
+      "elapsed_time": 183,
+      "moving_time": 183,
+      "start_date": "2026-07-07T05:46:48Z",
+      "start_date_local": "2026-07-07T07:46:48Z",
+      "distance": 1262.3,
+      "start_index": 566,
+      "end_index": 636,
+      "device_watts": false,
+      "average_heartrate": 114.6,
+      "max_heartrate": 124,
+      "segment": {
+        "id": 17673653,
+        "resource_state": 2,
+        "name": "Młoda West",
+        "activity_type": "Ride",
+        "distance": 1262.3,
+        "average_grade": 0.1,
+        "maximum_grade": 1.7,
+        "elevation_high": 151.4,
+        "elevation_low": 148.6,
+        "start_latlng": [
+          51.091177,
+          17.072811
+        ],
+        "end_latlng": [
+          51.096526,
+          17.058208
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Wrocław",
+        "state": "Województwo dolnośląskie",
+        "country": "Poland",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "followers_only",
+      "kom_rank": null,
+      "hidden": false
+    },
+    {
+      "id": 3509453846413153000,
+      "resource_state": 2,
+      "name": "Rakowiecki - Żabia Ścieżka",
+      "activity": {
+        "id": 19209986434,
+        "id_str": "19209986434",
+        "visibility": "followers_only",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 58678501,
+        "id_str": "58678501",
+        "resource_state": 1
+      },
+      "elapsed_time": 46,
+      "moving_time": 46,
+      "start_date": "2026-07-07T05:50:07Z",
+      "start_date_local": "2026-07-07T07:50:07Z",
+      "distance": 310.4,
+      "start_index": 645,
+      "end_index": 659,
+      "device_watts": false,
+      "average_heartrate": 111.6,
+      "max_heartrate": 116,
+      "segment": {
+        "id": 31259130,
+        "resource_state": 2,
+        "name": "Rakowiecki - Żabia Ścieżka",
+        "activity_type": "Ride",
+        "distance": 310.4,
+        "average_grade": -0.4,
+        "maximum_grade": 0,
+        "elevation_high": 118,
+        "elevation_low": 116.8,
+        "start_latlng": [
+          51.096895,
+          17.057646
+        ],
+        "end_latlng": [
+          51.099506,
+          17.056949
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Wrocław",
+        "state": "Dolnośląskie",
+        "country": "Poland",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "followers_only",
+      "kom_rank": null,
+      "hidden": false
+    }
+  ],
+  "splits_metric": [
+    {
+      "distance": 1003.2,
+      "elapsed_time": 258,
+      "elevation_difference": 2.8,
+      "moving_time": 189,
+      "split": 1,
+      "average_speed": 5.31,
+      "average_grade_adjusted_speed": 5.37,
+      "average_heartrate": 93.5195530726257,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1037.5,
+      "elapsed_time": 153,
+      "elevation_difference": 1,
+      "moving_time": 153,
+      "split": 2,
+      "average_speed": 6.78,
+      "average_grade_adjusted_speed": 6.81,
+      "average_heartrate": 69.9673202614379,
+      "pace_zone": 0
+    },
+    {
+      "distance": 979.2,
+      "elapsed_time": 124,
+      "elevation_difference": -7.8,
+      "moving_time": 124,
+      "split": 3,
+      "average_speed": 7.9,
+      "average_grade_adjusted_speed": 7.79,
+      "average_heartrate": 98.76612903225806,
+      "pace_zone": 0
+    },
+    {
+      "distance": 998.5,
+      "elapsed_time": 155,
+      "elevation_difference": 7.8,
+      "moving_time": 155,
+      "split": 4,
+      "average_speed": 6.44,
+      "average_grade_adjusted_speed": 6.69,
+      "average_heartrate": 111.7483870967742,
+      "pace_zone": 0
+    },
+    {
+      "distance": 983.6,
+      "elapsed_time": 155,
+      "elevation_difference": -0.4,
+      "moving_time": 155,
+      "split": 5,
+      "average_speed": 6.35,
+      "average_grade_adjusted_speed": 6.37,
+      "average_heartrate": 110.89677419354838,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1024.7,
+      "elapsed_time": 172,
+      "elevation_difference": -2,
+      "moving_time": 172,
+      "split": 6,
+      "average_speed": 5.96,
+      "average_grade_adjusted_speed": 5.99,
+      "average_heartrate": 106.23255813953489,
+      "pace_zone": 0
+    },
+    {
+      "distance": 974.3,
+      "elapsed_time": 179,
+      "elevation_difference": 0.6,
+      "moving_time": 172,
+      "split": 7,
+      "average_speed": 5.66,
+      "average_grade_adjusted_speed": 5.68,
+      "average_heartrate": 106.29585798816568,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1001.4,
+      "elapsed_time": 159,
+      "elevation_difference": 0.6,
+      "moving_time": 159,
+      "split": 8,
+      "average_speed": 6.3,
+      "average_grade_adjusted_speed": 6.32,
+      "average_heartrate": 108.74213836477988,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1012.6,
+      "elapsed_time": 185,
+      "elevation_difference": 3.8,
+      "moving_time": 167,
+      "split": 9,
+      "average_speed": 6.06,
+      "average_grade_adjusted_speed": 6.32,
+      "average_heartrate": 106.90963855421687,
+      "pace_zone": 0
+    },
+    {
+      "distance": 990.5,
+      "elapsed_time": 150,
+      "elevation_difference": 8.6,
+      "moving_time": 150,
+      "split": 10,
+      "average_speed": 6.6,
+      "average_grade_adjusted_speed": 7.09,
+      "average_heartrate": 125.64666666666666,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1002.3,
+      "elapsed_time": 164,
+      "elevation_difference": -11.4,
+      "moving_time": 164,
+      "split": 11,
+      "average_speed": 6.11,
+      "average_grade_adjusted_speed": 6.36,
+      "average_heartrate": 110.7439024390244,
+      "pace_zone": 0
+    },
+    {
+      "distance": 994.9,
+      "elapsed_time": 147,
+      "elevation_difference": 3.4,
+      "moving_time": 147,
+      "split": 12,
+      "average_speed": 6.77,
+      "average_grade_adjusted_speed": 7.2,
+      "average_heartrate": 116.5578231292517,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1016.5,
+      "elapsed_time": 166,
+      "elevation_difference": 3.6,
+      "moving_time": 166,
+      "split": 13,
+      "average_speed": 6.12,
+      "average_grade_adjusted_speed": 6.52,
+      "average_heartrate": 107.26506024096386,
+      "pace_zone": 0
+    },
+    {
+      "distance": 350.1,
+      "elapsed_time": 119,
+      "elevation_difference": -3,
+      "moving_time": 109,
+      "split": 14,
+      "average_speed": 3.21,
+      "average_grade_adjusted_speed": 3.42,
+      "average_heartrate": 98.20192307692308,
+      "pace_zone": 0
+    }
+  ],
+  "splits_standard": [
+    {
+      "distance": 1613.8,
+      "elapsed_time": 356,
+      "elevation_difference": 4.6,
+      "moving_time": 287,
+      "split": 1,
+      "average_speed": 5.62,
+      "average_grade_adjusted_speed": 5.68,
+      "average_heartrate": 84.37545126353791,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1610,
+      "elapsed_time": 222,
+      "elevation_difference": 0.2,
+      "moving_time": 222,
+      "split": 2,
+      "average_speed": 7.25,
+      "average_grade_adjusted_speed": 7.36,
+      "average_heartrate": 94.14864864864865,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1629.5,
+      "elapsed_time": 239,
+      "elevation_difference": -1,
+      "moving_time": 239,
+      "split": 3,
+      "average_speed": 6.82,
+      "average_grade_adjusted_speed": 6.84,
+      "average_heartrate": 112.94560669456067,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1600.6,
+      "elapsed_time": 269,
+      "elevation_difference": -3.2,
+      "moving_time": 269,
+      "split": 4,
+      "average_speed": 5.95,
+      "average_grade_adjusted_speed": 5.96,
+      "average_heartrate": 105.76208178438662,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1599,
+      "elapsed_time": 276,
+      "elevation_difference": -0.6,
+      "moving_time": 269,
+      "split": 5,
+      "average_speed": 5.94,
+      "average_grade_adjusted_speed": 5.95,
+      "average_heartrate": 108.1390977443609,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1634.1,
+      "elapsed_time": 286,
+      "elevation_difference": 14.6,
+      "moving_time": 268,
+      "split": 6,
+      "average_speed": 6.1,
+      "average_grade_adjusted_speed": 6.35,
+      "average_heartrate": 115.51685393258427,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1614.9,
+      "elapsed_time": 248,
+      "elevation_difference": -10.2,
+      "moving_time": 248,
+      "split": 7,
+      "average_speed": 6.51,
+      "average_grade_adjusted_speed": 6.9,
+      "average_heartrate": 112.18951612903226,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1576.9,
+      "elapsed_time": 247,
+      "elevation_difference": 5.4,
+      "moving_time": 247,
+      "split": 8,
+      "average_speed": 6.38,
+      "average_grade_adjusted_speed": 6.85,
+      "average_heartrate": 112.65182186234817,
+      "pace_zone": 0
+    },
+    {
+      "distance": 490.5,
+      "elapsed_time": 143,
+      "elevation_difference": -2.2,
+      "moving_time": 133,
+      "split": 9,
+      "average_speed": 3.69,
+      "average_grade_adjusted_speed": 3.93,
+      "average_heartrate": 98.9375,
+      "pace_zone": 0
+    }
+  ],
+  "laps": [
+    {
+      "id": 68653202893,
+      "resource_state": 2,
+      "name": "Lap 1",
+      "activity": {
+        "id": 19209986434,
+        "id_str": "19209986434",
+        "visibility": "followers_only",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 58678501,
+        "id_str": "58678501",
+        "resource_state": 1
+      },
+      "elapsed_time": 844,
+      "moving_time": 775,
+      "start_date": "2026-07-07T05:16:42Z",
+      "start_date_local": "2026-07-07T07:16:42Z",
+      "distance": 5000,
+      "average_speed": 6.45,
+      "max_speed": 10.157,
+      "lap_index": 1,
+      "split": 1,
+      "start_index": 0,
+      "end_index": 192,
+      "total_elevation_gain": 23.6,
+      "device_watts": false,
+      "average_watts": 153.3,
+      "average_heartrate": 96.9,
+      "max_heartrate": 121
+    },
+    {
+      "id": 68653202898,
+      "resource_state": 2,
+      "name": "Lap 2",
+      "activity": {
+        "id": 19209986434,
+        "id_str": "19209986434",
+        "visibility": "followers_only",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 58678501,
+        "id_str": "58678501",
+        "resource_state": 1
+      },
+      "elapsed_time": 844,
+      "moving_time": 819,
+      "start_date": "2026-07-07T05:30:48Z",
+      "start_date_local": "2026-07-07T07:30:48Z",
+      "distance": 5000,
+      "average_speed": 6.11,
+      "max_speed": 8.929,
+      "lap_index": 2,
+      "split": 2,
+      "start_index": 193,
+      "end_index": 468,
+      "total_elevation_gain": 50.8,
+      "device_watts": false,
+      "average_watts": 153.7,
+      "average_heartrate": 110.5,
+      "max_heartrate": 132
+    },
+    {
+      "id": 68653202902,
+      "resource_state": 2,
+      "name": "Lap 3",
+      "activity": {
+        "id": 19209986434,
+        "id_str": "19209986434",
+        "visibility": "followers_only",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 58678501,
+        "id_str": "58678501",
+        "resource_state": 1
+      },
+      "elapsed_time": 596,
+      "moving_time": 586,
+      "start_date": "2026-07-07T05:44:54Z",
+      "start_date_local": "2026-07-07T07:44:54Z",
+      "distance": 3369.25,
+      "average_speed": 5.75,
+      "max_speed": 8.967,
+      "lap_index": 3,
+      "split": 3,
+      "start_index": 469,
+      "end_index": 647,
+      "total_elevation_gain": 87.4,
+      "device_watts": false,
+      "average_watts": 169.8,
+      "average_heartrate": 109,
+      "max_heartrate": 126
+    }
+  ],
+  "gear": {
+    "id": "b12994442",
+    "primary": false,
+    "name": "Kross Esker 6.0",
+    "nickname": "Kross Esker 6.0",
+    "resource_state": 2,
+    "retired": false,
+    "distance": 17875270,
+    "converted_distance": 17875.3
+  },
+  "photos": {
+    "primary": null,
+    "count": 0
+  },
+  "stats_visibility": [
+    {
+      "type": "heart_rate",
+      "visibility": "everyone"
+    },
+    {
+      "type": "pace",
+      "visibility": "everyone"
+    },
+    {
+      "type": "power",
+      "visibility": "everyone"
+    },
+    {
+      "type": "speed",
+      "visibility": "everyone"
+    },
+    {
+      "type": "calories",
+      "visibility": "everyone"
+    },
+    {
+      "type": "weight_lifted",
+      "visibility": "everyone"
+    }
+  ],
+  "hide_from_home": false,
+  "sport_image_visibility": "everyone",
+  "embed_token": "1603b94b68d957199044081e96df618560adad85",
+  "available_zones": [
+    "heartrate",
+    "power"
+  ]
+}

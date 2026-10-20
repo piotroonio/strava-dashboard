@@ -1,0 +1,10 @@
+{
+  "message": "Rate Limit Exceeded",
+  "errors": [
+    {
+      "resource": "Application",
+      "field": "read rate limit",
+      "code": "exceeded"
+    }
+  ]
+}

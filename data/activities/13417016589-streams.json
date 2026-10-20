@@ -1,0 +1,59 @@
+{
+  "time": {
+    "data": [
+      0,
+      3,
+      26,
+      31,
+      1692,
+      1948
+    ],
+    "series_type": "distance",
+    "original_size": 6,
+    "resolution": "high"
+  },
+  "latlng": {
+    "data": [
+      [
+        51.13923,
+        17.044787
+      ],
+      [
+        51.13923,
+        17.044787
+      ],
+      [
+        51.13923,
+        17.044787
+      ],
+      [
+        51.13923,
+        17.044787
+      ],
+      [
+        51.13923,
+        17.044787
+      ],
+      [
+        51.13923,
+        17.044787
+      ]
+    ],
+    "series_type": "distance",
+    "original_size": 6,
+    "resolution": "high"
+  },
+  "distance": {
+    "data": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "series_type": "distance",
+    "original_size": 6,
+    "resolution": "high"
+  }
+}
