@@ -308,6 +308,76 @@ function formatDuration(
 
     return `${hours}h ${minutes}min`;
 }
+
+let galleryImages = [];
+let currentImageIndex = 0;
+
+function showPhoto(url) {
+
+    document.getElementById(
+        "lightboxImage"
+    ).src = url;
+
+    document.getElementById(
+        "lightbox"
+    ).style.display = "flex";
+}
+
+function showPhotoByIndex(
+    index
+) {
+
+    currentImageIndex = index;
+
+    showPhoto(
+        galleryImages[
+            currentImageIndex
+        ]
+    );
+}
+
+function showNextPhoto() {
+
+    if (
+        galleryImages.length === 0
+    ) {
+        return;
+    }
+
+    currentImageIndex =
+        (
+            currentImageIndex + 1
+        ) %
+        galleryImages.length;
+
+    showPhoto(
+        galleryImages[
+            currentImageIndex
+        ]
+    );
+}
+
+function showPreviousPhoto() {
+
+    if (
+        galleryImages.length === 0
+    ) {
+        return;
+    }
+
+    currentImageIndex =
+        (
+            currentImageIndex - 1 +
+            galleryImages.length
+        ) %
+        galleryImages.length;
+
+    showPhoto(
+        galleryImages[
+            currentImageIndex
+        ]
+    );
+}
     
 async function loadData() {
 
@@ -602,31 +672,43 @@ L.marker(
         )
         .addTo(map)
         .bindPopup(`
-           <img src="${imageUrl}" class="popup-photo" onclick="showPhoto('${imageUrl}')">
+           <img src="${imageUrl}" class="popup-photo" onclick="
+    currentImageIndex =
+        galleryImages.indexOf(
+            '${imageUrl}'
+        );
+    showPhoto('${imageUrl}');
+">
             
         `);
 
     });
 
-    document.getElementById(
+galleryImages =
+    photos.map(
+        photo =>
+            photo.urls["2048"]
+    );
+
+document.getElementById(
     "gallery"
 ).innerHTML =
 
-    photos
-    .map(photo => {
+    galleryImages
+    .map(
+        (
+            imageUrl,
+            index
+        ) => `
 
-        const imageUrl =
-            photo.urls["2048"];
-
-        return `
             <img
                 src="${imageUrl}"
                 class="gallery-photo"
-                onclick="showPhoto('${imageUrl}')"
+                onclick="showPhotoByIndex(${index})"
             >
-        `;
 
-    })
+        `
+    )
     .join("");
 
 }
@@ -670,12 +752,43 @@ document.addEventListener(
     "keydown",
     (e) => {
 
-        if (e.key === "Escape") {
+        const lightbox =
+            document.getElementById(
+                "lightbox"
+            );
 
-            document
-                .getElementById("lightbox")
-                .style.display = "none";
+        const lightboxVisible =
+            lightbox.style.display ===
+            "flex";
 
+        if (
+            !lightboxVisible
+        ) {
+            return;
+        }
+
+        if (
+            e.key === "Escape"
+        ) {
+
+            lightbox.style.display =
+                "none";
+        }
+
+        if (
+            e.key ===
+            "ArrowRight"
+        ) {
+
+            showNextPhoto();
+        }
+
+        if (
+            e.key ===
+            "ArrowLeft"
+        ) {
+
+            showPreviousPhoto();
         }
 
     }
