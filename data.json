@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19T20:21:46.121Z",
+  "updatedAt": "2026-10-20T07:57:35.553Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -119,11 +119,11 @@
       "name": "Kasia Sch",
       "athleteId": 133627842,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIq9cxp2BfbtWstPkkkFl-wwGt8Oj5YKQwm-3vkjKqI=s96-c",
-      "totalDistance": 4860.1,
-      "totalElevation": 13559,
-      "avgElevation": 67,
-      "totalTime": 248,
-      "totalActivities": 203,
+      "totalDistance": 3994.6,
+      "totalElevation": 11034,
+      "avgElevation": 66,
+      "totalTime": 204,
+      "totalActivities": 166,
       "avgSpeed": 19.57,
       "activityTypes": [
         "Ride",
