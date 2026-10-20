@@ -217,6 +217,50 @@ body{
     transform: scale(1.03);
 }
 
+.nav-button {
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 60px;
+    height: 60px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.9);
+
+    color: #333;
+
+    font-size: 32px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    z-index: 10000;
+
+    box-shadow:
+        0 2px 10px rgba(0,0,0,.3);
+}
+
+.nav-button:hover {
+
+    background: white;
+}
+
+#prevPhoto {
+
+    left: 20px;
+}
+
+#nextPhoto {
+
+    right: 20px;
+}
+
 </style>
     
 </head>
@@ -241,7 +285,15 @@ body{
         ×
     </button>
 
+    <button id="prevPhoto" class="nav-button">
+        ❮
+    </button>
+
     <img id="lightboxImage">
+
+    <button id="nextPhoto" class="nav-button">
+        ❯
+    </button>
 
 </div>
 
@@ -378,6 +430,32 @@ function showPreviousPhoto() {
         ]
     );
 }
+
+document
+    .getElementById("prevPhoto")
+    .addEventListener(
+        "click",
+        (e) => {
+
+            e.stopPropagation();
+
+            showPreviousPhoto();
+
+        }
+    );
+
+document
+    .getElementById("nextPhoto")
+    .addEventListener(
+        "click",
+        (e) => {
+
+            e.stopPropagation();
+
+            showNextPhoto();
+
+        }
+    );
     
 async function loadData() {
 
