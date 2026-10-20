@@ -24,7 +24,7 @@ body{
 }
 
 #map{
-    height:calc(100vh - 60px);
+    height:60vh;
 }
 
 .photo-thumb{
@@ -145,6 +145,78 @@ body{
     box-shadow: 0 2px 6px rgba(0,0,0,.3);
 }
 
+#activityStats {
+
+    padding: 15px;
+
+    background: #f8f8f8;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.stats-grid {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+.stat-card {
+
+    background: white;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 2px 5px rgba(0,0,0,.1);
+
+    min-width: 120px;
+}
+
+.stat-value {
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.stat-label {
+
+    color: #666;
+    font-size: 12px;
+}
+
+#gallery {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    padding: 15px;
+}
+
+.gallery-photo {
+
+    width: 220px;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.gallery-photo:hover {
+
+    transform: scale(1.03);
+}
+
 </style>
     
 </head>
@@ -158,6 +230,10 @@ body{
 </div>
 
 <div id="map"></div>
+
+<div id="activityStats"></div>
+
+<div id="gallery"></div>
 
 <div id="lightbox">
 
@@ -216,6 +292,23 @@ L.control.layers(
   }
 ).addTo(map);
 
+function formatDuration(
+    seconds
+) {
+
+    const hours =
+        Math.floor(
+            seconds / 3600
+        );
+
+    const minutes =
+        Math.floor(
+            (seconds % 3600) / 60
+        );
+
+    return `${hours}h ${minutes}min`;
+}
+    
 async function loadData() {
 
     const activity =
@@ -236,6 +329,56 @@ async function loadData() {
     document.getElementById(
         "activityName"
     ).textContent = activity.name;
+
+    document.getElementById(
+    "activityStats"
+).innerHTML = `
+
+    <div class="stats-grid">
+
+        <div class="stat-card">
+            <div class="stat-value">
+                ${(activity.distance / 1000).toFixed(1)}
+            </div>
+            <div class="stat-label">
+                km
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-value">
+                ${Math.round(
+                    activity.total_elevation_gain
+                )}
+            </div>
+            <div class="stat-label">
+                m przewyższenia
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-value">
+                ${formatDuration(
+                    activity.moving_time
+                )}
+            </div>
+            <div class="stat-label">
+                czas ruchu
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-value">
+                ${photos.length}
+            </div>
+            <div class="stat-label">
+                zdjęć
+            </div>
+        </div>
+
+    </div>
+
+`;
 
     const timeData =
         streams.time.data;
@@ -408,6 +551,27 @@ L.marker(
         `);
 
     });
+
+    document.getElementById(
+    "gallery"
+).innerHTML =
+
+    photos
+    .map(photo => {
+
+        const imageUrl =
+            photo.urls["2048"];
+
+        return `
+            <img
+                src="${imageUrl}"
+                class="gallery-photo"
+                onclick="showPhoto('${imageUrl}')"
+            >
+        `;
+
+    })
+    .join("");
 
 }
 
