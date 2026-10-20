@@ -1,4 +1,4 @@
-name: Fetch Activities
+name: Pobierz aktywnosci
 
 on:
   workflow_dispatch:
