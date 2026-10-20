@@ -334,6 +334,10 @@ async function loadData() {
     "activityStats"
 ).innerHTML = `
 
+document.getElementById(
+    "activityStats"
+).innerHTML = `
+
     <div class="stats-grid">
 
         <div class="stat-card">
@@ -369,6 +373,24 @@ async function loadData() {
 
         <div class="stat-card">
             <div class="stat-value">
+                ${avgSpeed.toFixed(1)}
+            </div>
+            <div class="stat-label">
+                km/h śr.
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-value">
+                ${maxSpeed.toFixed(1)}
+            </div>
+            <div class="stat-label">
+                km/h max
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-value">
                 ${photos.length}
             </div>
             <div class="stat-label">
@@ -377,6 +399,8 @@ async function loadData() {
         </div>
 
     </div>
+
+`;
 
 `;
 
