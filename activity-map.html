@@ -261,6 +261,29 @@ body{
     right: 20px;
 }
 
+#photoCounter {
+
+    position: absolute;
+
+    bottom: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: rgba(0,0,0,.7);
+
+    color: white;
+
+    padding: 8px 16px;
+
+    border-radius: 20px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    z-index: 10000;
+}
+
 </style>
     
 </head>
@@ -294,7 +317,7 @@ body{
     <button id="nextPhoto" class="nav-button">
         ❯
     </button>
-
+    <div id="photoCounter"></div>
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -363,6 +386,14 @@ function formatDuration(
 
 let galleryImages = [];
 let currentImageIndex = 0;
+
+function updatePhotoCounter() {
+
+    document.getElementById(
+        "photoCounter"
+    ).textContent =
+        `${currentImageIndex + 1} / ${galleryImages.length}`;
+}
 
 function showPhoto(url) {
 
@@ -794,6 +825,8 @@ document.getElementById(
 function showPhoto(url){
 
     document.getElementById("lightboxImage").src = url;
+
+    updatePhotoCounter();
 
     document.getElementById(
         "lightbox"
