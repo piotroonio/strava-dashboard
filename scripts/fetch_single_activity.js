@@ -287,8 +287,37 @@ async function reverseGeocode(
 
     road:
       data.address?.road ||
-      "",
+      ""
+  };
+}
 
+async function fetchWeather(
+  lat,
+  lon,
+  startDate
+) {
+
+  const date =
+    startDate.substring(0, 10);
+
+  const hour =
+    new Date(startDate)
+      .getUTCHours();
+
+  const response =
+    await fetch(
+      `https://archive-api.open-meteo.com/v1/archive` +
+      `?latitude=${lat}` +
+      `&longitude=${lon}` +
+      `&start_date=${date}` +
+      `&end_date=${date}` +
+      `&hourly=temperature_2m,apparent_temperature,precipitation,cloud_cover,wind_speed_10m,wind_direction_10m`
+    );
+
+  const data =
+    await response.json();
+
+  return {
     temperature:
       data.hourly.temperature_2m[hour],
 
@@ -306,7 +335,6 @@ async function reverseGeocode(
 
     cloud_cover:
       data.hourly.cloud_cover[hour]
-    
   };
 }
 
