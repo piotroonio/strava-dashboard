@@ -429,6 +429,22 @@ body{
 
     z-index: 2001;
 }
+
+.weather-card {
+
+    min-width: 220px;
+}
+
+.weather-card .stat-value {
+
+    margin-bottom: 6px;
+}
+
+.weather-card .stat-label {
+
+    margin-top: 2px;
+}
+
 </style>
 </head>
 
@@ -744,6 +760,32 @@ document.getElementById(
         </div>
         <div class="stat-label">
             🏔️ wysokość startu
+        </div>
+    </div>
+
+    <div class="stat-card weather-card">
+        <div class="stat-value">
+            🌡️ ${activity.weather.temperature.toFixed(1)}°C
+        </div>
+
+        <div class="stat-label">
+            odczuwalna:
+            ${activity.weather.feels_like.toFixed(1)}°C
+        </div>
+
+        <div class="stat-label">
+            💨 wiatr:
+            ${activity.weather.wind_speed.toFixed(1)} km/h
+        </div>
+
+        <div class="stat-label">
+            ☁️ zachmurzenie:
+            ${activity.weather.cloud_cover}%
+        </div>
+
+        <div class="stat-label">
+            🌧 opady:
+            ${activity.weather.precipitation} mm
         </div>
     </div>
 
