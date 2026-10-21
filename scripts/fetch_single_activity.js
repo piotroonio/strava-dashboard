@@ -95,6 +95,12 @@ fs.mkdirSync("data", {
   recursive: true
 });
 
+detail.start_location =
+  startLocation;
+
+detail.finish_location =
+  finishLocation;
+  
 fs.writeFileSync(
   "data/activity-detail.json",
   JSON.stringify(detail, null, 2)
@@ -119,6 +125,47 @@ const streamRes = await fetch(
 
 const streams = await streamRes.json();
 
+let startLocation = null;
+let finishLocation = null;
+
+if (
+  streams.latlng &&
+  streams.latlng.data &&
+  streams.latlng.data.length > 0
+) {
+
+  const route =
+    streams.latlng.data;
+
+  const start =
+    route[0];
+
+  const finish =
+    route[
+      route.length - 1
+    ];
+
+  console.log(
+    "Reverse geocoding start..."
+  );
+
+  startLocation =
+    await reverseGeocode(
+      start[0],
+      start[1]
+    );
+
+  console.log(
+    "Reverse geocoding finish..."
+  );
+
+  finishLocation =
+    await reverseGeocode(
+      finish[0],
+      finish[1]
+    );
+}
+
 fs.writeFileSync(
   "data/activity-streams.json",
   JSON.stringify(streams, null, 2)
@@ -126,6 +173,42 @@ fs.writeFileSync(
 
 console.log("✅ zapisano data/activity-streams.json");
   
+}
+
+async function reverseGeocode(
+  lat,
+  lon
+) {
+
+  const response =
+    await fetch(
+      `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lon}`,
+      {
+        headers: {
+          "User-Agent":
+            "strava-dashboard"
+        }
+      }
+    );
+
+  const data =
+    await response.json();
+
+  return {
+    display_name:
+      data.display_name,
+
+    city:
+      data.address?.city ||
+      data.address?.town ||
+      data.address?.village ||
+      data.address?.hamlet ||
+      "",
+
+    road:
+      data.address?.road ||
+      ""
+  };
 }
 
 main().catch(console.error);
