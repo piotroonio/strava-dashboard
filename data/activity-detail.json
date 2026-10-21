@@ -428,5 +428,12 @@
   },
   "start_altitude": 420,
   "finish_altitude": 405,
-  "weather": null
+  "weather": {
+    "temperature": 14.8,
+    "feels_like": 14.7,
+    "wind_speed": 5.3,
+    "wind_direction": 98,
+    "precipitation": 0,
+    "cloud_cover": 67
+  }
 }
