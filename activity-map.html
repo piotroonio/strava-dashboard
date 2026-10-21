@@ -737,7 +737,24 @@ const startAltitude =
 const finishAltitude =
     activity.finish_altitude ?? "-";
 
+function windArrow(
+    degrees
+) {
 
+    return `
+        <span
+            style="
+                display:inline-block;
+                transform:rotate(${degrees + 180}deg);
+                color:#1e88e5;
+                font-size:20px;
+                font-weight:bold;
+            "
+        >
+            ➤
+        </span>
+    `;
+}
     
     
 document.getElementById(
@@ -786,6 +803,7 @@ document.getElementById(
         <div class="stat-label">
             💨 wiatr:
             ${activity.weather.wind_speed.toFixed(1)} km/h
+            ${windIcon}
         </div>
 
         <div class="stat-label">
