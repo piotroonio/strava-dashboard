@@ -552,16 +552,16 @@ const formattedDate =
     
 const startLocation =
     [
-        activity.start_location?.road,
-        activity.start_location?.city
+        activity.start_location?.city,
+        activity.start_location?.road
     ]
     .filter(Boolean)
     .join(", ");
 
 const finishLocation =
     [
-        activity.finish_location?.road,
-        activity.finish_location?.city
+        activity.finish_location?.city,
+        activity.finish_location?.road
     ]
     .filter(Boolean)
     .join(", ");
