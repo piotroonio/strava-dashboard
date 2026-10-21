@@ -127,6 +127,8 @@ let finishLocation = null;
 let startAltitude = null;
 let finishAltitude = null;
 
+let weather = null;
+
 if (
   streams.latlng &&
   streams.latlng.data &&
