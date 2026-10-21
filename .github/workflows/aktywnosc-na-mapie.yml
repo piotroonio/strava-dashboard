@@ -1,4 +1,4 @@
-name: Test Single Activity
+name: Aktywnosc na mapie
 
 on:
   workflow_dispatch:
