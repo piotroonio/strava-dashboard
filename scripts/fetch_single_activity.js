@@ -141,7 +141,7 @@ if (
   const start =
     route[0];
 
-  const weather =
+  weather =
   await fetchWeather(
     start[0],
     start[1],
