@@ -176,6 +176,12 @@ if (
     );
 }
 
+detail.start_location =
+  startLocation;
+
+detail.finish_location =
+  finishLocation;  
+  
 fs.writeFileSync(
   "data/activity-streams.json",
   JSON.stringify(streams, null, 2)
