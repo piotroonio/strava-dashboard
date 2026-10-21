@@ -330,6 +330,38 @@ body{
 
     padding: 0;
 }
+
+.route-marker {
+
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 3px solid white;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,.35);
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.start-marker {
+
+    background: #2ecc71;
+    color: white;
+}
+
+.finish-marker {
+
+    background: #ffffff;
+    color: black;
+}
 </style>
 </head>
 
@@ -741,17 +773,17 @@ document.getElementById(
     );
 
 const startIcon = L.divIcon({
-    html: `<div class="start-marker"></div>`,
+    html: `<div class="route-marker start-marker">s</div>`,
     className: "",
     iconSize: [20, 20],
     iconAnchor: [10, 10]
 });
 
 const finishIcon = L.divIcon({
-    html: "🏁",
+    html: `<div class="route-marker finish-marker">m</div>`,
     className: "",
-    iconSize: [30, 30],
-    iconAnchor: [15, 15]
+    iconSize: [20, 20],
+    iconAnchor: [10, 10]
 });
 
 L.marker(
