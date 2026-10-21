@@ -427,5 +427,6 @@
     "road": "Piazza Santa Chiara"
   },
   "start_altitude": 420,
-  "finish_altitude": 405
+  "finish_altitude": 405,
+  "weather": null
 }
