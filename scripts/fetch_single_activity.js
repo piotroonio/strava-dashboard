@@ -95,24 +95,10 @@ fs.mkdirSync("data", {
   recursive: true
 });
 
-detail.start_location =
-  startLocation;
-
-detail.finish_location =
-  finishLocation;
-  
-fs.writeFileSync(
-  "data/activity-detail.json",
-  JSON.stringify(detail, null, 2)
-);
-
 fs.writeFileSync(
   "data/activity-photos.json",
   JSON.stringify(photos, null, 2)
 );
-
-console.log("✅ zapisano data/activity-detail.json");
-console.log("✅ zapisano data/activity-photos.json");
 
 const streamRes = await fetch(
   `https://www.strava.com/api/v3/activities/${ACTIVITY_ID}/streams?keys=time,latlng&key_by_type=true`,
@@ -134,7 +120,7 @@ console.log(
   "latlng exists:",
   !!streams.latlng
 );
-  
+
 let startLocation = null;
 let finishLocation = null;
 
@@ -166,6 +152,10 @@ if (
     );
 
   console.log(
+    startLocation
+  );
+
+  console.log(
     "Reverse geocoding finish..."
   );
 
@@ -174,20 +164,56 @@ if (
       finish[0],
       finish[1]
     );
+
+  console.log(
+    finishLocation
+  );
 }
 
 detail.start_location =
   startLocation;
 
 detail.finish_location =
-  finishLocation;  
-  
+  finishLocation;
+
 fs.writeFileSync(
-  "data/activity-streams.json",
-  JSON.stringify(streams, null, 2)
+  "data/activity-detail.json",
+  JSON.stringify(
+    detail,
+    null,
+    2
+  )
 );
 
-console.log("✅ zapisano data/activity-streams.json");
+fs.writeFileSync(
+  "data/activity-photos.json",
+  JSON.stringify(
+    photos,
+    null,
+    2
+  )
+);
+
+fs.writeFileSync(
+  "data/activity-streams.json",
+  JSON.stringify(
+    streams,
+    null,
+    2
+  )
+);
+
+console.log(
+  "✅ zapisano data/activity-detail.json"
+);
+
+console.log(
+  "✅ zapisano data/activity-photos.json"
+);
+
+console.log(
+  "✅ zapisano data/activity-streams.json"
+);
   
 }
 
