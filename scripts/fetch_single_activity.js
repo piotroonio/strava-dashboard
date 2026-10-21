@@ -139,6 +139,13 @@ if (
   const start =
     route[0];
 
+  const weather =
+  await fetchWeather(
+    start[0],
+    start[1],
+    detail.start_date
+  );
+
   const finish =
     route[
       route.length - 1
@@ -203,6 +210,9 @@ detail.start_altitude =
 
 detail.finish_altitude =
   finishAltitude;
+
+detail.weather =
+  weather;
 
 fs.writeFileSync(
   "data/activity-detail.json",
@@ -277,7 +287,26 @@ async function reverseGeocode(
 
     road:
       data.address?.road ||
-      ""
+      "",
+
+    temperature:
+      data.hourly.temperature_2m[hour],
+
+    feels_like:
+      data.hourly.apparent_temperature[hour],
+
+    wind_speed:
+      data.hourly.wind_speed_10m[hour],
+
+    wind_direction:
+      data.hourly.wind_direction_10m[hour],
+
+    precipitation:
+      data.hourly.precipitation[hour],
+
+    cloud_cover:
+      data.hourly.cloud_cover[hour]
+    
   };
 }
 
