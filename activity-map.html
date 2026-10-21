@@ -636,6 +636,15 @@ const startAddress =
 
 const finishAddress =
     activity.finish_location?.display_name || "";
+
+const startAltitude =
+    activity.start_altitude ?? "-";
+
+const finishAltitude =
+    activity.finish_altitude ?? "-";
+
+
+    
     
 document.getElementById(
     "activityStats"
@@ -651,6 +660,14 @@ document.getElementById(
             start
         </div>
     </div>
+    <div class="stat-card">
+        <div class="stat-value">
+            ${startAltitude} m
+        </div>
+        <div class="stat-label">
+            🏔️ wysokość startu
+        </div>
+    </div>
 
     <div class="stat-card location-card" title="${finishAddress}">
         <div class="stat-value">
@@ -660,6 +677,16 @@ document.getElementById(
             koniec
         </div>
     </div>
+    <div class="stat-card">
+        <div class="stat-value">
+            ${finishAltitude} m
+        </div>
+        <div class="stat-label">
+            🏁 wysokość mety
+        </div>
+    </div>
+
+    
     <div class="stat-card">
             <div class="stat-value">
                 ${formattedDate}
