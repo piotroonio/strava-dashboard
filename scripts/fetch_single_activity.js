@@ -124,6 +124,9 @@ console.log(
 let startLocation = null;
 let finishLocation = null;
 
+let startAltitude = null;
+let finishAltitude = null;
+
 if (
   streams.latlng &&
   streams.latlng.data &&
@@ -140,9 +143,6 @@ if (
     route[
       route.length - 1
     ];
-
-  let startAltitude = null;
-  let finishAltitude = null;
 
   if (
   streams.altitude &&
