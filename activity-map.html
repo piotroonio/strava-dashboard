@@ -362,6 +362,50 @@ body{
     background: #ffffff;
     color: black;
 }
+
+#fullscreenMapBtn {
+
+    position: fixed;
+
+    top: 80px;
+    right: 15px;
+
+    z-index: 2000;
+
+    width: 44px;
+    height: 44px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: white;
+
+    cursor: pointer;
+
+    font-size: 22px;
+
+    box-shadow:
+        0 2px 8px rgba(0,0,0,.3);
+}
+
+#fullscreenMapBtn:hover {
+
+    background: #f5f5f5;
+}
+
+.map-fullscreen {
+
+    position: fixed !important;
+
+    inset: 0 !important;
+
+    width: 100vw !important;
+    height: 100vh !important;
+
+    z-index: 1500;
+
+    background: white;
+}
 </style>
 </head>
 
@@ -374,6 +418,9 @@ body{
 </div>
 
 <div id="map"></div>
+<button id="fullscreenMapBtn">
+    ⛶
+</button>
 
 <div id="activityStats"></div>
 
@@ -1050,7 +1097,39 @@ document.addEventListener(
     }
 );
 
+const fullscreenBtn =
+    document.getElementById(
+        "fullscreenMapBtn"
+    );
 
+fullscreenBtn.addEventListener(
+    "click",
+    () => {
+
+        const mapDiv =
+            document.getElementById(
+                "map"
+            );
+
+        mapDiv.classList.toggle(
+            "map-fullscreen"
+        );
+
+        fullscreenBtn.textContent =
+            mapDiv.classList.contains(
+                "map-fullscreen"
+            )
+                ? "✕"
+                : "⛶";
+
+        setTimeout(
+            () => {
+                map.invalidateSize();
+            },
+            100
+        );
+    }
+);
 
 loadData();
 
