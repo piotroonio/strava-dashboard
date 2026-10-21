@@ -565,31 +565,37 @@ const finishLocation =
     ]
     .filter(Boolean)
     .join(", ");
+
+const startAddress =
+    activity.start_location?.display_name || "";
+
+const finishAddress =
+    activity.finish_location?.display_name || "";
     
 document.getElementById(
     "activityStats"
 ).innerHTML = `
 
 
-    <div class="stats-grid">
-        <div class="stat-card location-card">
-            <div class="stat-value">
-                ${startLocation}
-            </div>
-            <div class="stat-label">
-                📍 start
-            </div>
+<div class="stats-grid">
+    <div class="stat-card location-card" title="${startAddress}">
+        <div class="stat-value">
+            ${startLocation}
         </div>
+        <div class="stat-label">
+            📍 start
+        </div>
+    </div>
 
-<div class="stat-card location-card">
-    <div class="stat-value">
-        ${finishLocation}
+    <div class="stat-card location-card" title="${finishAddress}">
+        <div class="stat-value">
+            ${finishLocation}
+        </div>
+        <div class="stat-label">
+            🏁 meta
+        </div>
     </div>
-    <div class="stat-label">
-        🏁 meta
-    </div>
-</div>
-        <div class="stat-card">
+    <div class="stat-card">
             <div class="stat-value">
                 ${formattedDate}
             </div>
