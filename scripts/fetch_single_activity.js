@@ -101,7 +101,7 @@ fs.writeFileSync(
 );
 
 const streamRes = await fetch(
-  `https://www.strava.com/api/v3/activities/${ACTIVITY_ID}/streams?keys=time,latlng&key_by_type=true`,
+  `https://www.strava.com/api/v3/activities/${ACTIVITY_ID}/streams?keys=time,latlng,altitude&key_by_type=true`,
   {
     headers: {
       Authorization: `Bearer ${accessToken}`
@@ -141,6 +141,28 @@ if (
       route.length - 1
     ];
 
+  let startAltitude = null;
+  let finishAltitude = null;
+
+  if (
+  streams.altitude &&
+  streams.altitude.data &&
+  streams.altitude.data.length > 0
+  ) {
+
+  startAltitude =
+    Math.round(
+      streams.altitude.data[0]
+    );
+
+  finishAltitude =
+    Math.round(
+      streams.altitude.data[
+        streams.altitude.data.length - 1
+      ]
+    );
+  }
+  
   console.log(
     "Reverse geocoding start..."
   );
@@ -175,6 +197,12 @@ detail.start_location =
 
 detail.finish_location =
   finishLocation;
+
+detail.start_altitude =
+  startAltitude;
+
+detail.finish_altitude =
+  finishAltitude;
 
 fs.writeFileSync(
   "data/activity-detail.json",
