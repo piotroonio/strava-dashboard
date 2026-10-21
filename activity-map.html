@@ -27,6 +27,11 @@ body{
     height:60vh;
 }
 
+#mapContainer {
+
+    position: relative;
+}
+
 .photo-thumb{
     width:200px;
     border-radius:8px;
@@ -370,7 +375,7 @@ body{
     bottom: 15px;
     right: 15px;
 
-    z-index: 1000;
+    z-index: 2000;
 
     width: 44px;
     height: 44px;
@@ -405,9 +410,14 @@ body{
     width: 100vw !important;
     height: 100vh !important;
 
-    z-index: 1500;
+    z-index: 5000;
 
     background: white;
+}
+
+.map-fullscreen #map {
+
+    height: 100vh !important;
 }
 
 .map-fullscreen + #fullscreenMapBtn {
@@ -430,10 +440,12 @@ body{
     </h2>
 </div>
 
-<div id="map"></div>
-<button id="fullscreenMapBtn">
-    ⛶
-</button>
+<div id="mapContainer">
+    <div id="map"></div>
+        <button id="fullscreenMapBtn">
+        ⛶
+        </button>
+</div>
 
 <div id="activityStats"></div>
 
@@ -1127,7 +1139,7 @@ fullscreenBtn.addEventListener(
 
         const mapDiv =
             document.getElementById(
-                "map"
+                "mapContainer"
             );
 
         const isFullscreen =
