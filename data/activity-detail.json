@@ -14,6 +14,7 @@
   "sport_type": "GravelRide",
   "workout_type": null,
   "device_name": "Garmin Instinct 2",
+  "tags": [],
   "id": 20338955873,
   "id_str": "20338955873",
   "start_date": "2026-09-26T07:17:25Z",
@@ -5738,8 +5739,8 @@
     "nickname": "Kross Esker 6.0",
     "resource_state": 2,
     "retired": false,
-    "distance": 17833021,
-    "converted_distance": 17833
+    "distance": 17897124,
+    "converted_distance": 17897.1
   },
   "photos": {
     "primary": {
@@ -5787,5 +5788,15 @@
   "available_zones": [
     "heartrate",
     "power"
-  ]
+  ],
+  "start_location": {
+    "display_name": "23a, Wylotowa, Osiedle Pogodne, Grünhausen, Zachodnia, Kołobrzeg, powiat kołobrzeski, województwo zachodniopomorskie, 78-100, Polska",
+    "city": "Kołobrzeg",
+    "road": "Wylotowa"
+  },
+  "finish_location": {
+    "display_name": "Cztery Wiatry - Domki Letniskowe, 4, Kąpielowa, Jezierzany, gmina Postomino, powiat sławieński, województwo zachodniopomorskie, 76-107, Polska",
+    "city": "Jezierzany",
+    "road": "Kąpielowa"
+  }
 }
