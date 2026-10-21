@@ -365,12 +365,12 @@ body{
 
 #fullscreenMapBtn {
 
-    position: fixed;
+    position: absolute;
 
-    top: 80px;
+    bottom: 15px;
     right: 15px;
 
-    z-index: 2000;
+    z-index: 1000;
 
     width: 44px;
     height: 44px;
@@ -380,9 +380,11 @@ body{
 
     background: white;
 
-    cursor: pointer;
+    color: #333;
 
     font-size: 22px;
+
+    cursor: pointer;
 
     box-shadow:
         0 2px 8px rgba(0,0,0,.3);
@@ -490,6 +492,12 @@ L.control.layers(
     "Satellite": satellite
   }
 ).addTo(map);
+
+L.control.scale({
+    metric: true,
+    imperial: false,
+    position: "bottomleft"
+}).addTo(map);
 
 function formatDuration(
     seconds
