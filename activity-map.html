@@ -7,6 +7,7 @@
 <title>Strava Activity Map</title>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet-polylinedecorator"></script>
 
 <style>
 
@@ -933,9 +934,29 @@ document.getElementById(
         route,
         {
             color: "#fc4c02",
-            weight: 5
+            weight: 4
         }
     ).addTo(map);
+
+    L.polylineDecorator(
+    track,
+    {
+        patterns: [
+            {
+                offset: 25,
+                repeat: 200,
+                symbol: L.Symbol.arrowHead({
+                    pixelSize: 10,
+                    polygon: false,
+                    pathOptions: {
+                        color: "#fc4c02",
+                        weight: 3
+                    }
+                })
+            }
+        ]
+    }
+).addTo(map);
     
     map.fitBounds(
         track.getBounds()
