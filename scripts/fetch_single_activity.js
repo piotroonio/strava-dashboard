@@ -125,6 +125,16 @@ const streamRes = await fetch(
 
 const streams = await streamRes.json();
 
+console.log(
+  "Streams keys:",
+  Object.keys(streams)
+);
+
+console.log(
+  "latlng exists:",
+  !!streams.latlng
+);
+  
 let startLocation = null;
 let finishLocation = null;
 
