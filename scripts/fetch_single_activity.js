@@ -148,6 +148,11 @@ if (
     detail.start_date
   );
 
+  console.log(
+  "WEATHER:",
+  weather
+);
+
   const finish =
     route[
       route.length - 1
