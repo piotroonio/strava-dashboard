@@ -1091,35 +1091,77 @@ document.addEventListener(
                 "lightbox"
             );
 
+        const mapContainer =
+            document.getElementById(
+                "mapContainer"
+            );
+
+        const fullscreenBtn =
+            document.getElementById(
+                "fullscreenMapBtn"
+            );
+
         const lightboxVisible =
             lightbox.style.display ===
             "flex";
 
+        /*
+         * ESC - najpierw zamknij zdjęcie
+         */
         if (
-            !lightboxVisible
-        ) {
-            return;
-        }
-
-        if (
-            e.key === "Escape"
+            e.key === "Escape" &&
+            lightboxVisible
         ) {
 
             lightbox.style.display =
                 "none";
+
+            return;
+        }
+
+        /*
+         * ESC - wyjdź z pełnego ekranu mapy
+         */
+        if (
+            e.key === "Escape" &&
+            mapContainer.classList.contains(
+                "map-fullscreen"
+            )
+        ) {
+
+            mapContainer.classList.remove(
+                "map-fullscreen"
+            );
+
+            fullscreenBtn.innerHTML =
+                "⛶";
+
+            setTimeout(
+                () => {
+                    map.invalidateSize();
+                },
+                150
+            );
+
+            return;
+        }
+
+        /*
+         * Strzałki działają tylko dla galerii
+         */
+        if (!lightboxVisible) {
+            return;
         }
 
         if (
-            e.key ===
-            "ArrowRight"
+            e.key === "ArrowRight"
         ) {
 
             showNextPhoto();
         }
 
         if (
-            e.key ===
-            "ArrowLeft"
+            e.key === "ArrowLeft"
         ) {
 
             showPreviousPhoto();
