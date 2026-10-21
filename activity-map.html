@@ -556,7 +556,7 @@ const startLocation =
         activity.start_location?.road
     ]
     .filter(Boolean)
-    .join(", ");
+    .join(", ul. ");
 
 const finishLocation =
     [
@@ -564,7 +564,7 @@ const finishLocation =
         activity.finish_location?.road
     ]
     .filter(Boolean)
-    .join(", ");
+    .join(", ul. ");
 
 const startAddress =
     activity.start_location?.display_name || "";
