@@ -667,20 +667,22 @@ document
     );
     
 async function loadData() {
-
+    const cacheBuster =
+        Date.now();
+    
     const activity =
         await fetch(
-            "data/activity-detail.json"
+            "data/activity-detail.json?v=${cacheBuster}"
         ).then(r => r.json());
 
     const photos =
         await fetch(
-            "data/activity-photos.json"
+            "data/activity-photos.json?v=${cacheBuster}"
         ).then(r => r.json());
 
     const streams =
         await fetch(
-            "data/activity-streams.json"
+            "data/activity-streams.json?v=${cacheBuster}"
         ).then(r => r.json());
 
     document.getElementById(
