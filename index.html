@@ -206,6 +206,7 @@ th span.sort-icon svg {
       <th data-sort="name">Użytkownik<span class="sort-icon"></span></th>
       <th data-sort="totalDistance">Dystans (km)<span class="sort-icon"></span></th>
       <th data-sort="avgSpeed">Śr. prędkość (km/godz.)<span class="sort-icon"></span></th>
+      <th data-sort="avgDistance">Śr. dystans (km)<span class="sort-icon"></span></th>
       <th data-sort="avgElevation">Śr. przewyższenie (m)<span class="sort-icon"></span></th>
       <th data-sort="totalElevation">Suma przewyższeń (m)<span class="sort-icon"></span></th>
       <th data-sort="totalActivities">Liczba aktywności<span class="sort-icon"></span></th>
@@ -341,10 +342,14 @@ if (DEBUG) {
   users = users.concat(testUsers);
 }
 
-  users = users.map(u => ({
-    ...u,
-    hasDuplicates: usersWithDuplicates.has(u.name)
-  }));
+users = users.map(u => ({
+  ...u,
+  hasDuplicates: usersWithDuplicates.has(u.name),
+  avgDistance:
+    u.totalActivities > 0
+      ? Number((u.totalDistance / u.totalActivities).toFixed(1))
+      : 0
+}));
 
 
     const tbody = document.querySelector("#table tbody");
@@ -440,6 +445,10 @@ const row = `
 
     <td class="${currentSort === 'avgSpeed' ? 'highlight' : ''}">
       ${u.avgSpeed}
+    </td>
+
+    <td class="${currentSort === 'avgDistance' ? 'highlight' : ''}">
+      ${u.avgDistance.toFixed(1)}
     </td>
 
     <td class="${currentSort === 'avgElevation' ? 'highlight' : ''}">
