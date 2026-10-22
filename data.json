@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T19:06:59.922Z",
+  "updatedAt": "2026-10-22T07:58:44.035Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -2547,6 +2547,74 @@
       "totalTime": 142,
       "totalActivities": 207,
       "avgSpeed": 17.52,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Pawel Zalewski",
+      "athleteId": 171311462,
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJodP0wyzxUtMy6DB0vMGCu1YuoTYfpar-9uRlJMJ-KyAfFNA=s96-c",
+      "totalDistance": 708.3,
+      "totalElevation": 660,
+      "avgElevation": 5,
+      "totalTime": 42,
+      "totalActivities": 146,
+      "avgSpeed": 16.84,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Sylwia Porzelska",
+      "athleteId": 864551342,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 0,
+      "totalElevation": 0,
+      "avgElevation": 0,
+      "totalTime": 0,
+      "totalActivities": 0,
+      "avgSpeed": 0,
+      "activityTypes": []
+    },
+    {
+      "name": "Dariusz Górnik",
+      "athleteId": 165481934,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 250,
+      "totalElevation": 406,
+      "avgElevation": 45,
+      "totalTime": 24,
+      "totalActivities": 9,
+      "avgSpeed": 10.42,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Konrad Tymczyszyn",
+      "athleteId": 136550138,
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLD4GwY0Z8LO5978LC0YbuE4JeF8KhiiPIcf1SYXHk90XxokA=s96-c",
+      "totalDistance": 890.5,
+      "totalElevation": 1650,
+      "avgElevation": 20,
+      "totalTime": 54,
+      "totalActivities": 82,
+      "avgSpeed": 16.56,
+      "activityTypes": [
+        "Ride"
+      ]
+    },
+    {
+      "name": "Maciek Stefaniuk",
+      "athleteId": 1906641556,
+      "avatar": "avatar/athlete/large.png",
+      "totalDistance": 47.7,
+      "totalElevation": 101,
+      "avgElevation": 13,
+      "totalTime": 2,
+      "totalActivities": 8,
+      "avgSpeed": 20.27,
       "activityTypes": [
         "Ride"
       ]
