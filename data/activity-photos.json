@@ -1,1 +1,130 @@
-[]
+[
+  {
+    "unique_id": "B5CB5684-3438-48A9-A18D-DAA1D7CB6AB2",
+    "athlete_id": 58678501,
+    "activity_id": 20590790442,
+    "activity_name": "Morning Walk",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2026-10-23T11:56:04Z",
+    "created_at": "2026-10-12T07:11:43Z",
+    "created_at_local": "2026-10-12T09:11:43Z",
+    "urls": {
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/rluEKTYv2eSosdoIf4vkxpZfz0vbh3H-_WZ7yOi15ro-2048x1536.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "2048": [
+        2048,
+        1536
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false,
+    "location": [
+      43.06945833333333,
+      12.616591666666666
+    ]
+  },
+  {
+    "unique_id": "A9CE3321-6DF1-49EF-9B8C-9BD7E6BF578E",
+    "athlete_id": 58678501,
+    "activity_id": 20590790442,
+    "activity_name": "Morning Walk",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2026-10-23T11:56:04Z",
+    "created_at": "2026-10-12T07:22:14Z",
+    "created_at_local": "2026-10-12T09:22:14Z",
+    "urls": {
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/mrG9NMalzDrbj36QDHS6SJdocLZ3Kv9rezW_uYsG5FA-1536x2048.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "2048": [
+        1536,
+        2048
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false,
+    "location": [
+      43.070766666666664,
+      12.614646666666667
+    ]
+  },
+  {
+    "unique_id": "6743A79D-271C-4F35-9382-46A05453B1AE",
+    "athlete_id": 58678501,
+    "activity_id": 20590790442,
+    "activity_name": "Morning Walk",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2026-10-23T11:56:04Z",
+    "created_at": "2026-10-12T07:24:50Z",
+    "created_at_local": "2026-10-12T09:24:50Z",
+    "urls": {
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/FotaOwthHwcoC2jvsF3EcobUOdQmkQeL3PSZscNlpG8-1536x2048.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "2048": [
+        1536,
+        2048
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false,
+    "location": [
+      43.07063333333333,
+      12.615128333333333
+    ]
+  },
+  {
+    "unique_id": "5D2D0AC0-0A2C-493D-B0B9-714A69CFB6E4",
+    "athlete_id": 58678501,
+    "activity_id": 20590790442,
+    "activity_name": "Morning Walk",
+    "post_id": null,
+    "resource_state": 2,
+    "caption": "",
+    "type": 1,
+    "source": 1,
+    "status": 3,
+    "uploaded_at": "2026-10-23T11:56:04Z",
+    "created_at": "2026-10-12T09:50:21Z",
+    "created_at_local": "2026-10-12T11:50:21Z",
+    "urls": {
+      "2048": "https://dgtzuqphqg23d.cloudfront.net/0gIvwlB1NVKFndWguFW742tEyr5t3kOob_RqQyA3Ww0-1536x2048.jpg"
+    },
+    "placeholder_image": null,
+    "sizes": {
+      "2048": [
+        1536,
+        2048
+      ]
+    },
+    "default_photo": false,
+    "cursor": null,
+    "is_strava_strength": false,
+    "location": [
+      43.0712805,
+      12.614808333333333
+    ]
+  }
+]
