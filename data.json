@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-22T19:03:54.674Z",
+  "updatedAt": "2026-10-23T07:52:47.318Z",
   "users": [
     {
       "name": "Piotr Sieradzki",
@@ -769,13 +769,15 @@
       "name": "magdalena szmara",
       "athleteId": 134151181,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocL0dqNaWQbDviYosdxbRtZmaqkiXdKlLWeGkTvfxARDF16XyQ=s96-c",
-      "totalDistance": 0,
-      "totalElevation": 0,
-      "avgElevation": 0,
-      "totalTime": 0,
-      "totalActivities": 0,
-      "avgSpeed": 0,
-      "activityTypes": []
+      "totalDistance": 3002.1,
+      "totalElevation": 4069,
+      "avgElevation": 32,
+      "totalTime": 189,
+      "totalActivities": 129,
+      "avgSpeed": 15.88,
+      "activityTypes": [
+        "Ride"
+      ]
     },
     {
       "name": "ANIA SZ",
