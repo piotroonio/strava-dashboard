@@ -90,7 +90,7 @@ function sleep(ms) {
 }
 
 // ✅ przetwarzanie usera
-async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
+async function processUser(user, CLIENT_ID, CLIENT_SECRET, monthlyStats) {
 
   await sleep(200);
 
@@ -206,8 +206,18 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET) {
         console.log(`✏️ Override ${a.id}`);
       }
 
-      totalDistance += distance;
-      totalElevation += a.total_elevation_gain || 0;
+totalDistance += distance;
+
+const monthKey =
+  new Date(a.start_date)
+    .toISOString()
+    .slice(0, 7);
+
+if (monthlyStats[monthKey] !== undefined) {
+  monthlyStats[monthKey] += distance / 1000;
+}
+
+totalElevation += a.total_elevation_gain || 0;
       totalMovingTime += a.moving_time || 0;
       totalActivities++;
 
@@ -251,6 +261,15 @@ async function main() {
 
   const CLIENT_ID = process.env.CLIENT_ID;
   const CLIENT_SECRET = process.env.CLIENT_SECRET;
+  const year = new Date().getFullYear();
+
+const monthlyStats = {
+  [`${year}-05`]: 0,
+  [`${year}-06`]: 0,
+  [`${year}-07`]: 0,
+  [`${year}-08`]: 0,
+  [`${year}-09`]: 0
+};
 
   try {
 
@@ -264,7 +283,7 @@ for (let i = 0; i < tokens.length; i += BATCH_SIZE) {
   console.log(`🚀 Processing batch ${i / BATCH_SIZE + 1}`);
 
   for (const user of batch) {
-    const res = await processUser(user, CLIENT_ID, CLIENT_SECRET);
+    const res = await processUser(user, CLIENT_ID, CLIENT_SECRET, monthlyStats);
     results.push(res);
   }
 
@@ -278,12 +297,20 @@ for (let i = 0; i < tokens.length; i += BATCH_SIZE) {
 
     // ✅ clean data
 
-  const data = {
-    updatedAt: new Date().toISOString(),
-    users: results
-      .map(r => r.data)
-      .filter(Boolean)
-  };
+const data = {
+  updatedAt: new Date().toISOString(),
+
+  monthlyStats: Object.fromEntries(
+    Object.entries(monthlyStats).map(([k, v]) => [
+      k,
+      Number(v.toFixed(1))
+    ])
+  ),
+
+  users: results
+    .map(r => r.data)
+    .filter(Boolean)
+};
 
 
     fs.writeFileSync("data.json", JSON.stringify(data, null, 2));
