@@ -197,6 +197,7 @@ th span.sort-icon svg {
   <option value="GravelRide">Gravel</option>
 </select>
 
+<div id="monthlyStats"></div>
 <div id="summary" class="summary"></div>
 <table id="table">
   <thead>
@@ -353,6 +354,7 @@ users = users.map(u => ({
 
 
     const tbody = document.querySelector("#table tbody");
+    const monthlyContainer = document.getElementById("monthlyStats");
     const searchInput = document.getElementById("searchUser");
     const activityFilter = document.getElementById("activityFilter");
 
@@ -481,6 +483,23 @@ const row = `
     }
 
     //renderTable(users);
+    if (data.monthlyStats) {
+
+  const monthly = data.monthlyStats;
+  const year = new Date().getFullYear();
+
+  monthlyContainer.innerHTML = `
+    <h3>📅 Dystans w poszczególnych miesiącach</h3>
+
+    <table style="margin-bottom:20px">
+      <tr><td>Maj</td><td>${(monthly[`${year}-05`] || 0).toFixed(1)} km</td></tr>
+      <tr><td>Czerwiec</td><td>${(monthly[`${year}-06`] || 0).toFixed(1)} km</td></tr>
+      <tr><td>Lipiec</td><td>${(monthly[`${year}-07`] || 0).toFixed(1)} km</td></tr>
+      <tr><td>Sierpień</td><td>${(monthly[`${year}-08`] || 0).toFixed(1)} km</td></tr>
+      <tr><td>Wrzesień</td><td>${(monthly[`${year}-09`] || 0).toFixed(1)} km</td></tr>
+    </table>
+  `;
+}
     applyFilters();
     
     updateSortIndicators();
