@@ -249,6 +249,7 @@ totalElevation += a.total_elevation_gain || 0;
       totalActivities++;
 
       activityTypes.add(a.sport_type);
+});
 
 Object.keys(dailyDistance).forEach(key => {
   dailyDistance[key] =
