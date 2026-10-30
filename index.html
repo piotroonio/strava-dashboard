@@ -560,11 +560,6 @@ function applyFilters() {
   const val = normalize(searchInput.value);
   const selected = activityFilter.value;
 
-  console.log("dateFrom:", dateFrom.value);
-  console.log("dateTo:", dateTo.value);
-  console.log("users:", users.length);
-  console.log("sample user:", users[0]);
-
   // ✅ filtr po nazwie
   let filtered = users.filter(u =>
     normalize(u.name).includes(val)
