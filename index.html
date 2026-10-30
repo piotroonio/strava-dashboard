@@ -496,18 +496,7 @@ const row = `
     }
 
     //renderTable(users);
-    if (data.monthlyStats) {
 
-  const monthly = data.monthlyStats;
-const year = new Date().getFullYear();
-
-const months = [
-  { name: "Maj", key: `${year}-05`, days: 31 },
-  { name: "Czerwiec", key: `${year}-06`, days: 30 },
-  { name: "Lipiec", key: `${year}-07`, days: 31 },
-  { name: "Sierpień", key: `${year}-08`, days: 31 },
-  { name: "Wrzesień", key: `${year}-09`, days: 30 }
-];
 function renderMonthlyStats(filteredUsers) {
 
   const monthlyTotals = {};
@@ -668,6 +657,8 @@ filtered = filtered.map(u => {
 // ✅ podłączenie eventów
 searchInput.addEventListener("input", applyFilters);
 activityFilter.addEventListener("change", applyFilters);
+dateFrom.addEventListener("change", applyFilters);
+dateTo.addEventListener("change", applyFilters);
 
 
     // 🔽 SORT CLICK
@@ -689,7 +680,7 @@ activityFilter.addEventListener("change", applyFilters);
       });
     });
 
-  };
+  });
 </script>
 
 </body>
