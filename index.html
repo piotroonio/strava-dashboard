@@ -187,6 +187,11 @@ th span.sort-icon svg {
   Ranking na podstawie aktywności rowerowych ze Strava.
 </p>
 
+<label><b>Od:</b></label>
+<input type="date" id="dateFrom" value="2026-05-01">
+<label><b>Do:</b></label>
+<input type="date" id="dateTo" value="2026-09-30">
+  
 <label><b>Szukaj użytkownika:</b></label>
 <input type="text" id="searchUser" placeholder="np. Piotr" />
 
@@ -357,6 +362,8 @@ users = users.map(u => ({
     const monthlyContainer = document.getElementById("monthlyStats");
     const searchInput = document.getElementById("searchUser");
     const activityFilter = document.getElementById("activityFilter");
+    const dateFrom = document.getElementById("dateFrom");
+    const dateTo = document.getElementById("dateTo");
 
     function renderTable(list) {
       tbody.innerHTML = "";
@@ -539,7 +546,36 @@ monthlyContainer.innerHTML = `
    //   renderTable(filtered);
    // });
 
-    
+function getMonthsInRange(startDate, endDate) {
+
+  const result = [];
+
+  const current = new Date(
+    startDate.getFullYear(),
+    startDate.getMonth(),
+    1
+  );
+
+  const end = new Date(
+    endDate.getFullYear(),
+    endDate.getMonth(),
+    1
+  );
+
+  while (current <= end) {
+
+    result.push(
+      current.toISOString().slice(0, 7)
+    );
+
+    current.setMonth(
+      current.getMonth() + 1
+    );
+  }
+
+  return result;
+}
+  
 function applyFilters() {
   const val = normalize(searchInput.value);
   const selected = activityFilter.value;
@@ -556,6 +592,45 @@ function applyFilters() {
     );
   }
 
+  const from = new Date(dateFrom.value);
+  const to = new Date(dateTo.value);
+
+  const selectedMonths =
+  getMonthsInRange(from, to);
+
+    filtered = filtered.map(u => {
+
+    let distance = 0;
+    let activities = 0;
+
+    selectedMonths.forEach(month => {
+
+      distance +=
+        u.monthlyDistance?.[month] || 0;
+
+      activities +=
+        u.monthlyActivities?.[month] || 0;
+    });
+
+    return {
+      ...u,
+
+      totalDistance:
+        Number(distance.toFixed(1)),
+
+      totalActivities:
+        activities,
+
+      avgDistance:
+        activities > 0
+          ? Number(
+              (distance / activities)
+                .toFixed(1)
+            )
+          : 0
+      };
+    });
+  
   renderTable(filtered);
   //renderLeader(filtered); // ✅ ważne
 }
