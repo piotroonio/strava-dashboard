@@ -146,8 +146,8 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET, monthlyStats) {
 
     // 📅 zakres dat
     const year = new Date().getFullYear();
-    const after = Math.floor(new Date(`${year}-05-01`).getTime() / 1000);
-    const before = Math.floor(new Date(`${year}-10-01`).getTime() / 1000);
+    const after = Math.floor(new Date(`${year}-01-01`).getTime() / 1000);
+    const before = Math.floor(new Date(`${year + 1}-01-01`).getTime() / 1000);
 
     let page = 1;
     let allActivities = [];
@@ -187,6 +187,8 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET, monthlyStats) {
     let totalMovingTime = 0;
     let totalActivities = 0;
     let activityTypes = new Set();
+    const monthlyDistance = {};
+    const monthlyActivities = {};
 
     allActivities.forEach(a => {
 
@@ -213,9 +215,19 @@ const monthKey =
     .toISOString()
     .slice(0, 7);
 
+// statystyki globalne
 if (monthlyStats[monthKey] !== undefined) {
   monthlyStats[monthKey] += distance / 1000;
 }
+
+// statystyki użytkownika
+monthlyDistance[monthKey] =
+  (monthlyDistance[monthKey] || 0)
+  + distance / 1000;
+
+monthlyActivities[monthKey] =
+  (monthlyActivities[monthKey] || 0)
+  + 1;
 
 totalElevation += a.total_elevation_gain || 0;
       totalMovingTime += a.moving_time || 0;
@@ -242,6 +254,8 @@ totalElevation += a.total_elevation_gain || 0;
         avgSpeed: totalDistance
           ? +((totalDistance / 1000) / (totalMovingTime / 3600)).toFixed(2)
           : 0,
+        monthlyDistance,
+        monthlyActivities,
         activityTypes: Array.from(activityTypes)
       },
       duplicates: duplicatePairs.map(p => ({
