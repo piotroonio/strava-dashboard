@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T13:03:02.817Z",
+  "updatedAt": "2026-10-30T19:43:02.592Z",
   "monthlyStats": {
     "2026-05": 41384.2,
     "2026-06": 41827.8,
@@ -12,14 +12,14 @@
       "name": "Piotr Sieradzki",
       "athleteId": 58678501,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/58678501/24592063/1/large.jpg",
-      "totalDistance": 5802.9,
-      "totalElevation": 24015,
+      "totalDistance": 5813.3,
+      "totalElevation": 24048,
       "avgElevation": 63,
-      "totalTime": 299,
-      "totalActivities": 383,
+      "totalTime": 300,
+      "totalActivities": 384,
       "avgSpeed": 19.39,
       "monthlyDistance": {
-        "2026-10": 317.2372,
+        "2026-10": 327.65999999999997,
         "2026-09": 998.0411999999999,
         "2026-08": 923.3204000000002,
         "2026-07": 632.1005,
@@ -31,7 +31,7 @@
         "2026-01": 180.15800000000002
       },
       "monthlyActivities": {
-        "2026-10": 31,
+        "2026-10": 32,
         "2026-09": 43,
         "2026-08": 51,
         "2026-07": 31,
@@ -43,7 +43,7 @@
         "2026-01": 27
       },
       "dailyDistance": {
-        "2026-10-30": 10.5,
+        "2026-10-30": 20.9,
         "2026-10-29": 21.2,
         "2026-10-28": 16.3,
         "2026-10-27": 17.4,
@@ -255,7 +255,7 @@
         "2026-01-14": 13
       },
       "dailyActivities": {
-        "2026-10-30": 1,
+        "2026-10-30": 2,
         "2026-10-29": 2,
         "2026-10-28": 2,
         "2026-10-27": 2,
@@ -1222,14 +1222,14 @@
       "name": "Jaroslaw Pasierski",
       "athleteId": 113908907,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLqZaHeWhuV-T8lwuUfP7M6sSekNuDl5DnyzcKB4l7GX1gr6n_l=s96-c",
-      "totalDistance": 2352.9,
-      "totalElevation": 3735,
+      "totalDistance": 2368.4,
+      "totalElevation": 3757,
       "avgElevation": 12,
-      "totalTime": 127,
-      "totalActivities": 302,
-      "avgSpeed": 18.51,
+      "totalTime": 128,
+      "totalActivities": 304,
+      "avgSpeed": 18.5,
       "monthlyDistance": {
-        "2026-10": 207.65359999999998,
+        "2026-10": 223.13060000000002,
         "2026-09": 202.80300000000005,
         "2026-08": 256.66600000000005,
         "2026-07": 277.5111,
@@ -1241,7 +1241,7 @@
         "2026-01": 175.91810000000004
       },
       "monthlyActivities": {
-        "2026-10": 27,
+        "2026-10": 29,
         "2026-09": 27,
         "2026-08": 30,
         "2026-07": 36,
@@ -1253,6 +1253,7 @@
         "2026-01": 23
       },
       "dailyDistance": {
+        "2026-10-30": 15.5,
         "2026-10-29": 13.7,
         "2026-10-28": 7.7,
         "2026-10-27": 7.7,
@@ -1411,6 +1412,7 @@
         "2026-01-02": 15.4
       },
       "dailyActivities": {
+        "2026-10-30": 2,
         "2026-10-29": 2,
         "2026-10-28": 1,
         "2026-10-27": 1,
@@ -2187,14 +2189,14 @@
       "name": "Małgorzata Żółtowska",
       "athleteId": 66600706,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/66600706/16617639/2/large.jpg",
-      "totalDistance": 2556.4,
-      "totalElevation": 4132,
+      "totalDistance": 2572.2,
+      "totalElevation": 4152,
       "avgElevation": 16,
-      "totalTime": 158,
-      "totalActivities": 253,
+      "totalTime": 159,
+      "totalActivities": 254,
       "avgSpeed": 16.19,
       "monthlyDistance": {
-        "2026-10": 436.9001,
+        "2026-10": 452.72790000000003,
         "2026-09": 384.0378000000001,
         "2026-08": 105.1748,
         "2026-07": 569.3499000000002,
@@ -2205,7 +2207,7 @@
         "2026-02": 5.2842
       },
       "monthlyActivities": {
-        "2026-10": 36,
+        "2026-10": 37,
         "2026-09": 35,
         "2026-08": 15,
         "2026-07": 51,
@@ -2216,7 +2218,7 @@
         "2026-02": 1
       },
       "dailyDistance": {
-        "2026-10-30": 15.6,
+        "2026-10-30": 31.4,
         "2026-10-29": 7.3,
         "2026-10-28": 10.2,
         "2026-10-26": 31.4,
@@ -2341,7 +2343,7 @@
         "2026-02-27": 5.3
       },
       "dailyActivities": {
-        "2026-10-30": 1,
+        "2026-10-30": 2,
         "2026-10-29": 2,
         "2026-10-28": 4,
         "2026-10-26": 2,
@@ -4742,14 +4744,14 @@
       "name": "Aleksander B.",
       "athleteId": 138637736,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocII38ufXzmLldFtu8pxlun0cDWT0jB-L_eBV-J88EHJu0Fikrc=s96-c",
-      "totalDistance": 1615.5,
-      "totalElevation": 2630,
+      "totalDistance": 1618.9,
+      "totalElevation": 2638,
       "avgElevation": 7,
       "totalTime": 143,
-      "totalActivities": 351,
-      "avgSpeed": 11.29,
+      "totalActivities": 352,
+      "avgSpeed": 11.3,
       "monthlyDistance": {
-        "2026-10": 179.62599999999998,
+        "2026-10": 183.05,
         "2026-09": 285.23,
         "2026-08": 248.25100000000006,
         "2026-07": 176.9488,
@@ -4761,7 +4763,7 @@
         "2026-01": 76.5818
       },
       "monthlyActivities": {
-        "2026-10": 36,
+        "2026-10": 37,
         "2026-09": 52,
         "2026-08": 60,
         "2026-07": 40,
@@ -4773,6 +4775,7 @@
         "2026-01": 17
       },
       "dailyDistance": {
+        "2026-10-30": 3.4,
         "2026-10-29": 5.2,
         "2026-10-28": 7.8,
         "2026-10-27": 5,
@@ -4944,6 +4947,7 @@
         "2026-01-08": 7.5
       },
       "dailyActivities": {
+        "2026-10-30": 1,
         "2026-10-29": 1,
         "2026-10-28": 2,
         "2026-10-27": 1,
@@ -11927,14 +11931,14 @@
       "name": "Dawid Moszowski",
       "athleteId": 133598764,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 2451.7,
-      "totalElevation": 9472,
+      "totalDistance": 2463.4,
+      "totalElevation": 9516,
       "avgElevation": 46,
       "totalTime": 142,
-      "totalActivities": 206,
-      "avgSpeed": 17.29,
+      "totalActivities": 207,
+      "avgSpeed": 17.3,
       "monthlyDistance": {
-        "2026-10": 153.94879999999998,
+        "2026-10": 165.6238,
         "2026-09": 376.9973,
         "2026-08": 496.12380000000013,
         "2026-07": 546.0246,
@@ -11943,7 +11947,7 @@
         "2026-04": 288.1339
       },
       "monthlyActivities": {
-        "2026-10": 13,
+        "2026-10": 14,
         "2026-09": 33,
         "2026-08": 37,
         "2026-07": 42,
@@ -11952,7 +11956,7 @@
         "2026-04": 23
       },
       "dailyDistance": {
-        "2026-10-30": 11.9,
+        "2026-10-30": 23.6,
         "2026-10-28": 23.6,
         "2026-10-27": 23.3,
         "2026-10-13": 23.4,
@@ -12051,7 +12055,7 @@
         "2026-04-01": 45.7
       },
       "dailyActivities": {
-        "2026-10-30": 1,
+        "2026-10-30": 2,
         "2026-10-28": 2,
         "2026-10-27": 2,
         "2026-10-13": 2,
@@ -17348,14 +17352,14 @@
       "name": "Maciek 1",
       "athleteId": 132230686,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJ9Il3V_wzf30ceIMUVkfvHEVODpK1wfGmUzAzmpkA7EAHSYg=s96-c",
-      "totalDistance": 1719.6,
-      "totalElevation": 2290,
+      "totalDistance": 1728.9,
+      "totalElevation": 2299,
       "avgElevation": 15,
-      "totalTime": 146,
-      "totalActivities": 149,
-      "avgSpeed": 11.75,
+      "totalTime": 147,
+      "totalActivities": 150,
+      "avgSpeed": 11.76,
       "monthlyDistance": {
-        "2026-10": 238.73160000000001,
+        "2026-10": 247.9529,
         "2026-09": 253.03230000000002,
         "2026-08": 151.2873,
         "2026-07": 380.7776,
@@ -17366,7 +17370,7 @@
         "2026-02": 120.98029999999997
       },
       "monthlyActivities": {
-        "2026-10": 25,
+        "2026-10": 26,
         "2026-09": 24,
         "2026-08": 13,
         "2026-07": 28,
@@ -17377,7 +17381,7 @@
         "2026-02": 11
       },
       "dailyDistance": {
-        "2026-10-30": 9.1,
+        "2026-10-30": 18.3,
         "2026-10-23": 21.4,
         "2026-10-21": 19.9,
         "2026-10-20": 18.5,
@@ -17462,7 +17466,7 @@
         "2026-02-11": 19.9
       },
       "dailyActivities": {
-        "2026-10-30": 1,
+        "2026-10-30": 2,
         "2026-10-23": 2,
         "2026-10-21": 2,
         "2026-10-20": 2,
@@ -18965,7 +18969,7 @@
     {
       "name": "Piotr Krzęć",
       "athleteId": 14504155,
-      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/14504155/22552071/2/large.jpg",
+      "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/14504155/22552071/3/large.jpg",
       "totalDistance": 3590.2,
       "totalElevation": 33401,
       "avgElevation": 221,
@@ -21361,14 +21365,14 @@
       "name": "Robert Kunysz",
       "athleteId": 78397546,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/78397546/49682450/1/large.jpg",
-      "totalDistance": 6829,
-      "totalElevation": 52380,
+      "totalDistance": 6843.8,
+      "totalElevation": 52406,
       "avgElevation": 121,
-      "totalTime": 309,
-      "totalActivities": 432,
+      "totalTime": 310,
+      "totalActivities": 433,
       "avgSpeed": 22.1,
       "monthlyDistance": {
-        "2026-10": 658.1052999999999,
+        "2026-10": 672.9032,
         "2026-09": 796.0329,
         "2026-08": 752.1713999999998,
         "2026-07": 626.393,
@@ -21380,7 +21384,7 @@
         "2026-01": 563.785
       },
       "monthlyActivities": {
-        "2026-10": 53,
+        "2026-10": 54,
         "2026-09": 52,
         "2026-08": 50,
         "2026-07": 30,
@@ -21392,7 +21396,7 @@
         "2026-01": 42
       },
       "dailyDistance": {
-        "2026-10-30": 13.5,
+        "2026-10-30": 28.3,
         "2026-10-29": 28.5,
         "2026-10-28": 28.5,
         "2026-10-27": 28.5,
@@ -21609,7 +21613,7 @@
         "2026-01-01": 27
       },
       "dailyActivities": {
-        "2026-10-30": 1,
+        "2026-10-30": 2,
         "2026-10-29": 2,
         "2026-10-28": 2,
         "2026-10-27": 2,
@@ -24080,14 +24084,14 @@
       "name": "Mariusz Lis",
       "athleteId": 132065953,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/132065953/36583108/1/large.jpg",
-      "totalDistance": 2590.5,
-      "totalElevation": 5057,
+      "totalDistance": 2603,
+      "totalElevation": 5097,
       "avgElevation": 25,
-      "totalTime": 123,
-      "totalActivities": 200,
+      "totalTime": 124,
+      "totalActivities": 201,
       "avgSpeed": 20.99,
       "monthlyDistance": {
-        "2026-10": 459.24039999999985,
+        "2026-10": 471.7180999999999,
         "2026-09": 667.5823000000001,
         "2026-08": 343.13180000000006,
         "2026-07": 404.47960000000006,
@@ -24097,7 +24101,7 @@
         "2026-03": 81.2757
       },
       "monthlyActivities": {
-        "2026-10": 37,
+        "2026-10": 38,
         "2026-09": 48,
         "2026-08": 27,
         "2026-07": 32,
@@ -24107,7 +24111,7 @@
         "2026-03": 6
       },
       "dailyDistance": {
-        "2026-10-30": 12.6,
+        "2026-10-30": 25.1,
         "2026-10-29": 25.1,
         "2026-10-28": 25.3,
         "2026-10-27": 25.1,
@@ -24214,7 +24218,7 @@
         "2026-03-01": 17.4
       },
       "dailyActivities": {
-        "2026-10-30": 1,
+        "2026-10-30": 2,
         "2026-10-29": 2,
         "2026-10-28": 2,
         "2026-10-27": 2,
