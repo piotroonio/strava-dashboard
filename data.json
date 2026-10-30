@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T08:59:54.340Z",
+  "updatedAt": "2026-10-30T10:16:32.674Z",
   "monthlyStats": {
     "2026-05": 41384.2,
     "2026-06": 41827.8,
@@ -12,12 +12,36 @@
       "name": "Piotr Sieradzki",
       "athleteId": 58678501,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/58678501/24592063/1/large.jpg",
-      "totalDistance": 3962.2,
-      "totalElevation": 18241,
-      "avgElevation": 87,
-      "totalTime": 203,
-      "totalActivities": 210,
-      "avgSpeed": 19.56,
+      "totalDistance": 5802.9,
+      "totalElevation": 24015,
+      "avgElevation": 63,
+      "totalTime": 299,
+      "totalActivities": 383,
+      "avgSpeed": 19.39,
+      "monthlyDistance": {
+        "2026-10": 317.2372,
+        "2026-09": 998.0411999999999,
+        "2026-08": 923.3204000000002,
+        "2026-07": 632.1005,
+        "2026-06": 706.5644000000001,
+        "2026-05": 702.1370999999999,
+        "2026-04": 422.6018000000001,
+        "2026-03": 586.0168000000001,
+        "2026-02": 334.71439999999996,
+        "2026-01": 180.15800000000002
+      },
+      "monthlyActivities": {
+        "2026-10": 31,
+        "2026-09": 43,
+        "2026-08": 51,
+        "2026-07": 31,
+        "2026-06": 44,
+        "2026-05": 41,
+        "2026-04": 40,
+        "2026-03": 43,
+        "2026-02": 32,
+        "2026-01": 27
+      },
       "activityTypes": [
         "GravelRide",
         "Ride"
@@ -27,12 +51,30 @@
       "name": "Małgorzata Dziuban",
       "athleteId": 205584164,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLj7ZxH7LqEiLQLch-qYNNziNU-GraS1vybOapfvdnEADpSYg=s96-c",
-      "totalDistance": 642.7,
-      "totalElevation": 1000,
+      "totalDistance": 726.8,
+      "totalElevation": 1153,
       "avgElevation": 10,
-      "totalTime": 85,
-      "totalActivities": 97,
-      "avgSpeed": 7.6,
+      "totalTime": 94,
+      "totalActivities": 113,
+      "avgSpeed": 7.77,
+      "monthlyDistance": {
+        "2026-09": 74.34030000000001,
+        "2026-08": 76.29899999999999,
+        "2026-07": 187.4042,
+        "2026-06": 198.42659999999998,
+        "2026-05": 106.25059999999998,
+        "2026-04": 76.182,
+        "2026-03": 7.8582
+      },
+      "monthlyActivities": {
+        "2026-09": 16,
+        "2026-08": 10,
+        "2026-07": 28,
+        "2026-06": 26,
+        "2026-05": 17,
+        "2026-04": 14,
+        "2026-03": 2
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -41,12 +83,32 @@
       "name": "Adam Zuzel 🇯🇲",
       "athleteId": 103614137,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/103614137/42125689/2/large.jpg",
-      "totalDistance": 2943.5,
-      "totalElevation": 12224,
-      "avgElevation": 119,
-      "totalTime": 140,
-      "totalActivities": 103,
-      "avgSpeed": 21.02,
+      "totalDistance": 3959,
+      "totalElevation": 15686,
+      "avgElevation": 93,
+      "totalTime": 194,
+      "totalActivities": 168,
+      "avgSpeed": 20.37,
+      "monthlyDistance": {
+        "2026-08": 356.3008,
+        "2026-07": 605.1845999999999,
+        "2026-06": 1185.8042,
+        "2026-05": 796.1715999999997,
+        "2026-04": 198.978,
+        "2026-03": 444.9703999999999,
+        "2026-02": 180.69249999999997,
+        "2026-01": 190.93039999999996
+      },
+      "monthlyActivities": {
+        "2026-08": 21,
+        "2026-07": 22,
+        "2026-06": 27,
+        "2026-05": 33,
+        "2026-04": 12,
+        "2026-03": 19,
+        "2026-02": 15,
+        "2026-01": 19
+      },
       "activityTypes": [
         "GravelRide",
         "Ride"
@@ -62,6 +124,20 @@
       "totalTime": 102,
       "totalActivities": 110,
       "avgSpeed": 12.5,
+      "monthlyDistance": {
+        "2026-09": 267.438,
+        "2026-08": 158.904,
+        "2026-07": 246.6077,
+        "2026-06": 326.9816,
+        "2026-05": 272.5225000000001
+      },
+      "monthlyActivities": {
+        "2026-09": 27,
+        "2026-08": 15,
+        "2026-07": 21,
+        "2026-06": 29,
+        "2026-05": 18
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -70,12 +146,28 @@
       "name": "Norbert Nowak",
       "athleteId": 136614767,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 868.8,
-      "totalElevation": 2993,
-      "avgElevation": 49,
-      "totalTime": 46,
-      "totalActivities": 61,
-      "avgSpeed": 19.01,
+      "totalDistance": 1118.7,
+      "totalElevation": 4387,
+      "avgElevation": 66,
+      "totalTime": 50,
+      "totalActivities": 66,
+      "avgSpeed": 22.3,
+      "monthlyDistance": {
+        "2026-09": 15.7384,
+        "2026-08": 109.722,
+        "2026-07": 143.708,
+        "2026-06": 291.82000000000005,
+        "2026-05": 307.79900000000004,
+        "2026-04": 249.87650000000002
+      },
+      "monthlyActivities": {
+        "2026-09": 1,
+        "2026-08": 7,
+        "2026-07": 9,
+        "2026-06": 19,
+        "2026-05": 25,
+        "2026-04": 5
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -84,12 +176,36 @@
       "name": "Jaroslaw Pasierski",
       "athleteId": 113908907,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLqZaHeWhuV-T8lwuUfP7M6sSekNuDl5DnyzcKB4l7GX1gr6n_l=s96-c",
-      "totalDistance": 1158.1,
-      "totalElevation": 1872,
-      "avgElevation": 13,
-      "totalTime": 60,
-      "totalActivities": 147,
-      "avgSpeed": 19.42,
+      "totalDistance": 2352.9,
+      "totalElevation": 3735,
+      "avgElevation": 12,
+      "totalTime": 127,
+      "totalActivities": 302,
+      "avgSpeed": 18.51,
+      "monthlyDistance": {
+        "2026-10": 207.65359999999998,
+        "2026-09": 202.80300000000005,
+        "2026-08": 256.66600000000005,
+        "2026-07": 277.5111,
+        "2026-06": 155.84929999999997,
+        "2026-05": 265.2901,
+        "2026-04": 241.41559999999998,
+        "2026-03": 302.7581,
+        "2026-02": 267.0314,
+        "2026-01": 175.91810000000004
+      },
+      "monthlyActivities": {
+        "2026-10": 27,
+        "2026-09": 27,
+        "2026-08": 30,
+        "2026-07": 36,
+        "2026-06": 20,
+        "2026-05": 34,
+        "2026-04": 31,
+        "2026-03": 39,
+        "2026-02": 35,
+        "2026-01": 23
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -98,12 +214,28 @@
       "name": "Aga Pa",
       "athleteId": 71275400,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/71275400/17411106/1/large.jpg",
-      "totalDistance": 470.8,
-      "totalElevation": 624,
+      "totalDistance": 482.8,
+      "totalElevation": 646,
       "avgElevation": 7,
-      "totalTime": 31,
-      "totalActivities": 88,
-      "avgSpeed": 15.16,
+      "totalTime": 33,
+      "totalActivities": 91,
+      "avgSpeed": 14.8,
+      "monthlyDistance": {
+        "2026-08": 58.2649,
+        "2026-07": 165.3269,
+        "2026-06": 145.57760000000002,
+        "2026-05": 101.67830000000001,
+        "2026-04": 6.756399999999999,
+        "2026-03": 5.1859
+      },
+      "monthlyActivities": {
+        "2026-08": 11,
+        "2026-07": 32,
+        "2026-06": 26,
+        "2026-05": 19,
+        "2026-04": 1,
+        "2026-03": 2
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -112,12 +244,28 @@
       "name": "Marcin K.",
       "athleteId": 167001309,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 1735.3,
-      "totalElevation": 2131,
+      "totalDistance": 1791,
+      "totalElevation": 2195,
       "avgElevation": 21,
-      "totalTime": 259,
-      "totalActivities": 103,
-      "avgSpeed": 6.71,
+      "totalTime": 265,
+      "totalActivities": 106,
+      "avgSpeed": 6.75,
+      "monthlyDistance": {
+        "2026-09": 455.3412,
+        "2026-08": 347.95750000000004,
+        "2026-07": 250.71829999999997,
+        "2026-06": 285.3398,
+        "2026-05": 395.9851,
+        "2026-04": 55.6222
+      },
+      "monthlyActivities": {
+        "2026-09": 20,
+        "2026-08": 17,
+        "2026-07": 10,
+        "2026-06": 21,
+        "2026-05": 35,
+        "2026-04": 3
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -126,12 +274,30 @@
       "name": "Kasia Sch",
       "athleteId": 133627842,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIq9cxp2BfbtWstPkkkFl-wwGt8Oj5YKQwm-3vkjKqI=s96-c",
-      "totalDistance": 4860.1,
-      "totalElevation": 13559,
-      "avgElevation": 67,
-      "totalTime": 248,
-      "totalActivities": 203,
-      "avgSpeed": 19.57,
+      "totalDistance": 5154,
+      "totalElevation": 14076,
+      "avgElevation": 64,
+      "totalTime": 263,
+      "totalActivities": 219,
+      "avgSpeed": 19.58,
+      "monthlyDistance": {
+        "2026-10": 270.29560000000004,
+        "2026-09": 996.2673000000002,
+        "2026-08": 976.3598999999998,
+        "2026-07": 1115.741,
+        "2026-06": 941.75,
+        "2026-05": 829.9744999999999,
+        "2026-03": 23.6115
+      },
+      "monthlyActivities": {
+        "2026-10": 15,
+        "2026-09": 51,
+        "2026-08": 27,
+        "2026-07": 51,
+        "2026-06": 39,
+        "2026-05": 35,
+        "2026-03": 1
+      },
       "activityTypes": [
         "Ride",
         "GravelRide"
@@ -141,12 +307,34 @@
       "name": "Małgorzata Żółtowska",
       "athleteId": 66600706,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/66600706/16617639/2/large.jpg",
-      "totalDistance": 1776.5,
-      "totalElevation": 2874,
+      "totalDistance": 2556.4,
+      "totalElevation": 4132,
       "avgElevation": 16,
-      "totalTime": 109,
-      "totalActivities": 176,
-      "avgSpeed": 16.28,
+      "totalTime": 158,
+      "totalActivities": 253,
+      "avgSpeed": 16.19,
+      "monthlyDistance": {
+        "2026-10": 436.9001,
+        "2026-09": 384.0378000000001,
+        "2026-08": 105.1748,
+        "2026-07": 569.3499000000002,
+        "2026-06": 362.26400000000007,
+        "2026-05": 355.6625999999999,
+        "2026-04": 280.0631,
+        "2026-03": 57.6669,
+        "2026-02": 5.2842
+      },
+      "monthlyActivities": {
+        "2026-10": 36,
+        "2026-09": 35,
+        "2026-08": 15,
+        "2026-07": 51,
+        "2026-06": 37,
+        "2026-05": 38,
+        "2026-04": 27,
+        "2026-03": 13,
+        "2026-02": 1
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -161,6 +349,18 @@
       "totalTime": 25,
       "totalActivities": 20,
       "avgSpeed": 19,
+      "monthlyDistance": {
+        "2026-08": 29.1698,
+        "2026-07": 45.249900000000004,
+        "2026-06": 119.9082,
+        "2026-05": 276.6844
+      },
+      "monthlyActivities": {
+        "2026-08": 1,
+        "2026-07": 4,
+        "2026-06": 5,
+        "2026-05": 10
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -169,12 +369,30 @@
       "name": "Krzysztof Pach",
       "athleteId": 133363477,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/133363477/36641164/1/large.jpg",
-      "totalDistance": 762,
-      "totalElevation": 1491,
+      "totalDistance": 823.9,
+      "totalElevation": 1631,
       "avgElevation": 19,
-      "totalTime": 61,
-      "totalActivities": 77,
-      "avgSpeed": 12.58,
+      "totalTime": 66,
+      "totalActivities": 84,
+      "avgSpeed": 12.52,
+      "monthlyDistance": {
+        "2026-10": 50.56399999999999,
+        "2026-09": 45.7834,
+        "2026-08": 7.6913,
+        "2026-07": 207.4588,
+        "2026-06": 256.62989999999996,
+        "2026-05": 244.47950000000003,
+        "2026-04": 11.2521
+      },
+      "monthlyActivities": {
+        "2026-10": 6,
+        "2026-09": 7,
+        "2026-08": 3,
+        "2026-07": 19,
+        "2026-06": 23,
+        "2026-05": 25,
+        "2026-04": 1
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -183,12 +401,30 @@
       "name": "Ewelina Drabko",
       "athleteId": 133709628,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/133709628/47141869/1/large.jpg",
-      "totalDistance": 1702.7,
-      "totalElevation": 2387,
-      "avgElevation": 21,
-      "totalTime": 113,
-      "totalActivities": 112,
-      "avgSpeed": 15.04,
+      "totalDistance": 1837.4,
+      "totalElevation": 2656,
+      "avgElevation": 22,
+      "totalTime": 125,
+      "totalActivities": 122,
+      "avgSpeed": 14.75,
+      "monthlyDistance": {
+        "2026-09": 197.61159999999995,
+        "2026-08": 297.11589999999995,
+        "2026-07": 267.21310000000005,
+        "2026-06": 503.56879999999995,
+        "2026-05": 437.2359,
+        "2026-04": 55.6616,
+        "2026-03": 79.0383
+      },
+      "monthlyActivities": {
+        "2026-09": 17,
+        "2026-08": 16,
+        "2026-07": 17,
+        "2026-06": 32,
+        "2026-05": 30,
+        "2026-04": 4,
+        "2026-03": 6
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -197,12 +433,30 @@
       "name": "Hubert Rusinowicz",
       "athleteId": 120390623,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJVWNVO3Qx-Dp36SYhyWm2OTHOXjvUgH09He4pigGRMaa5VAxs=s96-c",
-      "totalDistance": 580.5,
-      "totalElevation": 1834,
-      "avgElevation": 63,
-      "totalTime": 34,
-      "totalActivities": 29,
-      "avgSpeed": 16.92,
+      "totalDistance": 725,
+      "totalElevation": 2293,
+      "avgElevation": 64,
+      "totalTime": 44,
+      "totalActivities": 36,
+      "avgSpeed": 16.42,
+      "monthlyDistance": {
+        "2026-09": 7.218,
+        "2026-08": 74.5379,
+        "2026-06": 147.1105,
+        "2026-05": 351.6117,
+        "2026-04": 76.55340000000001,
+        "2026-03": 38.7805,
+        "2026-02": 29.236700000000003
+      },
+      "monthlyActivities": {
+        "2026-09": 1,
+        "2026-08": 1,
+        "2026-06": 9,
+        "2026-05": 18,
+        "2026-04": 3,
+        "2026-03": 2,
+        "2026-02": 2
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -211,12 +465,28 @@
       "name": "Paweł Różycki",
       "athleteId": 104773665,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/104773665/47588765/1/large.jpg",
-      "totalDistance": 744.7,
-      "totalElevation": 768,
-      "avgElevation": 10,
-      "totalTime": 38,
-      "totalActivities": 80,
-      "avgSpeed": 19.38,
+      "totalDistance": 858.8,
+      "totalElevation": 857,
+      "avgElevation": 9,
+      "totalTime": 45,
+      "totalActivities": 93,
+      "avgSpeed": 19.29,
+      "monthlyDistance": {
+        "2026-09": 51.1603,
+        "2026-08": 73.5025,
+        "2026-07": 217.06890000000004,
+        "2026-06": 241.51170000000002,
+        "2026-05": 161.4498,
+        "2026-04": 114.0909
+      },
+      "monthlyActivities": {
+        "2026-09": 6,
+        "2026-08": 9,
+        "2026-07": 25,
+        "2026-06": 23,
+        "2026-05": 17,
+        "2026-04": 13
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -231,6 +501,18 @@
       "totalTime": 7,
       "totalActivities": 54,
       "avgSpeed": 13.18,
+      "monthlyDistance": {
+        "2026-08": 12.741600000000002,
+        "2026-07": 28.609699999999997,
+        "2026-06": 22.2216,
+        "2026-05": 22.2305
+      },
+      "monthlyActivities": {
+        "2026-08": 8,
+        "2026-07": 18,
+        "2026-06": 14,
+        "2026-05": 14
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -239,12 +521,30 @@
       "name": "Marcin B",
       "athleteId": 136001895,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/136001895/31078750/1/large.jpg",
-      "totalDistance": 1621.8,
-      "totalElevation": 1990,
-      "avgElevation": 16,
-      "totalTime": 94,
-      "totalActivities": 128,
-      "avgSpeed": 17.3,
+      "totalDistance": 1697.9,
+      "totalElevation": 2063,
+      "avgElevation": 15,
+      "totalTime": 121,
+      "totalActivities": 134,
+      "avgSpeed": 14.05,
+      "monthlyDistance": {
+        "2026-10": 72.8286,
+        "2026-09": 356.7857,
+        "2026-08": 319.79670000000004,
+        "2026-07": 373.1337,
+        "2026-06": 332.9555000000001,
+        "2026-05": 239.09050000000008,
+        "2026-04": 3.2689
+      },
+      "monthlyActivities": {
+        "2026-10": 5,
+        "2026-09": 23,
+        "2026-08": 22,
+        "2026-07": 28,
+        "2026-06": 24,
+        "2026-05": 31,
+        "2026-04": 1
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -259,6 +559,14 @@
       "totalTime": 15,
       "totalActivities": 9,
       "avgSpeed": 17.03,
+      "monthlyDistance": {
+        "2026-06": 195.017,
+        "2026-05": 67.6605
+      },
+      "monthlyActivities": {
+        "2026-06": 7,
+        "2026-05": 2
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -273,6 +581,20 @@
       "totalTime": 34,
       "totalActivities": 49,
       "avgSpeed": 18.18,
+      "monthlyDistance": {
+        "2026-09": 83.7698,
+        "2026-08": 83.74730000000001,
+        "2026-07": 139.9358,
+        "2026-06": 125.35980000000002,
+        "2026-05": 179.2922
+      },
+      "monthlyActivities": {
+        "2026-09": 6,
+        "2026-08": 6,
+        "2026-07": 10,
+        "2026-06": 10,
+        "2026-05": 17
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -287,6 +609,20 @@
       "totalTime": 62,
       "totalActivities": 87,
       "avgSpeed": 14.21,
+      "monthlyDistance": {
+        "2026-09": 208.34550000000002,
+        "2026-08": 207.1703,
+        "2026-07": 19.883300000000002,
+        "2026-06": 183.22850000000003,
+        "2026-05": 261.5283
+      },
+      "monthlyActivities": {
+        "2026-09": 22,
+        "2026-08": 20,
+        "2026-07": 2,
+        "2026-06": 18,
+        "2026-05": 25
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -295,12 +631,30 @@
       "name": "Zbigniew Piotrowski",
       "athleteId": 31112741,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/31112741/13099904/3/large.jpg",
-      "totalDistance": 1564.2,
-      "totalElevation": 5690,
-      "avgElevation": 167,
-      "totalTime": 76,
-      "totalActivities": 34,
-      "avgSpeed": 20.56,
+      "totalDistance": 1911.9,
+      "totalElevation": 6880,
+      "avgElevation": 168,
+      "totalTime": 94,
+      "totalActivities": 41,
+      "avgSpeed": 20.41,
+      "monthlyDistance": {
+        "2026-10": 115.4337,
+        "2026-09": 220.9359,
+        "2026-08": 314.2481,
+        "2026-07": 398.6947,
+        "2026-06": 350.71909999999997,
+        "2026-05": 279.5581,
+        "2026-04": 232.2793
+      },
+      "monthlyActivities": {
+        "2026-10": 2,
+        "2026-09": 6,
+        "2026-08": 7,
+        "2026-07": 7,
+        "2026-06": 9,
+        "2026-05": 5,
+        "2026-04": 5
+      },
       "activityTypes": [
         "GravelRide",
         "Ride"
@@ -310,12 +664,28 @@
       "name": "Katarzyna Dutkowska",
       "athleteId": 122485288,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/122485288/28138721/1/large.jpg",
-      "totalDistance": 999.3,
-      "totalElevation": 735,
-      "avgElevation": 19,
-      "totalTime": 62,
-      "totalActivities": 38,
+      "totalDistance": 1016.2,
+      "totalElevation": 780,
+      "avgElevation": 20,
+      "totalTime": 63,
+      "totalActivities": 39,
       "avgSpeed": 16.19,
+      "monthlyDistance": {
+        "2026-09": 61.7628,
+        "2026-08": 82.2122,
+        "2026-07": 421.4925,
+        "2026-06": 231.3974,
+        "2026-05": 202.469,
+        "2026-02": 16.8763
+      },
+      "monthlyActivities": {
+        "2026-09": 4,
+        "2026-08": 3,
+        "2026-07": 15,
+        "2026-06": 9,
+        "2026-05": 7,
+        "2026-02": 1
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -324,12 +694,26 @@
       "name": "Agnieszka Różowa",
       "athleteId": 132023534,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKpr3ffGrStt3YbqvuKZijD2nk6FzeeaktXhJRkaZaKXdICbEM=s96-c",
-      "totalDistance": 1037.5,
-      "totalElevation": 1619,
-      "avgElevation": 17,
-      "totalTime": 85,
-      "totalActivities": 96,
-      "avgSpeed": 12.21,
+      "totalDistance": 1067.4,
+      "totalElevation": 1643,
+      "avgElevation": 16,
+      "totalTime": 88,
+      "totalActivities": 100,
+      "avgSpeed": 12.17,
+      "monthlyDistance": {
+        "2026-08": 292.02340000000004,
+        "2026-07": 124.91720000000001,
+        "2026-06": 355.62570000000005,
+        "2026-05": 264.9171,
+        "2026-01": 29.937899999999996
+      },
+      "monthlyActivities": {
+        "2026-08": 19,
+        "2026-07": 9,
+        "2026-06": 40,
+        "2026-05": 28,
+        "2026-01": 4
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -344,6 +728,20 @@
       "totalTime": 9,
       "totalActivities": 22,
       "avgSpeed": 13.01,
+      "monthlyDistance": {
+        "2026-09": 4.1955,
+        "2026-08": 19.7458,
+        "2026-07": 4.9866,
+        "2026-06": 65.16790000000002,
+        "2026-05": 26.022
+      },
+      "monthlyActivities": {
+        "2026-09": 1,
+        "2026-08": 2,
+        "2026-07": 2,
+        "2026-06": 14,
+        "2026-05": 3
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -358,6 +756,18 @@
       "totalTime": 70,
       "totalActivities": 120,
       "avgSpeed": 16.42,
+      "monthlyDistance": {
+        "2026-08": 242.9918,
+        "2026-07": 351.898,
+        "2026-06": 421.6509,
+        "2026-05": 131.87159999999997
+      },
+      "monthlyActivities": {
+        "2026-08": 18,
+        "2026-07": 39,
+        "2026-06": 46,
+        "2026-05": 17
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -372,6 +782,20 @@
       "totalTime": 31,
       "totalActivities": 31,
       "avgSpeed": 12.66,
+      "monthlyDistance": {
+        "2026-09": 138.269,
+        "2026-08": 101.91180000000003,
+        "2026-07": 24.1924,
+        "2026-06": 96.09299999999999,
+        "2026-05": 28.447599999999998
+      },
+      "monthlyActivities": {
+        "2026-09": 5,
+        "2026-08": 9,
+        "2026-07": 4,
+        "2026-06": 10,
+        "2026-05": 3
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -386,6 +810,20 @@
       "totalTime": 150,
       "totalActivities": 165,
       "avgSpeed": 12.05,
+      "monthlyDistance": {
+        "2026-09": 291.14539999999994,
+        "2026-08": 340.7081,
+        "2026-07": 633.5829,
+        "2026-06": 255.59120000000001,
+        "2026-05": 286.7278
+      },
+      "monthlyActivities": {
+        "2026-09": 29,
+        "2026-08": 35,
+        "2026-07": 45,
+        "2026-06": 27,
+        "2026-05": 29
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -400,6 +838,20 @@
       "totalTime": 38,
       "totalActivities": 42,
       "avgSpeed": 16.1,
+      "monthlyDistance": {
+        "2026-09": 40.8009,
+        "2026-08": 174.79640000000003,
+        "2026-07": 333.62199999999996,
+        "2026-06": 22.367800000000003,
+        "2026-05": 45.9591
+      },
+      "monthlyActivities": {
+        "2026-09": 4,
+        "2026-08": 9,
+        "2026-07": 20,
+        "2026-06": 2,
+        "2026-05": 7
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -414,6 +866,16 @@
       "totalTime": 18,
       "totalActivities": 14,
       "avgSpeed": 9.98,
+      "monthlyDistance": {
+        "2026-08": 101.15740000000002,
+        "2026-07": 47.6272,
+        "2026-06": 29.1809
+      },
+      "monthlyActivities": {
+        "2026-08": 10,
+        "2026-07": 2,
+        "2026-06": 2
+      },
       "activityTypes": [
         "MountainBikeRide"
       ]
@@ -422,12 +884,36 @@
       "name": "Aleksander B.",
       "athleteId": 138637736,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocII38ufXzmLldFtu8pxlun0cDWT0jB-L_eBV-J88EHJu0Fikrc=s96-c",
-      "totalDistance": 1013.2,
-      "totalElevation": 1730,
-      "avgElevation": 8,
-      "totalTime": 97,
-      "totalActivities": 218,
-      "avgSpeed": 10.46,
+      "totalDistance": 1615.5,
+      "totalElevation": 2630,
+      "avgElevation": 7,
+      "totalTime": 143,
+      "totalActivities": 351,
+      "avgSpeed": 11.29,
+      "monthlyDistance": {
+        "2026-10": 179.62599999999998,
+        "2026-09": 285.23,
+        "2026-08": 248.25100000000006,
+        "2026-07": 176.9488,
+        "2026-06": 158.005,
+        "2026-05": 144.75600000000006,
+        "2026-04": 79.63799999999999,
+        "2026-03": 211.74599999999998,
+        "2026-02": 54.70499999999999,
+        "2026-01": 76.5818
+      },
+      "monthlyActivities": {
+        "2026-10": 36,
+        "2026-09": 52,
+        "2026-08": 60,
+        "2026-07": 40,
+        "2026-06": 34,
+        "2026-05": 32,
+        "2026-04": 20,
+        "2026-03": 46,
+        "2026-02": 14,
+        "2026-01": 17
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -442,6 +928,20 @@
       "totalTime": 131,
       "totalActivities": 107,
       "avgSpeed": 9.59,
+      "monthlyDistance": {
+        "2026-09": 110.8826,
+        "2026-08": 49.1014,
+        "2026-07": 309.4435,
+        "2026-06": 335.4934,
+        "2026-05": 447.1069000000001
+      },
+      "monthlyActivities": {
+        "2026-09": 18,
+        "2026-08": 5,
+        "2026-07": 31,
+        "2026-06": 23,
+        "2026-05": 30
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -450,12 +950,28 @@
       "name": "Michał Niżyński",
       "athleteId": 171135850,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKejqrxCDMNC_2vA4m_amDi6-5rs44wxfIQYW4HwOhQ8f_BOA=s96-c",
-      "totalDistance": 613,
-      "totalElevation": 1507,
-      "avgElevation": 60,
-      "totalTime": 36,
-      "totalActivities": 25,
-      "avgSpeed": 16.97,
+      "totalDistance": 677.2,
+      "totalElevation": 1671,
+      "avgElevation": 62,
+      "totalTime": 41,
+      "totalActivities": 27,
+      "avgSpeed": 16.7,
+      "monthlyDistance": {
+        "2026-09": 303.07199999999995,
+        "2026-08": 148.08290000000002,
+        "2026-07": 122.77340000000001,
+        "2026-05": 39.082,
+        "2026-04": 23.0568,
+        "2026-02": 41.1015
+      },
+      "monthlyActivities": {
+        "2026-09": 7,
+        "2026-08": 11,
+        "2026-07": 5,
+        "2026-05": 2,
+        "2026-04": 1,
+        "2026-02": 1
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -464,12 +980,32 @@
       "name": "Magdalena Zalewska",
       "athleteId": 132062099,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKszU5AR91Zz385q3YXipVDyetOHT3f28mi6_uTBVp-HZJdpA=s96-c",
-      "totalDistance": 1086.7,
-      "totalElevation": 1871,
-      "avgElevation": 18,
-      "totalTime": 140,
-      "totalActivities": 103,
-      "avgSpeed": 7.77,
+      "totalDistance": 1277.6,
+      "totalElevation": 2134,
+      "avgElevation": 17,
+      "totalTime": 163,
+      "totalActivities": 124,
+      "avgSpeed": 7.85,
+      "monthlyDistance": {
+        "2026-10": 5.6747,
+        "2026-09": 104.28090000000002,
+        "2026-08": 118.38659999999999,
+        "2026-07": 344.06969999999995,
+        "2026-06": 292.1124,
+        "2026-05": 227.87690000000003,
+        "2026-04": 132.39170000000001,
+        "2026-03": 52.8359
+      },
+      "monthlyActivities": {
+        "2026-10": 1,
+        "2026-09": 10,
+        "2026-08": 6,
+        "2026-07": 32,
+        "2026-06": 32,
+        "2026-05": 23,
+        "2026-04": 13,
+        "2026-03": 7
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -478,12 +1014,32 @@
       "name": "rafael och",
       "athleteId": 133597206,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/133597206/33119988/4/large.jpg",
-      "totalDistance": 733.4,
-      "totalElevation": 1330,
+      "totalDistance": 798.7,
+      "totalElevation": 1468,
       "avgElevation": 16,
-      "totalTime": 42,
-      "totalActivities": 85,
-      "avgSpeed": 17.34,
+      "totalTime": 46,
+      "totalActivities": 93,
+      "avgSpeed": 17.18,
+      "monthlyDistance": {
+        "2026-10": 16.5981,
+        "2026-09": 24.8278,
+        "2026-08": 73.5013,
+        "2026-07": 107.482,
+        "2026-06": 279.18510000000003,
+        "2026-05": 248.40019999999996,
+        "2026-04": 18.9834,
+        "2026-03": 29.7536
+      },
+      "monthlyActivities": {
+        "2026-10": 3,
+        "2026-09": 2,
+        "2026-08": 6,
+        "2026-07": 15,
+        "2026-06": 36,
+        "2026-05": 26,
+        "2026-04": 2,
+        "2026-03": 3
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -498,6 +1054,18 @@
       "totalTime": 36,
       "totalActivities": 15,
       "avgSpeed": 17.85,
+      "monthlyDistance": {
+        "2026-08": 318.56809999999996,
+        "2026-07": 118.82060000000001,
+        "2026-06": 170.32769999999996,
+        "2026-05": 38.0681
+      },
+      "monthlyActivities": {
+        "2026-08": 7,
+        "2026-07": 2,
+        "2026-06": 5,
+        "2026-05": 1
+      },
       "activityTypes": [
         "Ride",
         "EBikeRide"
@@ -507,12 +1075,26 @@
       "name": "Kacper Węglarz",
       "athleteId": 23445125,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/23445125/56283834/3/large.jpg",
-      "totalDistance": 742.4,
-      "totalElevation": 4780,
-      "avgElevation": 299,
-      "totalTime": 26,
-      "totalActivities": 16,
-      "avgSpeed": 28.15,
+      "totalDistance": 769.2,
+      "totalElevation": 4901,
+      "avgElevation": 288,
+      "totalTime": 28,
+      "totalActivities": 17,
+      "avgSpeed": 27.58,
+      "monthlyDistance": {
+        "2026-09": 127.212,
+        "2026-08": 284.2431,
+        "2026-07": 180.7723,
+        "2026-06": 150.1761,
+        "2026-03": 26.8033
+      },
+      "monthlyActivities": {
+        "2026-09": 1,
+        "2026-08": 7,
+        "2026-07": 5,
+        "2026-06": 3,
+        "2026-03": 1
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -527,6 +1109,20 @@
       "totalTime": 23,
       "totalActivities": 29,
       "avgSpeed": 15.25,
+      "monthlyDistance": {
+        "2026-09": 81.31490000000001,
+        "2026-08": 93.8234,
+        "2026-07": 22.506700000000002,
+        "2026-06": 103.0049,
+        "2026-05": 48.1395
+      },
+      "monthlyActivities": {
+        "2026-09": 7,
+        "2026-08": 9,
+        "2026-07": 2,
+        "2026-06": 6,
+        "2026-05": 5
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -535,12 +1131,28 @@
       "name": "Piotr Korczowski",
       "athleteId": 132342922,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLObigJBg_Dtdyzr-RlnUYWJ_0C6iXiWJ-_D1VPP88YSM9j4w=s96-c",
-      "totalDistance": 1965.9,
-      "totalElevation": 2993,
+      "totalDistance": 1975.3,
+      "totalElevation": 3003,
       "avgElevation": 15,
-      "totalTime": 214,
-      "totalActivities": 204,
-      "avgSpeed": 9.18,
+      "totalTime": 215,
+      "totalActivities": 205,
+      "avgSpeed": 9.2,
+      "monthlyDistance": {
+        "2026-09": 557.1542,
+        "2026-08": 431.5842999999999,
+        "2026-07": 358.6446999999999,
+        "2026-06": 248.4373,
+        "2026-05": 370.03090000000003,
+        "2026-04": 9.398700000000002
+      },
+      "monthlyActivities": {
+        "2026-09": 52,
+        "2026-08": 42,
+        "2026-07": 40,
+        "2026-06": 29,
+        "2026-05": 41,
+        "2026-04": 1
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -555,6 +1167,20 @@
       "totalTime": 53,
       "totalActivities": 53,
       "avgSpeed": 14.43,
+      "monthlyDistance": {
+        "2026-09": 50.2313,
+        "2026-08": 215.7735,
+        "2026-07": 227.1491,
+        "2026-06": 181.7319,
+        "2026-05": 90.4435
+      },
+      "monthlyActivities": {
+        "2026-09": 3,
+        "2026-08": 16,
+        "2026-07": 17,
+        "2026-06": 13,
+        "2026-05": 4
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -569,6 +1195,20 @@
       "totalTime": 256,
       "totalActivities": 79,
       "avgSpeed": 5.36,
+      "monthlyDistance": {
+        "2026-09": 332.8446,
+        "2026-08": 121.9509,
+        "2026-07": 338.1506,
+        "2026-06": 296.4122,
+        "2026-05": 281.0189
+      },
+      "monthlyActivities": {
+        "2026-09": 15,
+        "2026-08": 5,
+        "2026-07": 14,
+        "2026-06": 23,
+        "2026-05": 22
+      },
       "activityTypes": [
         "Ride",
         "EBikeRide"
@@ -578,12 +1218,28 @@
       "name": "Milosz D",
       "athleteId": 136332796,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/136332796/36921510/1/large.jpg",
-      "totalDistance": 5635.4,
-      "totalElevation": 14398,
+      "totalDistance": 5869.7,
+      "totalElevation": 14847,
       "avgElevation": 51,
-      "totalTime": 336,
-      "totalActivities": 284,
-      "avgSpeed": 16.79,
+      "totalTime": 355,
+      "totalActivities": 289,
+      "avgSpeed": 16.54,
+      "monthlyDistance": {
+        "2026-10": 234.30190000000002,
+        "2026-09": 929.6748000000002,
+        "2026-08": 1433.7883,
+        "2026-07": 1238.383,
+        "2026-06": 1220.6861000000001,
+        "2026-05": 812.8371999999998
+      },
+      "monthlyActivities": {
+        "2026-10": 5,
+        "2026-09": 60,
+        "2026-08": 52,
+        "2026-07": 65,
+        "2026-06": 63,
+        "2026-05": 44
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -592,12 +1248,30 @@
       "name": "Marcin Mak777 Grzywa",
       "athleteId": 33439441,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/33439441/31486664/2/large.jpg",
-      "totalDistance": 465.8,
-      "totalElevation": 755,
-      "avgElevation": 7,
-      "totalTime": 26,
-      "totalActivities": 116,
-      "avgSpeed": 17.88,
+      "totalDistance": 511.5,
+      "totalElevation": 802,
+      "avgElevation": 6,
+      "totalTime": 28,
+      "totalActivities": 136,
+      "avgSpeed": 18.01,
+      "monthlyDistance": {
+        "2026-10": 12.2453,
+        "2026-09": 99.28110000000004,
+        "2026-08": 25.4746,
+        "2026-07": 160.11570000000003,
+        "2026-06": 45.7944,
+        "2026-05": 135.17890000000003,
+        "2026-04": 33.459
+      },
+      "monthlyActivities": {
+        "2026-10": 6,
+        "2026-09": 34,
+        "2026-08": 12,
+        "2026-07": 34,
+        "2026-06": 14,
+        "2026-05": 22,
+        "2026-04": 14
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -606,12 +1280,26 @@
       "name": "Mark Kida",
       "athleteId": 132334925,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJYlsVzlrTjzsvjPR63PVNKDbJQ4h3GisAl8NSHTTXQ4tbBtByt5w=s96-c",
-      "totalDistance": 406.5,
-      "totalElevation": 1149,
-      "avgElevation": 18,
-      "totalTime": 22,
-      "totalActivities": 65,
-      "avgSpeed": 18.48,
+      "totalDistance": 825.9,
+      "totalElevation": 2987,
+      "avgElevation": 23,
+      "totalTime": 47,
+      "totalActivities": 131,
+      "avgSpeed": 17.45,
+      "monthlyDistance": {
+        "2026-07": 128.66850000000002,
+        "2026-06": 113.2399,
+        "2026-05": 164.61829999999998,
+        "2026-04": 214.08589999999998,
+        "2026-03": 205.3373
+      },
+      "monthlyActivities": {
+        "2026-07": 19,
+        "2026-06": 26,
+        "2026-05": 20,
+        "2026-04": 33,
+        "2026-03": 33
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -620,13 +1308,32 @@
       "name": "Raf Fariano",
       "athleteId": 2048039827,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/2048039827/44062006/2/large.jpg",
-      "totalDistance": 613.8,
-      "totalElevation": 1648,
-      "avgElevation": 31,
-      "totalTime": 32,
-      "totalActivities": 54,
-      "avgSpeed": 19.27,
+      "totalDistance": 720,
+      "totalElevation": 3424,
+      "avgElevation": 58,
+      "totalTime": 39,
+      "totalActivities": 59,
+      "avgSpeed": 18.44,
+      "monthlyDistance": {
+        "2026-10": 71.6065,
+        "2026-09": 114.2214,
+        "2026-08": 40.6471,
+        "2026-07": 119.50970000000001,
+        "2026-06": 186.7483,
+        "2026-05": 152.64049999999997,
+        "2026-03": 34.589999999999996
+      },
+      "monthlyActivities": {
+        "2026-10": 2,
+        "2026-09": 7,
+        "2026-08": 4,
+        "2026-07": 12,
+        "2026-06": 16,
+        "2026-05": 15,
+        "2026-03": 3
+      },
       "activityTypes": [
+        "EBikeRide",
         "Ride"
       ]
     },
@@ -640,6 +1347,16 @@
       "totalTime": 3,
       "totalActivities": 4,
       "avgSpeed": 15.36,
+      "monthlyDistance": {
+        "2026-09": 7.4753,
+        "2026-07": 6.0328,
+        "2026-05": 27.151899999999998
+      },
+      "monthlyActivities": {
+        "2026-09": 1,
+        "2026-07": 1,
+        "2026-05": 2
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -654,6 +1371,16 @@
       "totalTime": 3,
       "totalActivities": 4,
       "avgSpeed": 14.66,
+      "monthlyDistance": {
+        "2026-09": 7.2519,
+        "2026-07": 6.8088999999999995,
+        "2026-05": 27.3172
+      },
+      "monthlyActivities": {
+        "2026-09": 1,
+        "2026-07": 1,
+        "2026-05": 2
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -662,12 +1389,32 @@
       "name": "Małgorzata Nowakowska",
       "athleteId": 132023142,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/132023142/30083977/2/large.jpg",
-      "totalDistance": 1204,
-      "totalElevation": 1655,
-      "avgElevation": 13,
-      "totalTime": 93,
-      "totalActivities": 128,
+      "totalDistance": 1417.1,
+      "totalElevation": 1905,
+      "avgElevation": 12,
+      "totalTime": 110,
+      "totalActivities": 162,
       "avgSpeed": 12.91,
+      "monthlyDistance": {
+        "2026-10": 16.4026,
+        "2026-09": 215.8991,
+        "2026-08": 279.57500000000005,
+        "2026-07": 395.0478,
+        "2026-06": 215.17020000000005,
+        "2026-05": 98.3261,
+        "2026-04": 121.4583,
+        "2026-03": 75.1956
+      },
+      "monthlyActivities": {
+        "2026-10": 1,
+        "2026-09": 26,
+        "2026-08": 28,
+        "2026-07": 39,
+        "2026-06": 25,
+        "2026-05": 10,
+        "2026-04": 19,
+        "2026-03": 14
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -676,12 +1423,28 @@
       "name": "Marta Dul",
       "athleteId": 120816538,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 171.5,
-      "totalElevation": 264,
+      "totalDistance": 195.3,
+      "totalElevation": 304,
       "avgElevation": 12,
-      "totalTime": 13,
-      "totalActivities": 22,
-      "avgSpeed": 12.88,
+      "totalTime": 16,
+      "totalActivities": 26,
+      "avgSpeed": 12.56,
+      "monthlyDistance": {
+        "2026-10": 7.6777,
+        "2026-09": 24.238599999999998,
+        "2026-07": 57.4987,
+        "2026-06": 22.307299999999998,
+        "2026-05": 67.4055,
+        "2026-04": 16.1841
+      },
+      "monthlyActivities": {
+        "2026-10": 2,
+        "2026-09": 8,
+        "2026-07": 7,
+        "2026-06": 1,
+        "2026-05": 6,
+        "2026-04": 2
+      },
       "activityTypes": [
         "Ride",
         "GravelRide"
@@ -697,6 +1460,18 @@
       "totalTime": 31,
       "totalActivities": 45,
       "avgSpeed": 16.89,
+      "monthlyDistance": {
+        "2026-08": 48.349599999999995,
+        "2026-07": 81.3253,
+        "2026-06": 209.6461,
+        "2026-05": 183.48909999999998
+      },
+      "monthlyActivities": {
+        "2026-08": 4,
+        "2026-07": 6,
+        "2026-06": 19,
+        "2026-05": 16
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -705,12 +1480,26 @@
       "name": "Jacek P",
       "athleteId": 83949605,
       "avatar": "https://lh6.googleusercontent.com/-TBoOMUxiPfI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucl88ZwYoMN96VOrQVCx8ZixLnAd4w/s96-c/photo.jpg",
-      "totalDistance": 163.7,
-      "totalElevation": 328,
+      "totalDistance": 176,
+      "totalElevation": 353,
       "avgElevation": 16,
-      "totalTime": 12,
-      "totalActivities": 21,
-      "avgSpeed": 13.27,
+      "totalTime": 13,
+      "totalActivities": 22,
+      "avgSpeed": 13.35,
+      "monthlyDistance": {
+        "2026-08": 14.8195,
+        "2026-07": 13.052700000000002,
+        "2026-06": 52.1641,
+        "2026-05": 83.66120000000001,
+        "2026-03": 12.3173
+      },
+      "monthlyActivities": {
+        "2026-08": 1,
+        "2026-07": 2,
+        "2026-06": 7,
+        "2026-05": 11,
+        "2026-03": 1
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -719,12 +1508,28 @@
       "name": "Mario GROBLA bwn Minions",
       "athleteId": 133151873,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/133151873/30330104/1/large.jpg",
-      "totalDistance": 2643,
-      "totalElevation": 3706,
+      "totalDistance": 2661,
+      "totalElevation": 3730,
       "avgElevation": 13,
-      "totalTime": 181,
-      "totalActivities": 288,
-      "avgSpeed": 14.63,
+      "totalTime": 182,
+      "totalActivities": 290,
+      "avgSpeed": 14.62,
+      "monthlyDistance": {
+        "2026-10": 18.0623,
+        "2026-09": 624.0073,
+        "2026-08": 534.4497,
+        "2026-07": 324.86430000000007,
+        "2026-06": 472.56690000000015,
+        "2026-05": 687.0868000000002
+      },
+      "monthlyActivities": {
+        "2026-10": 2,
+        "2026-09": 60,
+        "2026-08": 54,
+        "2026-07": 37,
+        "2026-06": 58,
+        "2026-05": 79
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -733,12 +1538,30 @@
       "name": "Grzegorz Kowalski",
       "athleteId": 135999779,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 273.9,
-      "totalElevation": 462,
+      "totalDistance": 314,
+      "totalElevation": 520,
       "avgElevation": 27,
-      "totalTime": 22,
-      "totalActivities": 17,
-      "avgSpeed": 12.37,
+      "totalTime": 26,
+      "totalActivities": 19,
+      "avgSpeed": 12.29,
+      "monthlyDistance": {
+        "2026-10": 20.245099999999997,
+        "2026-09": 42.0751,
+        "2026-08": 23.7856,
+        "2026-07": 60.90259999999999,
+        "2026-06": 59.1483,
+        "2026-05": 88.00049999999999,
+        "2026-03": 19.866400000000002
+      },
+      "monthlyActivities": {
+        "2026-10": 1,
+        "2026-09": 3,
+        "2026-08": 1,
+        "2026-07": 4,
+        "2026-06": 4,
+        "2026-05": 5,
+        "2026-03": 1
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -747,15 +1570,31 @@
       "name": "Stanisława Olejniczak",
       "athleteId": 134600698,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/134600698/30647997/2/large.jpg",
-      "totalDistance": 7506.7,
-      "totalElevation": 34554,
-      "avgElevation": 141,
-      "totalTime": 386,
-      "totalActivities": 245,
+      "totalDistance": 7572.8,
+      "totalElevation": 34791,
+      "avgElevation": 140,
+      "totalTime": 390,
+      "totalActivities": 249,
       "avgSpeed": 19.43,
+      "monthlyDistance": {
+        "2026-10": 66.0755,
+        "2026-09": 1357.3193,
+        "2026-08": 1679.371,
+        "2026-07": 1573.9159999999997,
+        "2026-06": 1502.5976,
+        "2026-05": 1393.5299000000002
+      },
+      "monthlyActivities": {
+        "2026-10": 4,
+        "2026-09": 44,
+        "2026-08": 48,
+        "2026-07": 57,
+        "2026-06": 47,
+        "2026-05": 49
+      },
       "activityTypes": [
-        "Ride",
-        "GravelRide"
+        "GravelRide",
+        "Ride"
       ]
     },
     {
@@ -768,6 +1607,18 @@
       "totalTime": 22,
       "totalActivities": 44,
       "avgSpeed": 16.75,
+      "monthlyDistance": {
+        "2026-08": 76.2508,
+        "2026-07": 114.68599999999999,
+        "2026-06": 148.04559999999998,
+        "2026-05": 36.6381
+      },
+      "monthlyActivities": {
+        "2026-08": 5,
+        "2026-07": 14,
+        "2026-06": 20,
+        "2026-05": 5
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -782,6 +1633,20 @@
       "totalTime": 189,
       "totalActivities": 129,
       "avgSpeed": 15.88,
+      "monthlyDistance": {
+        "2026-09": 738.6180999999999,
+        "2026-08": 1055.1536,
+        "2026-07": 590.5188999999999,
+        "2026-06": 375.15630000000004,
+        "2026-05": 242.63010000000003
+      },
+      "monthlyActivities": {
+        "2026-09": 20,
+        "2026-08": 33,
+        "2026-07": 33,
+        "2026-06": 28,
+        "2026-05": 15
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -796,6 +1661,16 @@
       "totalTime": 12,
       "totalActivities": 16,
       "avgSpeed": 16.69,
+      "monthlyDistance": {
+        "2026-08": 115.3653,
+        "2026-07": 47.1606,
+        "2026-06": 33.4934
+      },
+      "monthlyActivities": {
+        "2026-08": 9,
+        "2026-07": 4,
+        "2026-06": 3
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -804,12 +1679,28 @@
       "name": "Andrzej Imiołek",
       "athleteId": 701220110,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/701220110/49181096/1/large.jpg",
-      "totalDistance": 645.2,
-      "totalElevation": 1845,
-      "avgElevation": 19,
-      "totalTime": 38,
-      "totalActivities": 95,
-      "avgSpeed": 16.88,
+      "totalDistance": 820.2,
+      "totalElevation": 2226,
+      "avgElevation": 20,
+      "totalTime": 48,
+      "totalActivities": 114,
+      "avgSpeed": 16.97,
+      "monthlyDistance": {
+        "2026-08": 49.686600000000006,
+        "2026-07": 94.96419999999999,
+        "2026-06": 147.0035,
+        "2026-05": 353.5174999999999,
+        "2026-04": 91.32589999999999,
+        "2026-03": 83.71400000000001
+      },
+      "monthlyActivities": {
+        "2026-08": 7,
+        "2026-07": 19,
+        "2026-06": 23,
+        "2026-05": 46,
+        "2026-04": 14,
+        "2026-03": 5
+      },
       "activityTypes": [
         "EBikeRide",
         "Ride"
@@ -825,6 +1716,20 @@
       "totalTime": 117,
       "totalActivities": 142,
       "avgSpeed": 20.84,
+      "monthlyDistance": {
+        "2026-09": 141.50000000000003,
+        "2026-08": 409.70399999999995,
+        "2026-07": 545.679,
+        "2026-06": 651.109,
+        "2026-05": 681.0119
+      },
+      "monthlyActivities": {
+        "2026-09": 10,
+        "2026-08": 24,
+        "2026-07": 33,
+        "2026-06": 37,
+        "2026-05": 38
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -839,6 +1744,20 @@
       "totalTime": 151,
       "totalActivities": 199,
       "avgSpeed": 14.87,
+      "monthlyDistance": {
+        "2026-09": 475.9225,
+        "2026-08": 400.9600999999999,
+        "2026-07": 690.2356999999997,
+        "2026-06": 360.02349999999984,
+        "2026-05": 320.11190000000005
+      },
+      "monthlyActivities": {
+        "2026-09": 37,
+        "2026-08": 44,
+        "2026-07": 45,
+        "2026-06": 42,
+        "2026-05": 31
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -847,12 +1766,32 @@
       "name": "Justyna Woś",
       "athleteId": 134506166,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 612.4,
-      "totalElevation": 1913,
+      "totalDistance": 702,
+      "totalElevation": 2355,
       "avgElevation": 16,
-      "totalTime": 33,
-      "totalActivities": 121,
-      "avgSpeed": 18.78,
+      "totalTime": 38,
+      "totalActivities": 144,
+      "avgSpeed": 18.66,
+      "monthlyDistance": {
+        "2026-10": 8.862599999999999,
+        "2026-09": 135.79579999999996,
+        "2026-08": 117.64510000000001,
+        "2026-07": 107.7397,
+        "2026-06": 80.55700000000002,
+        "2026-05": 170.68369999999996,
+        "2026-04": 50.2278,
+        "2026-03": 30.4516
+      },
+      "monthlyActivities": {
+        "2026-10": 2,
+        "2026-09": 27,
+        "2026-08": 29,
+        "2026-07": 16,
+        "2026-06": 20,
+        "2026-05": 29,
+        "2026-04": 13,
+        "2026-03": 8
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -861,12 +1800,28 @@
       "name": "Aneta Gościniak",
       "athleteId": 1122474137,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 603.3,
+      "totalDistance": 608.9,
       "totalElevation": 638,
       "avgElevation": 6,
-      "totalTime": 50,
-      "totalActivities": 107,
+      "totalTime": 51,
+      "totalActivities": 108,
       "avgSpeed": 12.02,
+      "monthlyDistance": {
+        "2026-10": 5.5202,
+        "2026-09": 91.0153,
+        "2026-08": 211.03059999999996,
+        "2026-07": 135.85940000000002,
+        "2026-06": 23.87,
+        "2026-05": 141.56250000000003
+      },
+      "monthlyActivities": {
+        "2026-10": 1,
+        "2026-09": 8,
+        "2026-08": 30,
+        "2026-07": 28,
+        "2026-06": 10,
+        "2026-05": 31
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -881,6 +1836,20 @@
       "totalTime": 54,
       "totalActivities": 96,
       "avgSpeed": 11.45,
+      "monthlyDistance": {
+        "2026-09": 235.2287,
+        "2026-08": 229.50069999999997,
+        "2026-07": 47.6188,
+        "2026-06": 46.9893,
+        "2026-05": 62.2745
+      },
+      "monthlyActivities": {
+        "2026-09": 33,
+        "2026-08": 33,
+        "2026-07": 7,
+        "2026-06": 12,
+        "2026-05": 11
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -895,6 +1864,16 @@
       "totalTime": 5,
       "totalActivities": 8,
       "avgSpeed": 12.4,
+      "monthlyDistance": {
+        "2026-09": 15.718,
+        "2026-07": 22.013299999999997,
+        "2026-06": 26.1859
+      },
+      "monthlyActivities": {
+        "2026-09": 1,
+        "2026-07": 5,
+        "2026-06": 2
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -903,12 +1882,34 @@
       "name": "Rafal Dzimiński ",
       "athleteId": 139885737,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIoEINJIgocIY-0DwgaIuJ7PtaEdERcnAUVsHjewlwxnAby1A=s96-c",
-      "totalDistance": 1123.3,
-      "totalElevation": 1762,
+      "totalDistance": 1470.7,
+      "totalElevation": 2206,
       "avgElevation": 28,
-      "totalTime": 74,
-      "totalActivities": 62,
-      "avgSpeed": 15.09,
+      "totalTime": 99,
+      "totalActivities": 79,
+      "avgSpeed": 14.9,
+      "monthlyDistance": {
+        "2026-10": 132.662,
+        "2026-09": 182.2155,
+        "2026-08": 224.15770000000003,
+        "2026-07": 336.797,
+        "2026-06": 160.395,
+        "2026-05": 219.71959999999999,
+        "2026-04": 136.8791,
+        "2026-03": 48.0824,
+        "2026-02": 29.7637
+      },
+      "monthlyActivities": {
+        "2026-10": 6,
+        "2026-09": 8,
+        "2026-08": 21,
+        "2026-07": 18,
+        "2026-06": 7,
+        "2026-05": 8,
+        "2026-04": 8,
+        "2026-03": 2,
+        "2026-02": 1
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -917,12 +1918,36 @@
       "name": "Przeme k BLACK WIRE TEAM",
       "athleteId": 66211097,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/66211097/24830533/5/large.jpg",
-      "totalDistance": 4330.8,
-      "totalElevation": 26296,
-      "avgElevation": 438,
-      "totalTime": 156,
-      "totalActivities": 60,
-      "avgSpeed": 27.8,
+      "totalDistance": 5965.2,
+      "totalElevation": 32445,
+      "avgElevation": 373,
+      "totalTime": 214,
+      "totalActivities": 87,
+      "avgSpeed": 27.84,
+      "monthlyDistance": {
+        "2026-10": 357.2973,
+        "2026-09": 895.8926,
+        "2026-08": 575.1775,
+        "2026-07": 929.2947,
+        "2026-06": 1122.0682,
+        "2026-05": 808.3375,
+        "2026-04": 639.9163000000001,
+        "2026-03": 489.9971,
+        "2026-02": 78.46119999999999,
+        "2026-01": 68.7354
+      },
+      "monthlyActivities": {
+        "2026-10": 7,
+        "2026-09": 11,
+        "2026-08": 9,
+        "2026-07": 15,
+        "2026-06": 12,
+        "2026-05": 13,
+        "2026-04": 9,
+        "2026-03": 8,
+        "2026-02": 1,
+        "2026-01": 2
+      },
       "activityTypes": [
         "Ride",
         "GravelRide"
@@ -932,15 +1957,37 @@
       "name": "Ka St",
       "athleteId": 163435604,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/163435604/43559119/2/large.jpg",
-      "totalDistance": 3341,
-      "totalElevation": 17072,
-      "avgElevation": 267,
-      "totalTime": 133,
-      "totalActivities": 64,
-      "avgSpeed": 25.14,
+      "totalDistance": 3932.3,
+      "totalElevation": 21037,
+      "avgElevation": 296,
+      "totalTime": 157,
+      "totalActivities": 71,
+      "avgSpeed": 24.97,
+      "monthlyDistance": {
+        "2026-10": 95.5957,
+        "2026-09": 178.18079999999998,
+        "2026-08": 615.0190000000001,
+        "2026-07": 792.5322,
+        "2026-06": 891.8698,
+        "2026-05": 863.3499999999999,
+        "2026-04": 261.70399999999995,
+        "2026-03": 137.1894,
+        "2026-02": 96.8348
+      },
+      "monthlyActivities": {
+        "2026-10": 1,
+        "2026-09": 3,
+        "2026-08": 11,
+        "2026-07": 22,
+        "2026-06": 13,
+        "2026-05": 15,
+        "2026-04": 3,
+        "2026-03": 2,
+        "2026-02": 1
+      },
       "activityTypes": [
-        "GravelRide",
-        "Ride"
+        "Ride",
+        "GravelRide"
       ]
     },
     {
@@ -953,6 +2000,20 @@
       "totalTime": 162,
       "totalActivities": 120,
       "avgSpeed": 6.68,
+      "monthlyDistance": {
+        "2026-09": 176.42260000000002,
+        "2026-08": 274.9550999999999,
+        "2026-07": 233.0052,
+        "2026-06": 130.16320000000002,
+        "2026-05": 265.1958
+      },
+      "monthlyActivities": {
+        "2026-09": 21,
+        "2026-08": 29,
+        "2026-07": 26,
+        "2026-06": 15,
+        "2026-05": 29
+      },
       "activityTypes": [
         "Ride",
         "MountainBikeRide"
@@ -968,6 +2029,20 @@
       "totalTime": 72,
       "totalActivities": 120,
       "avgSpeed": 20.62,
+      "monthlyDistance": {
+        "2026-09": 218.1784,
+        "2026-08": 178.41479999999999,
+        "2026-07": 421.0581000000001,
+        "2026-06": 316.12110000000007,
+        "2026-05": 354.0013999999999
+      },
+      "monthlyActivities": {
+        "2026-09": 18,
+        "2026-08": 14,
+        "2026-07": 33,
+        "2026-06": 25,
+        "2026-05": 30
+      },
       "activityTypes": [
         "EBikeRide",
         "Ride"
@@ -977,12 +2052,28 @@
       "name": "Mateusz Witkowski",
       "athleteId": 83777531,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIbF85a0zV_9ioPI6vK8QD0wRFxqFDrxnJlpspcWMLJBehTwg=s96-c",
-      "totalDistance": 669.3,
-      "totalElevation": 1644,
+      "totalDistance": 712.7,
+      "totalElevation": 1736,
       "avgElevation": 16,
-      "totalTime": 34,
-      "totalActivities": 101,
-      "avgSpeed": 19.84,
+      "totalTime": 36,
+      "totalActivities": 108,
+      "avgSpeed": 19.89,
+      "monthlyDistance": {
+        "2026-10": 43.3467,
+        "2026-09": 29.0586,
+        "2026-08": 155.1993,
+        "2026-07": 151.7667,
+        "2026-06": 212.68230000000003,
+        "2026-05": 120.631
+      },
+      "monthlyActivities": {
+        "2026-10": 7,
+        "2026-09": 5,
+        "2026-08": 20,
+        "2026-07": 25,
+        "2026-06": 46,
+        "2026-05": 5
+      },
       "activityTypes": [
         "GravelRide",
         "Ride"
@@ -992,12 +2083,28 @@
       "name": "Ryszard RwieSerce",
       "athleteId": 28247115,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 1626.5,
-      "totalElevation": 3541,
-      "avgElevation": 18,
-      "totalTime": 179,
-      "totalActivities": 196,
-      "avgSpeed": 9.11,
+      "totalDistance": 1901.1,
+      "totalElevation": 3987,
+      "avgElevation": 17,
+      "totalTime": 202,
+      "totalActivities": 234,
+      "avgSpeed": 9.4,
+      "monthlyDistance": {
+        "2026-09": 285.5218,
+        "2026-08": 564.1593,
+        "2026-07": 297.44919999999996,
+        "2026-06": 292.85940000000005,
+        "2026-05": 186.46359999999999,
+        "2026-03": 274.6408
+      },
+      "monthlyActivities": {
+        "2026-09": 40,
+        "2026-08": 40,
+        "2026-07": 40,
+        "2026-06": 43,
+        "2026-05": 33,
+        "2026-03": 38
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1006,12 +2113,26 @@
       "name": "Paweł Opszalski",
       "athleteId": 165720425,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/165720425/37079607/4/large.jpg",
-      "totalDistance": 738.4,
-      "totalElevation": 725,
+      "totalDistance": 748.3,
+      "totalElevation": 747,
       "avgElevation": 11,
-      "totalTime": 56,
-      "totalActivities": 68,
-      "avgSpeed": 13.26,
+      "totalTime": 57,
+      "totalActivities": 70,
+      "avgSpeed": 13.07,
+      "monthlyDistance": {
+        "2026-10": 9.9,
+        "2026-09": 148.99740000000003,
+        "2026-08": 325.6687,
+        "2026-07": 85.3702,
+        "2026-06": 178.4115
+      },
+      "monthlyActivities": {
+        "2026-10": 2,
+        "2026-09": 15,
+        "2026-08": 30,
+        "2026-07": 10,
+        "2026-06": 13
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1020,12 +2141,36 @@
       "name": "Jakub Krawiec",
       "athleteId": 76772718,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKhPujo8lpurQm5Byxzozda9AdtExhhrkTmP95dwfUqhdKQDg=s96-c",
-      "totalDistance": 2629.7,
-      "totalElevation": 8191,
-      "avgElevation": 51,
-      "totalTime": 172,
-      "totalActivities": 160,
-      "avgSpeed": 15.29,
+      "totalDistance": 3564.3,
+      "totalElevation": 10664,
+      "avgElevation": 45,
+      "totalTime": 241,
+      "totalActivities": 235,
+      "avgSpeed": 14.82,
+      "monthlyDistance": {
+        "2026-10": 145.2769,
+        "2026-09": 349.0791,
+        "2026-08": 354.53729999999996,
+        "2026-07": 455.9209,
+        "2026-06": 845.7035999999999,
+        "2026-05": 624.5003999999999,
+        "2026-04": 436.88190000000003,
+        "2026-03": 157.42900000000003,
+        "2026-02": 83.40060000000001,
+        "2026-01": 111.59779999999998
+      },
+      "monthlyActivities": {
+        "2026-10": 11,
+        "2026-09": 30,
+        "2026-08": 25,
+        "2026-07": 24,
+        "2026-06": 37,
+        "2026-05": 44,
+        "2026-04": 33,
+        "2026-03": 14,
+        "2026-02": 8,
+        "2026-01": 9
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1040,6 +2185,16 @@
       "totalTime": 30,
       "totalActivities": 56,
       "avgSpeed": 13.85,
+      "monthlyDistance": {
+        "2026-08": 53.09989999999999,
+        "2026-06": 182.8837,
+        "2026-05": 182.35899999999998
+      },
+      "monthlyActivities": {
+        "2026-08": 10,
+        "2026-06": 22,
+        "2026-05": 24
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1054,6 +2209,18 @@
       "totalTime": 22,
       "totalActivities": 50,
       "avgSpeed": 11.92,
+      "monthlyDistance": {
+        "2026-08": 21.3555,
+        "2026-07": 62.06719999999999,
+        "2026-06": 133.7387,
+        "2026-05": 42.4186
+      },
+      "monthlyActivities": {
+        "2026-08": 6,
+        "2026-07": 16,
+        "2026-06": 17,
+        "2026-05": 11
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1068,6 +2235,20 @@
       "totalTime": 92,
       "totalActivities": 214,
       "avgSpeed": 14.46,
+      "monthlyDistance": {
+        "2026-09": 269.5741,
+        "2026-08": 126.59909999999999,
+        "2026-07": 296.2617,
+        "2026-06": 322.71740000000005,
+        "2026-05": 317.9798999999999
+      },
+      "monthlyActivities": {
+        "2026-09": 36,
+        "2026-08": 23,
+        "2026-07": 48,
+        "2026-06": 57,
+        "2026-05": 50
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1076,15 +2257,30 @@
       "name": "Sziva PL",
       "athleteId": 16266170,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/16266170/6231632/1/large.jpg",
-      "totalDistance": 406.4,
-      "totalElevation": 1839,
-      "avgElevation": 131,
-      "totalTime": 21,
-      "totalActivities": 14,
-      "avgSpeed": 19.06,
+      "totalDistance": 509.9,
+      "totalElevation": 2266,
+      "avgElevation": 133,
+      "totalTime": 28,
+      "totalActivities": 17,
+      "avgSpeed": 18.31,
+      "monthlyDistance": {
+        "2026-09": 146.78900000000002,
+        "2026-08": 95.05789999999999,
+        "2026-07": 144.4091,
+        "2026-05": 20.1384,
+        "2026-04": 103.5415
+      },
+      "monthlyActivities": {
+        "2026-09": 4,
+        "2026-08": 4,
+        "2026-07": 5,
+        "2026-05": 1,
+        "2026-04": 3
+      },
       "activityTypes": [
         "GravelRide",
-        "MountainBikeRide"
+        "MountainBikeRide",
+        "EBikeRide"
       ]
     },
     {
@@ -1097,6 +2293,16 @@
       "totalTime": 4,
       "totalActivities": 9,
       "avgSpeed": 20.83,
+      "monthlyDistance": {
+        "2026-09": 4.1078,
+        "2026-06": 25.8166,
+        "2026-05": 62.3963
+      },
+      "monthlyActivities": {
+        "2026-09": 1,
+        "2026-06": 2,
+        "2026-05": 6
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1105,12 +2311,30 @@
       "name": "Dawid Moszowski",
       "athleteId": 133598764,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 2009.7,
-      "totalElevation": 7692,
-      "avgElevation": 45,
-      "totalTime": 116,
-      "totalActivities": 170,
-      "avgSpeed": 17.25,
+      "totalDistance": 2451.7,
+      "totalElevation": 9472,
+      "avgElevation": 46,
+      "totalTime": 142,
+      "totalActivities": 206,
+      "avgSpeed": 17.29,
+      "monthlyDistance": {
+        "2026-10": 153.94879999999998,
+        "2026-09": 376.9973,
+        "2026-08": 496.12380000000013,
+        "2026-07": 546.0246,
+        "2026-06": 176.39119999999997,
+        "2026-05": 414.1189,
+        "2026-04": 288.1339
+      },
+      "monthlyActivities": {
+        "2026-10": 13,
+        "2026-09": 33,
+        "2026-08": 37,
+        "2026-07": 42,
+        "2026-06": 22,
+        "2026-05": 36,
+        "2026-04": 23
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1119,12 +2343,28 @@
       "name": "Marcin Sawicki",
       "athleteId": 108970726,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/108970726/31106130/1/large.jpg",
-      "totalDistance": 902.6,
-      "totalElevation": 3723,
+      "totalDistance": 934,
+      "totalElevation": 3863,
       "avgElevation": 143,
-      "totalTime": 41,
-      "totalActivities": 26,
-      "avgSpeed": 22.07,
+      "totalTime": 42,
+      "totalActivities": 27,
+      "avgSpeed": 22.1,
+      "monthlyDistance": {
+        "2026-09": 124.27010000000001,
+        "2026-08": 147.20159999999998,
+        "2026-07": 149.32309999999998,
+        "2026-06": 315.77329999999995,
+        "2026-05": 166.0804,
+        "2026-04": 31.3965
+      },
+      "monthlyActivities": {
+        "2026-09": 4,
+        "2026-08": 4,
+        "2026-07": 5,
+        "2026-06": 8,
+        "2026-05": 5,
+        "2026-04": 1
+      },
       "activityTypes": [
         "GravelRide",
         "MountainBikeRide"
@@ -1134,12 +2374,32 @@
       "name": "Janek Fuławka",
       "athleteId": 132024542,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/132024542/30075721/2/large.jpg",
-      "totalDistance": 1268.1,
-      "totalElevation": 7017,
-      "avgElevation": 123,
-      "totalTime": 57,
-      "totalActivities": 57,
-      "avgSpeed": 22.28,
+      "totalDistance": 1362.9,
+      "totalElevation": 7765,
+      "avgElevation": 121,
+      "totalTime": 62,
+      "totalActivities": 64,
+      "avgSpeed": 22.12,
+      "monthlyDistance": {
+        "2026-09": 47.3337,
+        "2026-08": 323.94780000000003,
+        "2026-07": 168.34300000000002,
+        "2026-06": 469.3636999999999,
+        "2026-05": 259.1555,
+        "2026-04": 6.6386,
+        "2026-03": 71.9242,
+        "2026-02": 16.1803
+      },
+      "monthlyActivities": {
+        "2026-09": 1,
+        "2026-08": 8,
+        "2026-07": 5,
+        "2026-06": 27,
+        "2026-05": 16,
+        "2026-04": 2,
+        "2026-03": 3,
+        "2026-02": 2
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1154,6 +2414,20 @@
       "totalTime": 36,
       "totalActivities": 72,
       "avgSpeed": 17.1,
+      "monthlyDistance": {
+        "2026-09": 87.2012,
+        "2026-08": 304.67490000000004,
+        "2026-07": 60.8951,
+        "2026-06": 109.6745,
+        "2026-05": 48.2352
+      },
+      "monthlyActivities": {
+        "2026-09": 8,
+        "2026-08": 29,
+        "2026-07": 10,
+        "2026-06": 17,
+        "2026-05": 8
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1162,12 +2436,30 @@
       "name": "Krystian Januszewicz",
       "athleteId": 136390087,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/136390087/31283228/4/large.jpg",
-      "totalDistance": 404.6,
-      "totalElevation": 637,
+      "totalDistance": 454.8,
+      "totalElevation": 712,
       "avgElevation": 19,
-      "totalTime": 22,
-      "totalActivities": 33,
-      "avgSpeed": 18.27,
+      "totalTime": 26,
+      "totalActivities": 37,
+      "avgSpeed": 17.82,
+      "monthlyDistance": {
+        "2026-09": 69.3379,
+        "2026-08": 42.6015,
+        "2026-07": 65.3957,
+        "2026-06": 109.1734,
+        "2026-05": 118.10480000000001,
+        "2026-04": 20.9451,
+        "2026-03": 29.2663
+      },
+      "monthlyActivities": {
+        "2026-09": 3,
+        "2026-08": 5,
+        "2026-07": 5,
+        "2026-06": 9,
+        "2026-05": 11,
+        "2026-04": 1,
+        "2026-03": 3
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1176,12 +2468,24 @@
       "name": "Marcelina Mikoda",
       "athleteId": 133370972,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 23.1,
-      "totalElevation": 19,
-      "avgElevation": 6,
-      "totalTime": 2,
-      "totalActivities": 3,
-      "avgSpeed": 10.44,
+      "totalDistance": 37.8,
+      "totalElevation": 26,
+      "avgElevation": 5,
+      "totalTime": 4,
+      "totalActivities": 5,
+      "avgSpeed": 10.12,
+      "monthlyDistance": {
+        "2026-07": 2.651,
+        "2026-05": 20.4823,
+        "2026-04": 6.8529,
+        "2026-03": 7.8587
+      },
+      "monthlyActivities": {
+        "2026-07": 1,
+        "2026-05": 2,
+        "2026-04": 1,
+        "2026-03": 1
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1190,12 +2494,28 @@
       "name": "Adam Muca",
       "athleteId": 132246743,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/132246743/32894258/1/large.jpg",
-      "totalDistance": 1248.5,
-      "totalElevation": 7500,
-      "avgElevation": 268,
-      "totalTime": 64,
-      "totalActivities": 28,
+      "totalDistance": 1276.8,
+      "totalElevation": 7561,
+      "avgElevation": 252,
+      "totalTime": 66,
+      "totalActivities": 30,
       "avgSpeed": 19.49,
+      "monthlyDistance": {
+        "2026-10": 28.365099999999998,
+        "2026-09": 200.70430000000002,
+        "2026-08": 499.9542,
+        "2026-07": 272.8464,
+        "2026-06": 161.24900000000002,
+        "2026-05": 113.71690000000001
+      },
+      "monthlyActivities": {
+        "2026-10": 2,
+        "2026-09": 4,
+        "2026-08": 10,
+        "2026-07": 4,
+        "2026-06": 5,
+        "2026-05": 5
+      },
       "activityTypes": [
         "Ride",
         "GravelRide"
@@ -1205,12 +2525,32 @@
       "name": "Robek Rabek",
       "athleteId": 50478951,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKuMcqJWg-4v0vQHWRj6GzvWW8rGlOF1A5aoyestkkOi6GWQg=s96-c",
-      "totalDistance": 745.7,
-      "totalElevation": 3190,
+      "totalDistance": 838.7,
+      "totalElevation": 3681,
       "avgElevation": 69,
-      "totalTime": 47,
-      "totalActivities": 46,
-      "avgSpeed": 15.77,
+      "totalTime": 53,
+      "totalActivities": 53,
+      "avgSpeed": 15.97,
+      "monthlyDistance": {
+        "2026-10": 14.3271,
+        "2026-09": 139.92989999999998,
+        "2026-08": 375.1326999999999,
+        "2026-07": 105.2845,
+        "2026-06": 26.711799999999997,
+        "2026-05": 98.66420000000001,
+        "2026-04": 39.379000000000005,
+        "2026-03": 39.308
+      },
+      "monthlyActivities": {
+        "2026-10": 2,
+        "2026-09": 13,
+        "2026-08": 19,
+        "2026-07": 8,
+        "2026-06": 2,
+        "2026-05": 4,
+        "2026-04": 3,
+        "2026-03": 2
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1225,6 +2565,20 @@
       "totalTime": 34,
       "totalActivities": 96,
       "avgSpeed": 26.34,
+      "monthlyDistance": {
+        "2026-09": 166.37299999999996,
+        "2026-08": 189.8346,
+        "2026-07": 169.0596,
+        "2026-06": 208.66520000000003,
+        "2026-05": 157.73889999999997
+      },
+      "monthlyActivities": {
+        "2026-09": 18,
+        "2026-08": 23,
+        "2026-07": 17,
+        "2026-06": 21,
+        "2026-05": 17
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1239,6 +2593,18 @@
       "totalTime": 35,
       "totalActivities": 21,
       "avgSpeed": 17.13,
+      "monthlyDistance": {
+        "2026-09": 74.7873,
+        "2026-08": 464.42740000000003,
+        "2026-06": 14.122,
+        "2026-05": 50.909600000000005
+      },
+      "monthlyActivities": {
+        "2026-09": 4,
+        "2026-08": 8,
+        "2026-06": 3,
+        "2026-05": 6
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1253,6 +2619,20 @@
       "totalTime": 36,
       "totalActivities": 48,
       "avgSpeed": 17.76,
+      "monthlyDistance": {
+        "2026-09": 86.42559999999999,
+        "2026-08": 125.3666,
+        "2026-07": 201.9794,
+        "2026-06": 105.0358,
+        "2026-05": 126.65720000000002
+      },
+      "monthlyActivities": {
+        "2026-09": 6,
+        "2026-08": 8,
+        "2026-07": 16,
+        "2026-06": 9,
+        "2026-05": 9
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1267,6 +2647,16 @@
       "totalTime": 13,
       "totalActivities": 15,
       "avgSpeed": 13.27,
+      "monthlyDistance": {
+        "2026-09": 15.3184,
+        "2026-06": 82.3427,
+        "2026-05": 76.6105
+      },
+      "monthlyActivities": {
+        "2026-09": 1,
+        "2026-06": 5,
+        "2026-05": 9
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1281,6 +2671,20 @@
       "totalTime": 18,
       "totalActivities": 20,
       "avgSpeed": 12.54,
+      "monthlyDistance": {
+        "2026-09": 47.91,
+        "2026-08": 53.0471,
+        "2026-07": 31.2723,
+        "2026-06": 29.036800000000003,
+        "2026-05": 62.25240000000001
+      },
+      "monthlyActivities": {
+        "2026-09": 3,
+        "2026-08": 5,
+        "2026-07": 2,
+        "2026-06": 4,
+        "2026-05": 6
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1295,6 +2699,20 @@
       "totalTime": 64,
       "totalActivities": 173,
       "avgSpeed": 16.32,
+      "monthlyDistance": {
+        "2026-09": 237.97250000000005,
+        "2026-08": 206.0351,
+        "2026-07": 136.09240000000003,
+        "2026-06": 259.92589999999996,
+        "2026-05": 209.6205
+      },
+      "monthlyActivities": {
+        "2026-09": 36,
+        "2026-08": 33,
+        "2026-07": 29,
+        "2026-06": 41,
+        "2026-05": 34
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1309,6 +2727,18 @@
       "totalTime": 25,
       "totalActivities": 88,
       "avgSpeed": 11.99,
+      "monthlyDistance": {
+        "2026-09": 72.43469999999999,
+        "2026-08": 102.0861,
+        "2026-07": 53.246300000000005,
+        "2026-06": 77.5679
+      },
+      "monthlyActivities": {
+        "2026-09": 22,
+        "2026-08": 29,
+        "2026-07": 16,
+        "2026-06": 21
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1323,6 +2753,20 @@
       "totalTime": 43,
       "totalActivities": 30,
       "avgSpeed": 14.22,
+      "monthlyDistance": {
+        "2026-09": 68.1716,
+        "2026-08": 76.2551,
+        "2026-07": 96.2752,
+        "2026-06": 166.9461,
+        "2026-05": 201.3271
+      },
+      "monthlyActivities": {
+        "2026-09": 6,
+        "2026-08": 6,
+        "2026-07": 2,
+        "2026-06": 6,
+        "2026-05": 10
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1331,12 +2775,28 @@
       "name": "Jacek Przyszlak",
       "athleteId": 132758676,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLamO6_wSnZNCAf1aUAXPFaPsUZ3uYciTh81m2ldBfY=s96-c",
-      "totalDistance": 4019.5,
-      "totalElevation": 5521,
-      "avgElevation": 43,
-      "totalTime": 233,
-      "totalActivities": 129,
-      "avgSpeed": 17.24,
+      "totalDistance": 4096.1,
+      "totalElevation": 5590,
+      "avgElevation": 41,
+      "totalTime": 239,
+      "totalActivities": 135,
+      "avgSpeed": 17.16,
+      "monthlyDistance": {
+        "2026-10": 76.5815,
+        "2026-09": 961.7674,
+        "2026-08": 1014.0272000000002,
+        "2026-07": 740.927,
+        "2026-06": 647.5189,
+        "2026-05": 655.3001999999999
+      },
+      "monthlyActivities": {
+        "2026-10": 6,
+        "2026-09": 26,
+        "2026-08": 29,
+        "2026-07": 26,
+        "2026-06": 27,
+        "2026-05": 21
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1345,12 +2805,28 @@
       "name": "Maciej Mirowski",
       "athleteId": 135999165,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 435.2,
-      "totalElevation": 922,
+      "totalDistance": 443.8,
+      "totalElevation": 938,
       "avgElevation": 13,
-      "totalTime": 34,
-      "totalActivities": 71,
-      "avgSpeed": 12.67,
+      "totalTime": 35,
+      "totalActivities": 73,
+      "avgSpeed": 12.68,
+      "monthlyDistance": {
+        "2026-10": 8.5988,
+        "2026-09": 73.1343,
+        "2026-08": 137.22510000000003,
+        "2026-07": 51.52669999999999,
+        "2026-06": 134.9108,
+        "2026-05": 38.412400000000005
+      },
+      "monthlyActivities": {
+        "2026-10": 2,
+        "2026-09": 5,
+        "2026-08": 23,
+        "2026-07": 13,
+        "2026-06": 24,
+        "2026-05": 6
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1359,12 +2835,28 @@
       "name": "Małgorzata Antoniak",
       "athleteId": 593911092,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 861.3,
-      "totalElevation": 809,
+      "totalDistance": 909.9,
+      "totalElevation": 849,
       "avgElevation": 4,
-      "totalTime": 299,
-      "totalActivities": 193,
-      "avgSpeed": 2.88,
+      "totalTime": 330,
+      "totalActivities": 194,
+      "avgSpeed": 2.75,
+      "monthlyDistance": {
+        "2026-09": 189.6051,
+        "2026-08": 153.7742,
+        "2026-07": 186.45420000000004,
+        "2026-06": 182.27340000000004,
+        "2026-05": 149.22999999999996,
+        "2026-04": 48.5724
+      },
+      "monthlyActivities": {
+        "2026-09": 54,
+        "2026-08": 38,
+        "2026-07": 45,
+        "2026-06": 32,
+        "2026-05": 24,
+        "2026-04": 1
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1379,6 +2871,16 @@
       "totalTime": 11,
       "totalActivities": 15,
       "avgSpeed": 15.1,
+      "monthlyDistance": {
+        "2026-07": 65.3853,
+        "2026-06": 76.5593,
+        "2026-05": 22.4593
+      },
+      "monthlyActivities": {
+        "2026-07": 9,
+        "2026-06": 2,
+        "2026-05": 4
+      },
       "activityTypes": [
         "MountainBikeRide",
         "EMountainBikeRide"
@@ -1388,12 +2890,26 @@
       "name": "Chemiczny Ahmed",
       "athleteId": 135990927,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 2240.4,
-      "totalElevation": 2068,
+      "totalDistance": 2253.6,
+      "totalElevation": 2078,
       "avgElevation": 8,
-      "totalTime": 131,
-      "totalActivities": 249,
-      "avgSpeed": 17.09,
+      "totalTime": 132,
+      "totalActivities": 252,
+      "avgSpeed": 17.08,
+      "monthlyDistance": {
+        "2026-08": 256.30959999999993,
+        "2026-07": 575.8796,
+        "2026-06": 600.0864999999999,
+        "2026-05": 808.1695,
+        "2026-04": 13.1929
+      },
+      "monthlyActivities": {
+        "2026-08": 28,
+        "2026-07": 71,
+        "2026-06": 66,
+        "2026-05": 84,
+        "2026-04": 3
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1408,6 +2924,20 @@
       "totalTime": 72,
       "totalActivities": 70,
       "avgSpeed": 18.58,
+      "monthlyDistance": {
+        "2026-09": 169.28660000000002,
+        "2026-08": 293.9072,
+        "2026-07": 558.0048,
+        "2026-06": 180.883,
+        "2026-05": 142.76659999999998
+      },
+      "monthlyActivities": {
+        "2026-09": 11,
+        "2026-08": 12,
+        "2026-07": 28,
+        "2026-06": 9,
+        "2026-05": 10
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1422,6 +2952,18 @@
       "totalTime": 57,
       "totalActivities": 49,
       "avgSpeed": 16.16,
+      "monthlyDistance": {
+        "2026-08": 265.0426,
+        "2026-07": 343.737,
+        "2026-06": 269.9566,
+        "2026-05": 38.6755
+      },
+      "monthlyActivities": {
+        "2026-08": 10,
+        "2026-07": 18,
+        "2026-06": 18,
+        "2026-05": 3
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1436,6 +2978,20 @@
       "totalTime": 89,
       "totalActivities": 123,
       "avgSpeed": 16.76,
+      "monthlyDistance": {
+        "2026-09": 257.4851,
+        "2026-08": 199.20109999999997,
+        "2026-07": 395.9996,
+        "2026-06": 349.1611,
+        "2026-05": 285.77950000000004
+      },
+      "monthlyActivities": {
+        "2026-09": 22,
+        "2026-08": 16,
+        "2026-07": 32,
+        "2026-06": 28,
+        "2026-05": 25
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1444,12 +3000,28 @@
       "name": "Marcin Pragacz",
       "athleteId": 43199994,
       "avatar": "https://lh6.googleusercontent.com/-7WyO6F5r_Yo/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcK3HLP6IZAzX042E78ZSRkR8iP7A/mo/photo.jpg",
-      "totalDistance": 478,
-      "totalElevation": 695,
-      "avgElevation": 15,
-      "totalTime": 27,
-      "totalActivities": 45,
-      "avgSpeed": 17.97,
+      "totalDistance": 1001.3,
+      "totalElevation": 1860,
+      "avgElevation": 30,
+      "totalTime": 53,
+      "totalActivities": 61,
+      "avgSpeed": 18.72,
+      "monthlyDistance": {
+        "2026-10": 504.51039999999995,
+        "2026-08": 141.7711,
+        "2026-07": 2.8408,
+        "2026-06": 113.2328,
+        "2026-05": 220.15000000000003,
+        "2026-03": 18.8409
+      },
+      "monthlyActivities": {
+        "2026-10": 15,
+        "2026-08": 7,
+        "2026-07": 1,
+        "2026-06": 14,
+        "2026-05": 23,
+        "2026-03": 1
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1464,6 +3036,20 @@
       "totalTime": 35,
       "totalActivities": 31,
       "avgSpeed": 17.88,
+      "monthlyDistance": {
+        "2026-09": 133.72840000000002,
+        "2026-08": 105.6763,
+        "2026-07": 158.96400000000003,
+        "2026-06": 170.1549,
+        "2026-05": 56.8523
+      },
+      "monthlyActivities": {
+        "2026-09": 4,
+        "2026-08": 5,
+        "2026-07": 10,
+        "2026-06": 8,
+        "2026-05": 4
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1472,12 +3058,30 @@
       "name": "Tomasz Wolan",
       "athleteId": 97264669,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLOZDfxqIv4Vvm5ObwLBtVw9L-jrWKir4tUh3eVyWPReZy_3ZIiyA=s96-c",
-      "totalDistance": 201.9,
-      "totalElevation": 585,
+      "totalDistance": 246.6,
+      "totalElevation": 706,
       "avgElevation": 7,
-      "totalTime": 15,
-      "totalActivities": 86,
-      "avgSpeed": 13.11,
+      "totalTime": 19,
+      "totalActivities": 106,
+      "avgSpeed": 12.8,
+      "monthlyDistance": {
+        "2026-10": 40.2664,
+        "2026-09": 30.186800000000005,
+        "2026-08": 90.95460000000001,
+        "2026-07": 23.704799999999995,
+        "2026-06": 36.118300000000005,
+        "2026-05": 20.959699999999998,
+        "2026-03": 4.4295
+      },
+      "monthlyActivities": {
+        "2026-10": 18,
+        "2026-09": 15,
+        "2026-08": 31,
+        "2026-07": 12,
+        "2026-06": 18,
+        "2026-05": 10,
+        "2026-03": 2
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1486,12 +3090,32 @@
       "name": "Jowita Tazbir",
       "athleteId": 168401872,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 1256.7,
-      "totalElevation": 2569,
+      "totalDistance": 1572.9,
+      "totalElevation": 3262,
       "avgElevation": 12,
-      "totalTime": 85,
-      "totalActivities": 207,
-      "avgSpeed": 14.79,
+      "totalTime": 107,
+      "totalActivities": 264,
+      "avgSpeed": 14.77,
+      "monthlyDistance": {
+        "2026-10": 162.17370000000003,
+        "2026-09": 288.9683,
+        "2026-08": 329.4469,
+        "2026-07": 215.13430000000002,
+        "2026-06": 239.7323,
+        "2026-05": 183.3986,
+        "2026-04": 125.58279999999999,
+        "2026-03": 28.4741
+      },
+      "monthlyActivities": {
+        "2026-10": 27,
+        "2026-09": 43,
+        "2026-08": 53,
+        "2026-07": 40,
+        "2026-06": 40,
+        "2026-05": 31,
+        "2026-04": 26,
+        "2026-03": 4
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1500,12 +3124,30 @@
       "name": "Przemysław Skulski",
       "athleteId": 132368754,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLm5ajn57whe2z3YwVY2DHAfCviK1TSFKlbo0m-YOH3WcimVg=s96-c",
-      "totalDistance": 615,
-      "totalElevation": 743,
+      "totalDistance": 710.2,
+      "totalElevation": 886,
       "avgElevation": 14,
-      "totalTime": 75,
-      "totalActivities": 54,
-      "avgSpeed": 8.19,
+      "totalTime": 82,
+      "totalActivities": 63,
+      "avgSpeed": 8.67,
+      "monthlyDistance": {
+        "2026-09": 189.54319999999998,
+        "2026-08": 155.89509999999999,
+        "2026-07": 151.3529,
+        "2026-06": 103.7324,
+        "2026-05": 14.4556,
+        "2026-04": 47.4889,
+        "2026-03": 47.765299999999996
+      },
+      "monthlyActivities": {
+        "2026-09": 17,
+        "2026-08": 11,
+        "2026-07": 13,
+        "2026-06": 11,
+        "2026-05": 2,
+        "2026-04": 6,
+        "2026-03": 3
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1514,12 +3156,32 @@
       "name": "Wiktoria  Błocian",
       "athleteId": 163338133,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIPkzcX7vHRsDYqUmuL-8Qn1VlgHW-cZoSFZFOUmTnTltqEXA=s96-c",
-      "totalDistance": 1029.3,
-      "totalElevation": 2156,
+      "totalDistance": 1550.4,
+      "totalElevation": 3236,
       "avgElevation": 20,
-      "totalTime": 55,
-      "totalActivities": 107,
-      "avgSpeed": 18.84,
+      "totalTime": 84,
+      "totalActivities": 159,
+      "avgSpeed": 18.41,
+      "monthlyDistance": {
+        "2026-10": 318.5326,
+        "2026-09": 246.38389999999995,
+        "2026-08": 260.25010000000003,
+        "2026-07": 166.9418,
+        "2026-06": 259.46470000000005,
+        "2026-05": 96.29079999999999,
+        "2026-04": 147.1317,
+        "2026-03": 55.411
+      },
+      "monthlyActivities": {
+        "2026-10": 32,
+        "2026-09": 25,
+        "2026-08": 28,
+        "2026-07": 18,
+        "2026-06": 28,
+        "2026-05": 8,
+        "2026-04": 14,
+        "2026-03": 6
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1534,6 +3196,20 @@
       "totalTime": 55,
       "totalActivities": 23,
       "avgSpeed": 16.74,
+      "monthlyDistance": {
+        "2026-09": 273.0554,
+        "2026-08": 215.6363,
+        "2026-07": 112.27159999999999,
+        "2026-06": 61.8029,
+        "2026-05": 257.2858
+      },
+      "monthlyActivities": {
+        "2026-09": 4,
+        "2026-08": 7,
+        "2026-07": 4,
+        "2026-06": 4,
+        "2026-05": 4
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1548,6 +3224,16 @@
       "totalTime": 12,
       "totalActivities": 7,
       "avgSpeed": 16.45,
+      "monthlyDistance": {
+        "2026-07": 8.7126,
+        "2026-06": 52.6639,
+        "2026-05": 131.518
+      },
+      "monthlyActivities": {
+        "2026-07": 1,
+        "2026-06": 2,
+        "2026-05": 4
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1556,12 +3242,32 @@
       "name": "Paweł Cierniak",
       "athleteId": 136057999,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/136057999/36727020/1/large.jpg",
-      "totalDistance": 1837.7,
-      "totalElevation": 2543,
+      "totalDistance": 1988.5,
+      "totalElevation": 2798,
       "avgElevation": 14,
-      "totalTime": 95,
-      "totalActivities": 187,
-      "avgSpeed": 19.35,
+      "totalTime": 103,
+      "totalActivities": 198,
+      "avgSpeed": 19.27,
+      "monthlyDistance": {
+        "2026-09": 417.7617000000001,
+        "2026-08": 163.9834,
+        "2026-07": 218.59820000000005,
+        "2026-06": 322.998,
+        "2026-05": 714.3151999999999,
+        "2026-04": 92.67129999999999,
+        "2026-03": 4.2639,
+        "2026-02": 53.874500000000005
+      },
+      "monthlyActivities": {
+        "2026-09": 47,
+        "2026-08": 18,
+        "2026-07": 27,
+        "2026-06": 36,
+        "2026-05": 59,
+        "2026-04": 7,
+        "2026-03": 1,
+        "2026-02": 3
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1570,12 +3276,32 @@
       "name": "Piotrek G",
       "athleteId": 103287767,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/103287767/33896857/2/large.jpg",
-      "totalDistance": 1688.7,
-      "totalElevation": 11188,
-      "avgElevation": 155,
-      "totalTime": 88,
-      "totalActivities": 72,
-      "avgSpeed": 19.29,
+      "totalDistance": 1867,
+      "totalElevation": 12069,
+      "avgElevation": 131,
+      "totalTime": 97,
+      "totalActivities": 92,
+      "avgSpeed": 19.32,
+      "monthlyDistance": {
+        "2026-10": 10.6104,
+        "2026-09": 125.66,
+        "2026-08": 390.53310000000005,
+        "2026-07": 696.1732,
+        "2026-06": 191.19819999999999,
+        "2026-05": 285.1299,
+        "2026-04": 123.2802,
+        "2026-03": 44.3892
+      },
+      "monthlyActivities": {
+        "2026-10": 2,
+        "2026-09": 1,
+        "2026-08": 20,
+        "2026-07": 10,
+        "2026-06": 16,
+        "2026-05": 25,
+        "2026-04": 15,
+        "2026-03": 3
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1584,12 +3310,36 @@
       "name": "Tomasz Konieczny",
       "athleteId": 164870994,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/164870994/36951872/1/large.jpg",
-      "totalDistance": 1710,
-      "totalElevation": 4289,
-      "avgElevation": 19,
-      "totalTime": 118,
-      "totalActivities": 231,
-      "avgSpeed": 14.5,
+      "totalDistance": 2350.4,
+      "totalElevation": 5808,
+      "avgElevation": 16,
+      "totalTime": 167,
+      "totalActivities": 356,
+      "avgSpeed": 14.1,
+      "monthlyDistance": {
+        "2026-10": 113.7001,
+        "2026-09": 362.50070000000005,
+        "2026-08": 239.5188,
+        "2026-07": 240.4611,
+        "2026-06": 357.26669999999996,
+        "2026-05": 510.25920000000013,
+        "2026-04": 161.903,
+        "2026-03": 191.78859999999997,
+        "2026-02": 108.43010000000002,
+        "2026-01": 64.5921
+      },
+      "monthlyActivities": {
+        "2026-10": 16,
+        "2026-09": 51,
+        "2026-08": 41,
+        "2026-07": 36,
+        "2026-06": 45,
+        "2026-05": 58,
+        "2026-04": 33,
+        "2026-03": 32,
+        "2026-02": 23,
+        "2026-01": 21
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1604,6 +3354,20 @@
       "totalTime": 482,
       "totalActivities": 143,
       "avgSpeed": 3.75,
+      "monthlyDistance": {
+        "2026-09": 354.7116,
+        "2026-08": 190.739,
+        "2026-07": 585.788,
+        "2026-06": 349.11299999999994,
+        "2026-05": 327.5849
+      },
+      "monthlyActivities": {
+        "2026-09": 28,
+        "2026-08": 17,
+        "2026-07": 41,
+        "2026-06": 27,
+        "2026-05": 30
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1618,6 +3382,20 @@
       "totalTime": 40,
       "totalActivities": 51,
       "avgSpeed": 16.57,
+      "monthlyDistance": {
+        "2026-09": 275.79670000000004,
+        "2026-08": 20.7208,
+        "2026-07": 28.687500000000004,
+        "2026-06": 203.7662,
+        "2026-05": 140.78150000000002
+      },
+      "monthlyActivities": {
+        "2026-09": 9,
+        "2026-08": 1,
+        "2026-07": 6,
+        "2026-06": 20,
+        "2026-05": 15
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1626,12 +3404,22 @@
       "name": "Damian Baran",
       "athleteId": 116503735,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/116503735/27238469/1/large.jpg",
-      "totalDistance": 34,
-      "totalElevation": 159,
-      "avgElevation": 40,
-      "totalTime": 2,
-      "totalActivities": 4,
-      "avgSpeed": 14.38,
+      "totalDistance": 63.3,
+      "totalElevation": 232,
+      "avgElevation": 39,
+      "totalTime": 4,
+      "totalActivities": 6,
+      "avgSpeed": 16.32,
+      "monthlyDistance": {
+        "2026-08": 16.873,
+        "2026-05": 17.168,
+        "2026-02": 29.2653
+      },
+      "monthlyActivities": {
+        "2026-08": 3,
+        "2026-05": 1,
+        "2026-02": 2
+      },
       "activityTypes": [
         "GravelRide"
       ]
@@ -1640,12 +3428,28 @@
       "name": "Adam Filimonowicz",
       "athleteId": 136439695,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJSHLNIc0PvhLucqTSFlKsdxjPT-J219Rzgll5Rfew8Jl8hQA=s96-c",
-      "totalDistance": 2186.8,
-      "totalElevation": 2872,
-      "avgElevation": 21,
-      "totalTime": 113,
-      "totalActivities": 138,
-      "avgSpeed": 19.38,
+      "totalDistance": 2254.5,
+      "totalElevation": 2944,
+      "avgElevation": 20,
+      "totalTime": 116,
+      "totalActivities": 144,
+      "avgSpeed": 19.4,
+      "monthlyDistance": {
+        "2026-10": 67.6297,
+        "2026-09": 497.7264,
+        "2026-08": 134.95499999999998,
+        "2026-07": 286.91859999999997,
+        "2026-06": 501.2625,
+        "2026-05": 765.9787
+      },
+      "monthlyActivities": {
+        "2026-10": 6,
+        "2026-09": 29,
+        "2026-08": 9,
+        "2026-07": 18,
+        "2026-06": 36,
+        "2026-05": 46
+      },
       "activityTypes": [
         "EBikeRide"
       ]
@@ -1660,6 +3464,12 @@
       "totalTime": 0,
       "totalActivities": 2,
       "avgSpeed": 12.59,
+      "monthlyDistance": {
+        "2026-05": 3.4623999999999997
+      },
+      "monthlyActivities": {
+        "2026-05": 2
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1668,12 +3478,34 @@
       "name": "Maciek 1",
       "athleteId": 132230686,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJ9Il3V_wzf30ceIMUVkfvHEVODpK1wfGmUzAzmpkA7EAHSYg=s96-c",
-      "totalDistance": 1073.4,
-      "totalElevation": 1501,
-      "avgElevation": 17,
-      "totalTime": 84,
-      "totalActivities": 90,
-      "avgSpeed": 12.71,
+      "totalDistance": 1719.6,
+      "totalElevation": 2290,
+      "avgElevation": 15,
+      "totalTime": 146,
+      "totalActivities": 149,
+      "avgSpeed": 11.75,
+      "monthlyDistance": {
+        "2026-10": 238.73160000000001,
+        "2026-09": 253.03230000000002,
+        "2026-08": 151.2873,
+        "2026-07": 380.7776,
+        "2026-06": 209.4985,
+        "2026-05": 78.85149999999999,
+        "2026-04": 132.3604,
+        "2026-03": 154.1281,
+        "2026-02": 120.98029999999997
+      },
+      "monthlyActivities": {
+        "2026-10": 25,
+        "2026-09": 24,
+        "2026-08": 13,
+        "2026-07": 28,
+        "2026-06": 19,
+        "2026-05": 6,
+        "2026-04": 12,
+        "2026-03": 11,
+        "2026-02": 11
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1682,12 +3514,22 @@
       "name": "Marta Nadolska",
       "athleteId": 136705066,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/136705066/52045824/1/large.jpg",
-      "totalDistance": 83.1,
-      "totalElevation": 92,
-      "avgElevation": 18,
-      "totalTime": 7,
-      "totalActivities": 5,
-      "avgSpeed": 12.24,
+      "totalDistance": 97.8,
+      "totalElevation": 101,
+      "avgElevation": 17,
+      "totalTime": 8,
+      "totalActivities": 6,
+      "avgSpeed": 11.94,
+      "monthlyDistance": {
+        "2026-06": 46.2598,
+        "2026-05": 36.8123,
+        "2026-04": 14.747
+      },
+      "monthlyActivities": {
+        "2026-06": 3,
+        "2026-05": 2,
+        "2026-04": 1
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1696,12 +3538,28 @@
       "name": "grzegorz mandziej",
       "athleteId": 74472108,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/74472108/56218026/1/large.jpg",
-      "totalDistance": 340.7,
-      "totalElevation": 2004,
-      "avgElevation": 111,
-      "totalTime": 20,
-      "totalActivities": 18,
-      "avgSpeed": 17.44,
+      "totalDistance": 404.8,
+      "totalElevation": 2321,
+      "avgElevation": 116,
+      "totalTime": 24,
+      "totalActivities": 20,
+      "avgSpeed": 17.09,
+      "monthlyDistance": {
+        "2026-09": 7.2659,
+        "2026-08": 7.7877,
+        "2026-07": 48.244299999999996,
+        "2026-06": 26.1776,
+        "2026-05": 251.1994,
+        "2026-03": 64.145
+      },
+      "monthlyActivities": {
+        "2026-09": 2,
+        "2026-08": 1,
+        "2026-07": 2,
+        "2026-06": 2,
+        "2026-05": 11,
+        "2026-03": 2
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1716,6 +3574,20 @@
       "totalTime": 121,
       "totalActivities": 219,
       "avgSpeed": 13.72,
+      "monthlyDistance": {
+        "2026-09": 390.38040000000007,
+        "2026-08": 190.6758,
+        "2026-07": 310.2796,
+        "2026-06": 429.3639999999999,
+        "2026-05": 342.0822
+      },
+      "monthlyActivities": {
+        "2026-09": 56,
+        "2026-08": 27,
+        "2026-07": 36,
+        "2026-06": 57,
+        "2026-05": 43
+      },
       "activityTypes": [
         "Ride",
         "EBikeRide"
@@ -1725,12 +3597,28 @@
       "name": "E Z",
       "athleteId": 135999099,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 308,
-      "totalElevation": 404,
-      "avgElevation": 7,
-      "totalTime": 23,
-      "totalActivities": 57,
-      "avgSpeed": 13.15,
+      "totalDistance": 363,
+      "totalElevation": 484,
+      "avgElevation": 8,
+      "totalTime": 28,
+      "totalActivities": 62,
+      "avgSpeed": 13.1,
+      "monthlyDistance": {
+        "2026-09": 33.183,
+        "2026-08": 141.76069999999999,
+        "2026-07": 50.1922,
+        "2026-06": 46.19769999999999,
+        "2026-05": 36.68909999999999,
+        "2026-02": 54.9511
+      },
+      "monthlyActivities": {
+        "2026-09": 16,
+        "2026-08": 14,
+        "2026-07": 10,
+        "2026-06": 11,
+        "2026-05": 6,
+        "2026-02": 5
+      },
       "activityTypes": [
         "Ride",
         "GravelRide"
@@ -1746,6 +3634,18 @@
       "totalTime": 24,
       "totalActivities": 46,
       "avgSpeed": 19.13,
+      "monthlyDistance": {
+        "2026-08": 22.7147,
+        "2026-07": 15.1469,
+        "2026-06": 179.39960000000002,
+        "2026-05": 241.77580000000003
+      },
+      "monthlyActivities": {
+        "2026-08": 3,
+        "2026-07": 2,
+        "2026-06": 20,
+        "2026-05": 21
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1760,6 +3660,14 @@
       "totalTime": 4,
       "totalActivities": 12,
       "avgSpeed": 11.7,
+      "monthlyDistance": {
+        "2026-08": 15.445200000000002,
+        "2026-05": 30.0823
+      },
+      "monthlyActivities": {
+        "2026-08": 1,
+        "2026-05": 11
+      },
       "activityTypes": [
         "Ride",
         "MountainBikeRide",
@@ -1776,6 +3684,20 @@
       "totalTime": 70,
       "totalActivities": 72,
       "avgSpeed": 17.26,
+      "monthlyDistance": {
+        "2026-09": 423.5563,
+        "2026-08": 241.5837,
+        "2026-07": 212.8006,
+        "2026-06": 172.48290000000003,
+        "2026-05": 150.6583
+      },
+      "monthlyActivities": {
+        "2026-09": 21,
+        "2026-08": 13,
+        "2026-07": 14,
+        "2026-06": 10,
+        "2026-05": 14
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1790,6 +3712,20 @@
       "totalTime": 168,
       "totalActivities": 181,
       "avgSpeed": 12.05,
+      "monthlyDistance": {
+        "2026-09": 131.113,
+        "2026-08": 489.5556,
+        "2026-07": 578.4581999999998,
+        "2026-06": 613.3213,
+        "2026-05": 212.5022
+      },
+      "monthlyActivities": {
+        "2026-09": 14,
+        "2026-08": 40,
+        "2026-07": 52,
+        "2026-06": 58,
+        "2026-05": 17
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1798,12 +3734,28 @@
       "name": "Grzegorz Grabowski",
       "athleteId": 167010585,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/167010585/55479335/2/large.jpg",
-      "totalDistance": 716.4,
-      "totalElevation": 941,
+      "totalDistance": 750.1,
+      "totalElevation": 974,
       "avgElevation": 15,
-      "totalTime": 40,
-      "totalActivities": 62,
-      "avgSpeed": 17.98,
+      "totalTime": 42,
+      "totalActivities": 64,
+      "avgSpeed": 18,
+      "monthlyDistance": {
+        "2026-10": 33.726,
+        "2026-09": 391.177,
+        "2026-08": 47.9317,
+        "2026-07": 29.8938,
+        "2026-06": 179.50950000000003,
+        "2026-05": 67.8564
+      },
+      "monthlyActivities": {
+        "2026-10": 2,
+        "2026-09": 29,
+        "2026-08": 5,
+        "2026-07": 3,
+        "2026-06": 19,
+        "2026-05": 6
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1818,6 +3770,18 @@
       "totalTime": 36,
       "totalActivities": 76,
       "avgSpeed": 12.08,
+      "monthlyDistance": {
+        "2026-09": 71.43020000000001,
+        "2026-08": 126.1163,
+        "2026-06": 126.52289999999998,
+        "2026-05": 106.14650000000002
+      },
+      "monthlyActivities": {
+        "2026-09": 9,
+        "2026-08": 21,
+        "2026-06": 26,
+        "2026-05": 20
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1832,6 +3796,20 @@
       "totalTime": 118,
       "totalActivities": 166,
       "avgSpeed": 17,
+      "monthlyDistance": {
+        "2026-09": 267.86220000000003,
+        "2026-08": 221.3827,
+        "2026-07": 354.35040000000004,
+        "2026-06": 810.3213999999999,
+        "2026-05": 345.6355
+      },
+      "monthlyActivities": {
+        "2026-09": 31,
+        "2026-08": 26,
+        "2026-07": 41,
+        "2026-06": 33,
+        "2026-05": 35
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1846,6 +3824,16 @@
       "totalTime": 6,
       "totalActivities": 6,
       "avgSpeed": 12.63,
+      "monthlyDistance": {
+        "2026-09": 53.5188,
+        "2026-08": 17.675,
+        "2026-05": 8.899700000000001
+      },
+      "monthlyActivities": {
+        "2026-09": 3,
+        "2026-08": 1,
+        "2026-05": 2
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1854,12 +3842,34 @@
       "name": "Piotr Krzęć",
       "athleteId": 14504155,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/14504155/22552071/2/large.jpg",
-      "totalDistance": 3148.1,
-      "totalElevation": 29585,
-      "avgElevation": 229,
-      "totalTime": 133,
-      "totalActivities": 129,
-      "avgSpeed": 23.6,
+      "totalDistance": 3590.2,
+      "totalElevation": 33401,
+      "avgElevation": 221,
+      "totalTime": 154,
+      "totalActivities": 151,
+      "avgSpeed": 23.34,
+      "monthlyDistance": {
+        "2026-10": 50.7161,
+        "2026-09": 348.91939999999994,
+        "2026-08": 755.9775,
+        "2026-07": 843.4324,
+        "2026-06": 653.0237000000001,
+        "2026-05": 546.7072000000001,
+        "2026-04": 186.02280000000002,
+        "2026-03": 202.5825,
+        "2026-02": 2.7759
+      },
+      "monthlyActivities": {
+        "2026-10": 3,
+        "2026-09": 19,
+        "2026-08": 27,
+        "2026-07": 30,
+        "2026-06": 29,
+        "2026-05": 24,
+        "2026-04": 11,
+        "2026-03": 7,
+        "2026-02": 1
+      },
       "activityTypes": [
         "MountainBikeRide",
         "Ride"
@@ -1875,6 +3885,18 @@
       "totalTime": 49,
       "totalActivities": 26,
       "avgSpeed": 13.64,
+      "monthlyDistance": {
+        "2026-09": 100.0129,
+        "2026-08": 100.7762,
+        "2026-06": 252.3546,
+        "2026-05": 212.8044
+      },
+      "monthlyActivities": {
+        "2026-09": 4,
+        "2026-08": 3,
+        "2026-06": 10,
+        "2026-05": 9
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1889,6 +3911,20 @@
       "totalTime": 49,
       "totalActivities": 47,
       "avgSpeed": 13.06,
+      "monthlyDistance": {
+        "2026-09": 81.8591,
+        "2026-08": 81.369,
+        "2026-07": 201.7413,
+        "2026-06": 186.7871,
+        "2026-05": 87.77590000000001
+      },
+      "monthlyActivities": {
+        "2026-09": 5,
+        "2026-08": 3,
+        "2026-07": 17,
+        "2026-06": 13,
+        "2026-05": 9
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1903,6 +3939,20 @@
       "totalTime": 36,
       "totalActivities": 29,
       "avgSpeed": 17.07,
+      "monthlyDistance": {
+        "2026-09": 135.8401,
+        "2026-08": 163.4282,
+        "2026-07": 50.3625,
+        "2026-06": 93.6655,
+        "2026-05": 179.505
+      },
+      "monthlyActivities": {
+        "2026-09": 8,
+        "2026-08": 7,
+        "2026-07": 2,
+        "2026-06": 4,
+        "2026-05": 8
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1911,12 +3961,36 @@
       "name": "Arkadiusz Cisło",
       "athleteId": 132033584,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/132033584/31092201/2/large.jpg",
-      "totalDistance": 1348.4,
-      "totalElevation": 2883,
-      "avgElevation": 30,
-      "totalTime": 90,
-      "totalActivities": 95,
-      "avgSpeed": 15.01,
+      "totalDistance": 1833.3,
+      "totalElevation": 3603,
+      "avgElevation": 26,
+      "totalTime": 126,
+      "totalActivities": 136,
+      "avgSpeed": 14.6,
+      "monthlyDistance": {
+        "2026-10": 40.6802,
+        "2026-09": 387.3001,
+        "2026-08": 277.12790000000007,
+        "2026-07": 176.3227,
+        "2026-06": 185.6596,
+        "2026-05": 321.95990000000006,
+        "2026-04": 153.2257,
+        "2026-03": 199.77730000000003,
+        "2026-02": 22.9363,
+        "2026-01": 68.3442
+      },
+      "monthlyActivities": {
+        "2026-10": 3,
+        "2026-09": 20,
+        "2026-08": 14,
+        "2026-07": 12,
+        "2026-06": 22,
+        "2026-05": 27,
+        "2026-04": 16,
+        "2026-03": 19,
+        "2026-02": 1,
+        "2026-01": 2
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1931,6 +4005,20 @@
       "totalTime": 151,
       "totalActivities": 247,
       "avgSpeed": 10.38,
+      "monthlyDistance": {
+        "2026-09": 143.04560000000004,
+        "2026-08": 345.88029999999986,
+        "2026-07": 470.8742000000001,
+        "2026-06": 231.0495,
+        "2026-05": 376.0182
+      },
+      "monthlyActivities": {
+        "2026-09": 19,
+        "2026-08": 56,
+        "2026-07": 82,
+        "2026-06": 31,
+        "2026-05": 59
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1939,12 +4027,28 @@
       "name": "Alicja Ka",
       "athleteId": 132698330,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJRDvaLCrDd3lfrE4v_Oz0QAXNTGnyG6sEiUPPAHcyVfDPb=s96-c",
-      "totalDistance": 781.1,
-      "totalElevation": 1312,
+      "totalDistance": 893.5,
+      "totalElevation": 1503,
       "avgElevation": 13,
-      "totalTime": 57,
-      "totalActivities": 102,
-      "avgSpeed": 13.77,
+      "totalTime": 65,
+      "totalActivities": 118,
+      "avgSpeed": 13.73,
+      "monthlyDistance": {
+        "2026-09": 44.8045,
+        "2026-08": 103.45459999999999,
+        "2026-07": 90.945,
+        "2026-06": 95.2423,
+        "2026-05": 446.6479,
+        "2026-04": 112.37910000000001
+      },
+      "monthlyActivities": {
+        "2026-09": 9,
+        "2026-08": 15,
+        "2026-07": 14,
+        "2026-06": 15,
+        "2026-05": 49,
+        "2026-04": 16
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1953,12 +4057,36 @@
       "name": "Magdalena Ostojska-Korpas",
       "athleteId": 135518653,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJ1TnRb2b_YaoBo9JGRGzr7S05xwQppBX3edH6esTTI8T_XYXM=s96-c",
-      "totalDistance": 1579.8,
-      "totalElevation": 2001,
-      "avgElevation": 11,
-      "totalTime": 113,
-      "totalActivities": 184,
-      "avgSpeed": 13.98,
+      "totalDistance": 2621.6,
+      "totalElevation": 3193,
+      "avgElevation": 10,
+      "totalTime": 193,
+      "totalActivities": 311,
+      "avgSpeed": 13.6,
+      "monthlyDistance": {
+        "2026-10": 39.5947,
+        "2026-09": 417.6746,
+        "2026-08": 283.8379,
+        "2026-07": 377.3324999999999,
+        "2026-06": 319.82730000000004,
+        "2026-05": 181.13729999999998,
+        "2026-04": 321.5108,
+        "2026-03": 417.22159999999997,
+        "2026-02": 138.78680000000003,
+        "2026-01": 124.70980000000002
+      },
+      "monthlyActivities": {
+        "2026-10": 4,
+        "2026-09": 44,
+        "2026-08": 30,
+        "2026-07": 46,
+        "2026-06": 37,
+        "2026-05": 27,
+        "2026-04": 41,
+        "2026-03": 45,
+        "2026-02": 17,
+        "2026-01": 20
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -1967,16 +4095,34 @@
       "name": "Jacek Korfanty",
       "athleteId": 42438120,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 2396.8,
-      "totalElevation": 23226,
-      "avgElevation": 116,
-      "totalTime": 150,
-      "totalActivities": 200,
-      "avgSpeed": 16,
+      "totalDistance": 2570.4,
+      "totalElevation": 26576,
+      "avgElevation": 128,
+      "totalTime": 162,
+      "totalActivities": 207,
+      "avgSpeed": 15.86,
+      "monthlyDistance": {
+        "2026-10": 34.9255,
+        "2026-09": 520.0453999999999,
+        "2026-08": 363.76480000000004,
+        "2026-07": 496.26790000000005,
+        "2026-06": 479.9334,
+        "2026-05": 536.7622999999999,
+        "2026-04": 138.6745
+      },
+      "monthlyActivities": {
+        "2026-10": 1,
+        "2026-09": 50,
+        "2026-08": 37,
+        "2026-07": 29,
+        "2026-06": 44,
+        "2026-05": 40,
+        "2026-04": 6
+      },
       "activityTypes": [
+        "EBikeRide",
         "MountainBikeRide",
-        "EMountainBikeRide",
-        "EBikeRide"
+        "EMountainBikeRide"
       ]
     },
     {
@@ -1989,6 +4135,18 @@
       "totalTime": 17,
       "totalActivities": 54,
       "avgSpeed": 13.59,
+      "monthlyDistance": {
+        "2026-08": 12.3541,
+        "2026-07": 26.9195,
+        "2026-06": 96.4768,
+        "2026-05": 95.74550000000002
+      },
+      "monthlyActivities": {
+        "2026-08": 2,
+        "2026-07": 6,
+        "2026-06": 21,
+        "2026-05": 25
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2003,6 +4161,20 @@
       "totalTime": 42,
       "totalActivities": 59,
       "avgSpeed": 13.6,
+      "monthlyDistance": {
+        "2026-09": 76.8694,
+        "2026-08": 28.4553,
+        "2026-07": 157.9634,
+        "2026-06": 171.5406,
+        "2026-05": 138.8221
+      },
+      "monthlyActivities": {
+        "2026-09": 4,
+        "2026-08": 2,
+        "2026-07": 20,
+        "2026-06": 17,
+        "2026-05": 16
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2011,12 +4183,28 @@
       "name": "Łukasz C",
       "athleteId": 136024825,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/136024825/31073124/2/large.jpg",
-      "totalDistance": 172,
-      "totalElevation": 895,
-      "avgElevation": 99,
-      "totalTime": 7,
-      "totalActivities": 9,
-      "avgSpeed": 25.9,
+      "totalDistance": 330.2,
+      "totalElevation": 1605,
+      "avgElevation": 89,
+      "totalTime": 11,
+      "totalActivities": 18,
+      "avgSpeed": 29.33,
+      "monthlyDistance": {
+        "2026-08": 56.5152,
+        "2026-06": 23.5995,
+        "2026-05": 91.8699,
+        "2026-04": 93.6059,
+        "2026-03": 32.2569,
+        "2026-01": 32.3588
+      },
+      "monthlyActivities": {
+        "2026-08": 2,
+        "2026-06": 1,
+        "2026-05": 6,
+        "2026-04": 7,
+        "2026-03": 1,
+        "2026-01": 1
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2031,6 +4219,14 @@
       "totalTime": 8,
       "totalActivities": 3,
       "avgSpeed": 15.72,
+      "monthlyDistance": {
+        "2026-08": 75.0867,
+        "2026-05": 48.3752
+      },
+      "monthlyActivities": {
+        "2026-08": 2,
+        "2026-05": 1
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2045,6 +4241,16 @@
       "totalTime": 37,
       "totalActivities": 15,
       "avgSpeed": 13.79,
+      "monthlyDistance": {
+        "2026-08": 460.22589999999997,
+        "2026-07": 17.535700000000002,
+        "2026-06": 27.942700000000002
+      },
+      "monthlyActivities": {
+        "2026-08": 13,
+        "2026-07": 1,
+        "2026-06": 1
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2059,6 +4265,12 @@
       "totalTime": 2,
       "totalActivities": 2,
       "avgSpeed": 14.59,
+      "monthlyDistance": {
+        "2026-06": 36.2375
+      },
+      "monthlyActivities": {
+        "2026-06": 2
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2073,6 +4285,20 @@
       "totalTime": 111,
       "totalActivities": 183,
       "avgSpeed": 11.95,
+      "monthlyDistance": {
+        "2026-09": 271.05649999999997,
+        "2026-08": 328.179,
+        "2026-07": 286.3655,
+        "2026-06": 357.0157000000001,
+        "2026-05": 87.4741
+      },
+      "monthlyActivities": {
+        "2026-09": 39,
+        "2026-08": 36,
+        "2026-07": 49,
+        "2026-06": 37,
+        "2026-05": 22
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2087,6 +4313,14 @@
       "totalTime": 5,
       "totalActivities": 4,
       "avgSpeed": 12.24,
+      "monthlyDistance": {
+        "2026-06": 41.5806,
+        "2026-05": 15.5977
+      },
+      "monthlyActivities": {
+        "2026-06": 1,
+        "2026-05": 3
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2101,6 +4335,14 @@
       "totalTime": 1,
       "totalActivities": 3,
       "avgSpeed": 16.15,
+      "monthlyDistance": {
+        "2026-06": 15.173200000000001,
+        "2026-05": 2.5046
+      },
+      "monthlyActivities": {
+        "2026-06": 2,
+        "2026-05": 1
+      },
       "activityTypes": [
         "MountainBikeRide"
       ]
@@ -2115,6 +4357,14 @@
       "totalTime": 1,
       "totalActivities": 3,
       "avgSpeed": 12.04,
+      "monthlyDistance": {
+        "2026-06": 4.4762,
+        "2026-05": 3.2058
+      },
+      "monthlyActivities": {
+        "2026-06": 2,
+        "2026-05": 1
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2123,15 +4373,40 @@
       "name": "Robert Kunysz",
       "athleteId": 78397546,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/78397546/49682450/1/large.jpg",
-      "totalDistance": 3909.2,
-      "totalElevation": 27812,
-      "avgElevation": 123,
-      "totalTime": 172,
-      "totalActivities": 227,
-      "avgSpeed": 22.74,
+      "totalDistance": 6829,
+      "totalElevation": 52380,
+      "avgElevation": 121,
+      "totalTime": 309,
+      "totalActivities": 432,
+      "avgSpeed": 22.1,
+      "monthlyDistance": {
+        "2026-10": 658.1052999999999,
+        "2026-09": 796.0329,
+        "2026-08": 752.1713999999998,
+        "2026-07": 626.393,
+        "2026-06": 716.8987,
+        "2026-05": 1017.675,
+        "2026-04": 585.9239999999999,
+        "2026-03": 677.6506000000002,
+        "2026-02": 434.3380000000001,
+        "2026-01": 563.785
+      },
+      "monthlyActivities": {
+        "2026-10": 53,
+        "2026-09": 52,
+        "2026-08": 50,
+        "2026-07": 30,
+        "2026-06": 44,
+        "2026-05": 51,
+        "2026-04": 40,
+        "2026-03": 40,
+        "2026-02": 30,
+        "2026-01": 42
+      },
       "activityTypes": [
         "Ride",
-        "GravelRide"
+        "GravelRide",
+        "MountainBikeRide"
       ]
     },
     {
@@ -2144,6 +4419,16 @@
       "totalTime": 9,
       "totalActivities": 4,
       "avgSpeed": 16.37,
+      "monthlyDistance": {
+        "2026-07": 33.950199999999995,
+        "2026-06": 63.0984,
+        "2026-05": 45.5865
+      },
+      "monthlyActivities": {
+        "2026-07": 1,
+        "2026-06": 2,
+        "2026-05": 1
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2158,6 +4443,18 @@
       "totalTime": 35,
       "totalActivities": 33,
       "avgSpeed": 17.1,
+      "monthlyDistance": {
+        "2026-08": 36.7341,
+        "2026-07": 83.6064,
+        "2026-06": 162.82599999999996,
+        "2026-05": 317.77610000000004
+      },
+      "monthlyActivities": {
+        "2026-08": 2,
+        "2026-07": 5,
+        "2026-06": 9,
+        "2026-05": 17
+      },
       "activityTypes": [
         "MountainBikeRide"
       ]
@@ -2166,12 +4463,30 @@
       "name": "Zbigniew Bilski",
       "athleteId": 136058528,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLQ-cSfpV5Hzsraf-msFjB8a8DMx5yG5ivXqEeHbFg9HaKf-Q=s96-c",
-      "totalDistance": 3147.4,
-      "totalElevation": 3406,
+      "totalDistance": 3193.4,
+      "totalElevation": 3495,
       "avgElevation": 38,
-      "totalTime": 218,
-      "totalActivities": 89,
-      "avgSpeed": 14.41,
+      "totalTime": 225,
+      "totalActivities": 92,
+      "avgSpeed": 14.18,
+      "monthlyDistance": {
+        "2026-10": 10.9688,
+        "2026-09": 391.4033000000001,
+        "2026-08": 621.8567,
+        "2026-07": 427.86650000000003,
+        "2026-06": 654.3969000000001,
+        "2026-05": 1051.8645000000001,
+        "2026-04": 35.0439
+      },
+      "monthlyActivities": {
+        "2026-10": 1,
+        "2026-09": 13,
+        "2026-08": 19,
+        "2026-07": 11,
+        "2026-06": 21,
+        "2026-05": 25,
+        "2026-04": 2
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2186,6 +4501,18 @@
       "totalTime": 40,
       "totalActivities": 106,
       "avgSpeed": 15.01,
+      "monthlyDistance": {
+        "2026-08": 61.869899999999994,
+        "2026-07": 249.94320000000002,
+        "2026-06": 85.4404,
+        "2026-05": 205.66120000000004
+      },
+      "monthlyActivities": {
+        "2026-08": 16,
+        "2026-07": 45,
+        "2026-06": 12,
+        "2026-05": 33
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2200,6 +4527,18 @@
       "totalTime": 22,
       "totalActivities": 31,
       "avgSpeed": 14.66,
+      "monthlyDistance": {
+        "2026-08": 93.84249999999999,
+        "2026-07": 114.13559999999998,
+        "2026-06": 99.41319999999999,
+        "2026-05": 18.7761
+      },
+      "monthlyActivities": {
+        "2026-08": 4,
+        "2026-07": 19,
+        "2026-06": 6,
+        "2026-05": 2
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2208,12 +4547,30 @@
       "name": "Karolina Kończarek",
       "athleteId": 137547058,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/137547058/32371139/2/large.jpg",
-      "totalDistance": 1301.5,
-      "totalElevation": 4678,
-      "avgElevation": 134,
-      "totalTime": 70,
-      "totalActivities": 35,
-      "avgSpeed": 18.54,
+      "totalDistance": 1358.8,
+      "totalElevation": 4932,
+      "avgElevation": 133,
+      "totalTime": 74,
+      "totalActivities": 37,
+      "avgSpeed": 18.46,
+      "monthlyDistance": {
+        "2026-09": 412.19070000000005,
+        "2026-08": 206.543,
+        "2026-07": 272.7001,
+        "2026-06": 159.07569999999998,
+        "2026-05": 251.03480000000005,
+        "2026-04": 30.7942,
+        "2026-03": 26.4373
+      },
+      "monthlyActivities": {
+        "2026-09": 10,
+        "2026-08": 4,
+        "2026-07": 7,
+        "2026-06": 5,
+        "2026-05": 9,
+        "2026-04": 1,
+        "2026-03": 1
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2222,12 +4579,28 @@
       "name": "Magdalena Lasota",
       "athleteId": 194315751,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 1217.2,
-      "totalElevation": 5126,
+      "totalDistance": 1247.7,
+      "totalElevation": 5215,
       "avgElevation": 33,
-      "totalTime": 80,
-      "totalActivities": 156,
-      "avgSpeed": 15.26,
+      "totalTime": 81,
+      "totalActivities": 160,
+      "avgSpeed": 15.36,
+      "monthlyDistance": {
+        "2026-10": 30.501200000000004,
+        "2026-09": 285.35389999999995,
+        "2026-08": 67.9295,
+        "2026-07": 193.81079999999997,
+        "2026-06": 310.59779999999995,
+        "2026-05": 359.52899999999994
+      },
+      "monthlyActivities": {
+        "2026-10": 4,
+        "2026-09": 29,
+        "2026-08": 10,
+        "2026-07": 24,
+        "2026-06": 42,
+        "2026-05": 51
+      },
       "activityTypes": [
         "Ride",
         "GravelRide"
@@ -2243,6 +4616,20 @@
       "totalTime": 459,
       "totalActivities": 330,
       "avgSpeed": 13.65,
+      "monthlyDistance": {
+        "2026-09": 1292.3764999999999,
+        "2026-08": 1308.3846,
+        "2026-07": 1372.0199999999995,
+        "2026-06": 1180.0629000000006,
+        "2026-05": 1113.6737999999998
+      },
+      "monthlyActivities": {
+        "2026-09": 44,
+        "2026-08": 69,
+        "2026-07": 78,
+        "2026-06": 70,
+        "2026-05": 69
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2257,6 +4644,18 @@
       "totalTime": 11,
       "totalActivities": 10,
       "avgSpeed": 16.68,
+      "monthlyDistance": {
+        "2026-08": 59.3977,
+        "2026-07": 40.2438,
+        "2026-06": 61.6444,
+        "2026-05": 27.0253
+      },
+      "monthlyActivities": {
+        "2026-08": 4,
+        "2026-07": 1,
+        "2026-06": 3,
+        "2026-05": 2
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2271,6 +4670,20 @@
       "totalTime": 59,
       "totalActivities": 124,
       "avgSpeed": 17.86,
+      "monthlyDistance": {
+        "2026-09": 214.4885,
+        "2026-08": 198.7756,
+        "2026-07": 273.41400000000004,
+        "2026-06": 101.15490000000001,
+        "2026-05": 259.1487
+      },
+      "monthlyActivities": {
+        "2026-09": 25,
+        "2026-08": 23,
+        "2026-07": 32,
+        "2026-06": 13,
+        "2026-05": 31
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2279,12 +4692,30 @@
       "name": "Mariusz Rawecki",
       "athleteId": 136015098,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/136015098/32379045/1/large.jpg",
-      "totalDistance": 770.2,
-      "totalElevation": 737,
-      "avgElevation": 11,
-      "totalTime": 61,
-      "totalActivities": 69,
-      "avgSpeed": 12.72,
+      "totalDistance": 837.6,
+      "totalElevation": 785,
+      "avgElevation": 10,
+      "totalTime": 67,
+      "totalActivities": 81,
+      "avgSpeed": 12.52,
+      "monthlyDistance": {
+        "2026-09": 35.0541,
+        "2026-08": 61.8534,
+        "2026-07": 226.279,
+        "2026-06": 87.45500000000001,
+        "2026-05": 359.5951999999999,
+        "2026-04": 30.9633,
+        "2026-03": 36.424800000000005
+      },
+      "monthlyActivities": {
+        "2026-09": 5,
+        "2026-08": 6,
+        "2026-07": 17,
+        "2026-06": 12,
+        "2026-05": 29,
+        "2026-04": 5,
+        "2026-03": 7
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2293,12 +4724,26 @@
       "name": "Marcin Stff",
       "athleteId": 136549736,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/136549736/31070885/1/large.jpg",
-      "totalDistance": 836,
-      "totalElevation": 927,
+      "totalDistance": 856,
+      "totalElevation": 976,
       "avgElevation": 9,
-      "totalTime": 100,
-      "totalActivities": 103,
-      "avgSpeed": 8.39,
+      "totalTime": 101,
+      "totalActivities": 104,
+      "avgSpeed": 8.45,
+      "monthlyDistance": {
+        "2026-10": 20.0835,
+        "2026-09": 103.158,
+        "2026-08": 360.2429000000001,
+        "2026-07": 263.1658,
+        "2026-06": 109.3899
+      },
+      "monthlyActivities": {
+        "2026-10": 1,
+        "2026-09": 9,
+        "2026-08": 43,
+        "2026-07": 37,
+        "2026-06": 14
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2307,12 +4752,26 @@
       "name": "Przemysław  Koćma ",
       "athleteId": 166454136,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 766.5,
-      "totalElevation": 1679,
-      "avgElevation": 21,
-      "totalTime": 48,
-      "totalActivities": 81,
-      "avgSpeed": 15.87,
+      "totalDistance": 810.8,
+      "totalElevation": 1786,
+      "avgElevation": 22,
+      "totalTime": 51,
+      "totalActivities": 83,
+      "avgSpeed": 15.93,
+      "monthlyDistance": {
+        "2026-07": 130.1795,
+        "2026-06": 345.1820999999999,
+        "2026-05": 291.14279999999997,
+        "2026-04": 11.300600000000001,
+        "2026-03": 32.9641
+      },
+      "monthlyActivities": {
+        "2026-07": 13,
+        "2026-06": 42,
+        "2026-05": 26,
+        "2026-04": 1,
+        "2026-03": 1
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2327,6 +4786,14 @@
       "totalTime": 12,
       "totalActivities": 12,
       "avgSpeed": 19.47,
+      "monthlyDistance": {
+        "2026-06": 35.861599999999996,
+        "2026-05": 198.9512
+      },
+      "monthlyActivities": {
+        "2026-06": 1,
+        "2026-05": 11
+      },
       "activityTypes": [
         "Ride",
         "EBikeRide"
@@ -2342,6 +4809,12 @@
       "totalTime": 4,
       "totalActivities": 6,
       "avgSpeed": 12.17,
+      "monthlyDistance": {
+        "2026-06": 48.5322
+      },
+      "monthlyActivities": {
+        "2026-06": 6
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2350,12 +4823,32 @@
       "name": "Marek Skrzypczak",
       "athleteId": 30981470,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/30981470/30431845/2/large.jpg",
-      "totalDistance": 1554.1,
-      "totalElevation": 3359,
-      "avgElevation": 25,
-      "totalTime": 73,
-      "totalActivities": 136,
-      "avgSpeed": 21.35,
+      "totalDistance": 1974.8,
+      "totalElevation": 4236,
+      "avgElevation": 24,
+      "totalTime": 94,
+      "totalActivities": 179,
+      "avgSpeed": 21.12,
+      "monthlyDistance": {
+        "2026-10": 75.1844,
+        "2026-09": 305.67589999999996,
+        "2026-08": 298.7993,
+        "2026-07": 278.28389999999996,
+        "2026-06": 248.71959999999999,
+        "2026-05": 422.6298,
+        "2026-04": 175.56500000000003,
+        "2026-03": 169.9479
+      },
+      "monthlyActivities": {
+        "2026-10": 8,
+        "2026-09": 31,
+        "2026-08": 28,
+        "2026-07": 27,
+        "2026-06": 22,
+        "2026-05": 28,
+        "2026-04": 17,
+        "2026-03": 18
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2370,6 +4863,20 @@
       "totalTime": 32,
       "totalActivities": 25,
       "avgSpeed": 19.1,
+      "monthlyDistance": {
+        "2026-09": 49.0536,
+        "2026-08": 240.44599999999997,
+        "2026-07": 172.3874,
+        "2026-06": 80.6818,
+        "2026-05": 62.958
+      },
+      "monthlyActivities": {
+        "2026-09": 3,
+        "2026-08": 9,
+        "2026-07": 7,
+        "2026-06": 3,
+        "2026-05": 3
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2384,6 +4891,14 @@
       "totalTime": 13,
       "totalActivities": 5,
       "avgSpeed": 13.21,
+      "monthlyDistance": {
+        "2026-08": 42.2804,
+        "2026-05": 124.94239999999999
+      },
+      "monthlyActivities": {
+        "2026-08": 2,
+        "2026-05": 3
+      },
       "activityTypes": [
         "MountainBikeRide"
       ]
@@ -2398,6 +4913,16 @@
       "totalTime": 13,
       "totalActivities": 15,
       "avgSpeed": 16.86,
+      "monthlyDistance": {
+        "2026-07": 14.595200000000002,
+        "2026-06": 27.1954,
+        "2026-05": 171.03199999999998
+      },
+      "monthlyActivities": {
+        "2026-07": 3,
+        "2026-06": 2,
+        "2026-05": 10
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2412,6 +4937,14 @@
       "totalTime": 11,
       "totalActivities": 5,
       "avgSpeed": 14.31,
+      "monthlyDistance": {
+        "2026-06": 95.62819999999999,
+        "2026-05": 56.079
+      },
+      "monthlyActivities": {
+        "2026-06": 3,
+        "2026-05": 2
+      },
       "activityTypes": [
         "Ride",
         "MountainBikeRide"
@@ -2421,12 +4954,32 @@
       "name": "Mariusz Lis",
       "athleteId": 132065953,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/132065953/36583108/1/large.jpg",
-      "totalDistance": 1851,
-      "totalElevation": 3489,
+      "totalDistance": 2590.5,
+      "totalElevation": 5057,
       "avgElevation": 25,
-      "totalTime": 88,
-      "totalActivities": 141,
-      "avgSpeed": 21.04,
+      "totalTime": 123,
+      "totalActivities": 200,
+      "avgSpeed": 20.99,
+      "monthlyDistance": {
+        "2026-10": 459.24039999999985,
+        "2026-09": 667.5823000000001,
+        "2026-08": 343.13180000000006,
+        "2026-07": 404.47960000000006,
+        "2026-06": 151.0821,
+        "2026-05": 284.70939999999996,
+        "2026-04": 198.99099999999999,
+        "2026-03": 81.2757
+      },
+      "monthlyActivities": {
+        "2026-10": 37,
+        "2026-09": 48,
+        "2026-08": 27,
+        "2026-07": 32,
+        "2026-06": 12,
+        "2026-05": 22,
+        "2026-04": 16,
+        "2026-03": 6
+      },
       "activityTypes": [
         "EBikeRide",
         "Ride"
@@ -2436,12 +4989,26 @@
       "name": "Kasia Miazga",
       "athleteId": 137180430,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/137180430/36842822/1/large.jpg",
-      "totalDistance": 790,
-      "totalElevation": 1694,
-      "avgElevation": 16,
-      "totalTime": 47,
-      "totalActivities": 109,
-      "avgSpeed": 16.81,
+      "totalDistance": 913.2,
+      "totalElevation": 1952,
+      "avgElevation": 15,
+      "totalTime": 55,
+      "totalActivities": 127,
+      "avgSpeed": 16.72,
+      "monthlyDistance": {
+        "2026-10": 123.11840000000002,
+        "2026-09": 320.81049999999993,
+        "2026-08": 328.7208,
+        "2026-07": 115.86119999999998,
+        "2026-06": 24.6396
+      },
+      "monthlyActivities": {
+        "2026-10": 18,
+        "2026-09": 42,
+        "2026-08": 43,
+        "2026-07": 18,
+        "2026-06": 6
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2450,12 +5017,30 @@
       "name": "Janek S.",
       "athleteId": 140743685,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKfTDksoCO9RCGpjRR1p8asOLEfUmKBDNXFSX8u6LGFeGy2XoOT=s96-c",
-      "totalDistance": 659,
-      "totalElevation": 982,
+      "totalDistance": 747.4,
+      "totalElevation": 1086,
       "avgElevation": 25,
-      "totalTime": 50,
-      "totalActivities": 39,
-      "avgSpeed": 13.23,
+      "totalTime": 56,
+      "totalActivities": 43,
+      "avgSpeed": 13.25,
+      "monthlyDistance": {
+        "2026-09": 72.02329999999999,
+        "2026-08": 200.17880000000002,
+        "2026-07": 206.15259999999998,
+        "2026-06": 53.7666,
+        "2026-05": 126.88470000000001,
+        "2026-04": 21.7732,
+        "2026-03": 66.5875
+      },
+      "monthlyActivities": {
+        "2026-09": 7,
+        "2026-08": 11,
+        "2026-07": 11,
+        "2026-06": 3,
+        "2026-05": 7,
+        "2026-04": 1,
+        "2026-03": 3
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2464,12 +5049,30 @@
       "name": "PAWEŁ KEMPA",
       "athleteId": 136100892,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 657.6,
-      "totalElevation": 2010,
-      "avgElevation": 47,
-      "totalTime": 41,
-      "totalActivities": 43,
-      "avgSpeed": 16.21,
+      "totalDistance": 826.7,
+      "totalElevation": 2407,
+      "avgElevation": 50,
+      "totalTime": 51,
+      "totalActivities": 48,
+      "avgSpeed": 16.16,
+      "monthlyDistance": {
+        "2026-10": 122.55849999999998,
+        "2026-09": 169.0254,
+        "2026-08": 96.4033,
+        "2026-07": 147.33939999999998,
+        "2026-06": 58.82639999999999,
+        "2026-05": 185.9744,
+        "2026-04": 46.5608
+      },
+      "monthlyActivities": {
+        "2026-10": 3,
+        "2026-09": 8,
+        "2026-08": 6,
+        "2026-07": 9,
+        "2026-06": 6,
+        "2026-05": 14,
+        "2026-04": 2
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2484,6 +5087,20 @@
       "totalTime": 22,
       "totalActivities": 45,
       "avgSpeed": 16.65,
+      "monthlyDistance": {
+        "2026-09": 19.5966,
+        "2026-08": 96.2754,
+        "2026-07": 121.02670000000002,
+        "2026-06": 76.24619999999999,
+        "2026-05": 56.2365
+      },
+      "monthlyActivities": {
+        "2026-09": 3,
+        "2026-08": 10,
+        "2026-07": 15,
+        "2026-06": 10,
+        "2026-05": 7
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2492,12 +5109,20 @@
       "name": "Paweł Sroczyński",
       "athleteId": 135987212,
       "avatar": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/135987212/30948428/2/large.jpg",
-      "totalDistance": 602.1,
-      "totalElevation": 1051,
-      "avgElevation": 29,
-      "totalTime": 28,
-      "totalActivities": 36,
-      "avgSpeed": 21.18,
+      "totalDistance": 689.7,
+      "totalElevation": 1203,
+      "avgElevation": 30,
+      "totalTime": 32,
+      "totalActivities": 40,
+      "avgSpeed": 21.35,
+      "monthlyDistance": {
+        "2026-05": 602.1369000000001,
+        "2026-04": 87.5849
+      },
+      "monthlyActivities": {
+        "2026-05": 36,
+        "2026-04": 4
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2512,6 +5137,20 @@
       "totalTime": 120,
       "totalActivities": 147,
       "avgSpeed": 14.19,
+      "monthlyDistance": {
+        "2026-09": 337.7598,
+        "2026-08": 554.1184000000001,
+        "2026-07": 427.2826000000001,
+        "2026-06": 165.26309999999995,
+        "2026-05": 222.4498
+      },
+      "monthlyActivities": {
+        "2026-09": 27,
+        "2026-08": 43,
+        "2026-07": 38,
+        "2026-06": 14,
+        "2026-05": 25
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2526,6 +5165,20 @@
       "totalTime": 136,
       "totalActivities": 138,
       "avgSpeed": 13.69,
+      "monthlyDistance": {
+        "2026-09": 197.80429999999996,
+        "2026-08": 378.05809999999997,
+        "2026-07": 535.9713,
+        "2026-06": 543.6910999999999,
+        "2026-05": 202.43550000000002
+      },
+      "monthlyActivities": {
+        "2026-09": 11,
+        "2026-08": 25,
+        "2026-07": 46,
+        "2026-06": 39,
+        "2026-05": 17
+      },
       "activityTypes": [
         "EBikeRide"
       ]
@@ -2540,6 +5193,16 @@
       "totalTime": 7,
       "totalActivities": 10,
       "avgSpeed": 13.98,
+      "monthlyDistance": {
+        "2026-07": 6.4519,
+        "2026-06": 62.0049,
+        "2026-05": 35.9678
+      },
+      "monthlyActivities": {
+        "2026-07": 2,
+        "2026-06": 4,
+        "2026-05": 4
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2554,6 +5217,20 @@
       "totalTime": 142,
       "totalActivities": 207,
       "avgSpeed": 17.52,
+      "monthlyDistance": {
+        "2026-09": 672.1614000000001,
+        "2026-08": 587.2498999999999,
+        "2026-07": 458.3885999999999,
+        "2026-06": 408.00620000000004,
+        "2026-05": 362.3477
+      },
+      "monthlyActivities": {
+        "2026-09": 39,
+        "2026-08": 40,
+        "2026-07": 44,
+        "2026-06": 42,
+        "2026-05": 42
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2568,6 +5245,20 @@
       "totalTime": 42,
       "totalActivities": 146,
       "avgSpeed": 16.84,
+      "monthlyDistance": {
+        "2026-09": 2.9559,
+        "2026-08": 122.3928,
+        "2026-07": 291.91569999999996,
+        "2026-06": 206.0004,
+        "2026-05": 85.06359999999998
+      },
+      "monthlyActivities": {
+        "2026-09": 1,
+        "2026-08": 24,
+        "2026-07": 63,
+        "2026-06": 41,
+        "2026-05": 17
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2582,18 +5273,32 @@
       "totalTime": 0,
       "totalActivities": 0,
       "avgSpeed": 0,
+      "monthlyDistance": {},
+      "monthlyActivities": {},
       "activityTypes": []
     },
     {
       "name": "Dariusz Górnik",
       "athleteId": 165481934,
       "avatar": "avatar/athlete/large.png",
-      "totalDistance": 250,
-      "totalElevation": 406,
-      "avgElevation": 45,
-      "totalTime": 24,
-      "totalActivities": 9,
-      "avgSpeed": 10.42,
+      "totalDistance": 281.4,
+      "totalElevation": 460,
+      "avgElevation": 46,
+      "totalTime": 27,
+      "totalActivities": 10,
+      "avgSpeed": 10.36,
+      "monthlyDistance": {
+        "2026-10": 31.388900000000003,
+        "2026-09": 31.6584,
+        "2026-08": 153.54579999999999,
+        "2026-07": 64.7934
+      },
+      "monthlyActivities": {
+        "2026-10": 1,
+        "2026-09": 3,
+        "2026-08": 4,
+        "2026-07": 2
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2608,6 +5313,16 @@
       "totalTime": 54,
       "totalActivities": 82,
       "avgSpeed": 16.56,
+      "monthlyDistance": {
+        "2026-09": 429.3348,
+        "2026-08": 458.0508000000001,
+        "2026-07": 3.1601
+      },
+      "monthlyActivities": {
+        "2026-09": 41,
+        "2026-08": 40,
+        "2026-07": 1
+      },
       "activityTypes": [
         "Ride"
       ]
@@ -2622,6 +5337,14 @@
       "totalTime": 2,
       "totalActivities": 8,
       "avgSpeed": 20.27,
+      "monthlyDistance": {
+        "2026-09": 6.8544,
+        "2026-08": 40.83409999999999
+      },
+      "monthlyActivities": {
+        "2026-09": 1,
+        "2026-08": 7
+      },
       "activityTypes": [
         "Ride"
       ]
