@@ -508,34 +508,77 @@ const months = [
   { name: "Sierpień", key: `${year}-08`, days: 31 },
   { name: "Wrzesień", key: `${year}-09`, days: 30 }
 ];
+function renderMonthlyStats(filteredUsers) {
 
-monthlyContainer.innerHTML = `
-  <h3>📅 Dystans w poszczególnych miesiącach</h3>
+  const monthlyTotals = {};
 
-  <table style="margin-bottom:20px">
-    <thead>
-      <tr>
-        <th>Miesiąc</th>
-        <th>Dystans</th>
-        <th>Śr. km/dzień</th>
-      </tr>
-    </thead>
-    <tbody>
-      ${months.map(m => {
-        const distance = monthly[m.key] || 0;
-        const avgDaily = distance / m.days;
+  filteredUsers.forEach(user => {
 
-        return `
-          <tr>
-            <td>${m.name}</td>
-            <td>${distance.toFixed(1)} km</td>
-            <td>${avgDaily.toFixed(0)} km</td>
-          </tr>
-        `;
-      }).join("")}
-    </tbody>
-  </table>
-`;
+    Object.entries(user.dailyDistance || {})
+      .forEach(([date, distance]) => {
+
+        if (
+          isDateInRange(
+            date,
+            dateFrom.value,
+            dateTo.value
+          )
+        ) {
+
+          const month = date.slice(0, 7);
+
+          monthlyTotals[month] =
+            (monthlyTotals[month] || 0)
+            + distance;
+        }
+      });
+  });
+
+  const monthNames = {
+    "01": "Styczeń",
+    "02": "Luty",
+    "03": "Marzec",
+    "04": "Kwiecień",
+    "05": "Maj",
+    "06": "Czerwiec",
+    "07": "Lipiec",
+    "08": "Sierpień",
+    "09": "Wrzesień",
+    "10": "Październik",
+    "11": "Listopad",
+    "12": "Grudzień"
+  };
+
+  const rows = Object.entries(monthlyTotals)
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([month, distance]) => {
+
+      const monthNumber = month.split("-")[1];
+
+      return `
+        <tr>
+          <td>${monthNames[monthNumber]}</td>
+          <td>${distance.toFixed(1)} km</td>
+        </tr>
+      `;
+    })
+    .join("");
+
+  monthlyContainer.innerHTML = `
+    <h3>📅 Dystans w poszczególnych miesiącach</h3>
+
+    <table style="margin-bottom:20px">
+      <thead>
+        <tr>
+          <th>Miesiąc</th>
+          <th>Dystans</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${rows}
+      </tbody>
+    </table>
+  `;
 }
     applyFilters();
     
@@ -617,6 +660,7 @@ filtered = filtered.map(u => {
   };
 });
   
+  renderMonthlyStats(filtered);
   renderTable(filtered);
   //renderLeader(filtered); // ✅ ważne
 }
