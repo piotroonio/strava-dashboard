@@ -189,6 +189,8 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET, monthlyStats) {
     let activityTypes = new Set();
     const monthlyDistance = {};
     const monthlyActivities = {};
+    const dailyDistance = {};
+    const dailyActivities = {};
 
     allActivities.forEach(a => {
 
@@ -215,6 +217,11 @@ const monthKey =
     .toISOString()
     .slice(0, 7);
 
+const dayKey =
+  new Date(a.start_date)
+    .toISOString()
+    .slice(0, 10);
+
 // statystyki globalne
 if (monthlyStats[monthKey] !== undefined) {
   monthlyStats[monthKey] += distance / 1000;
@@ -225,8 +232,16 @@ monthlyDistance[monthKey] =
   (monthlyDistance[monthKey] || 0)
   + distance / 1000;
 
+dailyDistance[dayKey] =
+  (dailyDistance[dayKey] || 0)
+  + distance / 1000;
+
 monthlyActivities[monthKey] =
   (monthlyActivities[monthKey] || 0)
+  + 1;
+
+dailyActivities[dayKey] =
+  (dailyActivities[dayKey] || 0)
   + 1;
 
 totalElevation += a.total_elevation_gain || 0;
@@ -234,7 +249,11 @@ totalElevation += a.total_elevation_gain || 0;
       totalActivities++;
 
       activityTypes.add(a.sport_type);
-    });
+
+Object.keys(dailyDistance).forEach(key => {
+  dailyDistance[key] =
+    Number(dailyDistance[key].toFixed(1));
+});
 
     return {
       data: {
@@ -256,6 +275,10 @@ totalElevation += a.total_elevation_gain || 0;
           : 0,
         monthlyDistance,
         monthlyActivities,
+        
+        dailyDistance,
+        dailyActivities,
+        
         activityTypes: Array.from(activityTypes)
       },
       duplicates: duplicatePairs.map(p => ({
