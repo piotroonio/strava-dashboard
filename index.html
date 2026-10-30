@@ -181,9 +181,7 @@ th span.sort-icon svg {
 
 <body>
 
-<!--
-  <h1>🚴 Zestawienie aktywności maj–wrzesień 2026 r.</h1>
--->
+  <h1>🚴 Zestawienie aktywności</h1>
 
 <p class="description">
   Ranking na podstawie aktywności rowerowych ze Strava.
@@ -193,7 +191,7 @@ th span.sort-icon svg {
 <input type="date" id="dateFrom" value="2026-05-01">
 <label><b>Do:</b></label>
 <input type="date" id="dateTo" value="2026-09-30">
-  
+</br>  
 <label><b>Szukaj użytkownika:</b></label>
 <input type="text" id="searchUser" placeholder="np. Piotr" />
 
@@ -367,6 +365,11 @@ users = users.map(u => ({
     const activityFilter = document.getElementById("activityFilter");
     const dateFrom = document.getElementById("dateFrom");
     const dateTo = document.getElementById("dateTo");
+
+    const year = new Date().getFullYear();
+
+    dateFrom.value = `${year}-05-01`;
+    dateTo.value = `${year}-09-30`;
 
     function renderTable(list) {
       tbody.innerHTML = "";
@@ -549,34 +552,8 @@ monthlyContainer.innerHTML = `
    //   renderTable(filtered);
    // });
 
-function getMonthsInRange(startDate, endDate) {
-
-  const result = [];
-
-  const current = new Date(
-    startDate.getFullYear(),
-    startDate.getMonth(),
-    1
-  );
-
-  const end = new Date(
-    endDate.getFullYear(),
-    endDate.getMonth(),
-    1
-  );
-
-  while (current <= end) {
-
-    result.push(
-      current.toISOString().slice(0, 7)
-    );
-
-    current.setMonth(
-      current.getMonth() + 1
-    );
-  }
-
-  return result;
+function isDateInRange(date, from, to) {
+  return date >= from && date <= to;
 }
   
 function applyFilters() {
@@ -595,44 +572,50 @@ function applyFilters() {
     );
   }
 
-  const from = new Date(dateFrom.value);
-  const to = new Date(dateTo.value);
+const fromStr = dateFrom.value;
+const toStr = dateTo.value;
 
-  const selectedMonths =
-  getMonthsInRange(from, to);
+filtered = filtered.map(u => {
 
-    filtered = filtered.map(u => {
+  let distance = 0;
+  let activities = 0;
 
-    let distance = 0;
-    let activities = 0;
+  Object.entries(
+    u.dailyDistance || {}
+  ).forEach(([date, value]) => {
 
-    selectedMonths.forEach(month => {
+    if (isDateInRange(date, fromStr, toStr)) {
+      distance += value;
+    }
+  });
 
-      distance +=
-        u.monthlyDistance?.[month] || 0;
+  Object.entries(
+    u.dailyActivities || {}
+  ).forEach(([date, value]) => {
 
-      activities +=
-        u.monthlyActivities?.[month] || 0;
-    });
+    if (isDateInRange(date, fromStr, toStr)) {
+      activities += value;
+    }
+  });
 
-    return {
-      ...u,
+  return {
+    ...u,
 
-      totalDistance:
-        Number(distance.toFixed(1)),
+    totalDistance:
+      Number(distance.toFixed(1)),
 
-      totalActivities:
-        activities,
+    totalActivities:
+      activities,
 
-      avgDistance:
-        activities > 0
-          ? Number(
-              (distance / activities)
-                .toFixed(1)
-            )
-          : 0
-      };
-    });
+    avgDistance:
+      activities > 0
+        ? Number(
+            (distance / activities)
+              .toFixed(1)
+          )
+        : 0
+  };
+});
   
   renderTable(filtered);
   //renderLeader(filtered); // ✅ ważne
