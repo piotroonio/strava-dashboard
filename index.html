@@ -486,19 +486,43 @@ const row = `
     if (data.monthlyStats) {
 
   const monthly = data.monthlyStats;
-  const year = new Date().getFullYear();
+const year = new Date().getFullYear();
 
-  monthlyContainer.innerHTML = `
-    <h3>📅 Dystans w poszczególnych miesiącach</h3>
+const months = [
+  { name: "Maj", key: `${year}-05`, days: 31 },
+  { name: "Czerwiec", key: `${year}-06`, days: 30 },
+  { name: "Lipiec", key: `${year}-07`, days: 31 },
+  { name: "Sierpień", key: `${year}-08`, days: 31 },
+  { name: "Wrzesień", key: `${year}-09`, days: 30 }
+];
 
-    <table style="margin-bottom:20px">
-      <tr><td>Maj</td><td>${(monthly[`${year}-05`] || 0).toFixed(1)} km</td></tr>
-      <tr><td>Czerwiec</td><td>${(monthly[`${year}-06`] || 0).toFixed(1)} km</td></tr>
-      <tr><td>Lipiec</td><td>${(monthly[`${year}-07`] || 0).toFixed(1)} km</td></tr>
-      <tr><td>Sierpień</td><td>${(monthly[`${year}-08`] || 0).toFixed(1)} km</td></tr>
-      <tr><td>Wrzesień</td><td>${(monthly[`${year}-09`] || 0).toFixed(1)} km</td></tr>
-    </table>
-  `;
+monthlyContainer.innerHTML = `
+  <h3>📅 Dystans w poszczególnych miesiącach</h3>
+
+  <table style="margin-bottom:20px">
+    <thead>
+      <tr>
+        <th>Miesiąc</th>
+        <th>Dystans</th>
+        <th>Śr. km/dzień</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${months.map(m => {
+        const distance = monthly[m.key] || 0;
+        const avgDaily = distance / m.days;
+
+        return `
+          <tr>
+            <td>${m.name}</td>
+            <td>${distance.toFixed(1)} km</td>
+            <td>${avgDaily.toFixed(0)} km</td>
+          </tr>
+        `;
+      }).join("")}
+    </tbody>
+  </table>
+`;
 }
     applyFilters();
     
