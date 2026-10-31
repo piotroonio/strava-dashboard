@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T19:43:02.592Z",
+  "updatedAt": "2026-10-31T08:52:34.185Z",
   "monthlyStats": {
     "2026-05": 41384.2,
     "2026-06": 41827.8,
@@ -15746,14 +15746,14 @@
       "name": "Wiktoria  Błocian",
       "athleteId": 163338133,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIPkzcX7vHRsDYqUmuL-8Qn1VlgHW-cZoSFZFOUmTnTltqEXA=s96-c",
-      "totalDistance": 1550.4,
-      "totalElevation": 3236,
+      "totalDistance": 1568.9,
+      "totalElevation": 3278,
       "avgElevation": 20,
-      "totalTime": 84,
-      "totalActivities": 159,
+      "totalTime": 85,
+      "totalActivities": 161,
       "avgSpeed": 18.41,
       "monthlyDistance": {
-        "2026-10": 318.5326,
+        "2026-10": 337.00550000000004,
         "2026-09": 246.38389999999995,
         "2026-08": 260.25010000000003,
         "2026-07": 166.9418,
@@ -15763,7 +15763,7 @@
         "2026-03": 55.411
       },
       "monthlyActivities": {
-        "2026-10": 32,
+        "2026-10": 34,
         "2026-09": 25,
         "2026-08": 28,
         "2026-07": 18,
@@ -15773,6 +15773,7 @@
         "2026-03": 6
       },
       "dailyDistance": {
+        "2026-10-30": 18.5,
         "2026-10-28": 18.6,
         "2026-10-27": 28.4,
         "2026-10-26": 18.6,
@@ -15851,6 +15852,7 @@
         "2026-03-24": 18.3
       },
       "dailyActivities": {
+        "2026-10-30": 2,
         "2026-10-28": 2,
         "2026-10-27": 3,
         "2026-10-26": 2,
