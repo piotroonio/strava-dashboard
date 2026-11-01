@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T09:35:46.322Z",
+  "updatedAt": "2026-11-01T19:26:21.933Z",
   "monthlyStats": {
     "2026-05": 41384.2,
     "2026-06": 41827.8,
@@ -11111,13 +11111,14 @@
       "name": "Jakub Krawiec",
       "athleteId": 76772718,
       "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKhPujo8lpurQm5Byxzozda9AdtExhhrkTmP95dwfUqhdKQDg=s96-c",
-      "totalDistance": 3564.3,
-      "totalElevation": 10664,
-      "avgElevation": 45,
-      "totalTime": 241,
-      "totalActivities": 235,
-      "avgSpeed": 14.82,
+      "totalDistance": 3582.2,
+      "totalElevation": 10973,
+      "avgElevation": 46,
+      "totalTime": 242,
+      "totalActivities": 236,
+      "avgSpeed": 14.8,
       "monthlyDistance": {
+        "2026-11": 17.8439,
         "2026-10": 145.2769,
         "2026-09": 349.0791,
         "2026-08": 354.53729999999996,
@@ -11130,6 +11131,7 @@
         "2026-01": 111.59779999999998
       },
       "monthlyActivities": {
+        "2026-11": 1,
         "2026-10": 11,
         "2026-09": 30,
         "2026-08": 25,
@@ -11142,6 +11144,7 @@
         "2026-01": 9
       },
       "dailyDistance": {
+        "2026-11-01": 17.8,
         "2026-10-28": 8.1,
         "2026-10-26": 29.4,
         "2026-10-21": 56.4,
@@ -11278,6 +11281,7 @@
         "2026-01-15": 26.9
       },
       "dailyActivities": {
+        "2026-11-01": 1,
         "2026-10-28": 1,
         "2026-10-26": 2,
         "2026-10-21": 2,
