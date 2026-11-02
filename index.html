@@ -176,6 +176,23 @@ th span.sort-icon svg {
   font-weight: bold;
 }
 
+.leaders-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.leaders-box h3 {
+  margin-top: 0;
+  color: #fc4c02;
+}
+
+.leaders-box p {
+  margin: 8px 0;
+}
+
   </style>
 </head>
 
@@ -205,7 +222,7 @@ th span.sort-icon svg {
 
 <div id="monthlyStats"></div>
 <div id="summary" class="summary"></div>
-
+<div id="leaders" class="leaders"></div>
 
 <table id="table">
   <thead>
@@ -498,7 +515,7 @@ const row = `
       `;
     }
 
-    //renderTable(users);
+//renderTable(users);
 
 function renderMonthlyStats(filteredUsers) {
 
@@ -572,6 +589,57 @@ function renderMonthlyStats(filteredUsers) {
     </table>
   `;
 }
+
+function renderLeaders(filteredUsers) {
+
+  if (filteredUsers.length === 0) {
+    document.getElementById("leaders").innerHTML = "";
+    return;
+  }
+
+  const distanceLeader = [...filteredUsers]
+    .sort((a, b) => b.totalDistance - a.totalDistance)[0];
+
+  const activitiesLeader = [...filteredUsers]
+    .sort((a, b) => b.totalActivities - a.totalActivities)[0];
+
+  const elevationLeader = [...filteredUsers]
+    .sort((a, b) => b.totalElevation - a.totalElevation)[0];
+
+  const speedLeader = [...filteredUsers]
+    .sort((a, b) => b.avgSpeed - a.avgSpeed)[0];
+
+  document.getElementById("leaders").innerHTML = `
+    <div class="leaders-box">
+      <h3>🏆 Liderzy okresu</h3>
+
+      <p>
+        🥇 <strong>Największy dystans:</strong>
+        ${distanceLeader.name}
+        (${distanceLeader.totalDistance.toFixed(1)} km)
+      </p>
+
+      <p>
+        🚵 <strong>Najwięcej aktywności:</strong>
+        ${activitiesLeader.name}
+        (${activitiesLeader.totalActivities})
+      </p>
+
+      <p>
+        ⛰️ <strong>Największa suma przewyższeń:</strong>
+        ${elevationLeader.name}
+        (${elevationLeader.totalElevation} m)
+      </p>
+
+      <p>
+        ⚡ <strong>Najwyższa średnia prędkość:</strong>
+        ${speedLeader.name}
+        (${speedLeader.avgSpeed} km/h)
+      </p>
+    </div>
+  `;
+}
+  
     applyFilters();
     
     updateSortIndicators();
@@ -701,8 +769,8 @@ filtered = filtered.filter(u =>
 
  
   renderMonthlyStats(filtered);
+  renderLeaders(filtered);
   renderTable(filtered);
-  //renderLeader(filtered); // ✅ ważne
 }
 
 // ✅ podłączenie eventów
