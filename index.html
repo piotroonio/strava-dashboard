@@ -609,8 +609,10 @@ const toStr = dateTo.value;
 
 filtered = filtered.map(u => {
 
-  let distance = 0;
-  let activities = 0;
+   let distance = 0;
+   let activities = 0;
+   let movingTime = 0;
+   let elevation = 0;
 
   Object.entries(
     u.dailyDistance || {}
@@ -630,23 +632,63 @@ filtered = filtered.map(u => {
     }
   });
 
-  return {
-    ...u,
+  Object.entries(
+  u.dailyMovingTime || {}
+  ).forEach(([date, value]) => {
 
-    totalDistance:
-      Number(distance.toFixed(1)),
+    if (isDateInRange(date, fromStr, toStr)) {
+      movingTime += value;
+    }
+  });
 
-    totalActivities:
-      activities,
+  Object.entries(
+  u.dailyElevation || {}
+  ).forEach(([date, value]) => {
 
-    avgDistance:
-      activities > 0
-        ? Number(
-            (distance / activities)
-              .toFixed(1)
-          )
-        : 0
-  };
+    if (isDateInRange(date, fromStr, toStr)) {
+      elevation += value;
+    }
+  });
+
+return {
+  ...u,
+
+  totalDistance:
+    Number(distance.toFixed(1)),
+
+  totalActivities:
+    activities,
+
+  totalElevation:
+    Math.round(elevation),
+
+  avgElevation:
+    activities > 0
+      ? Math.round(
+          elevation / activities
+        )
+      : 0,
+
+  avgSpeed:
+    movingTime > 0
+      ? Number(
+          (
+            distance /
+            (movingTime / 3600)
+          ).toFixed(2)
+        )
+      : 0,
+
+  avgDistance:
+    activities > 0
+      ? Number(
+          (
+            distance / activities
+          ).toFixed(1)
+        )
+      : 0
+};
+
 });
   
   renderMonthlyStats(filtered);
