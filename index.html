@@ -446,6 +446,43 @@ users = users.map(u => ({
 
     const presetsContainer =
       document.getElementById("datePresets");
+  
+    const monthNames = [
+    "Styczeń",
+    "Luty",
+    "Marzec",
+    "Kwiecień",
+    "Maj",
+    "Czerwiec",
+    "Lipiec",
+    "Sierpień",
+    "Wrzesień",
+    "Październik",
+    "Listopad",
+    "Grudzień"
+  ];
+  
+  let monthButtons = "";
+  
+  for (let month = 1; month <= 12; month++) {
+  
+    const mm = String(month).padStart(2, "0");
+  
+    const lastDay = new Date(
+      year,
+      month,
+      0
+    ).getDate();
+  
+    monthButtons += `
+      <button
+        type="button"
+        data-from="${year}-${mm}-01"
+        data-to="${year}-${mm}-${String(lastDay).padStart(2, "0")}">
+        ${monthNames[month - 1]}
+      </button>
+    `;
+  }
 
 presetsContainer.innerHTML = `
 
@@ -467,35 +504,7 @@ presetsContainer.innerHTML = `
     Cały rok
   </button>
 
-  <button type="button"
-    data-from="${year}-05-01"
-    data-to="${year}-05-31">
-    Maj
-  </button>
-
-  <button type="button"
-    data-from="${year}-06-01"
-    data-to="${year}-06-30">
-    Czerwiec
-  </button>
-
-  <button type="button"
-    data-from="${year}-07-01"
-    data-to="${year}-07-31">
-    Lipiec
-  </button>
-
-  <button type="button"
-    data-from="${year}-08-01"
-    data-to="${year}-08-31">
-    Sierpień
-  </button>
-
-  <button type="button"
-    data-from="${year}-09-01"
-    data-to="${year}-09-30">
-    Wrzesień
-  </button>
+${monthButtons}
 
   <button type="button"
     data-from="${year}-05-01"
