@@ -410,10 +410,32 @@ users = users.map(u => ({
     dateFrom.value = `${year}-05-01`;
     dateTo.value = `${year}-09-30`;
 
-  const presetsContainer =
-  document.getElementById("datePresets");
+    // Bieżący miesiąc
+    const now = new Date();
+
+    const currentMonthStart =
+      `${year}-${String(now.getMonth() + 1).padStart(2, "0")}-01`;
+
+    const currentMonthEnd =
+      `${year}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(
+        new Date(
+          year,
+          now.getMonth() + 1,
+          0
+        ).getDate()
+      ).padStart(2, "0")}`;
+
+    const presetsContainer =
+      document.getElementById("datePresets");
 
 presetsContainer.innerHTML = `
+
+  <button type="button"
+    data-from="${currentMonthStart}"
+    data-to="${currentMonthEnd}">
+    Bieżący miesiąc
+  </button>
+  
   <button type="button"
     data-from="${year}-01-01"
     data-to="${year}-12-31">
