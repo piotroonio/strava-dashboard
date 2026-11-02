@@ -37,20 +37,20 @@
       text-align: center; /* ✅ WYŚRODKOWANIE */
     }
 
-  thead th {
-    position: sticky;
-    top: 0;
-    background: #f5f5f5;
-    z-index: 10;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  }
+    thead th {
+      position: sticky;
+      top: 0;
+      background: #f5f5f5;
+      z-index: 10;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
 
     
-th span {
-  margin-left: 5px;
-  font-size: 12px;
-  color: #999;
-}
+    th span {
+      margin-left: 5px;
+      font-size: 12px;
+      color: #999;
+    }
 
     th {
       background-color: #f5f5f5;
@@ -65,21 +65,21 @@ th span {
     }
 
 
-.gold {
-  background-color: #fff8dc;
-  border-left: 4px solid #fc4c02;
-  box-shadow: inset 0 0 0 1px #ffe0cc;
-}
-
-.silver {
-  background-color: #f7f7f7;
-  border-left: 4px solid #bbb;
-}
-
-.bronze {
-  background-color: #faf3ee;
-  border-left: 4px solid #d8a47f;
-}
+    .gold {
+      background-color: #fff8dc;
+      border-left: 4px solid #fc4c02;
+      box-shadow: inset 0 0 0 1px #ffe0cc;
+    }
+    
+    .silver {
+      background-color: #f7f7f7;
+      border-left: 4px solid #bbb;
+    }
+    
+    .bronze {
+      background-color: #faf3ee;
+      border-left: 4px solid #d8a47f;
+    }
 
 
     a {
@@ -99,117 +99,116 @@ th span {
       color: gray;
       text-align: center;
     }
-
     
-.avatar {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #eee;
-}
-
-.avatar-fallback {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #fc4c02, #ff7f50);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 13px;
-  font-weight: bold;
-  border: 2px solid #eee;
-}
+    .avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #eee;
+    }
     
-.avatar-wrapper {
-  position: relative;
-  display: inline-block;
-}
-
-.avatar-wrapper a {
-  display: inline-block;
-}
-
-.avatar-wrapper a:hover {
-  transform: scale(1.05);
-  transition: transform 0.15s ease;
-}
+    .avatar-fallback {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #fc4c02, #ff7f50);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: bold;
+      border: 2px solid #eee;
+    }
+        
+    .avatar-wrapper {
+      position: relative;
+      display: inline-block;
+    }
     
-.highlight {
-  color: #fc4c02;
-  font-weight: bold;
-}
+    .avatar-wrapper a {
+      display: inline-block;
+    }
+    
+    .avatar-wrapper a:hover {
+      transform: scale(1.05);
+      transition: transform 0.15s ease;
+    }
+    
+    .highlight {
+      color: #fc4c02;
+      font-weight: bold;
+    }
+    
+    
+    th span.arrow::after {
+      font-size: 12px;
+      margin-left: 5px;
+      color: #999;
+    }
+    
+    th span.arrow.up::after {
+      content: "▴";
+    }
+    
+    th span.arrow.down::after {
+      content: "▾";
+    }
+  
+    th span.sort-icon {
+      display: inline-block;
+      width: 12px;   /* ✅ STAŁA SZEROKOŚĆ */
+      height: 12px;
+      margin-left: 5px;
+    }
+    
+    th span.sort-icon svg {
+      width: 10px;
+      height: 10px;
+      vertical-align: middle;
+      color: #999;
+    }
+    
+    .duplicate {
+      color: #d9534f;
+      font-weight: bold;
+    }
 
-
-th span.arrow::after {
-  font-size: 12px;
-  margin-left: 5px;
-  color: #999;
-}
-
-th span.arrow.up::after {
-  content: "▴";
-}
-
-th span.arrow.down::after {
-  content: "▾";
-}
-
-th span.sort-icon {
-  display: inline-block;
-  width: 12px;   /* ✅ STAŁA SZEROKOŚĆ */
-  height: 12px;
-  margin-left: 5px;
-}
-
-th span.sort-icon svg {
-  width: 10px;
-  height: 10px;
-  vertical-align: middle;
-  color: #999;
-}
-
-.duplicate {
-  color: #d9534f;
-  font-weight: bold;
-}
-
-.leaders-box {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 15px;
-  margin: 20px 0;
-}
-
-.leaders-box h3 {
-  margin-top: 0;
-  color: #fc4c02;
-}
-
-.leaders-box p {
-  margin: 8px 0;
-}
-
-#datePresets {
-  margin: 12px 0;
-}
-
-#datePresets button {
-  margin: 2px;
-  padding: 6px 10px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  background: #fff;
-  cursor: pointer;
-}
-
-#datePresets button:hover {
-  background: #fc4c02;
-  color: white;
-}
+    .leaders-box {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 20px 0;
+    }
+    
+    .leaders-box h3 {
+      margin-top: 0;
+      color: #fc4c02;
+    }
+    
+    .leaders-box p {
+      margin: 8px 0;
+    }
+    
+    #datePresets {
+      margin: 12px 0;
+    }
+    
+    #datePresets button {
+      margin: 2px;
+      padding: 6px 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background: #fff;
+      cursor: pointer;
+    }
+    
+    #datePresets button:hover {
+      background: #fc4c02;
+      color: white;
+    }
 
   </style>
 </head>
@@ -218,204 +217,204 @@ th span.sort-icon svg {
 
   <h1>🚴 Zestawienie aktywności</h1>
 
-<p class="description">
-  Ranking na podstawie aktywności rowerowych ze Strava.
-</p>
-
-<label><b>Od:</b></label>
-<input type="date" id="dateFrom" value="2026-05-01">
-<label><b>Do:</b></label>
-<input type="date" id="dateTo" value="2026-09-30">
-<div id="datePresets"></div>
-</br>
-
-<label><b>Szukaj użytkownika:</b></label>
-<input type="text" id="searchUser" placeholder="np. Piotr" />
-
-<label><b>Rodzaj aktywności:</b></label>
-<select id="activityFilter">
-  <option value="all">Wszystkie</option>
-  <option value="Ride">Road</option>
-  <option value="MountainBikeRide">MTB</option>
-  <option value="GravelRide">Gravel</option>
-</select>
-
-<div id="monthlyStats"></div>
-<div id="summary" class="summary"></div>
-<div id="leaders" class="leaders"></div>
-
-<table id="table">
-  <thead>
-    <tr>
-      <th>👤</th>
-      <th data-sort="position">#</th>
-      <th data-sort="name">Użytkownik<span class="sort-icon"></span></th>
-      <th data-sort="totalDistance">Dystans (km)<span class="sort-icon"></span></th>
-      <th data-sort="avgSpeed">Śr. prędkość (km/godz.)<span class="sort-icon"></span></th>
-      <th data-sort="avgDistance">Śr. dystans (km)<span class="sort-icon"></span></th>
-      <th data-sort="avgElevation">Śr. przewyższenie (m)<span class="sort-icon"></span></th>
-      <th data-sort="totalElevation">Suma przewyższeń (m)<span class="sort-icon"></span></th>
-      <th data-sort="totalActivities">Liczba aktywności<span class="sort-icon"></span></th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-  
-<!--
-<div id="summary" class="summary"></div>
--->
-  
-<footer>
-  <p>Powered by https://www.strava.com</p>
-  <p>
-  This app supports a private corporate cycling challenge on Strava.
+  <p class="description">
+    Ranking na podstawie aktywności rowerowych ze Strava.
   </p>
-
-</footer>
-
-<script>
-
-// ===== CONFIG SORT =====
-let currentSort = "totalDistance";
-let sortAsc = false;
-
-// ===== TIME AGO =====
-function timeAgo(dateString) {
-  if (!dateString) return "brak danych";
-
-  const now = new Date();
-  const past = new Date(dateString);
-  const diff = Math.floor((now - past) / 1000);
-
-  if (diff < 60) return `${diff} s`;
-  const m = Math.floor(diff / 60);
-  if (m < 60) return `${m} min`;
-  const h = Math.floor(m / 60);
-  if (h < 24) return `${h} h`;
-  return `${Math.floor(h / 24)} d`;
-}
-
-// ===== NORMALIZE =====
-function normalize(text) {
-  return text
-    .toLowerCase()
-    .replace(/[ąćęłńóśźż]/g, c => ({
-      'ą':'a','ć':'c','ę':'e','ł':'l',
-      'ń':'n','ó':'o','ś':'s','ź':'z','ż':'z'
-    }[c]));
-}
-
-
-function getInitials(name) {
-  if (!name) return "?";
-
-  const parts = name.split(" ");
-  return parts
-    .map(p => p[0])
-    .join("")
-    .toUpperCase()
-    .slice(0, 2);
-}
-
-
-function getColor(name) {
-  const colors = ["#fc4c02", "#ff7f50", "#ff4500", "#ff6b35"];
-
-  let hash = 0;
-  for (let i = 0; i < name.length; i++) {
-    hash = name.charCodeAt(i) + ((hash << 5) - hash);
-  }
-
-  return colors[Math.abs(hash) % colors.length];
-}
-
   
-
-function updateSortIndicators() {
-  document.querySelectorAll("th").forEach(th => {
-    const key = th.dataset.sort;
-    const span = th.querySelector(".sort-icon");
-
-    if (!span) return;
-
-    span.style.visibility = "hidden";
-    span.innerHTML = "";
-
-    if (key === currentSort) {
-      const svg = sortAsc
-        ? `<svg viewBox="0 0 24 24"><path d="M7 14l5-5 5 5z"/></svg>`
-        : `<svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>`;
-
-      span.innerHTML = svg;
-      span.style.visibility = "visible";
-    }
-  });
-}
-
-//fetch("./data.json")
-//  .then(res => res.json())
-//  .then(data => {
-
-Promise.all([
-  fetch("./data.json").then(r => r.json()),
-  fetch("./duplicates.json")
-    .then(r => r.ok ? r.json() : [])
-    .catch(() => [])
-]).then(([data, duplicates]) => {
+  <label><b>Od:</b></label>
+  <input type="date" id="dateFrom" value="2026-05-01">
+  <label><b>Do:</b></label>
+  <input type="date" id="dateTo" value="2026-09-30">
+  <div id="datePresets"></div>
+  </br>
   
-let users = Array.isArray(data) ? data : data.users || [];
-
-const usersWithDuplicates = new Set(
-  duplicates.map(d => d.user)
-);
+  <label><b>Szukaj użytkownika:</b></label>
+  <input type="text" id="searchUser" placeholder="np. Piotr" />
+  
+  <label><b>Rodzaj aktywności:</b></label>
+  <select id="activityFilter">
+    <option value="all">Wszystkie</option>
+    <option value="Ride">Road</option>
+    <option value="MountainBikeRide">MTB</option>
+    <option value="GravelRide">Gravel</option>
+  </select>
+  
+  <div id="monthlyStats"></div>
+  <div id="summary" class="summary"></div>
+  <div id="leaders" class="leaders"></div>
+  
+  <table id="table">
+    <thead>
+      <tr>
+        <th>👤</th>
+        <th data-sort="position">#</th>
+        <th data-sort="name">Użytkownik<span class="sort-icon"></span></th>
+        <th data-sort="totalDistance">Dystans (km)<span class="sort-icon"></span></th>
+        <th data-sort="avgSpeed">Śr. prędkość (km/godz.)<span class="sort-icon"></span></th>
+        <th data-sort="avgDistance">Śr. dystans (km)<span class="sort-icon"></span></th>
+        <th data-sort="avgElevation">Śr. przewyższenie (m)<span class="sort-icon"></span></th>
+        <th data-sort="totalElevation">Suma przewyższeń (m)<span class="sort-icon"></span></th>
+        <th data-sort="totalActivities">Liczba aktywności<span class="sort-icon"></span></th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
     
-// 🔥 100 TEST USERÓW (tymczasowe)
-const testUsers = Array.from({ length: 100 }, (_, i) => ({
-  name: `Test User ${i + 1}`,
-  avatar: null,
-  totalDistance: Math.round(Math.random() * 500),
-  totalElevation: Math.round(Math.random() * 5000),
-  avgElevation: Math.round(Math.random() * 300),
-  totalActivities: Math.floor(Math.random() * 20 + 1),
-  avgSpeed: (20 + Math.random() * 10).toFixed(1),
-  activityTypes: ["Ride"]
-}));
-
-// ✅ dodaj testowych userów do listy wszystkich userów (tymczasowe)
-//ustaw DEBUG = true; jeśli todać 100 testowych userów do tabeli
-const DEBUG = false;
-if (DEBUG) {
-  users = users.concat(testUsers);
-}
-
-users = users.map(u => ({
-  ...u,
-  hasDuplicates: usersWithDuplicates.has(u.name),
-  avgDistance:
-    u.totalActivities > 0
-      ? Number((u.totalDistance / u.totalActivities).toFixed(1))
-      : 0
-}));
-
-
+  <!--
+  <div id="summary" class="summary"></div>
+  -->
+    
+  <footer>
+    <p>Powered by https://www.strava.com</p>
+    <p>
+    This app supports a private corporate cycling challenge on Strava.
+    </p>
+  
+  </footer>
+  
+  <script>
+  
+  // ===== CONFIG SORT =====
+  let currentSort = "totalDistance";
+  let sortAsc = false;
+  
+  // ===== TIME AGO =====
+  function timeAgo(dateString) {
+    if (!dateString) return "brak danych";
+  
+    const now = new Date();
+    const past = new Date(dateString);
+    const diff = Math.floor((now - past) / 1000);
+  
+    if (diff < 60) return `${diff} s`;
+    const m = Math.floor(diff / 60);
+    if (m < 60) return `${m} min`;
+    const h = Math.floor(m / 60);
+    if (h < 24) return `${h} h`;
+    return `${Math.floor(h / 24)} d`;
+  }
+  
+  // ===== NORMALIZE =====
+  function normalize(text) {
+    return text
+      .toLowerCase()
+      .replace(/[ąćęłńóśźż]/g, c => ({
+        'ą':'a','ć':'c','ę':'e','ł':'l',
+        'ń':'n','ó':'o','ś':'s','ź':'z','ż':'z'
+      }[c]));
+  }
+  
+  
+  function getInitials(name) {
+    if (!name) return "?";
+  
+    const parts = name.split(" ");
+    return parts
+      .map(p => p[0])
+      .join("")
+      .toUpperCase()
+      .slice(0, 2);
+  }
+  
+  
+  function getColor(name) {
+    const colors = ["#fc4c02", "#ff7f50", "#ff4500", "#ff6b35"];
+  
+    let hash = 0;
+    for (let i = 0; i < name.length; i++) {
+      hash = name.charCodeAt(i) + ((hash << 5) - hash);
+    }
+  
+    return colors[Math.abs(hash) % colors.length];
+  }
+  
+    
+  
+  function updateSortIndicators() {
+    document.querySelectorAll("th").forEach(th => {
+      const key = th.dataset.sort;
+      const span = th.querySelector(".sort-icon");
+  
+      if (!span) return;
+  
+      span.style.visibility = "hidden";
+      span.innerHTML = "";
+  
+      if (key === currentSort) {
+        const svg = sortAsc
+          ? `<svg viewBox="0 0 24 24"><path d="M7 14l5-5 5 5z"/></svg>`
+          : `<svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>`;
+  
+        span.innerHTML = svg;
+        span.style.visibility = "visible";
+      }
+    });
+  }
+  
+  //fetch("./data.json")
+  //  .then(res => res.json())
+  //  .then(data => {
+  
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  Promise.all([
+    fetch("./data.json").then(r => r.json()),
+    fetch("./duplicates.json")
+      .then(r => r.ok ? r.json() : [])
+      .catch(() => [])
+  ]).then(([data, duplicates]) => {
+    
+    let users = Array.isArray(data) ? data : data.users || [];
+    
+    const usersWithDuplicates = new Set(
+      duplicates.map(d => d.user)
+    );
+        
+    // 🔥 100 TEST USERÓW (tymczasowe)
+    const testUsers = Array.from({ length: 100 }, (_, i) => ({
+      name: `Test User ${i + 1}`,
+      avatar: null,
+      totalDistance: Math.round(Math.random() * 500),
+      totalElevation: Math.round(Math.random() * 5000),
+      avgElevation: Math.round(Math.random() * 300),
+      totalActivities: Math.floor(Math.random() * 20 + 1),
+      avgSpeed: (20 + Math.random() * 10).toFixed(1),
+      activityTypes: ["Ride"]
+    }));
+    
+    // ✅ dodaj testowych userów do listy wszystkich userów (tymczasowe)
+    //ustaw DEBUG = true; jeśli todać 100 testowych userów do tabeli
+    const DEBUG = false;
+    if (DEBUG) {
+      users = users.concat(testUsers);
+    }
+    
+    users = users.map(u => ({
+      ...u,
+      hasDuplicates: usersWithDuplicates.has(u.name),
+      avgDistance:
+        u.totalActivities > 0
+          ? Number((u.totalDistance / u.totalActivities).toFixed(1))
+          : 0
+    }));
+        
     const tbody = document.querySelector("#table tbody");
     const monthlyContainer = document.getElementById("monthlyStats");
     const searchInput = document.getElementById("searchUser");
     const activityFilter = document.getElementById("activityFilter");
     const dateFrom = document.getElementById("dateFrom");
     const dateTo = document.getElementById("dateTo");
-
+  
     const year = new Date().getFullYear();
-
+    
     dateFrom.value = `${year}-05-01`;
     dateTo.value = `${year}-09-30`;
-
+  
     // Bieżący miesiąc
     const now = new Date();
-
+  
     const currentMonthStart =
       `${year}-${String(now.getMonth() + 1).padStart(2, "0")}-01`;
-
+  
     const currentMonthEnd =
       `${year}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(
         new Date(
@@ -424,26 +423,26 @@ users = users.map(u => ({
           0
         ).getDate()
       ).padStart(2, "0")}`;
-
-  const previousMonthDate =
-  new Date(year, now.getMonth() - 1, 1);
-
-  const previousMonthStart =
-    `${previousMonthDate.getFullYear()}-${String(
-      previousMonthDate.getMonth() + 1
-    ).padStart(2, "0")}-01`;
-
-  const previousMonthEnd =
-    `${previousMonthDate.getFullYear()}-${String(
-      previousMonthDate.getMonth() + 1
-    ).padStart(2, "0")}-${String(
-      new Date(
-        previousMonthDate.getFullYear(),
-        previousMonthDate.getMonth() + 1,
-        0
-      ).getDate()
-    ).padStart(2, "0")}`;
-
+    
+    const previousMonthDate =
+    new Date(year, now.getMonth() - 1, 1);
+  
+    const previousMonthStart =
+      `${previousMonthDate.getFullYear()}-${String(
+        previousMonthDate.getMonth() + 1
+      ).padStart(2, "0")}-01`;
+  
+    const previousMonthEnd =
+      `${previousMonthDate.getFullYear()}-${String(
+        previousMonthDate.getMonth() + 1
+      ).padStart(2, "0")}-${String(
+        new Date(
+          previousMonthDate.getFullYear(),
+          previousMonthDate.getMonth() + 1,
+          0
+        ).getDate()
+      ).padStart(2, "0")}`;
+    
     const presetsContainer =
       document.getElementById("datePresets");
   
@@ -460,484 +459,485 @@ users = users.map(u => ({
     "Październik",
     "Listopad",
     "Grudzień"
-  ];
-  
-  let monthButtons = "";
-  
-  for (let month = 1; month <= 12; month++) {
-  
-    const mm = String(month).padStart(2, "0");
-  
-    const lastDay = new Date(
-      year,
-      month,
-      0
-    ).getDate();
-  
-    monthButtons += `
-      <button
-        type="button"
-        data-from="${year}-${mm}-01"
-        data-to="${year}-${mm}-${String(lastDay).padStart(2, "0")}">
-        ${monthNames[month - 1]}
+    ];
+      
+    let monthButtons = "";
+        
+    for (let month = 1; month <= 12; month++) {
+    
+      const mm = String(month).padStart(2, "0");
+    
+      const lastDay = new Date(
+        year,
+        month,
+        0
+      ).getDate();
+    
+      monthButtons += `
+        <button
+          type="button"
+          data-from="${year}-${mm}-01"
+          data-to="${year}-${mm}-${String(lastDay).padStart(2, "0")}">
+          ${monthNames[month - 1]}
+        </button>
+      `;
+    }
+    
+    presetsContainer.innerHTML = `
+    
+      <button type="button"
+        data-from="${currentMonthStart}"
+        data-to="${currentMonthEnd}">
+        Bieżący miesiąc
+      </button>
+    
+      <button type="button"
+        data-from="${previousMonthStart}"
+        data-to="${previousMonthEnd}">
+        Poprzedni miesiąc
+      </button>
+      
+      <button type="button"
+        data-from="${year}-01-01"
+        data-to="${year}-12-31">
+        Cały rok
+      </button>
+    
+      ${monthButtons}
+    
+      <button type="button"
+        data-from="${year}-05-01"
+        data-to="${year}-09-30">
+        Wyzwanie
       </button>
     `;
-  }
+    
+    document
+      .querySelector("#datePresets")
+      .addEventListener("click", e => {
+    
+        if (!e.target.dataset.from) return;
+    
+        dateFrom.value =
+          e.target.dataset.from;
+    
+        dateTo.value =
+          e.target.dataset.to;
+    
+        applyFilters();
+    });
 
-presetsContainer.innerHTML = `
-
-  <button type="button"
-    data-from="${currentMonthStart}"
-    data-to="${currentMonthEnd}">
-    Bieżący miesiąc
-  </button>
-
-  <button type="button"
-    data-from="${previousMonthStart}"
-    data-to="${previousMonthEnd}">
-    Poprzedni miesiąc
-  </button>
-  
-  <button type="button"
-    data-from="${year}-01-01"
-    data-to="${year}-12-31">
-    Cały rok
-  </button>
-
-${monthButtons}
-
-  <button type="button"
-    data-from="${year}-05-01"
-    data-to="${year}-09-30">
-    Wyzwanie
-  </button>
-`;
-
-document
-  .querySelector("#datePresets")
-  .addEventListener("click", e => {
-
-    if (!e.target.dataset.from) return;
-
-    dateFrom.value =
-      e.target.dataset.from;
-
-    dateTo.value =
-      e.target.dataset.to;
-
-    applyFilters();
-});
+    
     function renderTable(list) {
       tbody.innerHTML = "";
-
+    
       let totalDistance = 0;
       let totalActivities = 0;
-
+    
       // 🔥 SORT
-
-  list.sort((a, b) => {
-
-    let A = a[currentSort];
-    let B = b[currentSort];
-
-    // fallback (undefined → 0 / "")
-    if (A == null) A = currentSort === "name" ? "" : 0;
-    if (B == null) B = currentSort === "name" ? "" : 0;
-
-    // sortowanie stringów (np. nazwa)
-    if (currentSort === "name") {
-      const result = A.localeCompare(B, "pl");
-      return sortAsc ? result : -result;
-    }
-
-    // specjalny przypadek pozycji
-    if (currentSort === "position") {
-      A = a.totalDistance;
-      B = b.totalDistance;
-    }
-
-    // sortowanie liczb
-    const result = A - B;
-    return sortAsc ? result : -result;
-  });
-
-
+      
+      list.sort((a, b) => {
+    
+        let A = a[currentSort];
+        let B = b[currentSort];
+    
+        // fallback (undefined → 0 / "")
+        if (A == null) A = currentSort === "name" ? "" : 0;
+        if (B == null) B = currentSort === "name" ? "" : 0;
+    
+        // sortowanie stringów (np. nazwa)
+        if (currentSort === "name") {
+          const result = A.localeCompare(B, "pl");
+          return sortAsc ? result : -result;
+        }
+      
+        // specjalny przypadek pozycji
+        if (currentSort === "position") {
+          A = a.totalDistance;
+          B = b.totalDistance;
+        }
+    
+        // sortowanie liczb
+        const result = A - B;
+        return sortAsc ? result : -result;
+      });
+      
+      
       list.forEach((u, i) => {
-
+    
         totalDistance += u.totalDistance;
         totalActivities += u.totalActivities;
-
+    
         let cls = "";
         if (i === 0) cls = "gold";
         else if (i === 1) cls = "silver";
         else if (i === 2) cls = "bronze";
-
+    
         const pos = i + 1;
-
-const row = `
-  <tr class="${cls}">
-    
-  <td>
-    <div class="avatar-wrapper">
-      <a href="https://www.strava.com/athletes/${u.athleteId}" target="_blank">
-      ${
-        u.avatar
-          ? `<img src="${u.avatar}" alt="${u.name}" class="avatar"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-             <div class="avatar-fallback" style="display:none">
-               ${getInitials(u.name)}
-             </div>`
-          : `<div class="avatar-fallback">
-               ${getInitials(u.name)}
-             </div>`
-      }
-
-    </div>
-  </td>
-
-    <td class="${currentSort === 'position' ? 'highlight' : ''}">
-      ${pos}
-    </td>
-
-    
-    <td class="${currentSort === 'name' ? 'highlight' : ''} ${u.hasDuplicates ? 'duplicate' : ''}"
-    title="${u.hasDuplicates ? 'Wykryto duplikaty aktywności' : ''}">
-
-      ${
-        u.athleteId
-          ? `<a href="https://www.strava.com/athletes/${u.athleteId}" target="_blank">${u.name}</a>`
-          : u.name
-      }
-    </td>
-
-    <td class="${currentSort === 'totalDistance' ? 'highlight' : ''}">
-      ${u.totalDistance || 0}
-    </td>
-
-    <td class="${currentSort === 'avgSpeed' ? 'highlight' : ''}">
-      ${u.avgSpeed}
-    </td>
-
-    <td class="${currentSort === 'avgDistance' ? 'highlight' : ''}">
-      ${u.avgDistance.toFixed(1)}
-    </td>
-
-    <td class="${currentSort === 'avgElevation' ? 'highlight' : ''}">
-      ${u.avgElevation}
-    </td>
-
-    <td class="${currentSort === 'totalElevation' ? 'highlight' : ''}">
-      ${u.totalElevation}
-    </td>
-
-    <td class="${currentSort === 'totalActivities' ? 'highlight' : ''}">
-      ${u.totalActivities}
-    </td>
-  </tr>
-`;
-
-
+      
+        const row = `
+          <tr class="${cls}">
+            <td>
+              <div class="avatar-wrapper">
+                <a href="https://www.strava.com/athletes/${u.athleteId}" target="_blank">
+                ${
+                  u.avatar
+                    ? `<img src="${u.avatar}" alt="${u.name}" class="avatar"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                       <div class="avatar-fallback" style="display:none">
+                         ${getInitials(u.name)}
+                       </div>`
+                    : `<div class="avatar-fallback">
+                         ${getInitials(u.name)}
+                       </div>`
+                }
+          
+              </div>
+            </td>
+        
+            <td class="${currentSort === 'position' ? 'highlight' : ''}">
+              ${pos}
+            </td>
+                
+            <td class="${currentSort === 'name' ? 'highlight' : ''} ${u.hasDuplicates ? 'duplicate' : ''}"
+            title="${u.hasDuplicates ? 'Wykryto duplikaty aktywności' : ''}">
+        
+              ${
+                u.athleteId
+                  ? `<a href="https://www.strava.com/athletes/${u.athleteId}" target="_blank">${u.name}</a>`
+                  : u.name
+              }
+            </td>
+        
+            <td class="${currentSort === 'totalDistance' ? 'highlight' : ''}">
+              ${u.totalDistance || 0}
+            </td>
+        
+            <td class="${currentSort === 'avgSpeed' ? 'highlight' : ''}">
+              ${u.avgSpeed}
+            </td>
+        
+            <td class="${currentSort === 'avgDistance' ? 'highlight' : ''}">
+              ${u.avgDistance.toFixed(1)}
+            </td>
+        
+            <td class="${currentSort === 'avgElevation' ? 'highlight' : ''}">
+              ${u.avgElevation}
+            </td>
+        
+            <td class="${currentSort === 'totalElevation' ? 'highlight' : ''}">
+              ${u.totalElevation}
+            </td>
+        
+            <td class="${currentSort === 'totalActivities' ? 'highlight' : ''}">
+              ${u.totalActivities}
+            </td>
+          </tr>
+        `;
+        
         tbody.innerHTML += row;
       });
-
+      
       const updatedAt = Array.isArray(data)
-        ? data[0]?.updatedAt
-        : data.updatedAt;
-
+            ? data[0]?.updatedAt
+            : data.updatedAt;
+    
       document.getElementById("summary").innerHTML = `
         <p>📊 ${totalDistance.toFixed(1)} km</p>
         <p>🚴 ${totalActivities} aktywności</p>
         <p>👥 ${list.length} aktywnych uczestników</p>
         <p>⏱️ ${timeAgo(updatedAt)}</p>
       `;
-    }
-
-//renderTable(users);
-
-function renderMonthlyStats(filteredUsers) {
-
-  const monthlyTotals = {};
-
-  filteredUsers.forEach(user => {
-
-    Object.entries(user.dailyDistance || {})
-      .forEach(([date, distance]) => {
-
-        if (
-          isDateInRange(
-            date,
-            dateFrom.value,
-            dateTo.value
-          )
-        ) {
-
-          const month = date.slice(0, 7);
-
-          monthlyTotals[month] =
-            (monthlyTotals[month] || 0)
-            + distance;
-        }
-      });
-  });
-
-  const monthNames = {
-    "01": "Styczeń",
-    "02": "Luty",
-    "03": "Marzec",
-    "04": "Kwiecień",
-    "05": "Maj",
-    "06": "Czerwiec",
-    "07": "Lipiec",
-    "08": "Sierpień",
-    "09": "Wrzesień",
-    "10": "Październik",
-    "11": "Listopad",
-    "12": "Grudzień"
-  };
-
-  const rows = Object.entries(monthlyTotals)
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([month, distance]) => {
-
-      const monthNumber = month.split("-")[1];
-
-      return `
-        <tr>
-          <td>${monthNames[monthNumber]}</td>
-          <td>${distance.toFixed(1)} km</td>
-        </tr>
-      `;
-    })
-    .join("");
-
-  monthlyContainer.innerHTML = `
-    <h3>📅 Dystans w poszczególnych miesiącach</h3>
-
-    <table style="margin-bottom:20px">
-      <thead>
-        <tr>
-          <th>Miesiąc</th>
-          <th>Dystans</th>
-        </tr>
-      </thead>
-      <tbody>
-        ${rows}
-      </tbody>
-    </table>
-  `;
-}
-
-function renderLeaders(filteredUsers) {
-
-  if (filteredUsers.length === 0) {
-    document.getElementById("leaders").innerHTML = "";
-    return;
-  }
-
-  const distanceLeader = [...filteredUsers]
-    .sort((a, b) => b.totalDistance - a.totalDistance)[0];
-
-  const activitiesLeader = [...filteredUsers]
-    .sort((a, b) => b.totalActivities - a.totalActivities)[0];
-
-  const elevationLeader = [...filteredUsers]
-    .sort((a, b) => b.totalElevation - a.totalElevation)[0];
-
-  const speedLeader = [...filteredUsers]
-    .sort((a, b) => b.avgSpeed - a.avgSpeed)[0];
-
-  document.getElementById("leaders").innerHTML = `
-    <div class="leaders-box">
-      <h3>🏆 Liderzy okresu</h3>
-
-      <p>
-        🥇 <strong>Największy dystans:</strong>
-        ${distanceLeader.name}
-        (${distanceLeader.totalDistance.toFixed(1)} km)
-      </p>
-
-      <p>
-        🚵 <strong>Najwięcej aktywności:</strong>
-        ${activitiesLeader.name}
-        (${activitiesLeader.totalActivities})
-      </p>
-
-      <p>
-        ⛰️ <strong>Największa suma przewyższeń:</strong>
-        ${elevationLeader.name}
-        (${elevationLeader.totalElevation} m)
-      </p>
-
-      <p>
-        ⚡ <strong>Najwyższa średnia prędkość:</strong>
-        ${speedLeader.name}
-        (${speedLeader.avgSpeed} km/h)
-      </p>
-    </div>
-  `;
-}
-  
-    applyFilters();
+      } //koniec function renderTable(list)
     
-    updateSortIndicators();
-
-    // 🔍 SEARCH
-    //searchInput.addEventListener("input", () => {
-    //  const val = normalize(searchInput.value);
-
-    //  const filtered = users.filter(u =>
-    //    normalize(u.name).includes(val)
-   //   );
-
-   //   renderTable(filtered);
-   // });
-
-function isDateInRange(date, from, to) {
-  return date >= from && date <= to;
-}
-  
-function applyFilters() {
-  const val = normalize(searchInput.value);
-  const selected = activityFilter.value;
-
-  // ✅ filtr po nazwie
-  let filtered = users.filter(u =>
-    normalize(u.name).includes(val)
-  );
-
-  // ✅ filtr po typie aktywności
-  if (selected !== "all") {
-    filtered = filtered.filter(u =>
-      (u.activityTypes || []).includes(selected)
-    );
-  }
-
-const fromStr = dateFrom.value;
-const toStr = dateTo.value;
-
-filtered = filtered.map(u => {
-
-   let distance = 0;
-   let activities = 0;
-   let movingTime = 0;
-   let elevation = 0;
-
-  Object.entries(
-    u.dailyDistance || {}
-  ).forEach(([date, value]) => {
-
-    if (isDateInRange(date, fromStr, toStr)) {
-      distance += value;
-    }
-  });
-
-  Object.entries(
-    u.dailyActivities || {}
-  ).forEach(([date, value]) => {
-
-    if (isDateInRange(date, fromStr, toStr)) {
-      activities += value;
-    }
-  });
-
-  Object.entries(
-  u.dailyMovingTime || {}
-  ).forEach(([date, value]) => {
-
-    if (isDateInRange(date, fromStr, toStr)) {
-      movingTime += value;
-    }
-  });
-
-  Object.entries(
-  u.dailyElevation || {}
-  ).forEach(([date, value]) => {
-
-    if (isDateInRange(date, fromStr, toStr)) {
-      elevation += value;
-    }
-  });
-
-return {
-  ...u,
-
-  totalDistance:
-    Number(distance.toFixed(1)),
-
-  totalActivities:
-    activities,
-
-  totalElevation:
-    Math.round(elevation),
-
-  avgElevation:
-    activities > 0
-      ? Math.round(
-          elevation / activities
-        )
-      : 0,
-
-  avgSpeed:
-    movingTime > 0
-      ? Number(
-          (
-            distance /
-            (movingTime / 3600)
-          ).toFixed(2)
-        )
-      : 0,
-
-  avgDistance:
-    activities > 0
-      ? Number(
-          (
-            distance / activities
-          ).toFixed(1)
-        )
-      : 0
-};
-
-});
-
-// ukryj uczestników bez aktywności w wybranym zakresie
-filtered = filtered.filter(u =>
-  u.totalDistance > 0
-);
-
- 
-  renderMonthlyStats(filtered);
-  renderLeaders(filtered);
-  renderTable(filtered);
-}
-
-// ✅ podłączenie eventów
-searchInput.addEventListener("input", applyFilters);
-activityFilter.addEventListener("change", applyFilters);
-dateFrom.addEventListener("change", applyFilters);
-dateTo.addEventListener("change", applyFilters);
-
-
-    // 🔽 SORT CLICK
-    document.querySelectorAll("th").forEach(th => {
-      th.addEventListener("click", () => {
-        const key = th.dataset.sort;
-        if (!key) return;
-
-        if (currentSort === key) {
-          sortAsc = !sortAsc;
-        } else {
-          currentSort = key;
-          sortAsc = false;
-        }
-
-        //renderTable(users);
-        applyFilters();
-        updateSortIndicators();
+    //renderTable(users);
+    
+    function renderMonthlyStats(filteredUsers) {
+    
+      const monthlyTotals = {};
+    
+      filteredUsers.forEach(user => {
+    
+        Object.entries(user.dailyDistance || {})
+          .forEach(([date, distance]) => {
+    
+            if (
+              isDateInRange(
+                date,
+                dateFrom.value,
+                dateTo.value
+              )
+            ) {
+    
+              const month = date.slice(0, 7);
+    
+              monthlyTotals[month] =
+                (monthlyTotals[month] || 0)
+                + distance;
+            }
+          });
       });
+    
+      const monthNames = {
+        "01": "Styczeń",
+        "02": "Luty",
+        "03": "Marzec",
+        "04": "Kwiecień",
+        "05": "Maj",
+        "06": "Czerwiec",
+        "07": "Lipiec",
+        "08": "Sierpień",
+        "09": "Wrzesień",
+        "10": "Październik",
+        "11": "Listopad",
+        "12": "Grudzień"
+      };
+    
+      const rows = Object.entries(monthlyTotals)
+        .sort(([a], [b]) => a.localeCompare(b))
+        .map(([month, distance]) => {
+    
+          const monthNumber = month.split("-")[1];
+    
+          return `
+            <tr>
+              <td>${monthNames[monthNumber]}</td>
+              <td>${distance.toFixed(1)} km</td>
+            </tr>
+          `;
+        })
+        .join("");
+    
+      monthlyContainer.innerHTML = `
+        <h3>📅 Dystans w poszczególnych miesiącach</h3>
+    
+        <table style="margin-bottom:20px">
+          <thead>
+            <tr>
+              <th>Miesiąc</th>
+              <th>Dystans</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${rows}
+          </tbody>
+        </table>
+      `;
+    }
+    
+    function renderLeaders(filteredUsers) {
+    
+      if (filteredUsers.length === 0) {
+        document.getElementById("leaders").innerHTML = "";
+        return;
+      }
+    
+      const distanceLeader = [...filteredUsers]
+        .sort((a, b) => b.totalDistance - a.totalDistance)[0];
+    
+      const activitiesLeader = [...filteredUsers]
+        .sort((a, b) => b.totalActivities - a.totalActivities)[0];
+    
+      const elevationLeader = [...filteredUsers]
+        .sort((a, b) => b.totalElevation - a.totalElevation)[0];
+    
+      const speedLeader = [...filteredUsers]
+        .sort((a, b) => b.avgSpeed - a.avgSpeed)[0];
+    
+      document.getElementById("leaders").innerHTML = `
+        <div class="leaders-box">
+          <h3>🏆 Liderzy okresu</h3>
+    
+          <p>
+            🥇 <strong>Największy dystans:</strong>
+            ${distanceLeader.name}
+            (${distanceLeader.totalDistance.toFixed(1)} km)
+          </p>
+    
+          <p>
+            🚵 <strong>Najwięcej aktywności:</strong>
+            ${activitiesLeader.name}
+            (${activitiesLeader.totalActivities})
+          </p>
+    
+          <p>
+            ⛰️ <strong>Największa suma przewyższeń:</strong>
+            ${elevationLeader.name}
+            (${elevationLeader.totalElevation} m)
+          </p>
+    
+          <p>
+            ⚡ <strong>Najwyższa średnia prędkość:</strong>
+            ${speedLeader.name}
+            (${speedLeader.avgSpeed} km/h)
+          </p>
+        </div>
+      `;
+    }
+      
+    applyFilters();
+        
+    updateSortIndicators();
+    
+        // 🔍 SEARCH
+        //searchInput.addEventListener("input", () => {
+        //  const val = normalize(searchInput.value);
+    
+        //  const filtered = users.filter(u =>
+        //    normalize(u.name).includes(val)
+       //   );
+    
+       //   renderTable(filtered);
+       // });
+    
+    function isDateInRange(date, from, to) {
+      return date >= from && date <= to;
+    }
+  
+    //////////////////////////////////////////////////////////////  
+    function applyFilters() {
+      const val = normalize(searchInput.value);
+      const selected = activityFilter.value;
+    
+      // ✅ filtr po nazwie
+      let filtered = users.filter(u =>
+        normalize(u.name).includes(val)
+      );
+    
+      // ✅ filtr po typie aktywności
+      if (selected !== "all") {
+        filtered = filtered.filter(u =>
+          (u.activityTypes || []).includes(selected)
+        );
+      }
+    
+    const fromStr = dateFrom.value;
+    const toStr = dateTo.value;
+    
+    filtered = filtered.map(u => {
+    
+       let distance = 0;
+       let activities = 0;
+       let movingTime = 0;
+       let elevation = 0;
+    
+      Object.entries(
+        u.dailyDistance || {}
+      ).forEach(([date, value]) => {
+    
+        if (isDateInRange(date, fromStr, toStr)) {
+          distance += value;
+        }
+      });
+    
+      Object.entries(
+        u.dailyActivities || {}
+      ).forEach(([date, value]) => {
+    
+        if (isDateInRange(date, fromStr, toStr)) {
+          activities += value;
+        }
+      });
+    
+      Object.entries(
+      u.dailyMovingTime || {}
+      ).forEach(([date, value]) => {
+    
+        if (isDateInRange(date, fromStr, toStr)) {
+          movingTime += value;
+        }
+      });
+    
+      Object.entries(
+      u.dailyElevation || {}
+      ).forEach(([date, value]) => {
+    
+        if (isDateInRange(date, fromStr, toStr)) {
+          elevation += value;
+        }
+      });
+    
+    return {
+      ...u,
+    
+      totalDistance:
+        Number(distance.toFixed(1)),
+    
+      totalActivities:
+        activities,
+    
+      totalElevation:
+        Math.round(elevation),
+    
+      avgElevation:
+        activities > 0
+          ? Math.round(
+              elevation / activities
+            )
+          : 0,
+    
+      avgSpeed:
+        movingTime > 0
+          ? Number(
+              (
+                distance /
+                (movingTime / 3600)
+              ).toFixed(2)
+            )
+          : 0,
+    
+      avgDistance:
+        activities > 0
+          ? Number(
+              (
+                distance / activities
+              ).toFixed(1)
+            )
+          : 0
+    };
+    
     });
-
-  });
-</script>
+    
+    // ukryj uczestników bez aktywności w wybranym zakresie
+    filtered = filtered.filter(u =>
+      u.totalDistance > 0
+    );
+       
+      renderMonthlyStats(filtered);
+      renderLeaders(filtered);
+      renderTable(filtered);
+    } //koniec function applyFilters()
+    ////////////////////////////////////////////////////
+    
+    // ✅ podłączenie eventów
+    searchInput.addEventListener("input", applyFilters);
+    activityFilter.addEventListener("change", applyFilters);
+    dateFrom.addEventListener("change", applyFilters);
+    dateTo.addEventListener("change", applyFilters);
+    
+    
+      // 🔽 SORT CLICK
+      document.querySelectorAll("th").forEach(th => {
+        th.addEventListener("click", () => {
+          const key = th.dataset.sort;
+          if (!key) return;
+  
+          if (currentSort === key) {
+            sortAsc = !sortAsc;
+          } else {
+            currentSort = key;
+            sortAsc = false;
+          }
+  
+          //renderTable(users);
+          applyFilters();
+          updateSortIndicators();
+        });
+      });
+  
+    }); //Koniec Promise.All///////////////////////////////////////////////////////////////////////
+    
+  </script>
 
 </body>
 </html>
