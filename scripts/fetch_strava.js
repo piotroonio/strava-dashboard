@@ -189,8 +189,12 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET, monthlyStats) {
     let activityTypes = new Set();
     const monthlyDistance = {};
     const monthlyActivities = {};
+
     const dailyDistance = {};
     const dailyActivities = {};
+
+    const dailyMovingTime = {};
+    const dailyElevation = {};
 
     allActivities.forEach(a => {
 
@@ -210,51 +214,75 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET, monthlyStats) {
         console.log(`✏️ Override ${a.id}`);
       }
 
-totalDistance += distance;
+      totalDistance += distance;
 
-const monthKey =
-  new Date(a.start_date)
-    .toISOString()
-    .slice(0, 7);
+      const monthKey =
+      new Date(a.start_date)
+        .toISOString()
+        .slice(0, 7);
 
-const dayKey =
-  new Date(a.start_date)
-    .toISOString()
-    .slice(0, 10);
+    const dayKey =
+      new Date(a.start_date)
+        .toISOString()
+        .slice(0, 10);
 
-// statystyki globalne
-if (monthlyStats[monthKey] !== undefined) {
-  monthlyStats[monthKey] += distance / 1000;
-}
+    // statystyki globalne
+    if (monthlyStats[monthKey] !== undefined) {
+      monthlyStats[monthKey] += distance / 1000;
+    }
 
-// statystyki użytkownika
-monthlyDistance[monthKey] =
-  (monthlyDistance[monthKey] || 0)
-  + distance / 1000;
+    // statystyki użytkownika
+    monthlyDistance[monthKey] =
+      (monthlyDistance[monthKey] || 0)
+      + distance / 1000;
 
-dailyDistance[dayKey] =
-  (dailyDistance[dayKey] || 0)
-  + distance / 1000;
+    monthlyActivities[monthKey] =
+      (monthlyActivities[monthKey] || 0)
+      + 1;
 
-monthlyActivities[monthKey] =
-  (monthlyActivities[monthKey] || 0)
-  + 1;
+    dailyDistance[dayKey] =
+      (dailyDistance[dayKey] || 0)
+      + distance / 1000;
 
-dailyActivities[dayKey] =
-  (dailyActivities[dayKey] || 0)
-  + 1;
+    dailyActivities[dayKey] =
+      (dailyActivities[dayKey] || 0)
+      + 1;
 
-totalElevation += a.total_elevation_gain || 0;
-      totalMovingTime += a.moving_time || 0;
-      totalActivities++;
+    dailyMovingTime[dayKey] =
+      (dailyMovingTime[dayKey] || 0)
+      + (a.moving_time || 0);
 
-      activityTypes.add(a.sport_type);
-});
+    dailyElevation[dayKey] =
+      (dailyElevation[dayKey] || 0)
+      + (a.total_elevation_gain || 0);
 
-Object.keys(dailyDistance).forEach(key => {
-  dailyDistance[key] =
-    Number(dailyDistance[key].toFixed(1));
-});
+    totalElevation += a.total_elevation_gain || 0;
+    totalMovingTime += a.moving_time || 0;
+    totalActivities++;
+
+    activityTypes.add(a.sport_type);
+    }); // koniec forEach
+
+    // Zaokrąglenie zapisywanych danych
+    Object.keys(monthlyDistance).forEach(key => {
+      monthlyDistance[key] =
+        Number(monthlyDistance[key].toFixed(1));
+    });
+
+    Object.keys(dailyDistance).forEach(key => {
+      dailyDistance[key] =
+        Number(dailyDistance[key].toFixed(1));
+    });
+
+    Object.keys(dailyElevation).forEach(key => {
+      dailyElevation[key] =
+        Math.round(dailyElevation[key]);
+    });
+
+    Object.keys(dailyMovingTime).forEach(key => {
+      dailyMovingTime[key] =
+        Math.round(dailyMovingTime[key]);
+    });
 
     return {
       data: {
@@ -276,10 +304,13 @@ Object.keys(dailyDistance).forEach(key => {
           : 0,
         monthlyDistance,
         monthlyActivities,
-        
+
         dailyDistance,
         dailyActivities,
-        
+
+        dailyMovingTime,
+        dailyElevation,
+
         activityTypes: Array.from(activityTypes)
       },
       duplicates: duplicatePairs.map(p => ({
