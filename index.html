@@ -193,6 +193,24 @@ th span.sort-icon svg {
   margin: 8px 0;
 }
 
+#datePresets {
+  margin: 12px 0;
+}
+
+#datePresets button {
+  margin: 2px;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+}
+
+#datePresets button:hover {
+  background: #fc4c02;
+  color: white;
+}
+
   </style>
 </head>
 
@@ -390,6 +408,67 @@ users = users.map(u => ({
     dateFrom.value = `${year}-05-01`;
     dateTo.value = `${year}-09-30`;
 
+  const presetsContainer =
+  document.getElementById("datePresets");
+
+presetsContainer.innerHTML = `
+  <button type="button"
+    data-from="${year}-01-01"
+    data-to="${year}-12-31">
+    Cały rok
+  </button>
+
+  <button type="button"
+    data-from="${year}-05-01"
+    data-to="${year}-05-31">
+    Maj
+  </button>
+
+  <button type="button"
+    data-from="${year}-06-01"
+    data-to="${year}-06-30">
+    Czerwiec
+  </button>
+
+  <button type="button"
+    data-from="${year}-07-01"
+    data-to="${year}-07-31">
+    Lipiec
+  </button>
+
+  <button type="button"
+    data-from="${year}-08-01"
+    data-to="${year}-08-31">
+    Sierpień
+  </button>
+
+  <button type="button"
+    data-from="${year}-09-01"
+    data-to="${year}-09-30">
+    Wrzesień
+  </button>
+
+  <button type="button"
+    data-from="${year}-05-01"
+    data-to="${year}-09-30">
+    Wyzwanie
+  </button>
+`;
+
+document
+  .querySelector("#datePresets")
+  .addEventListener("click", e => {
+
+    if (!e.target.dataset.from) return;
+
+    dateFrom.value =
+      e.target.dataset.from;
+
+    dateTo.value =
+      e.target.dataset.to;
+
+    applyFilters();
+});
     function renderTable(list) {
       tbody.innerHTML = "";
 
