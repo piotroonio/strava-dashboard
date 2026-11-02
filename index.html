@@ -425,6 +425,25 @@ users = users.map(u => ({
         ).getDate()
       ).padStart(2, "0")}`;
 
+  const previousMonthDate =
+  new Date(year, now.getMonth() - 1, 1);
+
+  const previousMonthStart =
+    `${previousMonthDate.getFullYear()}-${String(
+      previousMonthDate.getMonth() + 1
+    ).padStart(2, "0")}-01`;
+
+  const previousMonthEnd =
+    `${previousMonthDate.getFullYear()}-${String(
+      previousMonthDate.getMonth() + 1
+    ).padStart(2, "0")}-${String(
+      new Date(
+        previousMonthDate.getFullYear(),
+        previousMonthDate.getMonth() + 1,
+        0
+      ).getDate()
+    ).padStart(2, "0")}`;
+
     const presetsContainer =
       document.getElementById("datePresets");
 
@@ -434,6 +453,12 @@ presetsContainer.innerHTML = `
     data-from="${currentMonthStart}"
     data-to="${currentMonthEnd}">
     Bieżący miesiąc
+  </button>
+
+  <button type="button"
+    data-from="${previousMonthStart}"
+    data-to="${previousMonthEnd}">
+    Poprzedni miesiąc
   </button>
   
   <button type="button"
