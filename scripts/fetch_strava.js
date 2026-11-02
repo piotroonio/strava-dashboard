@@ -351,10 +351,42 @@ for (let i = 0; i < tokens.length; i += BATCH_SIZE) {
 
   console.log(`🚀 Processing batch ${i / BATCH_SIZE + 1}`);
 
-  for (const user of batch) {
-    const res = await processUser(user, CLIENT_ID, CLIENT_SECRET, monthlyStats);
-    results.push(res);
-  }
+// Zapis danych do tymczasowego pliku json po pobraniu danych każdego uczestnika
+for (const user of batch) {
+
+  const res = await processUser(
+    user,
+    CLIENT_ID,
+    CLIENT_SECRET,
+    monthlyStats
+  );
+
+  results.push(res);
+
+  const partialData = {
+    updatedAt: new Date().toISOString(),
+
+    monthlyStats: Object.fromEntries(
+      Object.entries(monthlyStats).map(([k, v]) => [
+        k,
+        Number(v.toFixed(1))
+      ])
+    ),
+
+    users: results
+      .map(r => r.data)
+      .filter(Boolean)
+  };
+
+  fs.writeFileSync(
+    "data.partial.json",
+    JSON.stringify(partialData, null, 2)
+  );
+
+  console.log(
+    `💾 Saved ${partialData.users.length} users`
+  );
+}
 
   // ❗ NIE czekaj po ostatnim batchu
   if (i + BATCH_SIZE < tokens.length) {
