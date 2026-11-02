@@ -203,8 +203,6 @@ th span.sort-icon svg {
   <option value="GravelRide">Gravel</option>
 </select>
 
-<div id="participantsCount"></div>
-
 <div id="monthlyStats"></div>
 <div id="summary" class="summary"></div>
 
@@ -495,6 +493,7 @@ const row = `
       document.getElementById("summary").innerHTML = `
         <p>📊 ${totalDistance.toFixed(1)} km</p>
         <p>🚴 ${totalActivities} aktywności</p>
+        <p>👥 ${list.length} aktywnych uczestników</p>
         <p>⏱️ ${timeAgo(updatedAt)}</p>
       `;
     }
@@ -700,9 +699,7 @@ filtered = filtered.filter(u =>
   u.totalDistance > 0
 );
 
-document.getElementById("participantsCount").textContent =
-  `Aktywni uczestnicy: ${filtered.length}`;
-  
+ 
   renderMonthlyStats(filtered);
   renderTable(filtered);
   //renderLeader(filtered); // ✅ ważne
