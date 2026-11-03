@@ -524,7 +524,15 @@
   //fetch("./data.json")
   //  .then(res => res.json())
   //  .then(data => {
-  
+
+    function showLoader() {
+      document.getElementById("loader").style.display = "flex";
+    }
+    
+    function hideLoader() {
+      document.getElementById("loader").style.display = "none";
+    }
+    
   //Pierwsze otwarcie strony //////////////////////////////////////////////////////////////////////////////////////////////////
   showLoader();
   Promise.all([
@@ -970,15 +978,7 @@
     function isDateInRange(date, from, to) {
       return date >= from && date <= to;
     }
-
-    function showLoader() {
-      document.getElementById("loader").style.display = "flex";
-    }
-    
-    function hideLoader() {
-      document.getElementById("loader").style.display = "none";
-    }
-  
+ 
     //////////////////////////////////////////////////////////////  
     function applyFilters() {
 
