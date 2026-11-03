@@ -278,36 +278,35 @@
     Ranking na podstawie aktywności rowerowych ze Strava.
   </p>
   
-  <p style="text-align: center;">
-   <div class="filters">
-      <div>
-        <label><b>Od:</b></label>
-        <input type="date" id="dateFrom">
-      </div>
-    
-      <div>      
-        <label><b>Do:</b></label>
-        <input type="date" id="dateTo">
-      </div>
-
-      <div id="datePresets"></div>
-    
-      <div>
-        <label><b>Szukaj użytkownika:</b></label>
-        <input type="text" id="searchUser" placeholder="np. Piotr">
-      </div>
-    
-      <div>
-        <label><b>Rodzaj aktywności:</b></label>
-        <select id="activityFilter">
-          <option value="all">Wszystkie</option>
-          <option value="Ride">🚴 Road</option>
-          <option value="MountainBikeRide">🚵 MTB</option>
-          <option value="GravelRide">🟤 Gravel</option>
-        </select>
-      </div>
+  <div class="filters">
+    <div>
+      <label><b>Od:</b></label>
+      <input type="date" id="dateFrom">
     </div>
-  </p>
+  
+    <div>      
+      <label><b>Do:</b></label>
+      <input type="date" id="dateTo">
+    </div>
+
+    <div id="datePresets"></div>
+  
+    <div>
+      <label><b>Szukaj użytkownika:</b></label>
+      <input type="text" id="searchUser" placeholder="np. Piotr">
+    </div>
+  
+    <div>
+      <label><b>Rodzaj aktywności:</b></label>
+      <select id="activityFilter">
+        <option value="all">Wszystkie</option>
+        <option value="Ride">🚴 Road</option>
+        <option value="MountainBikeRide">🚵 MTB</option>
+        <option value="GravelRide">🟤 Gravel</option>
+      </select>
+    </div>
+  </div>
+  
   <div id="monthlyStats"></div>
   <div id="summary" class="summary"></div>
   <div id="leaders" class="leaders"></div>
