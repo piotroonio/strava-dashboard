@@ -526,12 +526,15 @@
   //  .then(data => {
 
     function showLoader() {
-      document.getElementById("loader").style.display = "flex";
+      document.getElementById("loader").style.display = "flex";   
+      document.getElementById("table").style.visibility = "hidden";
     }
     
     function hideLoader() {
       document.getElementById("loader").style.display = "none";
+      document.getElementById("table").style.visibility = "visible";
     }
+
     
   //Pierwsze otwarcie strony //////////////////////////////////////////////////////////////////////////////////////////////////
   showLoader();
@@ -833,6 +836,16 @@
         <p>👥 ${list.length} aktywnych uczestników</p>
         <p>⏱️ ${timeAgo(updatedAt)}</p>
       `;
+      requestAnimationFrame(() => {
+    
+      requestAnimationFrame(() => {
+    
+        hideLoader();
+    
+      });
+    
+    });
+      
       } //koniec function renderTable(list)
     
     //renderTable(users);
@@ -1094,7 +1107,6 @@
       renderMonthlyStats(filtered);
       renderLeaders(filtered);
       renderTable(filtered);
-      hideLoader();
     
       }, 10);
         
