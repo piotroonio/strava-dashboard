@@ -41,6 +41,7 @@
       box-sizing: border-box;
       margin: 4px 0;
       transition: all 0.2s ease;
+      width: 145px;
     }
 
     #searchUser:focus,
@@ -57,7 +58,7 @@
     }
     
     #activityFilter {
-      width: 140px;
+      width: 150px;
     }
     
     #dateFrom,
@@ -250,12 +251,16 @@
     }
     
     #datePresets {
-      margin: 12px 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 12px 0 20px 0;
     }
     
     #datePresets button {
       margin: 2px;
       padding: 6px 10px;
+      min-width: 55px;
       border: 1px solid #ddd;
       border-radius: 6px;
       background: #fff;
@@ -265,6 +270,14 @@
     #datePresets button:hover {
       background: #fc4c02;
       color: white;
+    }
+
+    .filters-panel {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 20px;
     }
 
   </style>
@@ -277,34 +290,36 @@
   <p class="description">
     Ranking na podstawie aktywności rowerowych ze Strava.
   </p>
-  
-  <div class="filters">
-    <div>
-      <label><b>Od:</b></label>
-      <input type="date" id="dateFrom">
-    </div>
-  
-    <div>      
-      <label><b>Do:</b></label>
-      <input type="date" id="dateTo">
-    </div>
 
-    <div id="datePresets"></div>
-  
-    <div>
-      <label><b>Szukaj użytkownika:</b></label>
-      <input type="text" id="searchUser" placeholder="np. Piotr">
-    </div>
-  
-    <div>
-      <label><b>Rodzaj aktywności:</b></label>
-      <select id="activityFilter">
-        <option value="all">Wszystkie</option>
-        <option value="Ride">🚴 Road</option>
-        <option value="MountainBikeRide">🚵 MTB</option>
-        <option value="GravelRide">🟤 Gravel</option>
-      </select>
-    </div>
+  <div class="filters-panel">
+      <div class="filters">
+        <div>
+          <label><b>Od:</b></label>
+          <input type="date" id="dateFrom">
+        </div>
+      
+        <div>      
+          <label><b>Do:</b></label>
+          <input type="date" id="dateTo">
+        </div>
+       
+        <div>
+          <label><b>Szukaj użytkownika:</b></label>
+          <input type="text" id="searchUser" placeholder="np. Piotr">
+        </div>
+      
+        <div>
+          <label><b>Rodzaj aktywności:</b></label>
+          <select id="activityFilter">
+            <option value="all">Wszystkie</option>
+            <option value="Ride">🚴 Road</option>
+            <option value="MountainBikeRide">🚵 MTB</option>
+            <option value="GravelRide">🟤 Gravel</option>
+          </select>
+        </div>
+      </div>
+      
+      <div id="datePresets"></div>
   </div>
   
   <div id="monthlyStats"></div>
@@ -515,18 +530,18 @@
       document.getElementById("datePresets");
   
     const monthNames = [
-    "Styczeń",
-    "Luty",
-    "Marzec",
-    "Kwiecień",
-    "Maj",
-    "Czerwiec",
-    "Lipiec",
-    "Sierpień",
-    "Wrzesień",
-    "Październik",
-    "Listopad",
-    "Grudzień"
+    "sty",
+    "lut",
+    "mar",
+    "kwi",
+    "maj",
+    "cze",
+    "lip",
+    "sie",
+    "wrz",
+    "paź",
+    "lis",
+    "gru"
     ];
       
     let monthButtons = "";
@@ -569,15 +584,15 @@
         data-from="${year}-01-01"
         data-to="${year}-12-31">
         Cały rok
-      </button>
-    
-      ${monthButtons}
-    
+      </button>  
+  
       <button type="button"
         data-from="${year}-05-01"
         data-to="${year}-09-30">
         Wyzwanie
       </button>
+
+      ${monthButtons}
     `;
     
     document
