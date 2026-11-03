@@ -250,7 +250,7 @@
       margin: 8px 0;
     }
     
-    #datePresets {
+    # {
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
@@ -611,20 +611,23 @@
 
     monthPresets.innerHTML = monthButtons;
     
+    function handlePresetClick(e) {
+    
+      if (!e.target.dataset.from) return;
+    
+      dateFrom.value = e.target.dataset.from;
+      dateTo.value = e.target.dataset.to;
+    
+      applyFilters();
+    }
+    
     document
-      .querySelector("#datePresets")
-      .addEventListener("click", e => {
+      .getElementById("quickPresets")
+      .addEventListener("click", handlePresetClick);
     
-        if (!e.target.dataset.from) return;
-    
-        dateFrom.value =
-          e.target.dataset.from;
-    
-        dateTo.value =
-          e.target.dataset.to;
-    
-        applyFilters();
-    });
+    document
+      .getElementById("monthPresets")
+      .addEventListener("click", handlePresetClick);
 
     
     function renderTable(list) {
