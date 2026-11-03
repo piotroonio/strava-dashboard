@@ -280,6 +280,18 @@
       margin-bottom: 20px;
     }
 
+    #quickPresets {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    
+    #monthPresets {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
   </style>
 </head>
 
@@ -311,15 +323,16 @@
         <div>
           <label><b>Rodzaj aktywności:</b></label>
           <select id="activityFilter">
-            <option value="all">Wszystkie</option>
-            <option value="Ride">🚴 Road</option>
-            <option value="MountainBikeRide">🚵 MTB</option>
-            <option value="GravelRide">🟤 Gravel</option>
+            <option value="all">wszystkie</option>
+            <option value="Ride">szosowe</option>
+            <option value="MountainBikeRide">mtb</option>
+            <option value="GravelRide">gravel</option>
           </select>
         </div>
       </div>
       
-      <div id="datePresets"></div>
+      <div id="quickPresets"></div>
+      <div id="monthPresets"></div>
   </div>
   
   <div id="monthlyStats"></div>
@@ -421,14 +434,14 @@
       if (!span) return;
   
       span.style.visibility = "hidden";
-      span.innerHTML = "";
+      span = "";
   
       if (key === currentSort) {
         const svg = sortAsc
           ? `<svg viewBox="0 0 24 24"><path d="M7 14l5-5 5 5z"/></svg>`
           : `<svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>`;
   
-        span.innerHTML = svg;
+        span = svg;
         span.style.visibility = "visible";
       }
     });
@@ -566,7 +579,7 @@
       `;
     }
     
-    presetsContainer.innerHTML = `
+    quickPresets.innerHTML = `
     
       <button type="button"
         data-from="${currentMonthStart}"
@@ -591,9 +604,9 @@
         data-to="${year}-09-30">
         Wyzwanie
       </button>
-
-      ${monthButtons}
     `;
+
+    monthPresets.innerHTML = monthButtons;
     
     document
       .querySelector("#datePresets")
