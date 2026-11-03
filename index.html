@@ -686,7 +686,7 @@
               <div class="avatar-wrapper">
                 <a href="https://www.strava.com/athletes/${u.athleteId}" target="_blank">
                 ${
-                  u.avatar && u.avatar.startsWith("http")
+                  u.avatar && typeof u.avatar === "string" && u.avatar.startsWith("http")
                     ? `<img src="${u.avatar}" alt="${u.name}" class="avatar"
                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                        <div class="avatar-fallback" style="display:none">
