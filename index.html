@@ -426,26 +426,29 @@
   
     
   
-  function updateSortIndicators() {
-    document.querySelectorAll("th").forEach(th => {
-      const key = th.dataset.sort;
-      const span = th.querySelector(".sort-icon");
-  
-      if (!span) return;
-  
-      span.style.visibility = "hidden";
-      span = "";
-  
-      if (key === currentSort) {
-        const svg = sortAsc
-          ? `<svg viewBox="0 0 24 24"><path d="M7 14l5-5 5 5z"/></svg>`
-          : `<svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>`;
-  
-        span = svg;
-        span.style.visibility = "visible";
-      }
-    });
-  }
+    function updateSortIndicators() {
+      document.querySelectorAll("th").forEach(th => {
+    
+        const key = th.dataset.sort;
+        const span = th.querySelector(".sort-icon");
+    
+        if (!span) return;
+    
+        span.style.visibility = "hidden";
+        span.innerHTML = "";
+    
+        if (key === currentSort) {
+    
+          const svg = sortAsc
+            ? `<svg viewBox="0 0 24 24"><path d="M7 14l5-5 5 5z"/></svg>`
+            : `<svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>`;
+    
+          span.innerHTML = svg;
+          span.style.visibility = "visible";
+        }
+      });
+    }
+
   
   //fetch("./data.json")
   //  .then(res => res.json())
