@@ -23,9 +23,8 @@
     }
 
     input {
-      margin: 10px 0 20px 10px;
+      margin: 0;
       padding: 6px;
-      width: 100%;
     }
 
     #searchUser,
@@ -139,7 +138,6 @@
       background-color: #faf3ee;
       border-left: 4px solid #d8a47f;
     }
-
 
     a {
       color: #fc4c02;
@@ -287,22 +285,31 @@
       gap: 6px;
     }
 
-    @media (max-width: 768px) {
-    
+    @media (max-width: 768px) {    
       body {
         padding: 10px;
+        max-width: 100%;
       }
     
       .filters-panel {
-        padding: 12px;
+        box-sizing: border-box;
+        max-width: 100%;
         width: 100%;
+      }
+
+      #monthlyStats,
+      #summary,
+      #leaders {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
       }
       
       .filters {
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        gap: 12px;
+        width: 100%;
       }
 
       .filters div {
@@ -323,7 +330,7 @@
       #dateFrom,
       #dateTo {
         width: 100%;
-        height: 50px;
+        height: 48px;
         font-size: 16px;
       }
       
@@ -331,7 +338,7 @@
       #monthPresets {
         display: flex;
         flex-wrap: wrap;
-        gap: 6px;
+        width: 100%;
       }
       
       #quickPresets button,
