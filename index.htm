@@ -668,8 +668,9 @@
   
     const year = new Date().getFullYear();
     
-    dateFrom.value = `${year}-05-01`;
-    dateTo.value = `${year}-09-30`;
+    // domyślnie okres wyzwania rowerowego maj-wrzesień
+    //dateFrom.value = `${year}-05-01`;
+    //dateTo.value = `${year}-09-30`;
   
     // Bieżący miesiąc
     const now = new Date();
@@ -685,6 +686,10 @@
           0
         ).getDate()
       ).padStart(2, "0")}`;
+
+    // domyślnie bieżący miesiąc
+    dateFrom.value = currentMonthStart;
+    dateTo.value = currentMonthEnd;
     
     const previousMonthDate =
     new Date(year, now.getMonth() - 1, 1);
