@@ -146,19 +146,27 @@
 
 
     .gold {
-      background-color: #fff8dc;
-      border-left: 4px solid #fc4c02;
-      box-shadow: inset 0 0 0 1px #ffe0cc;
+      background: linear-gradient(
+        90deg,
+        #fff8dc,
+        #fffdf4
+      );
     }
     
     .silver {
-      background-color: #f7f7f7;
-      border-left: 4px solid #bbb;
+      background: linear-gradient(
+        90deg,
+        #f3f3f3,
+        #ffffff
+      );
     }
     
     .bronze {
-      background-color: #faf3ee;
-      border-left: 4px solid #d8a47f;
+      background: linear-gradient(
+        90deg,
+        #f9efe7,
+        #ffffff
+      );
     }
 
     a {
@@ -170,7 +178,26 @@
       text-decoration: underline;
     }
 
-    .summary { margin-top: 20px; }
+    .summary {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 20px 0;
+    }
+    
+    .summary p {
+      margin: 0;
+    
+      background: white;
+      border-radius: 10px;
+    
+      padding: 12px 20px;
+    
+      box-shadow:
+        0 2px 6px rgba(0,0,0,0.08);
+    
+      font-weight: 600;
+    }
 
     footer {
       margin-top: 40px;
@@ -217,9 +244,12 @@
     
     .highlight {
       color: #fc4c02;
-      font-weight: bold;
+      font-weight: 700;
     }
     
+    td.highlight {
+      background: #fff8f3;
+    }
     
     th span.arrow::after {
       font-size: 12px;
