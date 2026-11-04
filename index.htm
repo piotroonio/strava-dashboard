@@ -940,11 +940,11 @@
             </td>
         
             <td class="${currentSort === 'totalDistance' ? 'highlight' : ''}">
-              ${u.totalDistance || 0}
+              ${formatNumber(u.totalDistance)}
             </td>
         
             <td class="${currentSort === 'avgSpeed' ? 'highlight' : ''}">
-              ${u.avgSpeed}
+              ${formatNumber(u.avgSpeed, 2)}
             </td>
         
             <td class="${currentSort === 'avgDistance' ? 'highlight' : ''}">
@@ -1042,7 +1042,7 @@
           return `
             <tr>
               <td>${monthNames[monthNumber]}</td>
-              <td>${distance.toFixed(1)} km</td>
+              <td>${formatNumber(distance)} km</td>
             </tr>
           `;
         })
@@ -1091,7 +1091,7 @@
           <p>
             🥇 <strong>Największy dystans:</strong>
             ${distanceLeader.name}
-            (${distanceLeader.totalDistance.toFixed(1)} km)
+            (${formatNumber(distanceLeader.totalDistance)} km)
           </p>
     
           <p>
@@ -1109,7 +1109,7 @@
           <p>
             ⚡ <strong>Najwyższa średnia prędkość:</strong>
             ${speedLeader.name}
-            (${speedLeader.avgSpeed} km/h)
+            (${formatNumber(speedLeader.avgSpeed, 2)} km/h)
           </p>
         </div>
       `;
