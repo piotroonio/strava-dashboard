@@ -602,7 +602,13 @@
       }[c]));
   }
   
-  
+  function formatNumber(value, decimals = 1) {
+    return Number(value).toLocaleString("pl-PL", {
+      minimumFractionDigits: decimals,
+      maximumFractionDigits: decimals
+    });
+  }
+    
   function getInitials(name) {
     if (!name) return "?";
   
@@ -942,7 +948,7 @@
             </td>
         
             <td class="${currentSort === 'avgDistance' ? 'highlight' : ''}">
-              ${u.avgDistance.toFixed(1)}
+              ${formatNumber(u.avgDistance)}
             </td>
         
             <td class="${currentSort === 'avgElevation' ? 'highlight' : ''}">
@@ -967,7 +973,7 @@
             : data.updatedAt;
     
       document.getElementById("summary").innerHTML = `
-        <p>📊 ${totalDistance.toFixed(1)} km</p>
+        <p>📊 ${formatNumber(totalDistance)} km</p>
         <p>🚴 ${totalActivities} aktywności</p>
         <p>👥 ${list.length} aktywnych uczestników</p>
         <p>⏱️ ${timeAgo(updatedAt)}</p>
