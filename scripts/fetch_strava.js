@@ -145,7 +145,8 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET, monthlyStats) {
     }
 
     // 📅 zakres dat
-    const year = new Date().getFullYear();
+    //const year = new Date().getFullYear(); //<--automatycznie brany jest rok bieżący
+    const year = 2026;
     const after = Math.floor(new Date(`${year}-01-01`).getTime() / 1000);
     const before = Math.floor(new Date(`${year + 1}-01-01`).getTime() / 1000);
 
