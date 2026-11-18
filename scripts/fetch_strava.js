@@ -217,10 +217,7 @@ if (ignoredActivities.has(activityId)) return;
 
       // ✅ override dystansu
       let distance = a.distance;
-
-      const activityId =
-        a.id_str || String(a.id);
-      
+   
       if (corrections.overrideDistances?.[activityId]) {
         distance =
           corrections.overrideDistances[activityId] * 1000;
