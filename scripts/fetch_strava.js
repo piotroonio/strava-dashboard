@@ -71,11 +71,17 @@ function findDuplicates(activities) {
 
       if (isDuplicate(activities[i], activities[j])) {
 
-        duplicateIds.add(activities[j].id);
-
+        const id1 =
+          activities[i].id_str || String(activities[i].id);
+        
+        const id2 =
+          activities[j].id_str || String(activities[j].id);
+        
+        duplicateIds.add(id2);
+        
         duplicatePairs.push({
-          activity1: activities[i].id,
-          activity2: activities[j].id
+          activity1: id1,
+          activity2: id2
         });
       }
     }
@@ -131,7 +137,7 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET, monthlyStats) {
     
     const avatar = athlete.profile;
 
-    const athleteId = athlete.id;
+    const athleteId = athlete.id_str || String(athlete.id);
 
     const displayName =
       [athlete.firstname, athlete.lastname]
@@ -200,7 +206,9 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET, monthlyStats) {
     allActivities.forEach(a => {
 
       // ❌ ignore (manual + dup)
-      if (ignoredActivities.has(a.id)) return;
+      const activityId = a.id_str || String(a.id);
+
+if (ignoredActivities.has(activityId)) return;
 
       if (!a.distance || a.distance < 1000) return;
       if (!a.start_latlng) return;
@@ -210,9 +218,14 @@ async function processUser(user, CLIENT_ID, CLIENT_SECRET, monthlyStats) {
       // ✅ override dystansu
       let distance = a.distance;
 
-      if (corrections.overrideDistances?.[a.id]) {
-        distance = corrections.overrideDistances[a.id] * 1000;
-        console.log(`✏️ Override ${a.id}`);
+      const activityId =
+        a.id_str || String(a.id);
+      
+      if (corrections.overrideDistances?.[activityId]) {
+        distance =
+          corrections.overrideDistances[activityId] * 1000;
+      
+        console.log(`✏️ Override ${activityId}`);
       }
 
       totalDistance += distance;
